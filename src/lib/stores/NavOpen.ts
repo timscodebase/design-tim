@@ -1,2 +1,2 @@
-import { writable } from 'svelte/store'
-export const NavOpen = writable(false)
+import NavOpen from './nav'
+export default NavOpen

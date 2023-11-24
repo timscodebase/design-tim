@@ -1,15 +1,14 @@
 <script lang="ts">
-	import { Button } from '$lib'
-	let open = false
+	import { Button, NavOpen } from '$lib'
 
 	function toggleNav() {
-		open = !open
+		$NavOpen = !$NavOpen
 	}
 </script>
 
 <nav>
 	<Button on:click={toggleNav}>+</Button>
-	<ul class:open>
+	<ul class:open={$NavOpen}>
 		<li><a href="/">Home</a></li>
 		<li><a href="/projects">Projects</a></li>
 		<li><a href="past-work">Past Work</a></li>

@@ -4,7 +4,7 @@
 	import { Header } from '$lib'
 
 	$: {
-		NavOpen.open = false
+		NavOpen = false
 	}
 </script>
 
