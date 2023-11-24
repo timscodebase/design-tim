@@ -28,6 +28,8 @@
 	--size-5: 1.5rem;
 	--size-6: 1.75rem;
 
+	--gap: var(--size-3);
+
 	--padding-xs: var(--size-1);
 	--padding-sm: var(--size-2);
 	--padding-md: var(--size-3);
