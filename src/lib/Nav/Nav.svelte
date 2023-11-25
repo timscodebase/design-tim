@@ -10,13 +10,25 @@
 </script>
 
 <nav>
-	<Button on:click={navStore.toggle}>{$navStore ? 'Close' : 'Open'} Nav</Button>
+	<Button btnClass={$navStore ? 'open' : ''} on:click={navStore.toggle}
+		>{$navStore ? 'Close' : 'Open'} Nav</Button
+	>
 	<ul class:open={$navStore}>
-		<li><Button on:click={() => handleNav('/')}>Home</Button></li>
-		<li><Button on:click={() => handleNav('/projects')}>Projects</Button></li>
-		<li><Button on:click={() => handleNav('/past-work')}>Past Work</Button></li>
-		<li><Button on:click={() => handleNav('/blog')}>Blog</Button></li>
-		<li><Button on:click={() => handleNav('/uses')}>Uses</Button></li>
+		<li>
+			<Button btnRole="link" on:click={() => handleNav('/')}>Home</Button>
+		</li>
+		<li>
+			<Button btnRole="link" on:click={() => handleNav('/projects')}>Projects</Button>
+		</li>
+		<li>
+			<Button btnRole="link" on:click={() => handleNav('/past-work')}>Past Work</Button>
+		</li>
+		<li>
+			<Button btnRole="link" on:click={() => handleNav('/blog')}>Blog</Button>
+		</li>
+		<li>
+			<Button btnRole="link" on:click={() => handleNav('/uses')}>Uses</Button>
+		</li>
 	</ul>
 </nav>
 

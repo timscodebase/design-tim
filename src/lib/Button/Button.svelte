@@ -1,8 +1,10 @@
 <script lang="ts">
-	let open = false
+	import { navStore } from '$stores'
+	export let btnRole: undefined | 'link' = undefined
+	export let btnClass: undefined | string = undefined
 </script>
 
-<button class:open class="resizeable" on:click>
+<button role={btnRole} class={`${btnClass} resizeable`} on:click>
 	<slot />
 </button>
 
