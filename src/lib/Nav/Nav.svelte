@@ -1,32 +1,22 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
-	import { onMount } from 'svelte'
 	import { Button } from '$lib'
+	import { navStore } from '$stores'
 
-	let open: boolean
-
-	onMount(() => {
-		open = false
-	})
-
-	function toggleNav() {
-		open = !open
-	}
-
-	function handleNav(href: string) {
-		goto(href)
-		toggleNav()
+	function handleNav(url: string) {
+		navStore.toggle()
+		goto(url)
 	}
 </script>
 
 <nav>
-	<Button buttonType="round" on:click={toggleNav}>{open ? 'Close' : 'Open'} Nav</Button>
-	<ul class:open>
+	<Button on:click={navStore.toggle}>{$navStore ? 'Close' : 'Open'} Nav</Button>
+	<ul class:open={$navStore}>
 		<li><Button on:click={() => handleNav('/')}>Home</Button></li>
 		<li><Button on:click={() => handleNav('/projects')}>Projects</Button></li>
 		<li><Button on:click={() => handleNav('/past-work')}>Past Work</Button></li>
-		<li><Button on:click={() => handleNav('/Blog')}>Blog</Button></li>
-		<li><Button on:click={() => handleNav('/Uses')}>Uses</Button></li>
+		<li><Button on:click={() => handleNav('/blog')}>Blog</Button></li>
+		<li><Button on:click={() => handleNav('/uses')}>Uses</Button></li>
 	</ul>
 </nav>
 
@@ -49,6 +39,11 @@
 		display: grid;
 		gap: var(--gap);
 		height: auto;
+	}
+
+	button.open {
+		color: var(--primary);
+		border-color: var(--border-hover);
 	}
 
 	li {

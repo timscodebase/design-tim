@@ -1,24 +1,22 @@
 <script lang="ts">
-	export let buttonType: 'link' | 'round' = 'link'
+	let open = false
 </script>
 
-<button class="resizeable" on:click>
+<button class:open class="resizeable" on:click>
 	<slot />
 </button>
 
 <style>
 	button {
 		--size: 65px;
-		/* font-size: 2rem; */
 		color: var(--text);
 		text-align: center;
 		min-width: var(--size);
 		min-height: var(--size);
 		padding: var(--padding-sm);
-		/* padding-top: var(--padding-xs);
-		border-radius: var(--border-radius-full); */
 		border: var(--border-base);
 	}
+	button.open,
 	button:hover,
 	button:active {
 		color: var(--primary);
