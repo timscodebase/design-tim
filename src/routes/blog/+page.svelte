@@ -25,28 +25,27 @@
 <style>
 	.posts {
 		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 2rem;
 	}
 
 	.post {
-		max-inline-size: var(--size-content-3);
+		padding: var(--padding-md);
+		margin: var(--margin-md) 0;
+		border: var(--border-base);
 	}
-
-	.post:not(:last-child) {
-		border-bottom: 1px solid var(--border);
-		padding-bottom: var(--size-7);
+	.post:hover {
+		border: var(--border-hover);
+	}
+	.post:hover > .title {
+		color: var(--text);
 	}
 
 	.title {
-		font-size: var(--font-size-fluid-3);
-		text-transform: capitalize;
-	}
-
-	.date {
-		color: var(--text-2);
-	}
-
-	.description {
-		margin-top: var(--size-3);
+		display: block;
+		font-size: 3svw;
+		cursor: pointer;
+		color: var(--primary);
+		margin-bottom: var(--margin-sm);
 	}
 </style>
