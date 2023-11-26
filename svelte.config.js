@@ -27,6 +27,17 @@ const config = {
 		alias: {
 			$stores: './src/lib/stores',
 			$utils: './src/lib/utils'
+		},
+		prerender: {
+			handleHttpError: ({ path, referrer, message }) => {
+				// ignore deliberate link to shiny 404 page
+				if (path === '/not-found' && referrer === '/blog/404-page') {
+					return
+				}
+
+				// otherwise fail the build
+				throw new Error(message)
+			}
 		}
 	}
 }
