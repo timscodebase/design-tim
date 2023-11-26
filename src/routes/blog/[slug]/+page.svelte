@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
+	import { Tags } from '$lib'
 
 	export let data
 </script>
@@ -19,11 +20,7 @@
 	</hgroup>
 
 	<!-- Tags -->
-	<div class="tags">
-		{#each data.meta.categories as category}
-			<span class="surface-4">&num;{category}</span>
-		{/each}
-	</div>
+	<Tags categories={data.meta.categories} />
 
 	<!-- Post -->
 	<div class="prose">

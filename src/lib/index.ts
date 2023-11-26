@@ -1,11 +1,17 @@
-import Button from './Button'
+import Button from './components/Button'
 export { Button }
 
-import Header from './Header'
+import Header from './components/Header'
 export { Header }
 
-import Nav from './Nav'
+import Nav from './components/Nav'
 export { Nav }
 
-import Me from './Me'
+import Me from './components/Me'
 export { Me }
+
+import Tag from './components/Tag'
+export { Tag }
+
+import Tags from './components/Tags'
+export { Tags }
