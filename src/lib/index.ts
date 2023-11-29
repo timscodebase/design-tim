@@ -10,6 +10,9 @@ export { Nav }
 import Me from './components/Me'
 export { Me }
 
+import SkillGrid from './components/SkillGrid'
+export { SkillGrid }
+
 import Tag from './components/Tag'
 export { Tag }
 
