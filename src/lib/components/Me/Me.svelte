@@ -1,15 +1,10 @@
 <script lang="ts">
 </script>
 
-<figure>
-	<img src="/images/me.png" alt="Tim Smith" />
-	<figcaption>
-		<h1>Hi, I'm <span>Tim Smith</span></h1>
-	</figcaption>
-</figure>
+<img src="/images/me.png" alt="Tim Smith" />
 
 <style>
-	figure {
-		width: 70svw;
+	img {
+		width: 25svw;
 	}
 </style>

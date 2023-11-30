@@ -3,12 +3,22 @@
 	import { Header } from '$lib'
 </script>
 
-<Header />
+<div class="container">
+	<Header />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
 
-<footer>
-	<p>Tim Smith {new Date().getFullYear()}</p>
-</footer>
+	<footer>
+		<p>Tim Smith {new Date().getFullYear()}</p>
+	</footer>
+</div>
+
+<style>
+	.container {
+		padding: var(--padding-md);
+		max-width: 875px;
+		margin: 0 auto;
+	}
+</style>
