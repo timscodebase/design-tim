@@ -1,3 +1,46 @@
 @import './reset.css';
 @import './variables.css';
 @import './typography.css';
+
+.frontend {
+	border: 2px solid var(--yellow);
+
+	.info {
+		color: var(--yellow);
+	}
+}
+.backend {
+	border: 2px solid var(--blue);
+
+	.info {
+		color: var(--blue);
+	}
+}
+.fullstack {
+	border: 2px solid var(--green);
+
+	.info {
+		color: var(--green);
+	}
+}
+.devops {
+	border: 2px solid var(--orange);
+
+	.info {
+		color: var(--orange);
+	}
+}
+.methodology {
+	border: 2px solid var(--pink);
+
+	.info {
+		color: var(--pink);
+	}
+}
+.design {
+	border: 2px solid var(--purple);
+
+	.info {
+		color: var(--purple);
+	}
+}

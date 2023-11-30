@@ -14,5 +14,5 @@ export type SkillType = {
 	usedAt: number
 	yearsExp: string
 	level: 'beginner' | 'intermediate' | 'advanced'
-	category: string[]
+	category: string
 }

@@ -4,111 +4,111 @@
 		"usedAt": [],
 		"yearsExp": 15,
 		"level": "advanced",
-		"category": ["frontend"]
+		"category": "frontend"
 	},
 	{
 		"name": "CSS",
 		"usedAt": [],
 		"yearsExp": 14,
 		"level": "advanced",
-		"category": ["frontend"]
+		"category": "frontend"
 	},
 	{
 		"name": "React",
 		"usedAt": [],
 		"yearsExp": 6,
 		"level": "intermediate",
-		"category": ["frontend"]
+		"category": "frontend"
 	},
 	{
 		"name": "Next JS",
 		"usedAt": [],
 		"yearsExp": 5,
 		"level": "intermediate",
-		"category": ["frontend", "backend"]
+		"category": "fullstack"
 	},
 	{
 		"name": "Node JS",
 		"usedAt": [],
 		"yearsExp": 5,
 		"level": "intermediate",
-		"category": ["backend"]
+		"category": "backend"
 	},
 	{
 		"name": "JAMStack",
 		"usedAt": [],
 		"yearsExp": 5,
 		"level": "advanced",
-		"category": ["frontend"]
+		"category": "frontend"
 	},
 	{
 		"name": "Svelte/Sveltekit",
 		"usedAt": [],
 		"yearsExp": 4,
 		"level": "intermediate",
-		"category": ["frontend", "backend"]
+		"category": "fullstack"
 	},
 	{
 		"name": "Typescript",
 		"usedAt": [],
 		"yearsExp": 3,
 		"level": "beginner",
-		"category": ["frontend", "backend"]
+		"category": "fullstack"
 	},
 	{
 		"name": "Python",
 		"usedAt": [],
 		"yearsExp": 14,
 		"level": "beginner",
-		"category": ["frontend", "backend"]
+		"category": "fullstack"
 	},
 	{
 		"name": "Github",
 		"usedAt": [],
 		"yearsExp": 8,
 		"level": "intermediate",
-		"category": ["devops"]
+		"category": "devops"
 	},
 	{
 		"name": "Photoshop",
 		"usedAt": [],
 		"yearsExp": 5,
 		"level": "intermediate",
-		"category": ["design"]
+		"category": "design"
 	},
 	{
 		"name": "Agile",
 		"usedAt": [],
 		"yearsExp": 6,
 		"level": "intermediate",
-		"category": ["methodology"]
+		"category": "methodology"
 	},
 	{
 		"name": "Docker",
 		"usedAt": [],
 		"yearsExp": 2,
 		"level": "beginner",
-		"category": ["devops", "backend"]
+		"category": "backend"
 	},
 	{
 		"name": "Kubernetes",
 		"usedAt": [],
 		"yearsExp": 1,
 		"level": "beginner",
-		"category": ["devops"]
+		"category": "devops"
 	},
 	{
 		"name": "Splunk",
 		"usedAt": [],
 		"yearsExp": 2,
 		"level": "beginner",
-		"category": ["devops"]
+		"category": "devops"
 	},
 	{
 		"name": "New Relic",
 		"usedAt": [],
 		"yearsExp": 1,
 		"level": "beginner",
-		"category": ["devops"]
+		"category": "devops"
 	}
 ]

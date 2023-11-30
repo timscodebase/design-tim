@@ -8,11 +8,7 @@
 </script>
 
 <h2>I excel in the following skills:</h2>
-<div class="grid">
-	{#each topSkills as skill}
-		<SkillGrid {topSkills} />
-	{/each}
-</div>
+<SkillGrid {topSkills} />
 
 <style>
 </style>

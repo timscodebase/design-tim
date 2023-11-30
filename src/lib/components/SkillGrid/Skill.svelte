@@ -3,14 +3,10 @@
 	export let skill: SkillType
 </script>
 
-<div class="skill">
+<div class={`skill ${skill.category}`}>
 	<h3>{skill.name}</h3>
 
-	<div class="categories">
-		{#each skill.category as category}
-			<p>{category}</p>
-		{/each}
-	</div>
+	<p>{skill.category}</p>
 
 	<p class="info">
 		{skill.level}, {skill.yearsExp > 1 ? `${skill.yearsExp} years` : `${skill.yearsExp} year`} of experience
@@ -27,9 +23,10 @@
 </div>
 
 <style>
-	.categories {
+	.skill {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		gap: var(--gap);
+		padding: var(--gap);
 	}
 </style>
