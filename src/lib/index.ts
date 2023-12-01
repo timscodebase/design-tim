@@ -7,6 +7,9 @@ export { Header }
 import Nav from './components/Nav'
 export { Nav }
 
+import { OpenNav, CloseNav } from './components/SVG'
+export { OpenNav, CloseNav }
+
 import Me from './components/Me'
 export { Me }
 

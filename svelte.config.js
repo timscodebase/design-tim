@@ -3,6 +3,8 @@ import { vitePreprocess } from '@sveltejs/kit/vite'
 
 import { mdsvex } from 'mdsvex'
 
+const svg = !!process.env.USE_SVG
+
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md', '.svelte', '.svx']

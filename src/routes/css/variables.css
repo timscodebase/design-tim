@@ -1,6 +1,7 @@
 :root {
 	/* Colors */
 	--black: #000000;
+	--black-75: rgba(0, 0, 0, 0.75);
 	--white: #ffffff;
 	--gray: #808080;
 	--grey: var(--gray);
@@ -26,6 +27,7 @@
 	--text: var(--white);
 	--background: var(--black);
 	--primary: var(--bright-pink);
+	--trans-background: var(--black-75);
 
 	/* Sizes */
 	--size-1: 0.5rem;

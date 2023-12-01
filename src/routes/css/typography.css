@@ -49,5 +49,5 @@ small {
 }
 
 .resizeable {
-	font-size: 4svw;
+	font-size: clamp(1rem, 2vw, 2rem);
 }

@@ -38,19 +38,25 @@
 		top: 2rem;
 		right: 2rem;
 		display: grid;
-		gap: var(--gap);
+		gap: 2px;
 	}
 
 	ul {
 		height: 0;
 		overflow: hidden;
 		transition: transform 0.3s ease-in-out;
+		background: var(--trans-background);
+		font-family: var(--body-font-family);
+		border: none;
 	}
 
 	ul.open {
 		display: grid;
 		gap: var(--gap);
 		height: auto;
+		margin: none;
+		padding: var(--padding-md);
+		border: var(--border-base);
 	}
 
 	button.open {
