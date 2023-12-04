@@ -17,6 +17,7 @@
 		min-height: var(--size);
 		padding: var(--padding-sm);
 		border: var(--border-base);
+		background: var(--black-75);
 	}
 	button.open,
 	button:hover,

@@ -51,3 +51,7 @@ small {
 .resizeable {
 	font-size: clamp(1rem, 2vw, 2rem);
 }
+
+b {
+	font-weight: 600;
+}

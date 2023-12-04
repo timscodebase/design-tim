@@ -21,7 +21,7 @@
 			<Button btnRole="link" on:click={() => handleNav('/projects')}>Projects</Button>
 		</li>
 		<li>
-			<Button btnRole="link" on:click={() => handleNav('/skills')}>Slills</Button>
+			<Button btnRole="link" on:click={() => handleNav('/skills')}>Skills</Button>
 		</li>
 		<li>
 			<Button btnRole="link" on:click={() => handleNav('/past-work')}>Past Work</Button>
@@ -38,8 +38,8 @@
 <style>
 	nav {
 		position: fixed;
-		top: 2rem;
-		right: 2rem;
+		top: 1rem;
+		right: 1rem;
 		display: grid;
 		gap: 2px;
 	}

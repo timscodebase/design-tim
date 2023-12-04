@@ -17,12 +17,11 @@
 >
 	<h3>{skill.name}</h3>
 
-	<p>{skill.category}</p>
+	<p>{skill.category} / <b>{skill.level}</b></p>
 
 	<p class="info">
-		{skill.level}, {parseInt(skill.yearsExp) > 1
-			? `${skill.yearsExp} years`
-			: `${skill.yearsExp} year`} of experience
+		<b>{skill.yearsExp}</b>
+		{parseInt(skill.yearsExp) > 1 ? ` years` : `${skill.yearsExp} year`} of experience
 	</p>
 </div>
 
