@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 	import { Button } from '$lib'
-	import { navStore } from '$stores'
+	import { navColor, navStore } from '$stores'
 
 	function handleNav(url: string) {
 		navStore.toggle()
@@ -13,7 +13,7 @@
 	<Button btnClass={$navStore ? 'open' : ''} on:click={navStore.toggle}
 		>{$navStore ? 'Close' : 'Open'} Nav</Button
 	>
-	<ul class:open={$navStore}>
+	<ul class:open={$navStore} class={`${$navColor}`}>
 		<li>
 			<Button btnRole="link" on:click={() => handleNav('/')}>Home</Button>
 		</li>
