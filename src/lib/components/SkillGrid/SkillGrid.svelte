@@ -2,12 +2,12 @@
 	import type { SkillType } from '$lib/types'
 	import Skill from './Skill.svelte'
 
-	export let topSkills: SkillType[]
+	export let skills: SkillType[]
 	console.log(topSkills)
 </script>
 
 <div class="grid">
-	{#each topSkills as skill}
+	{#each skills as skill}
 		<Skill {skill} />
 	{/each}
 </div>

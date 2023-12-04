@@ -21,6 +21,9 @@
 			<Button btnRole="link" on:click={() => handleNav('/projects')}>Projects</Button>
 		</li>
 		<li>
+			<Button btnRole="link" on:click={() => handleNav('/skills')}>Slills</Button>
+		</li>
+		<li>
 			<Button btnRole="link" on:click={() => handleNav('/past-work')}>Past Work</Button>
 		</li>
 		<li>
@@ -47,16 +50,14 @@
 		transition: transform 0.3s ease-in-out;
 		background: var(--trans-background);
 		font-family: var(--body-font-family);
-		border: none;
+		border: none !important;
 	}
 
 	ul.open {
 		display: grid;
 		gap: var(--gap);
 		height: auto;
-		margin: none;
 		padding: var(--padding-md);
-		border: var(--border-base);
 	}
 
 	button.open {

@@ -4,11 +4,11 @@
 
 	export let data: PageData
 
-	const { topSkills } = data
+	const { skills } = data
 </script>
 
 <h2>I excel in the following skills:</h2>
-<SkillGrid skills={topSkills} />
+<SkillGrid {skills} />
 
 <style>
 </style>

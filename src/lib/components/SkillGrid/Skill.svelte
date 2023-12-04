@@ -4,15 +4,17 @@
 	import { navColor } from '$stores'
 
 	function onMouseover() {
-		console.log('hovering over skill', skill.category)
-		setTimeout(() => {
-			navColor.set(skill.category)
-			console.log('set navColor to', $navColor)
-		}, 500)
+		navColor.set(skill.category)
 	}
 </script>
 
-<div on:mouseover={onMouseover} class={`skill ${skill.category}`}>
+<div
+	role="button"
+	tabindex="0"
+	on:mouseover={onMouseover}
+	on:focus={onMouseover}
+	class={`skill ${skill.category}`}
+>
 	<h3>{skill.name}</h3>
 
 	<p>{skill.category}</p>
@@ -22,16 +24,16 @@
 			? `${skill.yearsExp} years`
 			: `${skill.yearsExp} year`} of experience
 	</p>
-
-	<!-- <h4>Used At</h4>
-	<ul class="usedAt">
-		{#each skill.usedAt as usedAt}
-			<li>{usedAt}</li>
-		{/each}
-	</ul> -->
-
-	<!-- "usedAt": [] "category": ["devops"] -->
 </div>
+
+<!-- <h4>Used At</h4>
+<ul class="usedAt">
+	{#each skill.usedAt as usedAt}
+		<li>{usedAt}</li>
+	{/each}
+</ul> -->
+
+<!-- "usedAt": [] "category": ["devops"] -->
 
 <style>
 	.skill {
