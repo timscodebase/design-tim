@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { Me, Nav } from '$lib'
+	import { Logo, Me, Nav } from '$lib'
 </script>
 
 <header>
+	<Logo />
 	<Me />
 	<Nav />
 </header>

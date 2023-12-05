@@ -4,6 +4,9 @@ export { Button }
 import Header from './components/Header'
 export { Header }
 
+import Logo from './components/Logo'
+export { Logo }
+
 import Nav from './components/Nav'
 export { Nav }
 

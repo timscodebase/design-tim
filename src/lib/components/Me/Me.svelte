@@ -9,15 +9,23 @@
 <style>
 	.me {
 		width: 25svw;
+		max-width: 250px;
 		height: auto;
 		display: grid;
 		margin-left: auto;
-		margin-right: auto;
+		margin-right: var(--margin-md);
 	}
+
+	/* Mobile screens */
+	/* @media (max-width: 600px) {
+		.me {
+			display: none;
+		}
+	} */
 
 	.gradient {
 		width: 25svw;
-		height: 31svh;
+		height: 27svw;
 		background: linear-gradient(to top left, #000000 5%, #0000002e);
 	}
 
