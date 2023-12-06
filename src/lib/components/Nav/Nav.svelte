@@ -41,6 +41,7 @@
 		top: 1rem;
 		right: 1rem;
 		display: grid;
+		z-index: 9999;
 	}
 
 	ul {
