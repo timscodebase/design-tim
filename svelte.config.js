@@ -25,8 +25,8 @@ const config = {
 			strict: true
 		}),
 		alias: {
-			$stores: './src/lib/stores',
-			$utils: './src/lib/utils'
+			$stores: 'src/lib/stores',
+			$utils: 'src/lib/utils'
 		},
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
