@@ -59,11 +59,6 @@
 		padding: var(--padding-md);
 	}
 
-	button.open {
-		color: var(--primary);
-		border-color: var(--border-hover);
-	}
-
 	li {
 		margin-left: auto;
 	}

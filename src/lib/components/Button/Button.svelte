@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { navColor } from '$stores'
 	export let btnRole: undefined | 'link' = undefined
-	export let btnClass: undefined | string = undefined
 </script>
 
 <button role={btnRole} class={`${$navColor} resizeable`} on:click>
