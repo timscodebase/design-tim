@@ -7,7 +7,6 @@
 	const { topSkills } = data
 </script>
 
-<h2>I excel in the following skills:</h2>
 <SkillGrid skills={topSkills} />
 
 <style>

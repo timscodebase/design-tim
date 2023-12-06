@@ -11,6 +11,7 @@
 <div
 	role="button"
 	tabindex="0"
+	on:touchstart={onMouseover}
 	on:mouseover={onMouseover}
 	on:focus={onMouseover}
 	class={`skill ${skill.category}`}
