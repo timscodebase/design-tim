@@ -18,11 +18,13 @@
 >
 	<h3>{skill.name}</h3>
 
-	<p>{skill.category} / <b>{skill.level}</b></p>
-
 	<p class="info">
-		<b>{skill.yearsExp}</b>
-		{parseInt(skill.yearsExp) > 1 ? ` yrs` : `yr`}
+		<b
+			>{skill.yearsExp}
+			{parseInt(skill.yearsExp) > 1 ? ` yrs` : `yr`}</b
+		>
+		<br />{skill.category}
+		<br /><b>{skill.level}</b>
 	</p>
 
 	<h4>Used At</h4>
@@ -47,6 +49,7 @@
 		position: absolute;
 		top: var(--size);
 		right: var(--size);
+		color: var(--text);
 	}
 
 	.usedAt {

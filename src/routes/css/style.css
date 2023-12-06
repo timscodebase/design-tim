@@ -7,7 +7,7 @@
 	color: var(--yellow) !important;
 
 	.info {
-		color: var(--yellow);
+		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
 	}
 }
 .backend {
@@ -15,7 +15,7 @@
 	color: var(--blue) !important;
 
 	.info {
-		color: var(--blue);
+		color: color-mix(in srgb, var(--blue), var(--text) 50%);
 	}
 }
 .fullstack {
@@ -23,7 +23,7 @@
 	color: var(--green) !important;
 
 	.info {
-		color: var(--green);
+		color: color-mix(in srgb, var(--green), var(--text) 50%);
 	}
 }
 .devops {
@@ -31,7 +31,7 @@
 	color: var(--orange) !important;
 
 	.info {
-		color: var(--orange);
+		color: color-mix(in srgb, var(--orange), var(--text) 50%);
 	}
 }
 .methodology {
@@ -39,7 +39,7 @@
 	color: var(--pink) !important;
 
 	.info {
-		color: var(--pink);
+		color: color-mix(in srgb, var(--pink), var(--text) 50%);
 	}
 }
 .design {
@@ -47,6 +47,6 @@
 	color: var(--purple) !important;
 
 	.info {
-		color: var(--purple);
+		color: color-mix(in srgb, var(--purple), var(--text) 50%);
 	}
 }
