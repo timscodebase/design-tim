@@ -41,7 +41,6 @@
 		top: 1rem;
 		right: 1rem;
 		display: grid;
-		gap: 2px;
 	}
 
 	ul {

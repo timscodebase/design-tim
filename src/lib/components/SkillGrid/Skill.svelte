@@ -21,24 +21,36 @@
 
 	<p class="info">
 		<b>{skill.yearsExp}</b>
-		{parseInt(skill.yearsExp) > 1 ? ` years` : `${skill.yearsExp} year`} of experience
+		{parseInt(skill.yearsExp) > 1 ? ` yrs` : `yr`}
 	</p>
+
+	<h4>Used At</h4>
+	<ul class="usedAt">
+		{#each skill.usedAt as usedAt}
+			<li>{usedAt}</li>
+		{/each}
+	</ul>
 </div>
-
-<!-- <h4>Used At</h4>
-<ul class="usedAt">
-	{#each skill.usedAt as usedAt}
-		<li>{usedAt}</li>
-	{/each}
-</ul> -->
-
-<!-- "usedAt": [] "category": ["devops"] -->
 
 <style>
 	.skill {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		gap: var(--gap);
 		padding: var(--gap);
+	}
+
+	.info {
+		--size: 10px;
+		position: absolute;
+		top: var(--size);
+		right: var(--size);
+	}
+
+	.usedAt {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--gap);
 	}
 </style>

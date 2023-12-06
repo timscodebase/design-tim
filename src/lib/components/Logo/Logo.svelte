@@ -8,10 +8,6 @@
 		display: block;
 	}
 
-	h1 {
-		font-size: clamp(3rem, 7svw, 7rem);
-	}
-
 	p {
 		font-size: clamp(1.25rem, 2.5svw, 2.5rem);
 	}
