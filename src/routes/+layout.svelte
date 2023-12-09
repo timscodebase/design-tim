@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './css/style.css'
-	import { Header } from '$lib'
+	import { Footer, Header } from '$lib'
 </script>
 
 <div class="container">
@@ -10,9 +10,7 @@
 		<slot />
 	</main>
 
-	<footer>
-		<p>Tim Smith {new Date().getFullYear()}</p>
-	</footer>
+	<Footer />
 </div>
 
 <style>

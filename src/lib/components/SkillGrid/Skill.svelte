@@ -55,6 +55,6 @@
 	.usedAt {
 		display: flex;
 		flex-wrap: wrap;
-		gap: var(--gap);
+		gap: var(--padding-xs);
 	}
 </style>

@@ -15,11 +15,11 @@ h6 {
 }
 
 h1 {
-	font-size: clamp(2.5rem, 7svw, 7rem);
+	font-size: clamp(2.5rem, 6svw, 6rem);
 }
 
 h2 {
-	font-size: clamp(3rem, 6.5svw, 6.5rem);
+	font-size: clamp(3rem, 5svw, 5rem);
 }
 
 h3 {
@@ -27,15 +27,15 @@ h3 {
 }
 
 h4 {
-	font-size: clamp(2.5rem, 5.5svw, 2.5rem);
+	font-size: clamp(1.5rem, 2svw, 2rem);
 }
 
 h5 {
-	font-size: clamp(2rem, 5svw, 2rem);
+	font-size: clamp(1rem, 1.5svw, 1.5rem);
 }
 
 h6 {
-	font-size: clamp(1.5rem, 4.5svw, 1.5rem);
+	font-size: clamp(0.75rem, 1svw, 1rem);
 }
 
 p {

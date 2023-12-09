@@ -11,7 +11,7 @@
 <style>
 	header {
 		padding: var(--padding-md);
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
 	}
 </style>

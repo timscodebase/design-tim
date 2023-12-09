@@ -2,6 +2,7 @@
 	/* Colors */
 	--black: #000000;
 	--black-75: rgba(0, 0, 0, 0.75);
+	--white-75: rgba(255, 255, 255, 0.75);
 	--white: #ffffff;
 	--gray: #808080;
 	--grey: var(--gray);
@@ -25,6 +26,7 @@
 
 	/* Base Colors */
 	--text: var(--white);
+	--reverse-text: var(--black);
 	--background: var(--black);
 	--primary: var(--bright-pink);
 	--trans-background: var(--black-75);
@@ -61,14 +63,17 @@
 	--border-radius-full: var(--border-radius-lg);
 
 	--border-base: 2px solid var(--gray);
-	--border-hover: 2px solid var(--primary);
+	--border-primary: 2px solid var(--primary);
+	--border-hover: var(--border-primary);
 }
 
 /* Prefers Dark */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text: var(--white);
+		--reverse-text: var(--black);
 		--background: var(--black);
+		--trans-background: var(--black-75);
 	}
 }
 
@@ -76,7 +81,9 @@
 @media (prefers-color-scheme: light) {
 	:root {
 		--text: var(--black);
+		--reverse-text: var(--white);
 		--background: var(--white);
+		--trans-background: var(--white-75);
 	}
 }
 

@@ -7,6 +7,7 @@
 	const { topSkills } = data
 </script>
 
+<h2>Here are my most used skilled</h2>
 <SkillGrid skills={topSkills} />
 
 <style>

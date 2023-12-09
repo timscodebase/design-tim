@@ -5,7 +5,6 @@
 	export let skills: SkillType[]
 </script>
 
-<h2>Here are my most used skilled</h2>
 <div class="grid">
 	{#each skills as skill}
 		<Skill {skill} />

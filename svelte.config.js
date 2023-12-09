@@ -13,13 +13,6 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: undefined,
-			precompress: false,
-			strict: true
-		}),
 		alias: {
 			$stores: 'src/lib/stores',
 			$utils: 'src/lib/utils'
@@ -30,7 +23,7 @@ const config = {
 					return
 				}
 
-				throw new Error('I WAS HERE: ', message)
+				throw new Error(message)
 			}
 		}
 	}

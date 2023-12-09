@@ -9,6 +9,13 @@
 	.info {
 		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
 	}
+
+	.usedAt li {
+		padding: var(--padding-xs) var(--padding-sm);
+		border-radius: 2px;
+		color: var(--reverse-text);
+		background: color-mix(in srgb, var(--yellow), var(--text) 50%);
+	}
 }
 .backend {
 	border: 2px solid var(--blue) !important;
@@ -16,6 +23,13 @@
 
 	.info {
 		color: color-mix(in srgb, var(--blue), var(--text) 50%);
+	}
+
+	.usedAt li {
+		padding: var(--padding-xs) var(--padding-sm);
+		border-radius: 2px;
+		color: var(--reverse-text);
+		background: color-mix(in srgb, var(--blue), var(--text) 50%);
 	}
 }
 .fullstack {
@@ -25,6 +39,13 @@
 	.info {
 		color: color-mix(in srgb, var(--green), var(--text) 50%);
 	}
+
+	.usedAt li {
+		padding: var(--padding-xs) var(--padding-sm);
+		border-radius: 2px;
+		color: var(--reverse-text);
+		background: color-mix(in srgb, var(--green), var(--text) 50%);
+	}
 }
 .devops {
 	border: 2px solid var(--orange) !important;
@@ -32,6 +53,13 @@
 
 	.info {
 		color: color-mix(in srgb, var(--orange), var(--text) 50%);
+	}
+
+	.usedAt li {
+		padding: var(--padding-xs) var(--padding-sm);
+		border-radius: 2px;
+		color: var(--reverse-text);
+		background: color-mix(in srgb, var(--orange), var(--text) 50%);
 	}
 }
 .methodology {
@@ -41,6 +69,13 @@
 	.info {
 		color: color-mix(in srgb, var(--pink), var(--text) 50%);
 	}
+
+	.usedAt li {
+		padding: var(--padding-xs) var(--padding-sm);
+		border-radius: 2px;
+		color: var(--reverse-text);
+		background: color-mix(in srgb, var(--pink), var(--text) 50%);
+	}
 }
 .design {
 	border: 2px solid var(--purple) !important;
@@ -48,5 +83,12 @@
 
 	.info {
 		color: color-mix(in srgb, var(--purple), var(--text) 50%);
+	}
+
+	.usedAt li {
+		padding: var(--padding-xs) var(--padding-sm);
+		border-radius: 2px;
+		color: var(--reverse-text);
+		background: color-mix(in srgb, var(--purple), var(--text) 50%);
 	}
 }
