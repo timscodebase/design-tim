@@ -10,6 +10,9 @@ const mdsvexOptions = {
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+	adapter: adapter({
+		runtime: 'nodejs18.x'
+	}),
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {
