@@ -11,14 +11,15 @@
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => dialog.close()}
+	on:keypress|self={() => dialog.close()}
 >
-	<div on:click|stopPropagation>
+	<div role="dialog" on:click|stopPropagation on:keypress|stopPropagation>
 		<slot name="header" />
 		<hr />
 		<slot />
 		<hr />
 		{#if showCloseButton}
-			<button autofocus on:click={() => dialog.close()}>close modal</button>
+			<button on:click={() => dialog.close()}>close modal</button>
 		{/if}
 	</div>
 </dialog>
