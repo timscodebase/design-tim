@@ -16,15 +16,6 @@ const config = {
 		alias: {
 			$stores: 'src/lib/stores',
 			$utils: 'src/lib/utils'
-		},
-		prerender: {
-			handleHttpError: ({ path, referrer, message }) => {
-				if (path === '/not-found' && referrer === '/blog/not-found') {
-					return
-				}
-
-				throw new Error(message)
-			}
 		}
 	}
 }
