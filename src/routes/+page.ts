@@ -8,8 +8,12 @@ export const config: Config = {
 }
 
 export const load = (async (e) => {
-	const response = await e.fetch('api/topSkills')
-	const topSkills = await response.json()
+	try {
+		const response = await e.fetch('api/topSkills')
+		const topSkills = await response.json()
 
-	return { topSkills }
+		return { topSkills }
+	} catch (e) {
+		throw error(500, `Could not load your top posts. Error: ${error}`)
+	}
 }) satisfies PageLoad
