@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-vercel'
 import { vitePreprocess } from '@sveltejs/kit/vite'
 import preprocess from 'svelte-preprocess'
 import { mdsvex } from 'mdsvex'
@@ -10,9 +10,12 @@ const mdsvexOptions = {
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	adapter: adapter({
-		runtime: 'nodejs18.x'
-	}),
+	adapter: adapter(
+		{ pages: 'builds' },
+		{
+			runtime: 'nodejs18.x'
+		}
+	),
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {
