@@ -19,7 +19,8 @@ const config = {
 		alias: {
 			$stores: 'src/lib/stores',
 			$utils: 'src/lib/utils'
-		}
+		},
+		outDir: 'build'
 	}
 }
 
