@@ -14,7 +14,6 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		outDir: 'build',
 		alias: {
 			$stores: 'src/lib/stores',
 			$utils: 'src/lib/utils'
