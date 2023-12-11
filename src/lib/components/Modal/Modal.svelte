@@ -11,9 +11,8 @@
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => dialog.close()}
-	on:keypress|self={() => dialog.close()}
 >
-	<div role="dialog" on:click|stopPropagation on:keypress|stopPropagation>
+	<div role="dialog" on:click|stopPropagation>
 		<slot name="header" />
 		<hr />
 		<slot />

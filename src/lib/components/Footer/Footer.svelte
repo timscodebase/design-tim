@@ -70,13 +70,13 @@
 		border: var(--border-primary);
 	}
 
-	button {
+	/* button {
 		padding: var(--padding-sm);
 		border: var(--border-primary);
 		background-color: var(--color-primary);
 		color: var(--color-white);
 		cursor: pointer;
-	}
+	} */
 
 	button:hover {
 		background-color: var(--color-primary-dark);
