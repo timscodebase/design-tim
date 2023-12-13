@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit'
-import skills from '$lib/skills.json'
+import jobs from '$lib/jobs.json'
 
 export async function GET() {
-	return json(skills)
+	return json(jobs)
 }

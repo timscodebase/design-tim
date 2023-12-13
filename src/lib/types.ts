@@ -11,8 +11,16 @@ export type PostType = {
 
 export type SkillType = {
 	name: string
-	usedAt: number
+	usedAt: JobType[]
 	yearsExp: string
 	level: 'beginner' | 'intermediate' | 'advanced'
 	category: string
+}
+
+export type JobType = {
+	company: string
+	title: string
+	location: string
+	dates: string
+	description: string
 }

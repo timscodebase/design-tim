@@ -1,5 +1,5 @@
 <script>
-	import { Modal } from '$lib'
+	import { Link, Modal } from '$lib'
 	let showModal = false
 
 	const toggleModal = () => (showModal = !showModal)
@@ -33,8 +33,10 @@
 		<p>Tim Smith {new Date().getFullYear()}</p>
 	</div>
 	<div class="right">
-		<a href="https://github.com/timscodebase" target="_blank" rel="noopener">Github</a>
-		<a href="https://linkedin.com/in/timsmith25" target="_blank" rel="noopener">LinkedIn</a>
+		<Link href="https://github.com/timscodebase" className="github" external={true}>Github</Link>
+		<Link href="https://linkedin.com/in/timsmith25" className="linkedin" external={true}
+			>LinkedIn</Link
+		>
 	</div>
 </footer>
 
@@ -46,6 +48,7 @@
 		margin-top: var(--margin-md);
 		grid-template-columns: 1fr 1fr 1fr;
 		border: var(--border-primary);
+		padding: 0 var(--padding-md);
 	}
 
 	footer * {
@@ -70,13 +73,9 @@
 		border: var(--border-primary);
 	}
 
-	/* button {
-		padding: var(--padding-sm);
-		border: var(--border-primary);
-		background-color: var(--color-primary);
-		color: var(--color-white);
-		cursor: pointer;
-	} */
+	.right {
+		background: var(--trans-background);
+	}
 
 	button:hover {
 		background-color: var(--color-primary-dark);

@@ -8,10 +8,10 @@ export const config: typeof Config = {
 
 export const load = (async (e) => {
 	try {
-		const response = await e.fetch('api/topSkills')
-		const topSkills = await response.json()
+		const response = await e.fetch('api/jobs')
+		const jobs = await response.json()
 
-		return { topSkills }
+		return { jobs }
 	} catch (e) {
 		throw error(500, `Could not load your top posts. Error: ${error}`)
 	}

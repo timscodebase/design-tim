@@ -12,7 +12,6 @@ const githubConfig = {
 
 export const GET: RequestHandler = async () => {
 	const response = await octokit.request('GET /repos/{owner}/stargazers', githubConfig)
-	const data = await response.data
-	console.log(data)
+	const data = await response.data(data)
 	return { data }
 }

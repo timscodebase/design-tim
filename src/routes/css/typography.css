@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-	font-size: clamp(2.25rem, 2.75svw, 2.75rem);
+	font-size: clamp(2rem, 2.75svw, 2.25rem);
 }
 
 h4 {

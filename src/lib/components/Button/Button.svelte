@@ -9,7 +9,7 @@
 </button>
 
 <style>
-	button {
+	.button {
 		--size: 65px;
 		color: var(--text);
 		text-align: center;
