@@ -8,19 +8,21 @@
 	--grey: var(--gray);
 	--bright-pink-p3: oklch(71.76% 0.351 333.53);
 	--bright-pink: oklab(71.76% 0.31 -0.16);
+	--bright-purple-p3: oklch(55.5% 0.292 310.76);
+	--bright-blue-p3: oklch(72.06% 0.191 231.35);
 	--bright-orange-p3: oklch(71.76% 0.232 42.35);
 	--bright-orange: oklab(71.76% 0.17 0.16);
 	--bright-green-p3: oklch(83.24% 0.339 146.12);
 	--bright-green: oklab(83.24% -0.28 0.19);
-	--bright-yellow-p3: oklch(93.24% 0.252 119.65);
+	--bright-yellow-p3: oklch(93.68% 0.225 106.41);
 	--bright-yellow: oklab(93.24% -0.12 0.22);
 
-	--yellow: #f9db22;
-	--blue: #7286ee;
-	--green: #10d71e;
-	--orange: #f0911b;
-	--pink: #ec93f1;
-	--purple: #d43bdc;
+	--yellow: var(--bright-yellow-p3, #f9db22);
+	--blue: var(--bright-blue-p3, #7286ee);
+	--green: var(--bright-green-p3, #10d71e);
+	--orange: var(--bright-orange-p3, #f0911b);
+	--pink: var(--bright-pink-p3, #ec93f1);
+	--purple: var(--bright-purple-p3, #d43bdc);
 
 	color-scheme: 'pink';
 
@@ -28,7 +30,8 @@
 	--text: var(--white);
 	--reverse-text: var(--black);
 	--background: var(--black);
-	--primary: var(--bright-pink);
+	--primary: var(--pink);
+	--primary-2: var(--yellow);
 	--trans-background: var(--black-75);
 
 	/* Sizes */

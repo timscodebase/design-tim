@@ -1,6 +1,9 @@
 import Button from './components/Button'
 export { Button }
 
+import Chip from './components/Chip'
+export { Chip }
+
 import Footer from './components/Footer'
 export { Footer }
 
@@ -24,9 +27,6 @@ export { Modal }
 
 import Me from './components/Me'
 export { Me }
-
-import NoisySVGCircles from './components/NoisySVGCircles'
-export { NoisySVGCircles }
 
 import { formatDate, slugify } from './utils'
 export { formatDate, slugify }

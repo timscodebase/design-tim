@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { SkillType } from '$lib/types'
-	import { Link } from '$lib'
+	import { Chip, Link } from '$lib'
 	import { slugify } from '$utils'
 	export let skill: SkillType
 	import { navColor } from '$stores'
@@ -32,9 +32,9 @@
 	<h4>Used At</h4>
 	<ul class="usedAt">
 		{#each skill.usedAt as usedAt}
-			<li>
+			<Chip>
 				<Link href={`jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
-			</li>
+			</Chip>
 		{/each}
 	</ul>
 </div>

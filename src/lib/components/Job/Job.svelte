@@ -19,4 +19,8 @@
 		padding: var(--padding-sm);
 		border: var(--border-primary);
 	}
+
+	h3 {
+		color: var(--primary-2);
+	}
 </style>
