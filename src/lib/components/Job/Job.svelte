@@ -6,7 +6,7 @@
 	const { company, dates, description, location, title } = job
 </script>
 
-<article id={`${slugify(company)}`} class="job">
+<article id={`${slugify(company)}`}>
 	<h3>{company}</h3>
 	<p>{title}-{location}</p>
 	<p>{dates}</p>
@@ -14,7 +14,8 @@
 </article>
 
 <style>
-	.job {
+	article {
+		height: 50svh;
 		padding: var(--padding-sm);
 		border: var(--border-primary);
 	}
