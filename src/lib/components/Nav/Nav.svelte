@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 	import { Button } from '$lib'
-	import { SVG } from './SVG.svelte'
+	import SVG from './SVG.svelte'
 	import { navColor, navStore } from '$stores'
 
 	// $: {
@@ -15,7 +15,7 @@
 </script>
 
 <nav>
-	<Button on:click={navStore.toggle}>
+	<Button styled={false} on:click={navStore.toggle}>
 		{#if $navStore}
 			<SVG icon="close" />
 		{:else}
@@ -56,6 +56,7 @@
 	ul {
 		height: 0;
 		overflow: hidden;
+		margin: 0;
 		transition: transform 0.3s ease-in-out;
 		background: var(--trans-background);
 		font-family: var(--body-font-family);
