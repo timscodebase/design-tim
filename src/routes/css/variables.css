@@ -2,7 +2,9 @@
 	/* Colors */
 	--black: #000000;
 	--black-75: rgba(0, 0, 0, 0.75);
+	--black-15: rgba(0, 0, 0, 0.15);
 	--white-75: rgba(255, 255, 255, 0.75);
+	--white-15: rgba(255, 255, 255, 0.15);
 	--white: #ffffff;
 	--gray: #808080;
 	--grey: var(--gray);
@@ -33,6 +35,7 @@
 	--primary: var(--pink);
 	--primary-2: var(--yellow);
 	--trans-background: var(--black-75);
+	--me-trans-background: var(--black-15);
 
 	/* Sizes */
 	--size-1: 0.5rem;

@@ -51,6 +51,14 @@
 		padding: 0 var(--padding-md);
 	}
 
+	@media (max-width: 500px) {
+		footer {
+			height: 160px;
+			grid-template-columns: 1fr;
+			gap: var(--gap);
+		}
+	}
+
 	footer * {
 		display: flex;
 		place-content: center;
@@ -58,11 +66,13 @@
 	}
 
 	form {
-		display: grid;
+		display: flex;
+		flex-wrap: wrap;
 		grid-template-columns: 1fr 1fr;
 	}
 
 	label {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}

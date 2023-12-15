@@ -36,6 +36,11 @@
 		background-color: var(--trans-background);
 		border: var(--border-primary);
 	}
+	@media (max-width: 600px) {
+		dialog {
+			width: 80svw;
+		}
+	}
 	dialog::backdrop {
 		background: rgba(0, 0, 0, 0.5);
 	}

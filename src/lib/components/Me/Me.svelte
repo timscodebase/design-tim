@@ -26,7 +26,7 @@
 	.gradient {
 		width: 25svw;
 		height: 27svw;
-		background: linear-gradient(to top left, #000000 5%, #0000002e);
+		background: linear-gradient(to top left, var(--background) 5%, var(--me-trans-background));
 	}
 
 	img {
