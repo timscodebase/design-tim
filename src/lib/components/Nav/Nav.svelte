@@ -1,7 +1,12 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 	import { Button } from '$lib'
+	import { SVG } from './SVG.svelte'
 	import { navColor, navStore } from '$stores'
+
+	// $: {
+	// 	console.log('navStore', navStore)
+	// }
 
 	function handleNav(url: string) {
 		navStore.toggle()
@@ -10,9 +15,13 @@
 </script>
 
 <nav>
-	<Button btnClass={$navStore ? 'open' : ''} on:click={navStore.toggle}
-		>{$navStore ? 'Close' : 'Open'} Nav</Button
-	>
+	<Button on:click={navStore.toggle}>
+		{#if $navStore}
+			<SVG icon="close" />
+		{:else}
+			<SVG icon="open" />
+		{/if}
+	</Button>
 	<ul class:open={$navStore} class={`${$navColor}`}>
 		<li>
 			<Button btnRole="link" on:click={() => handleNav('/')}>Home</Button>

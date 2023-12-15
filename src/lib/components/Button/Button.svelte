@@ -10,11 +10,8 @@
 
 <style>
 	.button {
-		--size: 65px;
 		color: var(--text);
 		text-align: center;
-		min-width: var(--size);
-		min-height: var(--size);
 		padding: var(--padding-sm);
 		margin: var(--margin-sm) var(--margin-sm) 0 var(--margin-sm);
 		border: var(--border-base);

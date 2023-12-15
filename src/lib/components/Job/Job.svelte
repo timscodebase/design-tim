@@ -8,8 +8,10 @@
 
 <article id={`${slugify(company)}`}>
 	<h3>{company}</h3>
-	<p>{title}-{location}</p>
-	<p>{dates}</p>
+	<div class="meta">
+		<span>{title}-{location}</span>
+		<span>{dates}</span>
+	</div>
 	<p>{description}</p>
 </article>
 
@@ -22,5 +24,17 @@
 
 	h3 {
 		color: var(--primary-2);
+	}
+
+	.meta {
+		padding: var(--padding-sm) 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: color-mix(in srgb, var(--pink), var(--text) 50%);
+	}
+
+	p {
+		font-size: clamp(1.5rem, 2svw, 2rem);
 	}
 </style>
