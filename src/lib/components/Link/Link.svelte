@@ -19,6 +19,7 @@
 		cursor: pointer;
 		font-weight: bold;
 		text-decoration: underline;
+		font-size: var(--body-font-family);
 	}
 
 	.github {

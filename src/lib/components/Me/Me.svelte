@@ -8,28 +8,24 @@
 
 <style>
 	.me {
-		width: 25svw;
-		max-width: 250px;
+		width: 15svw;
 		height: auto;
 		display: grid;
 		margin-left: auto;
-		margin-right: var(--margin-md);
 	}
 
-	/* Mobile screens */
-	/* @media (max-width: 600px) {
+	@media (max-width: 600px) {
 		.me {
-			display: none;
+			margin-left: 0;
 		}
-	} */
+	}
 
 	.gradient {
-		width: 25svw;
-		height: 27svw;
 		background: linear-gradient(to top left, var(--background) 5%, var(--me-trans-background));
 	}
 
 	img {
+		max-width: 180px;
 		transform: scaleX(-1);
 		z-index: -1;
 	}

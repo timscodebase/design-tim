@@ -2,9 +2,24 @@
 @import './variables.css';
 @import './typography.css';
 
+.frontend,
+.backend,
+.fullstack,
+.devops,
+.methodology,
+.design {
+	border: 2px solid !important;
+}
+
 .frontend {
-	border: 2px solid var(--yellow) !important;
-	color: var(--yellow) !important;
+	border-color: var(--yellow);
+	color: var(--yellow);
+
+	h3,
+	.bold {
+		font-weight: bold;
+		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
+	}
 
 	.info {
 		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
@@ -18,9 +33,16 @@
 		border: 4px solid var(--background), 2px solid var(--yellow);
 	}
 }
+
 .backend {
-	border: 2px solid var(--blue) !important;
-	color: var(--blue) !important;
+	border-color: var(--blue);
+	color: var(--blue);
+
+	h3,
+	.bold {
+		font-weight: bold;
+		color: color-mix(in srgb, var(--blue), var(--text) 50%);
+	}
 
 	.info {
 		color: color-mix(in srgb, var(--blue), var(--text) 50%);
@@ -33,9 +55,16 @@
 		background: color-mix(in srgb, var(--blue), var(--text) 50%);
 	}
 }
+
 .fullstack {
-	border: 2px solid var(--green) !important;
-	color: var(--green) !important;
+	border-color: var(--green);
+	color: var(--green);
+
+	h3,
+	.bold {
+		font-weight: bold;
+		color: color-mix(in srgb, var(--green), var(--text) 50%);
+	}
 
 	.info {
 		color: color-mix(in srgb, var(--green), var(--text) 50%);
@@ -48,9 +77,16 @@
 		background: color-mix(in srgb, var(--green), var(--text) 50%);
 	}
 }
+
 .devops {
-	border: 2px solid var(--orange) !important;
-	color: var(--orange) !important;
+	border-color: var(--orange);
+	color: var(--orange);
+
+	h3,
+	.bold {
+		font-weight: bold;
+		color: color-mix(in srgb, var(--orange), var(--text) 50%);
+	}
 
 	.info {
 		color: color-mix(in srgb, var(--orange), var(--text) 50%);
@@ -63,9 +99,16 @@
 		background: color-mix(in srgb, var(--orange), var(--text) 50%);
 	}
 }
+
 .methodology {
-	border: 2px solid var(--pink) !important;
-	color: var(--pink) !important;
+	border-color: var(--pink);
+	color: var(--pink);
+
+	h3,
+	.bold {
+		font-weight: bold;
+		color: color-mix(in srgb, var(--pink), var(--text) 50%);
+	}
 
 	.info {
 		color: color-mix(in srgb, var(--pink), var(--text) 50%);
@@ -78,9 +121,16 @@
 		background: color-mix(in srgb, var(--pink), var(--text) 50%);
 	}
 }
+
 .design {
-	border: 2px solid var(--purple) !important;
-	color: var(--purple) !important;
+	border-color: var(--purple);
+	color: var(--purple);
+
+	h3,
+	.bold {
+		font-weight: bold;
+		color: color-mix(in srgb, var(--purple), var(--text) 50%);
+	}
 
 	.info {
 		color: color-mix(in srgb, var(--purple), var(--text) 50%);

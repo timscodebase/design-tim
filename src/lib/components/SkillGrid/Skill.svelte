@@ -21,17 +21,19 @@
 	<h3>{skill.name}</h3>
 
 	<p class="info">
-		<b
+		<b class="bold"
 			>{skill.yearsExp}
-			{parseInt(skill.yearsExp) > 1 ? ` yrs` : `yr`}</b
+			{parseInt(skill.yearsExp) > 1 ? ` years` : `year`}</b
 		>
 		<br />{skill.category}
-		<br /><b>{skill.level}</b>
+		<br /><b class="bold">{skill.level}</b>
 	</p>
 
 	<h4>Used At</h4>
 	<ul class="usedAt">
-		{#each skill.usedAt as usedAt}
+		<!-- alphabetize list -->
+
+		{#each skill.usedAt.sort() as usedAt}
 			<Chip>
 				<Link href={`jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
 			</Chip>

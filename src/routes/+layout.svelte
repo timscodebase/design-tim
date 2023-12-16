@@ -16,7 +16,7 @@
 <style>
 	.container {
 		padding: var(--padding-md);
-		max-width: 1000px;
+		max-width: 740px;
 		margin: 0 auto;
 	}
 </style>

@@ -5,6 +5,10 @@
 	--body-font-family: 'Space Mono', monospace;
 }
 
+html {
+	font-family: var(--body-font-family);
+}
+
 h1,
 h2,
 h3,

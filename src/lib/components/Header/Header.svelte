@@ -10,8 +10,7 @@
 
 <style>
 	header {
-		padding: var(--padding-md);
-		display: grid;
-		grid-template-columns: 3fr 1fr;
+		padding: var(--padding-md) 0;
+		display: flex;
 	}
 </style>

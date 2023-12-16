@@ -9,11 +9,9 @@
 
 <style>
 	button {
-		/* color: var(--text); */
 		text-align: center;
-		padding: var(--padding-sm) var(--padding-md);
-		/* border: var(--border-base); */
 		background: var(--black-75);
+		padding: var(--padding-sm) var(--padding-md);
 	}
 	button.open,
 	button:hover,
