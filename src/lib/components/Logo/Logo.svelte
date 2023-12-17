@@ -1,6 +1,10 @@
+<script>
+	import { name, description } from '$lib/config'
+</script>
+
 <a href="/">
-	<h1>Tim Smith</h1>
-	<p>Developer, Artist, Writer</p>
+	<h1>{name}</h1>
+	<p>{description}</p>
 </a>
 
 <style>
