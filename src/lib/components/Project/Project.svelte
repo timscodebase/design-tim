@@ -6,7 +6,7 @@
 </script>
 
 <article class="project">
-	<Link external={true}>
+	<Link external={true} href={image}>
 		<img src={thumbnail} />
 	</Link>
 	<h2>{name}</h2>
