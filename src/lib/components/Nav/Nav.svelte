@@ -33,9 +33,6 @@
 			<Button btnRole="link" on:click={() => handleNav('/skills')}>Skills</Button>
 		</li>
 		<li>
-			<Button btnRole="link" on:click={() => handleNav('/past-work')}>Past Work</Button>
-		</li>
-		<li>
 			<Button btnRole="link" on:click={() => handleNav('/blog')}>Blog</Button>
 		</li>
 		<li>
