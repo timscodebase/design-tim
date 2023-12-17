@@ -24,3 +24,11 @@ export type JobType = {
 	dates: string
 	description: string
 }
+
+export type ProjectType = {
+	name: string
+	thumbnail: string
+	image: string
+	description: string
+	medium: string
+}

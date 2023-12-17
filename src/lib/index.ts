@@ -28,6 +28,9 @@ export { Modal }
 import Me from './components/Me'
 export { Me }
 
+import Project from './components/Project'
+export { Project }
+
 import { formatDate, slugify } from './utils'
 export { formatDate, slugify }
 
