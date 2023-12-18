@@ -7,7 +7,7 @@
 
 <article>
 	<h2>{name}</h2>
-	<Link external={true} href={image}>
+	<Link href={image}>
 		<img src={thumbnail} alt={name} />
 	</Link>
 	<p>{description}</p>
