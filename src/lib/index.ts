@@ -19,6 +19,9 @@ export { Link }
 import Logo from './components/Logo'
 export { Logo }
 
+import Grid from './components/Grid'
+export { Grid }
+
 import Nav from './components/Nav'
 export { Nav }
 

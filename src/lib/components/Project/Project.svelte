@@ -10,18 +10,18 @@
 	<Link href={image}>
 		<img src={thumbnail} alt={name} />
 	</Link>
-	<p>{description}</p>
-	<p>{medium}</p>
+	<div>
+		<p>{description}</p>
+		<p>{medium}</p>
+	</div>
 </article>
 
 <style>
 	article {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		display: grid;
+		place-content: center;
+		grid-template-rows: 1fr auto 1fr;
 		gap: var(--gap);
-		margin: var(--margin-md);
 		padding: var(--padding-md);
 		border: var(--border-primary);
 	}

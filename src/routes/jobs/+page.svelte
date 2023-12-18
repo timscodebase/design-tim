@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import { Job } from '$lib'
+	import { Grid, Job } from '$lib'
 
 	export let data: PageData
 
@@ -9,15 +9,8 @@
 
 <h2>Past Work</h2>
 
-<div class="jobs">
+<Grid>
 	{#each jobs as job}
 		<Job {job} />
 	{/each}
-</div>
-
-<style>
-	.jobs {
-		display: grid;
-		gap: var(--gap);
-	}
-</style>
+</Grid>
