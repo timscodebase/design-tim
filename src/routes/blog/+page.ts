@@ -8,6 +8,6 @@ export const load = (async () => {
 		const posts: PostType[] = await response.json()
 		return { posts }
 	} catch (e) {
-		throw error(500, `Could not load posts. Error: ${error}`)
+		error(500, `Could not load posts. Error: ${error}`)
 	}
 }) satisfies PageLoad

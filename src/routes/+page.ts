@@ -13,6 +13,6 @@ export const load = (async (e) => {
 
 		return { topSkills }
 	} catch (e) {
-		throw error(500, `Could not load your top posts. Error: ${error}`)
+		error(500, `Could not load your top posts. Error: ${error}`)
 	}
 }) satisfies PageLoad

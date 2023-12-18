@@ -13,6 +13,6 @@ export const load = (async (e) => {
 
 		return { jobs }
 	} catch (e) {
-		throw error(500, `Could not load your jobs top. Error: ${error}`)
+		error(500, `Could not load your jobs top. Error: ${error}`)
 	}
 }) satisfies PageLoad

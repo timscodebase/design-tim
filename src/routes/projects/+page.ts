@@ -13,6 +13,6 @@ export const load = (async (e) => {
 
 		return { projects }
 	} catch (e) {
-		throw error(500, `Could not load your projects top. Error: ${error}`)
+		error(500, `Could not load your projects top. Error: ${error}`)
 	}
 }) satisfies PageLoad
