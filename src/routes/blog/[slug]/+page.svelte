@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
-	import { Tags } from '$lib'
+	import { Link, Tags } from '$lib'
 
 	export let data
 </script>
@@ -26,6 +26,8 @@
 	<div class="prose">
 		<svelte:component this={data.content} />
 	</div>
+
+	<Link href="/blog">Back to blog</Link>
 </article>
 
 <style>
