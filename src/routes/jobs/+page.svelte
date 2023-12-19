@@ -9,8 +9,15 @@
 
 <h2>Past Work</h2>
 
-<Grid>
+<div>
 	{#each jobs as job}
 		<Job {job} />
 	{/each}
-</Grid>
+</div>
+
+<style>
+	div {
+		display: grid;
+		gap: var(--gap);
+	}
+</style>

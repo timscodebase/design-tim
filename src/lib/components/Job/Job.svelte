@@ -12,13 +12,13 @@
 		<span>{title}-{location}</span>
 		<span>{dates}</span>
 	</div>
-	<p>{description}</p>
+	<p>{@html description}</p>
 </article>
 
 <style>
 	article {
-		height: 50svh;
-		padding: var(--padding-sm);
+		min-height: 50svh;
+		padding: var(--padding-md);
 		border: var(--border-primary);
 	}
 
@@ -32,9 +32,5 @@
 		justify-content: space-between;
 		align-items: center;
 		color: color-mix(in srgb, var(--pink), var(--text) 50%);
-	}
-
-	p {
-		font-size: clamp(1.5rem, 2svw, 2rem);
 	}
 </style>

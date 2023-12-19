@@ -24,14 +24,17 @@ h1 {
 
 h2 {
 	font-size: clamp(1.75rem, 3svw, 3rem);
+	padding-bottom: 3svw;
 }
 
 h3 {
 	font-size: clamp(2rem, 2.5svw, 2rem);
+	padding-bottom: 2.5svw;
 }
 
 h4 {
 	font-size: clamp(1.5rem, 2svw, 1.75rem);
+	padding-bottom: 2svw;
 }
 
 h5 {
@@ -40,11 +43,12 @@ h5 {
 
 h6 {
 	font-size: clamp(0.75rem, 1svw, 1rem);
+	padding-bottom: 1.5svw;
 }
 
 p {
-	font-size: clamp(1.75rem, 2.5svw, 2.5rem);
-	font-size: 1rem;
+	font-size: clamp(1.25rem, 1.75svw, 1.5rem);
+	padding-bottom: 2svw;
 	line-height: 1.5;
 }
 
