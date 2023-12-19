@@ -1,51 +1,51 @@
 [
 	{
-		"company": "Gap",
-		"title": "Frontend Engineer",
-		"location": "Remote",
-		"dates": "August 2020 - Present",
-		"description": "<p>Crafted cutting-edge, standards-compliant React components to elevate GAP's checkout flow UI. Embracing xAPI as a dynamic alternative to conventional flux libraries, I orchestrated seamless data transmission across the entire site and various application facets. A catalyst for GAP's evolution towards microservices, I executed a strategic node version upgrade, unlocking enhanced utilization of contemporary APIs. Every line of code and each meticulously designed component underwent rigorous code-level testing, including comprehensive end-to-end testing suites. In the realm of DevOps, I assumed a pivotal role, meticulously tending to the core metrics essential for the sustained health of the app.</p>"
-	},
-	{
 		"company": "Partners in Code",
 		"title": "Frontend Engineer",
 		"location": "Remote",
-		"dates": "August 2020 - Present",
+		"dates": "FEBRUARY 2016 - PRESENT",
 		"description": "<p>Welcome to Partners in Code, my personal venture dedicated to collaborating with small businesses and clients to craft bespoke websites and applications tailored to their unique requirements. Specializing in cutting-edge JAMStack websites, I leverage the latest proven technologies to deliver exceptional digital experiences. As the sole curator of UI and design for the majority of projects, I ensure a seamless and aesthetically pleasing outcome.</p><br>Noteworthy collaborations include:<br><br> - Onespine.org (1.5 years) - Non-profit charity<br> - PerlmanRep (2 years) - Fashion website<br> - My And My Song (2 years) - Band website (WordPress)<br> - Vouch4Vets (1 year) - Custom e-commerce solution<br> - Peter's Bakery (6 months) - Custom ecommerce solution<br><br>Embark on a journey with Partners in Code, where your digital vision becomes a reality."
 	},
 	{
-		"company": "LafLife",
+		"company": "Gap",
 		"title": "Frontend Engineer",
 		"location": "Remote",
-		"dates": "August 2020 - Present",
-		"description": "<p>Steered the evolution of the company's digital presence by maintaining and crafting multiple iterations of the website and application design. Took the lead in conceptualizing and executing a robust voting system, collaborating closely with and mentoring a junior developer throughout the functional build-out. Personally authored the comprehensive front end and user interface of both the website and app, ensuring a cohesive and engaging user experience.</p>"
+		"dates": "MARCH 2021 - JULY 2022",
+		"description": "<p>Crafted cutting-edge, standards-compliant React components to elevate GAP's checkout flow UI. Embracing xAPI as a dynamic alternative to conventional flux libraries, I orchestrated seamless data transmission across the entire site and various application facets. A catalyst for GAP's evolution towards microservices, I executed a strategic node version upgrade, unlocking enhanced utilization of contemporary APIs. Every line of code and each meticulously designed component underwent rigorous code-level testing, including comprehensive end-to-end testing suites. In the realm of DevOps, I assumed a pivotal role, meticulously tending to the core metrics essential for the sustained health of the app.</p>"
 	},
 	{
 		"company": "Spotkey",
 		"title": "Frontend Engineer",
 		"location": "Remote",
-		"dates": "August 2020 - Present",
+		"dates": "2014 - 2016",
 		"description": "<p>As the Lead Frontend Developer, I spearheaded the selection and implementation of the technology stack for our company's corporate website and core product. Collaborating seamlessly with Backend and iOS developers, I played a pivotal role in crafting data schemas, designing databases, and shaping both internal and external APIs. From inception to execution, I personally crafted the entire front end and user interface of the website and app.</p>"
+	},
+	{
+		"company": "LafLife",
+		"title": "Frontend Engineer",
+		"location": "Remote",
+		"dates": "2013 - 2014",
+		"description": "<p>Steered the evolution of the company's digital presence by maintaining and crafting multiple iterations of the website and application design. Took the lead in conceptualizing and executing a robust voting system, collaborating closely with and mentoring a junior developer throughout the functional build-out. Personally authored the comprehensive front end and user interface of both the website and app, ensuring a cohesive and engaging user experience.</p>"
+	},
+	{
+		"company": "Zynga",
+		"title": "Frontend Engineer",
+		"location": "Remote",
+		"dates": "2010 - 2012",
+		"description": "<p>Developed and sustained impactful email marketing campaigns for numerous flagship games at Zynga. Meticulously hand-coded each email to guarantee optimal compatibility across various email clients. Employed robust testing suites to uphold top-notch quality and maximize click-through rates. Additionally, provided valuable consultation on the layout and user interface of mobile emails, contributing to an enhanced and seamless user experience.</p>"
 	},
 	{
 		"company": "The Clorox Company",
 		"title": "Frontend Engineer",
 		"location": "Remote",
-		"dates": "August 2020 - Present",
+		"dates": "2008 - 2009",
 		"description": "<p>I took charge of enhancing their codebase, eliminating the reliance on jQuery and MooTools, and seamlessly transitioning to vanilla JavaScript. Additionally, I played a key role in crafting cutting-edge, mobile-first templates tailored specifically for their Brita product line.</p>"
 	},
 	{
 		"company": "YesMail InfoUSA",
 		"title": "Frontend Engineer",
 		"location": "Remote",
-		"dates": "August 2020 - Present",
+		"dates": "2006 - 2008",
 		"description": "<p>I orchestrated and upheld top-tier email marketing campaigns for renowned brands such as Macy's, King's Hawaiian, and numerous others. Every email was meticulously hand-coded to guarantee optimal compatibility across various email clients. Employing rigorous testing suites, we consistently ensured high-quality content and maximized click-through rates.</p>"
-	},
-	{
-		"company": "Zynga",
-		"title": "Frontend Engineer",
-		"location": "Remote",
-		"dates": "August 2020 - Present",
-		"description": "<p>Developed and sustained impactful email marketing campaigns for numerous flagship games at Zynga. Meticulously hand-coded each email to guarantee optimal compatibility across various email clients. Employed robust testing suites to uphold top-notch quality and maximize click-through rates. Additionally, provided valuable consultation on the layout and user interface of mobile emails, contributing to an enhanced and seamless user experience.</p>"
 	}
 ]
