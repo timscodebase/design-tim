@@ -12,6 +12,7 @@
 	</main>
 
 	<Footer />
+	{injectSpeedInsights()}
 </div>
 
 <style>
