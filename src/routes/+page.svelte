@@ -13,7 +13,7 @@
 	realms of self-study and hands-on experimentation—like the art of reverse engineering websites.
 	Fueled by an insatiable passion for learning, I constantly seek fresh avenues to refine my skills
 	and navigate the ever-evolving landscape. Join me as I recount encounters with some of the most
-	influential educators who have illuminated my learning journey
+	influential educators who have illuminated my learning journey:
 </p>
 
 <div class="teachers">
