@@ -22,17 +22,19 @@
 	{/each}
 </div>
 
-<h2>Here are my most used skilled</h2>
+<h3>Here are my most used skilled</h3>
 <SkillGrid skills={topSkills} />
 <Link href="/skills">See all my skills</Link>
 
 <style>
 	p {
 		color: var(--primary);
+		font-size: clamp(1.25rem, 1.75svw, 1.5rem) !important;
 	}
 
 	.teachers {
 		display: grid;
 		gap: var(--gap);
+		padding-bottom: var(--padding-lg);
 	}
 </style>
