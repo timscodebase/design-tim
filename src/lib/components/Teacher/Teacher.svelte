@@ -16,6 +16,7 @@
 <style>
 	.teacher {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		color: var(--primary-2);
 		border: var(--border-primary-2);
@@ -28,6 +29,7 @@
 		a {
 			color: var(--text);
 			text-decoration: underline;
+			cursor: pointer;
 		}
 	}
 </style>
