@@ -14,8 +14,6 @@ export const load = (async (e) => {
 		const teachersResponse = await e.fetch('api/teachers')
 		const teachers = await teachersResponse.json()
 
-		console.log('data:', { teachers, topSkills })
-
 		return { teachers, topSkills }
 	} catch (e) {
 		error(500, `Could not load your top posts. Error: ${error}`)
