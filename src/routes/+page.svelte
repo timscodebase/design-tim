@@ -12,8 +12,7 @@
 	for me. While I dabbled in a few college courses, my true knowledge reservoir comes from the
 	realms of self-study and hands-on experimentation—like the art of reverse engineering websites.
 	Fueled by an insatiable passion for learning, I constantly seek fresh avenues to refine my skills
-	and navigate the ever-evolving landscape. Join me as I recount encounters with some of the most
-	influential educators who have illuminated my learning journey:
+	and navigate the ever-evolving landscape. The following are some of my favorite teachers:
 </p>
 
 <div class="teachers">
@@ -24,7 +23,9 @@
 
 <h3>Here are my most used skilled</h3>
 <SkillGrid skills={topSkills} />
+<br />
 <Link href="/skills">See all my skills</Link>
+<br />
 
 <style>
 	p {
@@ -34,6 +35,7 @@
 
 	.teachers {
 		display: grid;
+		/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 		gap: var(--gap);
 		padding-bottom: var(--padding-lg);
 	}

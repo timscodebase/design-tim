@@ -18,9 +18,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		color: var(--primary-2);
-		border: var(--border-primary-2);
 		padding: var(--padding-sm);
+		border: var(--border-primary);
+		color: color-mix(in srgb, var(--purple), var(--text) 50%);
+		font-weight: bold;
 
 		p {
 			padding: 0;
@@ -31,5 +32,10 @@
 			text-decoration: underline;
 			cursor: pointer;
 		}
+	}
+
+	.teacher:nth-child(odd) {
+		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
+		border: var(--border-primary-2);
 	}
 </style>
