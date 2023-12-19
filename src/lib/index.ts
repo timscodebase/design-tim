@@ -45,3 +45,6 @@ export { Tag }
 
 import Tags from './components/Tags'
 export { Tags }
+
+import Teacher from './components/Teacher'
+export { Teacher }

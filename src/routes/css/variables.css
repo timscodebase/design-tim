@@ -70,6 +70,7 @@
 
 	--border-base: 2px solid var(--gray);
 	--border-primary: 2px solid var(--primary);
+	--border-primary-2: 2px solid var(--primary-2);
 	--border-hover: var(--border-primary);
 }
 

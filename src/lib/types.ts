@@ -32,3 +32,8 @@ export type ProjectType = {
 	description: string
 	medium: string
 }
+
+export type TeacherType = {
+	name: string
+	url: string
+}
