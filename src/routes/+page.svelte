@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import { Link, SkillGrid, Teacher } from '$lib'
+	import { BucketList, Link, SkillGrid, Teacher } from '$lib'
 
 	export let data: PageData
 
@@ -26,6 +26,8 @@
 <br />
 <Link href="/skills">See all my skills</Link>
 <br />
+
+<BucketList />
 
 <style>
 	p {

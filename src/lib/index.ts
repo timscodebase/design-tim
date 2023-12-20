@@ -1,3 +1,6 @@
+import BucketList from './components/BucketList'
+export { BucketList }
+
 import Button from './components/Button'
 export { Button }
 
@@ -47,4 +50,5 @@ import Tags from './components/Tags'
 export { Tags }
 
 import Teacher from './components/Teacher'
+import BucketList from './components/BucketList'
 export { Teacher }

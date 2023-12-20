@@ -1,5 +1,10 @@
 export type Categories = 'sveltekit' | 'svelte'
 
+export type GoalType = {
+	goal: string
+	description: string
+}
+
 export type PostType = {
 	title: string
 	slug: string

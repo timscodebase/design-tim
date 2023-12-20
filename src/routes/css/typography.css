@@ -16,6 +16,7 @@ h4,
 h5,
 h6 {
 	font-family: var(--header-font-family);
+	color: var(--primary);
 }
 
 h1 {
