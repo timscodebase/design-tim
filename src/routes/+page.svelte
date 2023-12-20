@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { PageData } from './$types'
 	import { BucketList, Link, SkillGrid, Teacher, Quote } from '$lib'
+	import { fly } from 'svelte/transition'
+	import { quintOut } from 'svelte/easing'
 
 	export let data: PageData
 
@@ -35,9 +37,63 @@
 	p {
 		color: var(--primary-2);
 		font-size: clamp(1.25rem, 1.75svw, 1.5rem) !important;
-		background: linear-gradient(var(--primary-2), var(--primary));
+		background: linear-gradient(1turn, var(--primary-2), var(--primary));
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
+		animation: spin-gradient 6s infinite;
+	}
+
+	@keyframes spin-gradient {
+		0% {
+			background: linear-gradient(36deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		10% {
+			background: linear-gradient(72deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		20% {
+			background: linear-gradient(108deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		30% {
+			background: linear-gradient(144deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		40% {
+			background: linear-gradient(180deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		50% {
+			background: linear-gradient(216deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		60% {
+			background: linear-gradient(252deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		70% {
+			background: linear-gradient(288deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		80% {
+			background: linear-gradient(324deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		90% {
+			background: linear-gradient(360deg, var(--primary-2), var(--primary));
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 	}
 
 	.teachers {
