@@ -50,5 +50,10 @@ import Tags from './components/Tags'
 export { Tags }
 
 import Teacher from './components/Teacher'
-import BucketList from './components/BucketList'
 export { Teacher }
+
+import Quote from './components/Quote'
+export { Quote }
+
+import Star from './components/Star'
+export { Star }

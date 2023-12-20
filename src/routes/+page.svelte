@@ -1,11 +1,13 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import { BucketList, Link, SkillGrid, Teacher } from '$lib'
+	import { BucketList, Link, SkillGrid, Teacher, Quote } from '$lib'
 
 	export let data: PageData
 
 	const { teachers, topSkills } = data
 </script>
+
+<Quote />
 
 <p>
 	My cognitive gears turn in their unique way, making the conventional educational path a mismatch

@@ -3,7 +3,6 @@
 	import { Grid } from '$lib'
 	import List from './list.json'
 	import Item from './Item.svelte'
-	console.log('Bucket List: ', List)
 
 	let bucketList: GoalType[] = List
 </script>
