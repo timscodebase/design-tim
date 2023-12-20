@@ -35,64 +35,49 @@
 
 <style>
 	p {
+		--turn: 1turn;
 		color: var(--primary-2);
 		font-size: clamp(1.25rem, 1.75svw, 1.5rem) !important;
-		background: linear-gradient(1turn, var(--primary-2), var(--primary));
+		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		animation: spin-gradient 6s infinite;
+		transition: all 6s ease-in-out;
 	}
 
 	@keyframes spin-gradient {
 		0% {
-			background: linear-gradient(36deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0turn;
 		}
 		10% {
-			background: linear-gradient(72deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.1turn;
 		}
 		20% {
-			background: linear-gradient(108deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.2turn;
 		}
 		30% {
-			background: linear-gradient(144deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.3turn;
 		}
 		40% {
-			background: linear-gradient(180deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.4turn;
 		}
 		50% {
-			background: linear-gradient(216deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.5turn;
 		}
 		60% {
-			background: linear-gradient(252deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.6turn;
 		}
 		70% {
-			background: linear-gradient(288deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.7turn;
 		}
 		80% {
-			background: linear-gradient(324deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.8turn;
 		}
 		90% {
-			background: linear-gradient(360deg, var(--primary-2), var(--primary));
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
+			--turn: 0.9turn;
+		}
+		100% {
+			--turn: 1turn;
 		}
 	}
 
