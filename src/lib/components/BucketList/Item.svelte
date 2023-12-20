@@ -17,7 +17,7 @@
 <style>
 	div {
 		display: grid;
-		grid-template-rows: 50px auto 1fr;
+		grid-template-rows: auto auto 1fr;
 		align-items: start;
 		gap: var(--gap);
 	}
