@@ -33,8 +33,11 @@
 
 <style>
 	p {
-		color: var(--primary);
+		color: var(--primary-2);
 		font-size: clamp(1.25rem, 1.75svw, 1.5rem) !important;
+		background: linear-gradient(var(--primary-2), var(--primary));
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 
 	.teachers {

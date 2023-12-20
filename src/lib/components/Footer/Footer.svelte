@@ -48,14 +48,15 @@
 		margin-top: var(--margin-md);
 		grid-template-columns: 1fr 1fr 1fr;
 		border: var(--border-primary);
-		padding: 0 var(--padding-md);
+		padding: var(--padding-md);
+		gap: var(--gap);
 	}
 
 	@media (max-width: 500px) {
 		footer {
 			height: 160px;
 			grid-template-columns: 1fr;
-			gap: var(--gap);
+			gap: 0;
 		}
 	}
 
