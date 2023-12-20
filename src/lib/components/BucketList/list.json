@@ -18,6 +18,12 @@
 		"thumb": null
 	},
 	{
+		"goal": "Light the Olympic Torch",
+		"description": "I've already had the honor of participating in the Olympic Torch Relay back in 1996. Now, I dream of taking those final steps to carry the torch and ignite the flame.",
+		"image": "images/olympics.png",
+		"thumb": "images/olympics-thumb.png"
+	},
+	{
 		"goal": "Claim the throne of Scotland",
 		"description": "Technically, I possess a 1-acre plot of land in West Scotland. It's more of a whimsical claim than anything, but hey, I can boast a connection to the throne.",
 		"image": "images/title.png",
