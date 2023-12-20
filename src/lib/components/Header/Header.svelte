@@ -11,6 +11,15 @@
 <style>
 	header {
 		padding: var(--padding-md) 0;
-		display: flex;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: var(--gap);
+	}
+
+	@media (max-width: 600px) {
+		header {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto;
+		}
 	}
 </style>

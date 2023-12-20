@@ -15,7 +15,7 @@
 </script>
 
 <nav>
-	<Button styled={false} on:click={navStore.toggle}>
+	<Button on:click={navStore.toggle}>
 		{#if $navStore}
 			<SVG icon="close" />
 		{:else}

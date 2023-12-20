@@ -8,7 +8,7 @@
 
 <style>
 	.me {
-		width: 15svw;
+		width: 100%;
 		height: auto;
 		display: grid;
 		margin-left: auto;
@@ -25,7 +25,7 @@
 	}
 
 	img {
-		max-width: 180px;
+		max-width: 100%;
 		transform: scaleX(-1);
 		z-index: -1;
 	}
