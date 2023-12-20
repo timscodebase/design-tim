@@ -30,6 +30,9 @@
 			<Button btnRole="link" on:click={() => handleNav('/projects')}>Projects</Button>
 		</li>
 		<li>
+			<Button btnRole="link" on:click={() => handleNav('/jobs')}>Jobs</Button>
+		</li>
+		<li>
 			<Button btnRole="link" on:click={() => handleNav('/skills')}>Skills</Button>
 		</li>
 		<li>

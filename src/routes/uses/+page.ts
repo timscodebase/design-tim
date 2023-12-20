@@ -1,5 +1,5 @@
-import type { PageLoad } from './$types'
+import { dev } from '$app/environment'
 
-export const load = (async () => {
-	return {}
-}) satisfies PageLoad
+export const csr = dev
+
+export const prerender = true
