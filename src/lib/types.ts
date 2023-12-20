@@ -3,6 +3,7 @@ export type Categories = 'sveltekit' | 'svelte'
 export type GoalType = {
 	goal: string
 	description: string
+	image: string | null
 }
 
 export type PostType = {
