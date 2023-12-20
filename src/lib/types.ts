@@ -4,6 +4,7 @@ export type GoalType = {
 	goal: string
 	description: string
 	image: string | null
+	thumb: string | null
 }
 
 export type PostType = {

@@ -1,13 +1,14 @@
 <script lang="ts">
+	import { Link } from '$lib'
 	export let item
-	const { goal, description, image } = item
+	const { goal, description, image, thumb } = item
 </script>
 
 <div>
 	<h4>{goal}</h4>
 	<p>{description}</p>
 	{#if image}
-		<img src={image} alt={goal} />
+		<Link href={image}><img src={thumb} alt={goal} /></Link>
 	{/if}
 </div>
 
