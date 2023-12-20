@@ -19,4 +19,11 @@
 		align-content: baseline;
 		gap: var(--gap);
 	}
+
+	@media (max-width: 600px) {
+		img {
+			width: 80svw;
+			height: auto;
+		}
+	}
 </style>
