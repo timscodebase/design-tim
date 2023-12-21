@@ -10,6 +10,9 @@ export { Chip }
 import Footer from './components/Footer'
 export { Footer }
 
+import GitHubStar from './components/GitHubStar'
+export { GitHubStar }
+
 import Header from './components/Header'
 export { Header }
 

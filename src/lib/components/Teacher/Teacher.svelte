@@ -18,8 +18,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: var(--padding-sm);
-		border: 1px dashed var(--border-primary);
 		color: var(--purple);
 		font-weight: bold;
 
