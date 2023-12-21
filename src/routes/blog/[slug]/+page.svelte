@@ -31,17 +31,10 @@
 </article>
 
 <style>
-	article {
-		max-inline-size: var(--size-content-3);
-		margin-inline: auto;
-	}
-
 	h1 {
-		text-transform: capitalize;
+		color: var(--primary-2);
 	}
-
-	h1 + p {
-		margin-top: var(--size-2);
-		color: var(--text-2);
+	p {
+		padding: var(--padding-sm) 0;
 	}
 </style>
