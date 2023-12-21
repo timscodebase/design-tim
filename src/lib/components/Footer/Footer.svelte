@@ -44,7 +44,7 @@
 	footer {
 		height: 100px;
 		display: grid;
-		place-content: center;
+		place-items: center;
 		margin-top: var(--margin-md);
 		grid-template-columns: 1fr 1fr 1fr;
 		border: var(--border-primary);

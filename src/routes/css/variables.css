@@ -3,9 +3,9 @@
 	--black: #000000;
 	--black-75: rgba(0, 0, 0, 0.75);
 	--black-15: rgba(0, 0, 0, 0.15);
-	--white-75: rgba(255, 255, 255, 0.75);
-	--white-15: rgba(255, 255, 255, 0.15);
-	--white: #ffffff;
+	--white-75: rgba(196, 196, 196, 0.75);
+	--white-15: rgba(196, 196, 196, 0.15);
+	--white: rgb(196, 196, 196);
 	--gray: #808080;
 	--grey: var(--gray);
 	--bright-pink-p3: oklch(71.76% 0.351 333.53);
@@ -74,7 +74,7 @@
 	--border-hover: var(--border-primary);
 }
 
-/* Prefers Dark */
+/* Prefers Dark
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text: var(--white);
@@ -84,7 +84,7 @@
 	}
 }
 
-/* Prefers Light */
+/* Prefers Light
 @media (prefers-color-scheme: light) {
 	:root {
 		--text: var(--black);
@@ -92,8 +92,7 @@
 		--background: var(--white);
 		--trans-background: var(--white-75);
 	}
-}
-
+}*/
 [color-scheme='pink'] {
 	color-scheme: 'pink';
 	--primary: var(--bright-pink);

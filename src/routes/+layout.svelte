@@ -1,7 +1,7 @@
 <script lang="ts">
 	import './css/style.css'
 	import { Footer, Header } from '$lib'
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
+	// import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 </script>
 
 <div class="container">
@@ -12,7 +12,7 @@
 	</main>
 
 	<Footer />
-	{injectSpeedInsights()}
+	<!-- {injectSpeedInsights()} -->
 </div>
 
 <style>

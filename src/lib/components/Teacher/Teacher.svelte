@@ -19,8 +19,8 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: var(--padding-sm);
-		border: var(--border-primary);
-		color: color-mix(in srgb, var(--purple), var(--text) 50%);
+		border: 1px dashed var(--border-primary);
+		color: var(--purple);
 		font-weight: bold;
 
 		p {
@@ -35,7 +35,6 @@
 	}
 
 	.teacher:nth-child(odd) {
-		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
-		border: var(--border-primary-2);
+		color: var(--yellow);
 	}
 </style>
