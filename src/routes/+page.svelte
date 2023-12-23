@@ -42,7 +42,6 @@
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		animation: spin-gradient 6s infinite;
-		transition: all 6s ease-in-out;
 	}
 
 	@keyframes spin-gradient {

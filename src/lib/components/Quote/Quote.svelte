@@ -40,6 +40,7 @@
 </script>
 
 <section>
+	<p class="resizeable">Words to live by:</p>
 	<figure>
 		<blockquote>
 			<p>{quote.content}</p>
@@ -61,6 +62,15 @@
 </section>
 
 <style>
+	p {
+		padding: 0;
+		padding-bottom: var(--padding-sm);
+		font-weight: bolder;
+	}
+	section {
+		min-height: 24svh;
+	}
+
 	figure {
 		position: relative;
 		transition: all 0.3s ease;
@@ -75,7 +85,7 @@
 	}
 
 	figcaption {
-		color: color-mix(in srgb, var(--purple), var(--text) 50%);
+		color: color-mix(in srgb, var(--purple), var(--text) 70%);
 		font-weight: bolder;
 		padding-bottom: var(--padding-lg);
 	}

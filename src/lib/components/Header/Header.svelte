@@ -1,11 +1,17 @@
 <script lang="ts">
 	import { Logo, Me, Nav } from '$lib'
+	export let me: boolean = true
+	console.log('Me: ', me)
 </script>
 
 <header>
 	<Logo />
-	<Me />
-	<Nav />
+	{#if me === true}
+		<Me />
+		<Nav />
+	{:else}
+		<Nav />
+	{/if}
 </header>
 
 <style>

@@ -48,6 +48,12 @@
 		flex-direction: column;
 		gap: var(--gap);
 		padding: var(--gap);
+
+		h3,
+		h4,
+		p {
+			padding: 0;
+		}
 	}
 
 	.info {

@@ -1,18 +1,26 @@
 <script lang="ts">
 	import './css/style.css'
+	import { onMount } from 'svelte'
 	import { Footer, Header } from '$lib'
-	// import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
+	import { page } from '$app/stores'
+
+	let path
+	onMount(() => {
+		path = $page?.url.pathname
+	})
+	console.log('Path: ', path)
+	const me = path === '/blog' ? false : true
+	console.log('Me: ', me)
 </script>
 
 <div class="container">
-	<Header />
+	<Header {me} />
 
 	<main>
 		<slot />
 	</main>
 
 	<Footer />
-	<!-- {injectSpeedInsights()} -->
 </div>
 
 <style>
