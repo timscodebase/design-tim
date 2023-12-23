@@ -25,6 +25,25 @@
 					Message
 					<textarea />
 				</label>
+				<!-- H o n e y p o t -->
+				<label class="ohnohoney" for="name" />
+				<input
+					class="ohnohoney"
+					autocomplete="off"
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Your name here"
+				/>
+				<label class="ohnohoney" for="email" />
+				<input
+					class="ohnohoney"
+					autocomplete="off"
+					type="email"
+					id="email"
+					name="email"
+					placeholder="Your e-mail here"
+				/>
 				<button type="submit" on:click={toggleModal}>Send</button>
 			</form>
 		</Modal>
@@ -41,6 +60,15 @@
 </footer>
 
 <style>
+	.ohnohoney {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 0;
+		width: 0;
+		z-index: -1;
+	}
 	footer {
 		height: 100px;
 		display: grid;
