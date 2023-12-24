@@ -4,6 +4,9 @@ export { BucketList }
 import Button from './components/Button'
 export { Button }
 
+import ContactMe from './components/ContantMe'
+export { ContactMe }
+
 import Chip from './components/Chip'
 export { Chip }
 

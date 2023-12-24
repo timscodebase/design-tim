@@ -1,51 +1,15 @@
 <script>
-	import { Link, Modal } from '$lib'
-	let showModal = false
-
-	const toggleModal = () => (showModal = !showModal)
+	import { ContactMe, Link, Modal } from '$lib'
+	import { showModal } from '$stores'
+	import { toggleModal } from '$utils'
 </script>
 
 <footer>
 	<div class="left">
 		<button on:click={toggleModal}>Contact Me</button>
 
-		<Modal bind:showModal>
-			<h2 slot="header">Contact Me</h2>
-
-			<form action="">
-				<label>
-					Name
-					<input type="text" />
-				</label>
-				<label>
-					Email
-					<input type="email" />
-				</label>
-				<label class="textarea">
-					Message
-					<textarea />
-				</label>
-				<!-- H o n e y p o t -->
-				<label class="ohnohoney" for="name" />
-				<input
-					class="ohnohoney"
-					autocomplete="off"
-					type="text"
-					id="name"
-					name="name"
-					placeholder="Your name here"
-				/>
-				<label class="ohnohoney" for="email" />
-				<input
-					class="ohnohoney"
-					autocomplete="off"
-					type="email"
-					id="email"
-					name="email"
-					placeholder="Your e-mail here"
-				/>
-				<button type="submit" on:click={toggleModal}>Send</button>
-			</form>
+		<Modal bind:showModal={$showModal}>
+			<ContactMe />
 		</Modal>
 	</div>
 	<div class="center">
@@ -60,15 +24,6 @@
 </footer>
 
 <style>
-	.ohnohoney {
-		opacity: 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 0;
-		width: 0;
-		z-index: -1;
-	}
 	footer {
 		height: 100px;
 		display: grid;
@@ -92,24 +47,6 @@
 		display: flex;
 		place-content: center;
 		gap: 10px;
-	}
-
-	form {
-		display: flex;
-		flex-wrap: wrap;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	label {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	input,
-	textarea {
-		padding: var(--padding-sm);
-		border: var(--border-primary);
 	}
 
 	.right {
