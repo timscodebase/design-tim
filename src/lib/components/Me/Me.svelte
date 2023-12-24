@@ -16,11 +16,18 @@
 
 	@media (max-width: 600px) {
 		.me {
-			margin-left: 0;
+			width: 60svw;
+			margin: 0 var(--margin-sx) 2svh 2svw;
 		}
 	}
 
 	.gradient {
+		height: calc(100% + 1px);
+		width: 100%;
+		position: absolute;
+		top: 5px;
+		left: 0;
+		z-index: -1;
 		background: linear-gradient(to top left, var(--background) 5%, var(--me-trans-background));
 	}
 

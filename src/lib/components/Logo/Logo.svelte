@@ -14,13 +14,14 @@
 
 	p {
 		max-width: 50svw;
-		font-size: clamp(1.25rem, 2.5svw, 2.5rem);
+		font-size: clamp(1.25rem, 2.5svw, 2rem);
 	}
 
 	@media (max-width: 600px) {
 		p {
 			display: block;
-			max-width: 100svw;
+			max-width: 60svw;
+			margin: 0 var(--margin-sx) 2svh 2svw;
 		}
 	}
 </style>
