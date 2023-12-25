@@ -32,7 +32,7 @@
 	nav {
 		position: fixed;
 		top: 1rem;
-		right: 1rem;
+		right: 16svw;
 		display: grid;
 		z-index: 9999;
 	}
@@ -50,7 +50,7 @@
 		margin-left: auto;
 	}
 
-	@media (max-width: 1000px) {
+	@media (max-width: 1400px) {
 		nav {
 			position: relative;
 			grid-column: 1/-1;

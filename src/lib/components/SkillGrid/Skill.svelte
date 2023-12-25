@@ -54,6 +54,10 @@
 		p {
 			padding: 0;
 		}
+
+		h4 {
+			color: var(--text);
+		}
 	}
 
 	.info {
