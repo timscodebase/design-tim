@@ -71,6 +71,14 @@
 		}
 	}
 
+	@media (max-width: 450px) {
+		nav {
+			font-size: 1.75rem;
+			text-decoration: underline;
+			text-decoration-color: var(--primary);
+		}
+	}
+
 	li {
 		margin-left: auto;
 	}
