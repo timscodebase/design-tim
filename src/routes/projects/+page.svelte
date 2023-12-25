@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import { Grid, Project } from '$lib'
+	import { Project, Masonry } from '$lib'
 
 	export let data: PageData
 
@@ -9,8 +9,8 @@
 
 <h2>Projects</h2>
 
-<Grid>
+<Masonry>
 	{#each projects as project}
 		<Project {project} />
 	{/each}
-</Grid>
+</Masonry>

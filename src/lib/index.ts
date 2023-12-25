@@ -40,6 +40,9 @@ export { Modal }
 import Me from './components/Me'
 export { Me }
 
+import Masonry from './components/Masonry'
+export { Masonry }
+
 import Project from './components/Project'
 export { Project }
 

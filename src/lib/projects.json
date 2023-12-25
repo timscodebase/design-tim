@@ -3,6 +3,7 @@
 		"name": "Wolf In Sheep's Clothing",
 		"thumbnail": "images/wolf-in-sheeps-clothing-thumb.jpg",
 		"image": "images/wolf-in-sheeps-clothing.png",
+		"where": "Digital Art I: Mount Hood Community College",
 		"description": "\"Wolf In Sheep's Clothing\" description",
 		"medium": "digital"
 	},
@@ -10,6 +11,7 @@
 		"name": "Perfection",
 		"thumbnail": "images/perfection-thumb.jpg",
 		"image": "images/perfection.png",
+		"where": "Digital Art I: Mount Hood Community College",
 		"description": "Project 1 description",
 		"medium": "digital"
 	},
@@ -17,6 +19,7 @@
 		"name": "Mushroom Map Before",
 		"thumbnail": "images/mushroom_map_before-thumb.jpg",
 		"image": "images/mushroom_map_before.png",
+		"where": "Digital Art I: Mount Hood Community College",
 		"description": "Project 1 description",
 		"medium": "digital"
 	},
@@ -24,6 +27,7 @@
 		"name": "Mushroom Map Before Black And White",
 		"thumbnail": "images/mushroom_map_before_b&w-thumb.jpg",
 		"image": "images/mushroom_map_before_b&w.png",
+		"where": "Digital Art I: Mount Hood Community College",
 		"description": "Project 1 description",
 		"medium": "digital"
 	},
@@ -31,6 +35,7 @@
 		"name": "Mushroom Map After",
 		"thumbnail": "images/mushroom_map_after-thumb.jpg",
 		"image": "images/mushroom_map_after.png",
+		"where": "Digital Art I: Mount Hood Community College",
 		"description": "Project 1 description",
 		"medium": "digital"
 	},
@@ -38,6 +43,7 @@
 		"name": "Mushroom Map Inverted",
 		"thumbnail": "images/mushroom_map_after_inverted-thumb.jpg",
 		"image": "images/mushroom_map_after_inverted.png",
+		"where": "Digital Art I: Mount Hood Community College",
 		"description": "Project 1 description",
 		"medium": "digital"
 	}

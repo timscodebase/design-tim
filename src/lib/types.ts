@@ -36,6 +36,7 @@ export type ProjectType = {
 	name: string
 	thumbnail: string
 	image: string
+	where: string
 	description: string
 	medium: string
 }
