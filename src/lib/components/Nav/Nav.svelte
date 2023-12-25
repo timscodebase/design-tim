@@ -48,6 +48,8 @@
 
 	li {
 		margin-left: auto;
+		text-decoration: underline;
+		text-decoration-color: var(--primary);
 	}
 
 	@media (max-width: 1400px) {
@@ -74,8 +76,6 @@
 	@media (max-width: 450px) {
 		nav {
 			font-size: 1.75rem;
-			text-decoration: underline;
-			text-decoration-color: var(--primary);
 		}
 	}
 
