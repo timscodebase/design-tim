@@ -35,9 +35,9 @@
 		<li>
 			<Button btnRole="link" on:click={() => handleNav('/skills')}>Skills</Button>
 		</li>
-		<li>
+		<!-- <li>
 			<Button btnRole="link" on:click={() => handleNav('/blog')}>Blog</Button>
-		</li>
+		</li> -->
 		<li>
 			<Button btnRole="link" on:click={() => handleNav('/uses')}>Uses</Button>
 		</li>
