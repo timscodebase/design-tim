@@ -8,13 +8,10 @@
 	onMount(() => {
 		path = $page?.url.pathname
 	})
-	console.log('Path: ', path)
-	const me = path === '/blog' ? false : true
-	console.log('Me: ', me)
 </script>
 
 <div class="container">
-	<Header {me} />
+	<Header />
 
 	<main>
 		<slot />

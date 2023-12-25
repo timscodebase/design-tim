@@ -2,44 +2,28 @@
 	import { goto } from '$app/navigation'
 	import { Button } from '$lib'
 	import SVG from './SVG.svelte'
-	import { navColor, navStore } from '$stores'
-
-	// $: {
-	// 	console.log('navStore', navStore)
-	// }
-
-	function handleNav(url: string) {
-		navStore.toggle()
-		goto(url)
-	}
+	import { navColor } from '$stores'
 </script>
 
 <nav>
-	<Button on:click={navStore.toggle}>
-		{#if $navStore}
-			<SVG icon="close" />
-		{:else}
-			<SVG icon="open" />
-		{/if}
-	</Button>
-	<ul class:open={$navStore} class={`${$navColor}`}>
+	<ul class={`${$navColor}`}>
 		<li>
-			<Button btnRole="link" on:click={() => handleNav('/')}>Home</Button>
+			<a href="/">Home</a>
 		</li>
 		<li>
-			<Button btnRole="link" on:click={() => handleNav('/projects')}>Projects</Button>
+			<a href="projects">Projects</a>
 		</li>
 		<li>
-			<Button btnRole="link" on:click={() => handleNav('/jobs')}>Jobs</Button>
+			<a href="jobs">Jobs</a>
 		</li>
 		<li>
-			<Button btnRole="link" on:click={() => handleNav('/skills')}>Skills</Button>
+			<a href="skills">Skills</a>
 		</li>
 		<!-- <li>
-			<Button btnRole="link" on:click={() => handleNav('/blog')}>Blog</Button>
+			<a href='blog'>blog</a>
 		</li> -->
 		<li>
-			<Button btnRole="link" on:click={() => handleNav('/uses')}>Uses</Button>
+			<a href="uses">Uses</a>
 		</li>
 	</ul>
 </nav>
@@ -54,20 +38,37 @@
 	}
 
 	ul {
-		height: 0;
-		overflow: hidden;
-		margin: 0;
-		transition: transform 0.3s ease-in-out;
-		background: var(--trans-background);
+		display: grid;
+		height: auto;
+		gap: calc(var(--gap) / 2);
+		padding-bottom: var(--padding-lg);
 		font-family: var(--body-font-family);
 		border: none !important;
 	}
 
-	ul.open {
-		display: grid;
-		gap: var(--gap);
-		height: auto;
-		padding: var(--padding-md);
+	li {
+		margin-left: auto;
+	}
+
+	@media (max-width: 1000px) {
+		nav {
+			position: relative;
+			grid-column: 1/-1;
+			top: initial;
+			right: initial;
+			font-size: 1.5rem;
+		}
+
+		ul {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+		}
+		li {
+			margin-left: initial !important;
+		}
 	}
 
 	li {

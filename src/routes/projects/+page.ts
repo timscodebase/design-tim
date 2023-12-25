@@ -8,7 +8,7 @@ export const config: typeof Config = {
 
 export const load = (async (e) => {
 	try {
-		const response = await e.fetch('/api/projects')
+		const response = await e.fetch('api/projects')
 		const projects = await response.json()
 
 		return { projects }

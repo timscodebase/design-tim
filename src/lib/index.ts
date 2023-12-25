@@ -49,7 +49,7 @@ export { formatDate, slugify }
 import SkillGrid from './components/SkillGrid'
 export { SkillGrid }
 
-import Tag from './components/Tag'
+import Tag from './utils/Tag'
 export { Tag }
 
 import Tags from './components/Tags'
