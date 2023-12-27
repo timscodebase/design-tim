@@ -6,23 +6,49 @@
 </script>
 
 <article>
-	<h2>{name}</h2>
-	<p>{where}</p>
+	<div>
+		<h2>{name}</h2>
+		<h3>Created at:</h3>
+		<p>{where}</p>
+	</div>
 	<Link href={image}>
 		<img src={thumbnail} alt={name} />
 	</Link>
 	<div>
+		<h4>Description:</h4>
 		<p>{description}</p>
-		<p>{medium}</p>
+		<p class="meta"><span>Medium: </span>{medium}</p>
 	</div>
 </article>
 
 <style>
+	p,
+	h2,
+	h3 {
+		padding: 0;
+		padding-bottom: var(--padding-sm);
+	}
+
+	h2 {
+		color: var(--primary-2);
+	}
+	h3 {
+		color: color-mix(in srgb, var(--primary), var(--text) 80%);
+	}
+
+	p.meta {
+		color: var(--primary-2);
+
+		span {
+			color: var(--primary);
+			font-weight: bold;
+		}
+	}
 	article {
 		display: flex;
 		flex-direction: column;
-		align-items: start;
-		gap: var(--gap);
+		align-items: flex-start;
+		/* gap: var(--gap); */
 		padding: var(--padding-md);
 		border: var(--border-primary);
 	}

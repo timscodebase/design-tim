@@ -18,7 +18,7 @@
 	div {
 		display: grid;
 		grid-template-rows: auto auto 1fr;
-		align-items: start;
+		align-items: flex-start;
 		gap: var(--gap);
 	}
 
