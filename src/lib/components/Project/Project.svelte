@@ -16,7 +16,7 @@
 	</Link>
 	<div>
 		<h4>Description:</h4>
-		<p>{description}</p>
+		<p>{@html description}</p>
 		<p class="meta"><span>Medium: </span>{medium}</p>
 	</div>
 </article>
@@ -33,7 +33,7 @@
 		color: var(--primary-2);
 	}
 	h3 {
-		color: color-mix(in srgb, var(--primary), var(--text) 80%);
+		color: color-mix(in srgb, var(--primary), var(--text) 75%);
 	}
 
 	p.meta {
@@ -51,5 +51,10 @@
 		/* gap: var(--gap); */
 		padding: var(--padding-md);
 		border: var(--border-primary);
+	}
+
+	h4 {
+		color: color-mix(in srgb, var(--primary-2), var(--text) 75%);
+		font-weight: bolder;
 	}
 </style>
