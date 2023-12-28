@@ -1,8 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types'
 	import { BucketList, Link, SkillGrid, Teacher, Quote } from '$lib'
-	import { fly } from 'svelte/transition'
-	import { quintOut } from 'svelte/easing'
 
 	export let data: PageData
 
@@ -44,45 +42,8 @@
 		animation: spin-gradient 6s infinite;
 	}
 
-	@keyframes spin-gradient {
-		0% {
-			--turn: 0turn;
-		}
-		10% {
-			--turn: 0.1turn;
-		}
-		20% {
-			--turn: 0.2turn;
-		}
-		30% {
-			--turn: 0.3turn;
-		}
-		40% {
-			--turn: 0.4turn;
-		}
-		50% {
-			--turn: 0.5turn;
-		}
-		60% {
-			--turn: 0.6turn;
-		}
-		70% {
-			--turn: 0.7turn;
-		}
-		80% {
-			--turn: 0.8turn;
-		}
-		90% {
-			--turn: 0.9turn;
-		}
-		100% {
-			--turn: 1turn;
-		}
-	}
-
 	.teachers {
 		display: grid;
-		/* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 		gap: var(--gap);
 		padding-bottom: var(--padding-lg);
 	}
