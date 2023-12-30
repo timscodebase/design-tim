@@ -38,13 +38,13 @@
 	{
 		"goal": "Light the Olympic Torch",
 		"description": "I've already had the honor of participating in the Olympic Torch Relay back in 1996. Now, I dream of taking those final steps to carry the torch and ignite the flame.",
-		"image": "images/olympics.png",
-		"thumb": "images/olympics-thumb.png"
+		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907647/olympics_kkud3r.png",
+		"thumb": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/olympics-thumb_spjffj.png"
 	},
 	{
 		"goal": "Claim the throne of Scotland",
 		"description": "Technically, I possess a 1-acre plot of land in West Scotland. It's more of a whimsical claim than anything, but hey, I can boast a connection to the throne.",
-		"image": "images/title.png",
-		"thumb": "images/title-thumb.png"
+		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/title_jmoatp.png",
+		"thumb": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/title-thumb_jjeenm.png"
 	}
 ]
