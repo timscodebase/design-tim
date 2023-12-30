@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Link } from '$lib'
 	import type { TeacherType } from '$lib/types'
 	export let teacher: TeacherType
 
@@ -18,21 +17,25 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		color: var(--purple);
-		font-weight: bold;
+		color: color-mix(in srgb, var(--purple), var(--text) 60%);
+		font-weight: bolder;
+		font-family: var(--header-font-family);
+		font-size: clamp(1.5rem, 2.5svw, 2rem);
 
 		p {
 			padding: 0;
+			font-size: inherit;
 		}
 
 		a {
 			color: var(--text);
 			text-decoration: underline;
 			cursor: pointer;
+			font-weight: 400;
 		}
 	}
 
 	.teacher:nth-child(odd) {
-		color: var(--yellow);
+		color: color-mix(in srgb, var(--yellow), var(--text) 60%);
 	}
 </style>

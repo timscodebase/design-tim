@@ -19,7 +19,7 @@
 	--bright-yellow-p3: oklch(93.68% 0.225 106.41);
 	--bright-yellow: oklab(93.24% -0.12 0.22);
 
-	--yellow: var(--bright-yellow-p3, #f9db22);
+	--yellow: var(--bright-yellow-p3, --bright-yellow);
 	--blue: var(--bright-blue-p3, #7286ee);
 	--green: var(--bright-green-p3, #10d71e);
 	--orange: var(--bright-orange-p3, #f0911b);

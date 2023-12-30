@@ -45,6 +45,8 @@
 	.teachers {
 		display: grid;
 		gap: var(--gap);
+		margin-bottom: var(--margin-lg);
 		padding-bottom: var(--padding-lg);
+		border-bottom: var(--primary) 4px solid;
 	}
 </style>

@@ -67,6 +67,7 @@
 			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: center;
+			color: var(--text) !important;
 		}
 		li {
 			margin-left: initial !important;

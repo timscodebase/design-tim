@@ -5,11 +5,11 @@
 </script>
 
 {#if external}
-	<a {href} class={className} target="_blank" rel="noopener">
+	<a {href} class={className} target="_blank" rel="noopener prefetch">
 		<slot />
 	</a>
 {:else}
-	<a {href} class={className}>
+	<a {href} class={className} rel="prefetch">
 		<slot />
 	</a>
 {/if}
