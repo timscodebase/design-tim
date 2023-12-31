@@ -37,7 +37,7 @@
 
 	@media (max-width: 500px) {
 		footer {
-			height: 160px;
+			height: auto;
 			grid-template-columns: 1fr;
 			gap: 0;
 		}
