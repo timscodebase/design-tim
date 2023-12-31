@@ -50,6 +50,8 @@
 		margin-left: auto;
 		text-decoration: underline;
 		text-decoration-color: var(--primary);
+		text-underline-offset: 2px;
+		text-decoration-thickness: 2px;
 	}
 
 	@media (max-width: 1400px) {
@@ -71,6 +73,8 @@
 		li {
 			margin-left: initial !important;
 			color: var(--yellow);
+			text-decoration-color: var(--pink);
+			text-underline-offset: 3px;
 			text-decoration-thickness: 4px;
 		}
 		a {
