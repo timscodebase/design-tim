@@ -4,8 +4,8 @@
 	"private": true,
 	"type": "module",
 	"engines": {
-		"node": ">=16.7",
-		"npm": "=8.5"
+		"node": ">=18.x",
+		"npm": "8.x"
 	},
 	"scripts": {
 		"dev": "vite dev",
@@ -69,6 +69,7 @@
 		"svelte-awesome": "^3.3.0",
 		"svelte-cubed": "^0.2.1",
 		"svelte-feather-icons": "^4.1.0",
-		"three": "^0.153.0"
+		"three": "^0.153.0",
+		"vite-plugin-svelte-console-remover": "^1.0.10"
 	}
 }

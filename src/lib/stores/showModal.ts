@@ -5,6 +5,7 @@ function createShowModal() {
 
 	return {
 		subscribe,
+		set: (n: boolean) => set(n),
 		toggle: () => update((n) => !n),
 		reset: () => set(false)
 	}

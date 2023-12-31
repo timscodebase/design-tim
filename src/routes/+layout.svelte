@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte'
 	import { Footer, Header } from '$lib'
 	import { page } from '$app/stores'
-	import { description, dev, name } from '$lib/config'
+	import { description, url, name } from '$lib/config'
 
 	let path
 	onMount(() => {
@@ -23,16 +23,16 @@
 	<meta name="twitter:creator" content="@timsmith23" />
 	<meta property="og:title" content={description} />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={dev} />
+	<meta property="og:url" content={url} />
 	<meta property="og:description" content="My Portfolio" />
 	<meta property="og:site_name" content="My Portfolio" />
 	<meta
 		property="og:image"
 		content="%sveltekit.assets%/images/banner/design-tim-genearal-banner.png"
 	/>
-	<link rel="icon" type="image/png" href="%sveltekit.assets%/images/favicon.png" />
-	<link rel="apple-touch-icon" href="/favicon.png" />
-	<link rel="canonical" href={dev} />
+	<link rel="icon" type="image/png" href="%sveltekit.assets%/favicon.png" />
+	<link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-icon.png" />
+	<link rel="canonical" href={url} />
 </svelte:head>
 
 <div class="container">
