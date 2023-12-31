@@ -1,8 +1,19 @@
 <script lang="ts">
+	function preload(src) {
+		return new Promise(function (resolve) {
+			let img = new Image()
+			img.onload = resolve
+			img.src = src
+		})
+	}
+
+	let src = 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907649/me_f8wxaa.png'
 </script>
 
 <div class="me">
-	<img src="/images/me.png" alt="Tim Smith" />
+	{#await preload(src) then _}
+		<img {src} alt="Tim Smith" />
+	{/await}
 	<div class="gradient" />
 </div>
 
