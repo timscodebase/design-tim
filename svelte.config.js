@@ -2,8 +2,6 @@ import adapter from '@sveltejs/adapter-vercel'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import preprocess from 'svelte-preprocess'
 import { mdsvex } from 'mdsvex'
-import { sveltekit } from '@sveltejs/kit/vite'
-import { partytownVite } from '@builder.io/partytown/utils'
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -12,12 +10,6 @@ const mdsvexOptions = {
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [
-		sveltekit(),
-		partytownVite({
-			dest: '/pt-static'
-		})
-	],
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {
