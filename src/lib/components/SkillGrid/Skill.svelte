@@ -48,6 +48,7 @@
 		flex-direction: column;
 		gap: var(--gap);
 		padding: var(--gap);
+		border-radius: 4px;
 
 		h3,
 		h4,

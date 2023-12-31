@@ -3,6 +3,10 @@
 	"version": "0.9.0",
 	"private": true,
 	"type": "module",
+	"engines": {
+		"node": ">=18.x",
+		"npm": "8.x"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -65,7 +69,6 @@
 		"svelte-awesome": "^3.3.0",
 		"svelte-cubed": "^0.2.1",
 		"svelte-feather-icons": "^4.1.0",
-		"three": "^0.153.0",
-		"vite-plugin-svelte-console-remover": "^1.0.10"
+		"three": "^0.153.0"
 	}
 }

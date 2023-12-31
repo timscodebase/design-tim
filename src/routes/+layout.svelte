@@ -28,7 +28,7 @@
 	<meta property="og:site_name" content="My Portfolio" />
 	<meta
 		property="og:image"
-		content="%sveltekit.assets%/images/banner/design-tim-genearal-banner.png"
+		content="%sveltekit.assets%/images/banners/design-tim-genearal-banner.png"
 	/>
 	<link rel="icon" type="image/png" href="%sveltekit.assets%/favicon.png" />
 	<link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-icon.png" />
