@@ -16,8 +16,8 @@
 
 	@media (max-width: 600px) {
 		.me {
-			width: 60svw;
-			margin: 0 var(--margin-sx) 2svh 2svw;
+			width: 80svw;
+			margin: 0 auto var(--margin-sm) auto;
 		}
 	}
 

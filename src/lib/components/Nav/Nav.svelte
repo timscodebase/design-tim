@@ -67,7 +67,7 @@
 			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: center;
-			color: var(--text) !important;
+			color: var(--yellow);
 		}
 		li {
 			margin-left: initial !important;
