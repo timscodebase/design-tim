@@ -34,7 +34,7 @@
 		<!-- alphabetize list -->
 
 		{#each skill.usedAt.sort() as usedAt}
-			<Chip>
+			<Chip liClass={skill.category}>
 				<Link href={`jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
 			</Chip>
 		{/each}

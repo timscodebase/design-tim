@@ -14,134 +14,31 @@
 .frontend {
 	border-color: var(--yellow);
 	color: var(--yellow);
-
-	/* h3,
-	.bold {
-		font-weight: bold;
-		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
-	} */
-
-	.info {
-		color: color-mix(in srgb, var(--yellow), var(--text) 50%);
-	}
-
-	.usedAt li {
-		padding: var(--padding-xs) var(--padding-sm);
-		border-radius: 2px;
-		color: var(--reverse-text);
-		background: color-mix(in srgb, var(--yellow), var(--text) 50%);
-		border: 4px solid var(--background), 2px solid var(--yellow);
-	}
 }
 
 .backend {
 	border-color: var(--blue);
 	color: var(--blue);
-
-	/* h3,
-	.bold {
-		font-weight: bold;
-		color: color-mix(in srgb, var(--blue), var(--text) 50%);
-	} */
-
-	.info {
-		color: color-mix(in srgb, var(--blue), var(--text) 50%);
-	}
-
-	.usedAt li {
-		padding: var(--padding-xs) var(--padding-sm);
-		border-radius: 2px;
-		color: var(--reverse-text);
-		background: color-mix(in srgb, var(--blue), var(--text) 50%);
-	}
 }
 
 .fullstack {
 	border-color: var(--green);
 	color: var(--green);
-
-	/* h3,
-	.bold {
-		font-weight: bold;
-		color: color-mix(in srgb, var(--green), var(--text) 50%);
-	} */
-
-	.info {
-		color: color-mix(in srgb, var(--green), var(--text) 50%);
-	}
-
-	.usedAt li {
-		padding: var(--padding-xs) var(--padding-sm);
-		border-radius: 2px;
-		color: var(--reverse-text);
-		background: color-mix(in srgb, var(--green), var(--text) 50%);
-	}
 }
 
 .devops {
 	border-color: var(--orange);
 	color: var(--orange);
-
-	/* h3,
-	.bold {
-		font-weight: bold;
-		color: color-mix(in srgb, var(--orange), var(--text) 50%);
-	} */
-
-	.info {
-		color: color-mix(in srgb, var(--orange), var(--text) 50%);
-	}
-
-	.usedAt li {
-		padding: var(--padding-xs) var(--padding-sm);
-		border-radius: 2px;
-		color: var(--reverse-text);
-		background: color-mix(in srgb, var(--orange), var(--text) 50%);
-	}
 }
 
 .methodology {
 	border-color: var(--pink);
 	color: var(--pink);
-
-	/* h3,
-	.bold {
-		font-weight: bold;
-		color: color-mix(in srgb, var(--pink), var(--text) 50%);
-	} */
-
-	.info {
-		color: color-mix(in srgb, var(--pink), var(--text) 50%);
-	}
-
-	.usedAt li {
-		padding: var(--padding-xs) var(--padding-sm);
-		border-radius: 2px;
-		color: var(--reverse-text);
-		background: color-mix(in srgb, var(--pink), var(--text) 50%);
-	}
 }
 
 .design {
 	border-color: var(--purple);
 	color: var(--purple);
-
-	h3,
-	.bold {
-		font-weight: bold;
-		color: color-mix(in srgb, var(--purple), var(--text) 50%);
-	}
-
-	.info {
-		color: color-mix(in srgb, var(--purple), var(--text) 50%);
-	}
-
-	.usedAt li {
-		padding: var(--padding-xs) var(--padding-sm);
-		border-radius: 2px;
-		color: var(--reverse-text);
-		background: color-mix(in srgb, var(--purple), var(--text) 50%);
-	}
 }
 
 strong {
