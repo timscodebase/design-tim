@@ -15,6 +15,7 @@
 <style>
 	.teacher {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		color: color-mix(in srgb, var(--purple), var(--text) 60%);
@@ -32,6 +33,13 @@
 			text-decoration: underline;
 			cursor: pointer;
 			font-weight: 400;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.teacher {
+			flex-direction: column;
+			align-items: flex-start;
 		}
 	}
 

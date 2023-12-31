@@ -41,18 +41,10 @@
 		// Forward the necessary functions to the web worker layer
 		partytown = {
 			forward: ['dataLayer.push']
-		};
+		}
 	</script>
 
 	{@html '<script>' + partytownSnippet() + '</script>'}
-
-	<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ"></script>
-	<script type="text/partytown">
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-178247022-1');
-	</script>
 </svelte:head>
 
 <div class="container">

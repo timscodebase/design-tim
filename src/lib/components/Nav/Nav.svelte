@@ -78,11 +78,11 @@
 			text-decoration-thickness: 4px;
 		}
 		a {
-			font-size: 2.7rem;
+			font-size: clamp(1.5rem, 2svw, 2.5rem);
 		}
 	}
 
-	@media (max-width: 450px) {
+	@media (max-width: 500px) {
 		nav {
 			font-size: 1.75rem;
 		}

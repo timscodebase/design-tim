@@ -1,6 +1,5 @@
 <script lang="ts">
 	export let liClass: string = ''
-	console.log('class: ', liClass)
 </script>
 
 <li class={liClass}>
