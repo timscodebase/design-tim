@@ -67,10 +67,14 @@
 			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: center;
-			color: var(--yellow);
 		}
 		li {
 			margin-left: initial !important;
+			color: var(--yellow);
+			text-decoration-thickness: 4px;
+		}
+		a {
+			font-size: 2.7rem;
 		}
 	}
 
