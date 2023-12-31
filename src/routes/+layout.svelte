@@ -4,9 +4,11 @@
 	import { Footer, Header } from '$lib'
 	import { page } from '$app/stores'
 	import { description, url, name } from '$lib/config'
-	import banner from './img/design-tim-genearal-banner.png'
 	import favicon from './img/favicon.png'
 	import appleIcon from './img/apple-icon.png'
+
+	const banner =
+		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703998982/design-tim-genearal-banner_y3aqyx.png'
 
 	let path
 	onMount(() => {
