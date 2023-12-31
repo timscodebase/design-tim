@@ -6,6 +6,7 @@
 	import { description, url, name } from '$lib/config'
 	import favicon from './img/favicon.png'
 	import appleIcon from './img/apple-icon.png'
+	import { partytownSnippet } from '@builder.io/partytown/integration'
 
 	const banner =
 		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703998982/design-tim-genearal-banner_y3aqyx.png'
@@ -35,6 +36,23 @@
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />
 	<link rel="canonical" href={url} />
+
+	<script>
+		// Forward the necessary functions to the web worker layer
+		partytown = {
+			forward: ['dataLayer.push']
+		};
+	</script>
+
+	{@html '<script>' + partytownSnippet() + '</script>'}
+
+	<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ"></script>
+	<script type="text/partytown">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-178247022-1');
+	</script>
 </svelte:head>
 
 <div class="container">
