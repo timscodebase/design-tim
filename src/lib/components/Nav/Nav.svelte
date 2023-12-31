@@ -19,9 +19,9 @@
 		<li>
 			<a href="skills">Skills</a>
 		</li>
-		<!-- <li>
-			<a href='blog'>blog</a>
-		</li> -->
+		<li>
+			<a href="about">About</a>
+		</li>
 		<li>
 			<a href="uses">Uses</a>
 		</li>
@@ -78,7 +78,7 @@
 			text-decoration-thickness: 4px;
 		}
 		a {
-			font-size: clamp(1.5rem, 2svw, 2.5rem);
+			font-size: clamp(1.5rem, 2svw, 2.25rem);
 		}
 	}
 

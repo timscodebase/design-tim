@@ -27,9 +27,6 @@
 <SkillGrid skills={topSkills} />
 <br />
 <Link href="/skills">See all my skills</Link>
-<br />
-
-<BucketList />
 
 <style>
 	p {

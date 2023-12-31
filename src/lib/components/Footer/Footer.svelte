@@ -25,7 +25,6 @@
 
 <style>
 	footer {
-		height: 100px;
 		display: grid;
 		place-items: center;
 		margin-top: var(--margin-md);
@@ -37,7 +36,6 @@
 
 	@media (max-width: 500px) {
 		footer {
-			height: auto;
 			grid-template-columns: 1fr;
 			gap: 0;
 		}
