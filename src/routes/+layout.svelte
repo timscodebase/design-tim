@@ -4,6 +4,9 @@
 	import { Footer, Header } from '$lib'
 	import { page } from '$app/stores'
 	import { description, url, name } from '$lib/config'
+	import banner from './img/design-tim-genearal-banner.png'
+	import favicon from './img/favicon.png'
+	import appleIcon from './img/apple-icon.png'
 
 	let path
 	onMount(() => {
@@ -26,12 +29,9 @@
 	<meta property="og:url" content={url} />
 	<meta property="og:description" content="My Portfolio" />
 	<meta property="og:site_name" content="My Portfolio" />
-	<meta
-		property="og:image"
-		content="%sveltekit.assets%/images/banners/design-tim-genearal-banner.png"
-	/>
-	<link rel="icon" type="image/png" href="%sveltekit.assets%/favicon.png" />
-	<link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-icon.png" />
+	<meta property="og:image" content={banner} />
+	<link rel="icon" type="image/png" href={favicon} />
+	<link rel="apple-touch-icon" href={appleIcon} />
 	<link rel="canonical" href={url} />
 </svelte:head>
 
