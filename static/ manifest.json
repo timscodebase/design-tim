@@ -1,0 +1,17 @@
+{
+    "short_name": "tim-Smith",
+    "name": "Tim Smith",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "./apple-icon-180x180",
+        "type": "image/png",
+        "sizes": "180x180"
+      }
+    ],
+    "background_color": "#000",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ff00fc",
+    "description": "Developer, Artist, Photographer, Writer and Creator"
+}
