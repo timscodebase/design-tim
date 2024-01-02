@@ -10,6 +10,9 @@ export { ContactMe }
 import Chip from './components/Chip'
 export { Chip }
 
+import Email from './components/Email'
+export { Email }
+
 import Footer from './components/Footer'
 export { Footer }
 

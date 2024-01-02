@@ -7,7 +7,7 @@
 		})
 	}
 
-	let src = 'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907649/me_f8wxaa.png'
+	let src = 'https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_323/v1703907649/me_f8wxaa.png'
 </script>
 
 <div class="me">

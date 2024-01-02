@@ -44,3 +44,7 @@
 strong {
 	color: var(--primary-2);
 }
+
+#__svelte-email > table {
+	width: 80svw !important;
+}
