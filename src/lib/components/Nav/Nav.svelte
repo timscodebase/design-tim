@@ -11,19 +11,19 @@
 			<a href="/">Home</a>
 		</li>
 		<li>
-			<a href="projects">Projects</a>
+			<a href="/projects">Projects</a>
 		</li>
 		<li>
-			<a href="jobs">Jobs</a>
+			<a href="/jobs">Jobs</a>
 		</li>
 		<li>
-			<a href="skills">Skills</a>
+			<a href="/skills">Skills</a>
 		</li>
 		<li>
-			<a href="about">About</a>
+			<a href="/about">About</a>
 		</li>
 		<li>
-			<a href="uses">Uses</a>
+			<a href="/uses">Uses</a>
 		</li>
 	</ul>
 </nav>

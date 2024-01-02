@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { SkillType } from '$lib/types'
+	import { fly } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 	import { Chip, Link } from '$lib'
 	import { slugify } from '$utils'
 	export let skill: SkillType
@@ -17,6 +19,7 @@
 	on:mouseover={onMouseover}
 	on:focus={onMouseover}
 	class={`skill ${skill.category}`}
+	transition:fly={{ delay: 250, duration: 300, x: 100, y: 500, opacity: 0.5, easing: quintOut }}
 >
 	<h3>{skill.name}</h3>
 
