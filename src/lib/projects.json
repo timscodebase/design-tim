@@ -14,37 +14,5 @@
 		"where": "Digital Art I: Mount Hood Community College",
 		"description": "<p>\"Perfection\" is a digital reflection of what I feel perfection is.</p><ul><li><strong>1:</strong> Anxiety</li><li><strong>2:</strong> Imposter</li><li><strong>3:</strong> Stress</li><li><strong>4:</strong> \"I'm not good enough!\"</li><li><strong>5:</strong> Self-doubt</li><li><strong>6:</strong> \"What will the think?\"</li><li><strong>7:</strong> NOT POSSIBLE!!</li><li><strong>8:</strong> ?</li></ul>",
 		"medium": "digital"
-	},
-	{
-		"name": "Mushroom Map Before",
-		"thumbnail": "images/mushroom_map_before-thumb.jpg",
-		"image": "images/mushroom_map_before.png",
-		"where": "Digital Art I: Mount Hood Community College",
-		"description": "<p>Project 1 description.</p>",
-		"medium": "digital"
-	},
-	{
-		"name": "Mushroom Map Before Black And White",
-		"thumbnail": "images/mushroom_map_before_b&w-thumb.jpg",
-		"image": "images/mushroom_map_before_b&w.png",
-		"where": "Digital Art I: Mount Hood Community College",
-		"description": "<p>Project 1 description.</p>",
-		"medium": "digital"
-	},
-	{
-		"name": "Mushroom Map After",
-		"thumbnail": "images/mushroom_map_after-thumb.jpg",
-		"image": "images/mushroom_map_after.png",
-		"where": "Digital Art I: Mount Hood Community College",
-		"description": "<p>Project 1 description.</p>",
-		"medium": "digital"
-	},
-	{
-		"name": "Mushroom Map Inverted",
-		"thumbnail": "images/mushroom_map_after_inverted-thumb.jpg",
-		"image": "images/mushroom_map_after_inverted.png",
-		"where": "Digital Art I: Mount Hood Community College",
-		"description": "<p>Project 1 description.</p>",
-		"medium": "digital"
 	}
 ]
