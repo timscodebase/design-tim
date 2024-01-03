@@ -3,8 +3,6 @@
 	import { Button, Star } from '$lib'
 	import { onMount } from 'svelte'
 
-	let isStar = false
-
 	let quote = {
 		content: 'You are loved.',
 		author: 'Me ❤️'
@@ -50,11 +48,6 @@
 	</figure>
 
 	<div style:position="relative">
-		{#if isStar}
-			<div class="star" out:fly={{ opacity: 0, y: -100, duration: 3000 }}>
-				<Star />
-			</div>
-		{/if}
 		<Button on:click={copyQuote}>
 			{isCopied ? 'Copied!' : 'Copy quote'}
 		</Button>
