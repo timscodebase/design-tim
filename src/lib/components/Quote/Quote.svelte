@@ -30,7 +30,7 @@
 			isCopied = true
 			setTimeout(() => {
 				isCopied = false
-			}, 2000)
+			}, 2500)
 		} catch (err) {
 			console.error('Failed to copy: ', err)
 		}

@@ -37,6 +37,7 @@
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		animation: spin-gradient 6s infinite;
+		padding-top: var(--padding-lg);
 	}
 
 	@media (max-width: 500px) {

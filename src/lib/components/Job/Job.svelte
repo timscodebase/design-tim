@@ -28,6 +28,7 @@
 
 	p {
 		text-align: justify;
+		padding: 0;
 	}
 
 	.date {
