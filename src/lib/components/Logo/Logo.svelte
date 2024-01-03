@@ -16,12 +16,6 @@
 	img {
 		width: 100%;
 		height: auto;
-	}
-
-	@media (max-width: 600px) {
-		img {
-			width: 80svw;
-			margin: 0 auto var(--margin-sm) auto;
-		}
+		margin: 0 auto;
 	}
 </style>
