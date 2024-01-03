@@ -7,6 +7,10 @@
 	import favicon from './img/favicon.png'
 	import appleIcon from './img/apple-icon.png'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
+	import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
+
+	inject({ mode: dev ? 'development' : 'production' });
 
 	const banner =
 		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704303304/design-tim-genearal-banner_h9oma6.png'
