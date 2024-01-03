@@ -9,7 +9,7 @@
 	import { partytownSnippet } from '@builder.io/partytown/integration'
 
 	const banner =
-		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703998982/design-tim-genearal-banner_y3aqyx.png'
+		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704303304/design-tim-genearal-banner_h9oma6.png'
 
 	let path
 	onMount(() => {

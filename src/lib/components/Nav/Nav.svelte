@@ -35,6 +35,8 @@
 		right: 16svw;
 		display: grid;
 		z-index: 9999;
+		padding-top: var(--padding-lg);
+		padding-bottom: var(--padding-lg);
 	}
 
 	ul {
@@ -61,6 +63,9 @@
 			top: initial;
 			right: initial;
 			font-size: 1.5rem;
+			margin-top: 0;
+			padding-bottom: 0;
+			padding-top: 0;
 		}
 
 		ul {
