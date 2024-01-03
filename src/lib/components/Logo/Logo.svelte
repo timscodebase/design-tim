@@ -5,7 +5,7 @@
 </script>
 
 <a href="/">
-	<img src={logo} alt={`${name} - ${description}`} />
+	<img width="740" height="228" src={logo} alt={`${name} - ${description}`} />
 </a>
 
 <style>
