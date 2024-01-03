@@ -10,7 +10,7 @@
 	<h3>{company}</h3>
 	<div class="meta">
 		<span>{title}-{location}</span>
-		<span>{dates}</span>
+		<span class="date">{dates}</span>
 	</div>
 	<p>{@html description}</p>
 </article>
@@ -18,7 +18,7 @@
 <style>
 	article {
 		min-height: 50svh;
-		padding: var(--padding-md);
+		padding: var(--padding-lg);
 		border: var(--border-primary);
 	}
 
@@ -26,11 +26,19 @@
 		color: var(--primary-2);
 	}
 
+	p {
+		text-align: justify;
+	}
+
+	.date {
+		text-align: right;
+	}
+
 	.meta {
 		padding: var(--padding-sm) 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		color: color-mix(in srgb, var(--pink), var(--text) 50%);
+		color: color-mix(in srgb, var(--primary), var(--text) 70%);
 	}
 </style>
