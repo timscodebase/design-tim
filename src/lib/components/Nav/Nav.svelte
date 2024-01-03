@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
-	import { Button } from '$lib'
+	import { Button, Link } from '$lib'
 	import SVG from './SVG.svelte'
 	import { navColor } from '$stores'
 </script>
@@ -8,22 +8,22 @@
 <nav>
 	<ul class={`${$navColor}`}>
 		<li>
-			<a href="/">Home</a>
+			<Link href="/">Home</Link>
 		</li>
 		<li>
-			<a href="/projects">Projects</a>
+			<Link href="/projects">Projects</Link>
 		</li>
 		<li>
-			<a href="/jobs">Jobs</a>
+			<Link href="/jobs">Jobs</Link>
 		</li>
 		<li>
-			<a href="/skills">Skills</a>
+			<Link href="/skills">Skills</Link>
 		</li>
 		<li>
-			<a href="/about">About</a>
+			<Link href="/about">About</Link>
 		</li>
 		<li>
-			<a href="/uses">Uses</a>
+			<Link href="/uses">Uses</Link>
 		</li>
 	</ul>
 </nav>
