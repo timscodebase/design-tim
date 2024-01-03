@@ -5,11 +5,11 @@
 </script>
 
 {#if external}
-	<a {href} class={className} target="_blank" rel="noopener" data-sveltekit-reload>
+	<a {href} class={className} target="_blank" rel="noopener" data-sveltekit-preload-data>
 		<slot />
 	</a>
 {:else}
-	<a {href} class={className} data-sveltekit-reload>
+	<a {href} class={className} data-sveltekit-preload-data>
 		<slot />
 	</a>
 {/if}
