@@ -1,7 +1,7 @@
 <script>
 	import { name, description } from '$lib/config'
 	const logo =
-		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704303044/design-tim-header-banner_axuy02.png'
+		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704304026/design-tim-header-banner_uvvpgy.png'
 </script>
 
 <a href="/">
