@@ -21,7 +21,7 @@
 		color: color-mix(in srgb, var(--purple), var(--text) 60%);
 		font-weight: bolder;
 		font-family: var(--header-font-family);
-		font-size: clamp(1.5rem, 2.5svw, 2rem);
+		font-size: clamp(1.2rem, 1.75svw, 1.5rem);
 
 		p {
 			padding: 0;

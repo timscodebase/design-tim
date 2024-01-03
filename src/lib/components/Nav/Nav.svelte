@@ -88,12 +88,15 @@
 	}
 
 	@media (max-width: 500px) {
-		nav {
-			font-size: 1.75rem;
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			font-size: 1.5rem;
 		}
 	}
 
 	li {
 		margin-left: auto;
+		text-align: center;
 	}
 </style>
