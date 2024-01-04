@@ -1,6 +1,6 @@
 <script>
 	import { fly } from 'svelte/transition'
-	import { Button, Star } from '$lib'
+	import { Button } from '$lib'
 	import { onMount } from 'svelte'
 
 	let quote = {

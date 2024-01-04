@@ -65,7 +65,7 @@ h6 {
 p {
 	font-size: clamp(1rem, 1.5svw, 1rem);
 	padding: 3svh 0;
-	line-height: 1.5 0;
+	line-height: 1.5;
 }
 
 small {
