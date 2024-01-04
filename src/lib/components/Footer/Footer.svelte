@@ -16,8 +16,8 @@
 		<p>Tim Smith {new Date().getFullYear()}</p>
 	</div>
 	<div class="right">
-		<Link href="https://github.com/timscodebase" className="github" external={true}>Github</Link>
-		<Link href="https://linkedin.com/in/timsmith25" className="linkedin" external={true}
+		<Link href="https://github.com/timscodebase" external={true}>Github</Link>
+		<Link href="https://linkedin.com/in/timsmith25" external={true}
 			>LinkedIn</Link
 		>
 	</div>
@@ -30,7 +30,7 @@
 		margin-top: var(--margin-md);
 		grid-template-columns: 1fr 1fr 1fr;
 		border: var(--border-primary);
-		padding: var(--padding-md);
+		padding: var(--padding-sm);
 		gap: var(--gap);
 	}
 
@@ -44,7 +44,7 @@
 	footer * {
 		display: flex;
 		place-content: center;
-		gap: 10px;
+		gap: var(--gap);
 	}
 
 	.right {

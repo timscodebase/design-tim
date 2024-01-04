@@ -1,15 +1,14 @@
 <script lang="ts">
 	export let external: boolean = false
 	export let href: string = ''
-	export let className: string = ''
 </script>
 
 {#if external}
-	<a {href} class={className} target="_blank" rel="noopener" data-sveltekit-preload-data>
+	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data>
 		<slot />
 	</a>
 {:else}
-	<a {href} class={className} data-sveltekit-preload-data>
+	<a {href} data-sveltekit-preload-data>
 		<slot />
 	</a>
 {/if}
@@ -20,13 +19,5 @@
 		font-weight: bold;
 		text-decoration: underline;
 		font-size: var(--body-font-family);
-	}
-
-	.github {
-		color: #6e5494;
-	}
-
-	.linkedin {
-		color: #0077b5;
 	}
 </style>
