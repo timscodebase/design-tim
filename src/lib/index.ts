@@ -66,6 +66,3 @@ export { Teacher }
 
 import Quote from './components/Quote'
 export { Quote }
-
-import Star from './components/Star'
-export { Star }
