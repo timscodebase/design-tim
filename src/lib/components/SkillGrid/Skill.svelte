@@ -1,24 +1,26 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { scale } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+	import { onMount } from 'svelte'
+	import { scale } from 'svelte/transition'
+	import { quintOut } from 'svelte/easing'
 	import { Chip, Link } from '$lib'
 	import { viewport, slugify } from '$utils'
 	import { navColor } from '$stores'
 	import type { SkillType } from '$lib/types'
 
 	export let skill: SkillType
-	export let visible = false;
+	export let visible = false
 
 	onMount(() => {
 		const box = document.querySelector('.outer')
+		if (!visible && viewport.isIn(box)) {
+			visible = true
+		}
+		console.log('Hi', visible)
 
 		document.addEventListener('scroll', function () {
-			// Only set visible if it's not already visible
 			if (!visible && viewport.isIn(box)) {
-				visible = true;
+				visible = true
 			}
-
 		}, {
 			passive: true
 		});

@@ -5,6 +5,7 @@
 	export let data: PageData
 
 	const { skills } = data
+	console.log('Skills: ', skills);
 </script>
 
 <h2>I excel in the following skills:</h2>
