@@ -77,6 +77,7 @@
 		gap: var(--gap);
 		padding: var(--gap);
 		border-radius: 4px;
+		height: 100%;
 
 		h3,
 		h4,
