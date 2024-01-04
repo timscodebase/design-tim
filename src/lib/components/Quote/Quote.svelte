@@ -22,7 +22,7 @@
 
 	onMount(fetchQuote)
 
-	setInterval(fetchQuote, 8000)
+	setInterval(fetchQuote, 10000)
 
 	async function copyQuote() {
 		try {

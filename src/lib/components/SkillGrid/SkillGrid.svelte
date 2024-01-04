@@ -1,16 +1,36 @@
 <script lang="ts">
+	import { viewport } from '$utils';
+	import { onMount } from 'svelte';
 	import type { SkillType } from '$lib/types'
 	import Skill from './Skill.svelte'
 	import { Grid } from '$lib'
 
 	export let skills: SkillType[]
+	let visible = false
+
+	function resetVisible() {
+		visible = false
+	}
+
+	onMount(() => {
+		const box = document.querySelector('.grid')
+
+		document.addEventListener('scroll', () => {
+			if (viewport.isBottom(box)) {
+				resetVisible()
+			}
+
+		}, {
+			passive: true
+		});
+	})
 </script>
 
-<Grid>
+<div class="grid">
 	{#each skills as skill}
-		<Skill {skill} />
+		<Skill {visible} {skill} />
 	{/each}
-</Grid>
+</div>
 
 <style>
 	.grid {

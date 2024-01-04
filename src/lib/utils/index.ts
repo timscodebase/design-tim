@@ -1,8 +1,8 @@
 import formatDate from './formateDate'
 export { formatDate }
 
-import isInViewport from './isInViewport'
-export { isInViewport }
+import viewport from './viewport'
+export { viewport }
 
 import slugify from './slugify'
 export { slugify }
