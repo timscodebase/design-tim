@@ -33,8 +33,8 @@
 	<meta property="og:title" content={description} />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={url} />
-	<meta property="og:description" content="My Portfolio" />
-	<meta property="og:site_name" content="My Portfolio" />
+	<meta property="og:description" content={`${name}: ${description}`} />
+	<meta property="og:site_name" content={`${name}: ${description}`} />
 	<meta property="og:image" content={banner} />
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />

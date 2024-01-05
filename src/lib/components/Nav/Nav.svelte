@@ -83,7 +83,7 @@
 			text-decoration-thickness: 4px;
 		}
 		a {
-			font-size: clamp(1.5rem, 2svw, 2.25rem);
+			font-size: clamp(1.25rem, 1.75svw, 2rem);
 		}
 	}
 
