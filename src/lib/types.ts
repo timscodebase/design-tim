@@ -39,6 +39,7 @@ export type ProjectType = {
 	where: string
 	description: string
 	medium: string
+	href?: string
 }
 
 export type TeacherType = {

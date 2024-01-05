@@ -1,3 +1,4 @@
+<!-- <svelte:options runes={true} /> -->
 <script lang="ts">
 	import { viewport } from '$utils';
 	import { onMount } from 'svelte';

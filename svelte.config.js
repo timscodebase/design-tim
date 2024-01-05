@@ -10,6 +10,9 @@ const mdsvexOptions = {
 
 /** @type {import('vite').UserConfig} */
 const config = {
+	// compilerOptions: {
+	// 	runes: true
+	// },
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {

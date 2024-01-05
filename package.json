@@ -41,6 +41,7 @@
 		"eslint-config-prettier": "^8.10.0",
 		"eslint-plugin-storybook": "^0.6.15",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"iconify-icon": "^1.0.8",
 		"postcss": "^8.4.32",
 		"postcss-csso": "^6.0.1",
 		"postcss-preset-env": "^9.3.0",

@@ -1,5 +1,13 @@
 [
 	{
+		"name": "Tim Smith V-6",
+		"thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_300/v1704406141/tim-v6_bwl1it.png",
+		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704406141/tim-v6_bwl1it.png",
+		"description": "<p>The 6th iteration of my personal website—a cybernetic masterpiece crafted with the enchanting harmony of SvelteKit, the precision of Typescript, and a dash of the mystical THREE.js. As you traverse these virtual corridors, may you find not just lines of code, but a symphony of pixels choreographed to dance in harmony with your digital wanderings. Welcome, dear traveler, to a corner of the internet where technology meets artistry in a dazzling display of creativity!</p>",
+		"medium": "Frontend Web Development",
+		"href": "https://tim-v6-reboot.vercel.app/"
+	},
+	{
 		"name": "Wolf In Sheep's Clothing",
 		"thumbnail": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/wolf-in-sheeps-clothing-thumb_pcsrpg.jpg",
 		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/wolf-in-sheeps-clothing_vxvumk.png",
