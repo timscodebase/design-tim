@@ -26,4 +26,6 @@
     gtag('js', new Date())
     gtag('config', 'G-EPNRTTEP8M')
   </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3189326528459169"
+     crossorigin="anonymous"></script>
 </svelte:head>
