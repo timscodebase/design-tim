@@ -3,15 +3,6 @@
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
-	"files": [
-		"dist"
-	],
-	"svelte": "dist/index.js",
-	"exports": {
-		".": {
-			"svelte": "./dist/index.js"
-		}
-	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
