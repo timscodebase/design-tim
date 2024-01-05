@@ -6,7 +6,7 @@
 </script>
 
 <Link href="/">
-	<enhanced:img width="740" height="228" src={logo} alt={`${name} - ${description}`} />
+	<img width="740" height="228" src={logo} alt={`${name} - ${description}`} />
 </Link>
 
 <style>
