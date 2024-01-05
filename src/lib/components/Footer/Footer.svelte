@@ -5,21 +5,20 @@
 </script>
 
 <footer>
-	<div class="left">
-		<button on:click={toggleModal}>Contact Me</button>
-
-		<Modal bind:showModal={$showModal}>
-			<ContactMe />
-		</Modal>
-	</div>
-	<div class="center">
+	<div>
 		<p>Tim Smith {new Date().getFullYear()}</p>
 	</div>
-	<div class="right">
+	<div>
 		<Link href="https://github.com/timscodebase" external={true}>Github</Link>
 		<Link href="https://linkedin.com/in/timsmith25" external={true}
 			>LinkedIn</Link
 		>
+	</div>
+	<div>
+		<button on:click={toggleModal}>Contact Me</button>
+		<Modal bind:showModal={$showModal}>
+			<ContactMe />
+		</Modal>
 	</div>
 </footer>
 
@@ -28,7 +27,7 @@
 		display: grid;
 		place-items: center;
 		margin-top: var(--margin-md);
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: auto 1fr auto;
 		border: var(--border-primary);
 		padding: var(--padding-sm);
 		gap: var(--gap);
@@ -45,10 +44,6 @@
 		display: flex;
 		place-content: center;
 		gap: var(--gap);
-	}
-
-	.right {
-		background: var(--trans-background);
 	}
 
 	button:hover {

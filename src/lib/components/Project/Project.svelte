@@ -55,9 +55,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		/* gap: var(--gap); */
 		padding: var(--padding-md);
 		border: var(--border-primary);
+	}
+
+	article a {
+		color: color-mix(in srgb, var(--primary), var(--text) 75%);
 	}
 
 	h4 {
