@@ -91,7 +91,13 @@
 		ul {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
-			font-size: 1.5rem;
+			font-size: 1.25rem;
+			text-align: center;
+		}
+
+		li {
+			display: flex;
+			justify-content: center;
 		}
 	}
 
