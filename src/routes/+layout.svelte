@@ -1,8 +1,7 @@
 <script lang="ts">
 	import './css/style.css'
 	import { onMount } from 'svelte'
-	import { Footer, Header } from '$lib'
-	import { Analytics } from '$lib/analytics.svelte'
+	import { Analytics, Footer, Header } from '$lib'
 	import { page } from '$app/stores'
 	import { description, name, url } from '$lib/config'
 	import favicon from '$lib/assets/favicon.png'

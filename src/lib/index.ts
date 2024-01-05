@@ -1,3 +1,6 @@
+import Analytics from './components/Analytics'
+export { Analytics }
+
 import BucketList from './components/BucketList'
 export { BucketList }
 
