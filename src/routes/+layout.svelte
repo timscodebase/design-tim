@@ -4,8 +4,8 @@
 	import { Footer, Header } from '$lib'
 	import { page } from '$app/stores'
 	import { description, url, name } from '$lib/config'
-	import favicon from './img/favicon.png'
-	import appleIcon from './img/apple-icon.png'
+	import favicon from '$lib/img/favicon.png'
+	import appleIcon from '$lib/img/apple-icon.png'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
 	import { dev } from '$app/environment';
   import { inject } from '@vercel/analytics';

@@ -1,4 +1,6 @@
 import adapter from '@sveltejs/adapter-vercel'
+import { sveltekit } from '@sveltejs/kit/vite';
+import { enhancedImages } from '@sveltejs/enhanced-img';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import preprocess from 'svelte-preprocess'
 import { mdsvex } from 'mdsvex'
@@ -10,9 +12,10 @@ const mdsvexOptions = {
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	// compilerOptions: {
-	// 	runes: true
-	// },
+	plugins: [
+		enhancedImages(),
+		sveltekit()
+	],
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {

@@ -29,6 +29,7 @@
 		"@storybook/testing-library": "^0.2.2",
 		"@sveltejs/adapter-auto": "^3.0.1",
 		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/enhanced-img": "^0.1.7",
 		"@sveltejs/kit": "^2.0.6",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/three": "^0.152.1",
