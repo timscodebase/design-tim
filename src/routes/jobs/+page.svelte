@@ -9,6 +9,8 @@
 	const { jobs } = data
 </script>
 
+<h2>Past Work</h2>
+
 <p class="flashy">
 I am actively looking to secure a dynamic Full-Stack Engineer role within an innovative organization, where I can channel my technical prowess and creative flair to craft and maintain cutting-edge, user-friendly websites with a focus on responsiveness and visual appeal.
 </p>
@@ -17,8 +19,6 @@ I am actively looking to secure a dynamic Full-Stack Engineer role within an inn
 	Checkout my <Link href={resume} external={true}>
 	Resume</Link> to find out more.
 </p>
-
-<h2>Past Work</h2>
 
 <div>
 	{#each jobs as job}
@@ -29,17 +29,8 @@ I am actively looking to secure a dynamic Full-Stack Engineer role within an inn
 <style>
 	.inline {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
-	}
-	.flashy {
-		--turn: 1turn;
-		color: var(--primary-2);
-		font-size: clamp(1.5rem, 1.75svw, 2rem) !important;
-		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: spin-gradient 6s infinite;
-		padding-top: var(--padding-lg);
 	}
 	div {
 		display: grid;

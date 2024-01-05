@@ -2,7 +2,6 @@
 	import { Link } from '$lib'
 	import { name, description } from '$lib/config'
 	import logo from '$lib/assets/design-tim-header-banner.png'
-	console.log('Logo: ', logo);
 </script>
 
 <Link href="/">

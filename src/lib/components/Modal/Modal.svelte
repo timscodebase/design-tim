@@ -13,13 +13,7 @@
 	on:click|self={() => dialog.close()}
 >
 	<div role="dialog" on:click|stopPropagation>
-		<slot name="header" />
-		<hr />
 		<slot />
-		<hr />
-		{#if showCloseButton}
-			<button on:click={() => dialog.close()}>close modal</button>
-		{/if}
 	</div>
 </dialog>
 

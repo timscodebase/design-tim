@@ -1,5 +1,4 @@
 <script>
-  import { Primary } from './../../../stories/Button.stories.ts';
 	import { ContactMe, Link, Modal } from '$lib'
 	import { showModal } from '$stores'
 	import { toggleModal } from '$utils'
@@ -16,11 +15,7 @@
 		>
 	</div>
 	<div>
-		<button on:click={toggleModal}>Contact Me</button>
-		<Modal bind:showModal={$showModal}>
-			<ContactMe />
-		</Modal>
-	</div>
+		<Link href="/contact-me">Contact Me</Link>
 </footer>
 
 <style>
