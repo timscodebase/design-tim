@@ -2,18 +2,25 @@
 	import { Link } from '$lib'
 	export let project
 
-	const { name, thumbnail, image, where, description, medium } = project
+	const { name, href, thumbnail, image, where, description, medium } = project
 </script>
 
 <article>
 	<div>
 		<h2>{name}</h2>
 		<h3>Created at:</h3>
-		<p>{where}</p>
+		{#if where}
+			<p>{where}</p>
+		{/if}
 	</div>
 	<Link href={image}>
 		<img src={thumbnail} alt={name} />
 	</Link>
+	{#if href}
+		<Link {href} external={true}>
+			{href}
+		</Link>
+	{/if}
 	<div>
 		<h4>Description:</h4>
 		<p>{@html description}</p>
