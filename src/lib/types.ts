@@ -40,6 +40,7 @@ export type ProjectType = {
 	description: string
 	medium: string
 	href?: string
+	github?: string
 }
 
 export type TeacherType = {
