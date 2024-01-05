@@ -7,8 +7,6 @@
 	const { teachers, topSkills } = data
 </script>
 
-<Quote />
-
 <p>
 	My cognitive gears turn in their unique way, making the conventional educational path a mismatch
 	for me. While I dabbled in a few college courses, my true knowledge reservoir comes from the
@@ -27,6 +25,8 @@
 <SkillGrid skills={topSkills} />
 <br />
 <Link href="/skills">See all my skills</Link>
+
+<Quote />
 
 <style>
 	p {

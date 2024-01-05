@@ -90,8 +90,9 @@
 	@media (max-width: 500px) {
 		ul {
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			font-size: 1.25rem;
+			gap: 0;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+			font-size: 1.1rem;
 			text-align: center;
 		}
 

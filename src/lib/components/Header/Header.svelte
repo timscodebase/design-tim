@@ -14,4 +14,11 @@
 		grid-template-columns: 1fr;
 		gap: var(--gap);
 	}
+
+	@media (max-width: 500px) {
+		header {
+			gap: 0;
+			padding-bottom: 0;
+		}
+	}
 </style>
