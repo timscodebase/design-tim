@@ -12,7 +12,7 @@
 
 	inject({ mode: dev ? 'development' : 'production' });
 
-	import banner from '$lib/img/design-tim-genearal-banner.png'
+	import banner from 'images/design-tim-genearal-banner.png'
 
 	let path
 	onMount(() => {
