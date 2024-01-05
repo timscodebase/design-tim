@@ -12,8 +12,7 @@
 
 	inject({ mode: dev ? 'development' : 'production' });
 
-	const banner =
-		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704303304/design-tim-genearal-banner_h9oma6.png'
+	import banner from '$lib/img/design-tim-genearal-banner.png'
 
 	let path
 	onMount(() => {
