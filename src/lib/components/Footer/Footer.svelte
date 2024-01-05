@@ -1,4 +1,5 @@
 <script>
+  import { Primary } from './../../../stories/Button.stories.ts';
 	import { ContactMe, Link, Modal } from '$lib'
 	import { showModal } from '$stores'
 	import { toggleModal } from '$utils'
@@ -52,5 +53,10 @@
 
 	.textarea {
 		grid-column: 1 / -1;
+	}
+
+	p {
+		color: var(--primary-2);
+		font-weight: bold;
 	}
 </style>

@@ -6,8 +6,8 @@
 
 {#if external}
 	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data>
-		<iconify-icon icon="mdi:open-in-new" />
 		<slot />
+		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
 	<a {href} data-sveltekit-preload-data>
@@ -18,7 +18,7 @@
 <style>
 	a {
 		display: flex;
-		gap: 3px;
+		gap: 5px;
 		align-items: center;
 		cursor: pointer;
 		font-weight: bold;
