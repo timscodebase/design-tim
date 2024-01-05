@@ -14,7 +14,7 @@
 		{/if}
 	</div>
 	<Link href={image}>
-		<img src={thumbnail} alt={name} />
+		<enhanced:img src={thumbnail} alt={name} />
 	</Link>
 	{#if href}
 		<Link {href} external={true}>
