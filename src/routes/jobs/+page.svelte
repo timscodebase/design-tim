@@ -2,7 +2,7 @@
 	import type { PageData } from './$types'
 	import { Link, Grid, Job } from '$lib'
 
-	import resume from '$lib/img/resume.pdf'
+	import resume from '$lib/assets/resume.pdf'
 
 	export let data: PageData
 

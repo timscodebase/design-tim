@@ -3,17 +3,16 @@
 	import { onMount } from 'svelte'
 	import { Footer, Header } from '$lib'
 	import { page } from '$app/stores'
-	import { description, url, name } from '$lib/config'
-	import favicon from '$lib/img/favicon.png'
-	import appleIcon from '$lib/img/apple-icon.png'
+	import { description, name, url } from '$lib/config'
+	import favicon from '$lib/assets/favicon.png'
+	import appleIcon from '$lib/assets/apple-icon.png'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
 	import { dev } from '$app/environment';
   import { inject } from '@vercel/analytics';
 
 	inject({ mode: dev ? 'development' : 'production' });
 
-	const banner = new URL('./images/design-tim-genearal-banner.png', import.meta.url).href
-	console.log('Banner: ', banner);
+	import banner from '$lib/assets/design-tim-genearal-banner.png'
 
 	let path
 	onMount(() => {
@@ -33,13 +32,13 @@
 	<meta name="twitter:creator" content="@timsmith23" />
 	<meta property="og:title" content={description} />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={url} />
+	<meta property="og:url" content="https://timsmith.tech" />
 	<meta property="og:description" content={`${name}: ${description}`} />
 	<meta property="og:site_name" content={`${name}: ${description}`} />
-	<meta property="og:image" content={banner} />
+	<meta property="og:image" href={`${url}${banner}`} />
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />
-	<link rel="canonical" href={url} />
+	<link rel="canonical" href="https://timsmith.tech" />
 
 	<script>
 		// Forward the necessary functions to the web worker layer
