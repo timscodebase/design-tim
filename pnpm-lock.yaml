@@ -9,7 +9,7 @@ dependencies:
     specifier: ^0.8.1
     version: 0.8.1
   '@sveltejs/adapter-vercel':
-    specifier: ^4.0.3
+    specifier: ^4.0.4
     version: 4.0.4(@sveltejs/kit@2.0.6)
   '@sveltejs/vite-plugin-svelte':
     specifier: ^3.0.1
@@ -80,7 +80,7 @@ devDependencies:
     specifier: ^0.2.2
     version: 0.2.2
   '@sveltejs/adapter-auto':
-    specifier: ^3.0.1
+    specifier: ^3.1.0
     version: 3.1.0(@sveltejs/kit@2.0.6)
   '@sveltejs/adapter-static':
     specifier: ^3.0.1
@@ -125,7 +125,7 @@ devDependencies:
     specifier: ^1.0.8
     version: 1.0.8
   postcss:
-    specifier: ^8.4.32
+    specifier: ^8.4.33
     version: 8.4.33
   postcss-csso:
     specifier: ^6.0.1
@@ -167,7 +167,7 @@ devDependencies:
     specifier: ^5.0.10
     version: 5.0.10
   vitest:
-    specifier: ^1.1.1
+    specifier: ^1.1.2
     version: 1.1.2
 
 packages:
