@@ -2,6 +2,7 @@
 	import './css/style.css'
 	import { onMount } from 'svelte'
 	import { Footer, Header } from '$lib'
+	import { Analytics } from '$lib/analytics.svelte'
 	import { page } from '$app/stores'
 	import { description, name, url } from '$lib/config'
 	import favicon from '$lib/assets/favicon.png'
@@ -19,6 +20,8 @@
 		path = $page?.url.pathname
 	})
 </script>
+
+<Analytics />
 
 <svelte:head>
 	<title>{name}</title>
