@@ -12,7 +12,8 @@
 
 	inject({ mode: dev ? 'development' : 'production' });
 
-	import banner from 'images/design-tim-genearal-banner.png'
+	const banner = new URL('./images/design-tim-genearal-banner.png', import.meta.url).href
+	console.log('Banner: ', banner);
 
 	let path
 	onMount(() => {
