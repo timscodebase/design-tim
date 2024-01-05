@@ -2,7 +2,7 @@
 	import { Link } from '$lib'
 	export let project
 
-	const { name, href, thumbnail, image, where, description, medium } = project
+	const { name, href, github, thumbnail, image, where, description, medium } = project
 </script>
 
 <article>
@@ -18,9 +18,15 @@
 	</Link>
 	{#if href}
 		<Link {href} external={true}>
-			{href}
+			Project Link
 		</Link>
 	{/if}
+	{#if github}
+		<Link href={github} external={true}>
+			Github Link
+		</Link>
+	{/if}
+
 	<div>
 		<h4>Description:</h4>
 		<p>{@html description}</p>

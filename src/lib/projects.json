@@ -5,7 +5,8 @@
 		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704406141/tim-v6_bwl1it.png",
 		"description": "<p>The 6th iteration of my personal website—a cybernetic masterpiece crafted with the enchanting harmony of SvelteKit, the precision of Typescript, and a dash of the mystical THREE.js. As you traverse these virtual corridors, may you find not just lines of code, but a symphony of pixels choreographed to dance in harmony with your digital wanderings. Welcome, dear traveler, to a corner of the internet where technology meets artistry in a dazzling display of creativity!</p>",
 		"medium": "Svelte, Typescript, THREE.js, SvelteKit, PostCSS, Vercel",
-		"href": "https://tim-v6-reboot.vercel.app/"
+		"href": "https://tim-v6-reboot.vercel.app/",
+		"github": "https://github.com/timscodebase/tim-v6-reboot"
 	},
 	{
 		"name": "Wolf In Sheep's Clothing",
@@ -29,7 +30,8 @@
 		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704421345/site-v5_xgk0te.png",
 		"description": "<p>The 5th iteration of my personal website—a cybernetic masterpiece crafted with the enchanting harmony of SvelteKit, the precision of Typescript, and a dash of the mystical THREE.js. As you traverse these virtual corridors, may you find not just lines of code, but a symphony of pixels choreographed to dance in harmony with your digital wanderings. Welcome, dear traveler, to a corner of the internet where technology meets artistry in a dazzling display of creativity!</p>",
 		"medium": "Gatsby, Typescript, SvelteKit, SCSS",
-		"href": "https://site-v5.netlify.app/"
+		"href": "https://site-v5.netlify.app/",
+		"github": "https://github.com/timscodebase/site-v5"
 	},
 	{
 		"name": "Memory Game",
