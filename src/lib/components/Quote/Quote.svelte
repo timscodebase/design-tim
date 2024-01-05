@@ -4,8 +4,8 @@
 	import { onMount } from 'svelte'
 
 	let quote = {
-		content: 'You are loved.',
-		author: 'Me ❤️'
+		content: 'The person I am know and the person I have been in the past does not need to be the person I will be in the future.',
+		author: 'Tim Smith'
 	}
 
 	let isCopied = false
