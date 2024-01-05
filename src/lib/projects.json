@@ -22,5 +22,17 @@
 		"where": "Digital Art I: Mount Hood Community College",
 		"description": "<p>\"Perfection\" is a digital reflection of what I feel perfection is.</p><ul><li><strong>1:</strong> Anxiety</li><li><strong>2:</strong> Imposter</li><li><strong>3:</strong> Stress</li><li><strong>4:</strong> \"I'm not good enough!\"</li><li><strong>5:</strong> Self-doubt</li><li><strong>6:</strong> \"What will the think?\"</li><li><strong>7:</strong> NOT POSSIBLE!!</li><li><strong>8:</strong> ?</li></ul>",
 		"medium": "digital"
+	},
+	{
+		"name": "Tim Smith V-6",
+		
+		"thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_300/v1704421345/site-v5_xgk0te.png",
+		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704421345/site-v5_xgk0te.png",
+		"description": "<p>The 5th iteration of my personal website—a cybernetic masterpiece crafted with the enchanting harmony of SvelteKit, the precision of Typescript, and a dash of the mystical THREE.js. As you traverse these virtual corridors, may you find not just lines of code, but a symphony of pixels choreographed to dance in harmony with your digital wanderings. Welcome, dear traveler, to a corner of the internet where technology meets artistry in a dazzling display of creativity!</p>",
+		"medium": "Frontend Web Development",
+		"href": "https://site-v5.netlify.app/"
 	}
 ]
+
+
+

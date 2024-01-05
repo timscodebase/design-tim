@@ -8,8 +8,8 @@
 <article>
 	<div>
 		<h2>{name}</h2>
-		<h3>Created at:</h3>
 		{#if where}
+			<h3>Created at:</h3>
 			<p>{where}</p>
 		{/if}
 	</div>
