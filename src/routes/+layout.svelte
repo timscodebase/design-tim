@@ -7,10 +7,6 @@
 	import favicon from '$lib/assets/favicon.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
-	import { dev } from '$app/environment';
-  import { inject } from '@vercel/analytics';
-
-	inject({ mode: dev ? 'development' : 'production' });
 
 	import banner from '$lib/assets/design-tim-genearal-banner.png'
 
