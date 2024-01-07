@@ -1,7 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Mulish';
+	font-weight: 700;
+  src:
+    local('Mulish'),
+		url('./fonts/Mulish-VariableFont_wght.ttf') format('truetype');
+	display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+	font-weight: 700;
+  src:
+    local('Space Mono'),
+    url('./fonts/SpaceMono-Bold.ttf') format('truetype');
+	display: swap;
+}
 
 :root {
-	--header-font-family: 'Mulish', sans-serif;
+	--header-font-family: 'Mulish', system-ui, sans-serif;
 	--body-font-family: 'Space Mono', monospace;
 }
 
