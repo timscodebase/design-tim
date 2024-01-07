@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit'
-import type { PageLoad } from './$types'
+import type { PageServerLoad } from './$types'
 import type Config from '@sveltejs/adapter-vercel'
 
 export const config: typeof Config = {
@@ -15,4 +15,4 @@ export const load = (async (e) => {
 	} catch (e) {
 		error(500, `Could not load your jobs top. Error: ${error}`)
 	}
-}) satisfies PageLoad
+}) satisfies PageServerLoad
