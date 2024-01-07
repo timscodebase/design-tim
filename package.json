@@ -60,7 +60,6 @@
 	},
 	"dependencies": {
 		"@builder.io/partytown": "^0.8.1",
-		"@sentry/sveltekit": "^7.92.0",
 		"@sveltejs/adapter-vercel": "^4.0.3",
 		"@sveltejs/vite-plugin-svelte": "^3.0.1",
 		"@vercel/speed-insights": "^1.0.2",
@@ -69,10 +68,8 @@
 		"nodemailer": "^6.9.8",
 		"octokit": "^3.1.2",
 		"svelte-awesome": "^3.3.0",
-		"svelte-cubed": "^0.2.1",
 		"svelte-email": "^0.0.4",
 		"svelte-feather-icons": "^4.1.0",
-		"three": "^0.153.0",
 		"utils": "link:@builder.io/partytown/utils"
 	}
 }
