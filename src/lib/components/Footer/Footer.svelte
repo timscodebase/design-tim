@@ -1,7 +1,5 @@
 <script>
-	import { ContactMe, Link, Modal } from '$lib'
-	import { showModal } from '$stores'
-	import { toggleModal } from '$utils'
+	import { ContactMe, Link } from '$lib'
 </script>
 
 <footer>
@@ -16,6 +14,7 @@
 	</div>
 	<div>
 		<Link href="/contact-me">Contact Me</Link>
+	</div>
 </footer>
 
 <style>

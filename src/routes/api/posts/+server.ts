@@ -21,7 +21,10 @@ async function getPosts() {
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
-	return posts
+	const publishedPosts = posts.filter((post) => post.published)
+	console.log(publishedPosts)
+
+	return publishedPosts
 }
 
 export async function GET() {

@@ -40,9 +40,6 @@ export { Grid }
 import Nav from './components/Nav'
 export { Nav }
 
-import Modal from './components/Modal'
-export { Modal }
-
 import Me from './components/Me'
 export { Me }
 

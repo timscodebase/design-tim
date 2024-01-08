@@ -2,10 +2,6 @@ import { error } from '@sveltejs/kit'
 import type { PageServerLoad } from './$types'
 import type Config from '@sveltejs/adapter-vercel'
 
-export const config: typeof Config = {
-	runtime: 'edge'
-}
-
 export const load = (async (e) => {
 	try {
 		const response = await e.fetch('api/skills')
@@ -13,6 +9,6 @@ export const load = (async (e) => {
 
 		return { skills }
 	} catch (e) {
-		error(500, `Could not load your skills. Error: ${error}`)
+		error(500, `Could not load your skills. Error: ${e}`)
 	}
 }) satisfies PageServerLoad

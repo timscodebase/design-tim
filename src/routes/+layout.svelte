@@ -7,6 +7,9 @@
 	import favicon from '$lib/assets/favicon.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
+ 
+injectSpeedInsights();
 
 	import banner from '$lib/assets/design-tim-genearal-banner.png'
 

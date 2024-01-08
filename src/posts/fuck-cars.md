@@ -5,7 +5,7 @@ date: '2023-12-20'
 categories:
   - safety
   - greshsam
-published: true
+published: false
 ---
 
 For almost a decade now, I've been without the companionship of a car—not out of some heroic or humble stance, but rather due to the aftermath of a harrowing car crash that left me grappling with financial constraints, rendering the prospect of a new vehicle beyond my reach. Thus, I find myself navigating through life by foot, relying on public transit, or graciously accepting the kindness of those willing to chauffeur me to my destinations.
