@@ -20,7 +20,6 @@
     lazyLoad={true}
     showPlayButton={false}
     showBullets={true}
-    showThumbnails={false}
   />
 {:else}
   <ImageGallery
@@ -28,7 +27,6 @@
     lazyLoad={true}
     showPlayButton={false}
     showBullets={true}
-    showThumbnails={false}
     showNav={false}
   />
 {/if}

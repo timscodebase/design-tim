@@ -69,3 +69,7 @@ strong {
 .image-gallery-icon:hover {
 	color: var(--primary-2);
 }
+
+.image-gallery-thumbnails-wrapper {
+	display: none !important;
+}
