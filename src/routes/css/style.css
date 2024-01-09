@@ -59,3 +59,17 @@ strong {
 	animation: spin-gradient 6s infinite;
 	padding-top: var(--padding-lg);
 }
+
+/* Image Slider Component */
+.image-gallery-icon {
+	color: var(--primary);
+
+}
+
+.image-gallery-icon:hover {
+	color: var(--primary-2);
+}
+
+.image-gallery-thumbnails-wrapper {
+	display: none !important;
+}

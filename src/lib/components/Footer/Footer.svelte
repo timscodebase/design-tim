@@ -23,7 +23,7 @@
 		place-items: center;
 		margin-top: var(--margin-md);
 		grid-template-columns: auto 1fr auto;
-		border: var(--border-primary);
+		/* border: var(--border-primary); */
 		padding: var(--padding-sm);
 		gap: var(--gap);
 	}
