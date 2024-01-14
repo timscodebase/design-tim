@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { formatDate } from '$utils'
-	import * as config from '$lib/config'
 
 	export let data
 </script>
 
 <svelte:head>
-	<title>{config.title}</title>
+	<title>Tim Smith Blog</title>
+	<link rel="canonical" href="https://timsmith.tech" />
+	<meta name="description" content="This is my blog. It's a work in progress." />
 </svelte:head>
 
 <!-- Posts -->
