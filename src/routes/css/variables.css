@@ -1,4 +1,6 @@
 :root {
+	view-transition-name: none;
+	
 	/* Colors */
 	--black: #000000;
 	--black-75: rgba(0, 0, 0, 0.75);
@@ -36,6 +38,7 @@
 	--primary-2: var(--yellow);
 	--trans-background: var(--black-75);
 	--me-trans-background: var(--black-15);
+	--pre-backgroung: var(--white-15);
 
 	/* Sizes */
 	--size-1: 0.5rem;
@@ -62,11 +65,11 @@
 	--margin-xxl: var(--size-6);
 
 	/* Borders */
-	--border-radius-xs: 25%;
-	--border-radius-sm: 50%;
-	--border-radius-md: 75%;
-	--border-radius-lg: 100%;
-	--border-radius-full: var(--border-radius-lg);
+	--border-radius-xs: 2px;
+	--border-radius-sm: 4px;
+	--border-radius-md: 6px;
+	--border-radius-lg: 8px;
+	--border-radius-full: 100%;
 
 	--border-base: 2px solid var(--gray);
 	--border-primary: 2px solid var(--primary);

@@ -26,8 +26,6 @@
 <br />
 <Link href="/skills">See all my skills</Link>
 
-<Quote />
-
 <style>
 	p {
 		--turn: 1turn;

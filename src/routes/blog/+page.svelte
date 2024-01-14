@@ -14,7 +14,12 @@
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
-				<a href={`blog/${post.slug}`} class="title">{post.title}</a>
+				{#if post.thumb}
+					<a href={`blog/${post.slug}`}>
+						<img src={post.thumb} alt={post.title} style={`--image: ${post.title}`} />
+						<h2 style={`--title: ${post.title}`}>{post.title}</h2>
+					</a>
+				{/if}
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
 			</li>
@@ -23,6 +28,17 @@
 </section>
 
 <style>
+	img {
+		view-transition-name: var(--image);
+	}
+	h2 {
+		display: block;
+		font-size: 3svw;
+		cursor: pointer;
+		color: var(--primary);
+		margin-bottom: var(--margin-sm);
+		view-transition-name: var(--title);
+	}
 	.posts {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -39,13 +55,5 @@
 	}
 	.post:hover > .title {
 		color: var(--text);
-	}
-
-	.title {
-		display: block;
-		font-size: 3svw;
-		cursor: pointer;
-		color: var(--primary);
-		margin-bottom: var(--margin-sm);
 	}
 </style>

@@ -2,6 +2,9 @@
 	import 'iconify-icon'
 	export let external: boolean = false
 	export let href: string = ''
+	import { page } from '$app/stores'
+
+	$: currentRoute = $page.url.pathname
 </script>
 
 {#if external}
@@ -10,7 +13,7 @@
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
-	<a {href} data-sveltekit-preload-data>
+	<a class:is-active={currentRoute === href} {href} data-sveltekit-preload-data>
 		<slot />
 	</a>
 {/if}
@@ -25,5 +28,10 @@
 		text-decoration: underline;
 		font-size: var(--body-font-family);
 		word-break: break-word;
+	}
+
+	.is-active {
+		color: var(--primary);
+		view-transition-name: active-page;
 	}
 </style>

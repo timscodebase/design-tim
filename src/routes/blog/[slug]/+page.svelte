@@ -12,10 +12,14 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
+{#if data.meta.image}
+	<img src={data.meta.image} alt={data.meta.title} style={`--image: ${data.meta.title}`} />
+{/if}
+
 <article>
 	<!-- Title -->
 	<hgroup>
-		<h1>{data.meta.title}</h1>
+		<h1 style={`--title: ${data.meta.title}`}>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
 	</hgroup>
 
@@ -31,8 +35,12 @@
 </article>
 
 <style>
+	img {
+		view-transition-name: var(--image);
+	}
 	h1 {
 		color: var(--primary-2);
+		view-transition-name: var(--title);
 	}
 	p {
 		padding: var(--padding-sm) 0;
