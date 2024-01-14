@@ -1,7 +1,9 @@
 <script>
 	import { Link } from '$lib'
 	import { name, description } from '$lib/config'
-	import logo from '$lib/assets/design-tim-header-banner.png'
+
+	const logo =
+		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704304026/design-tim-header-banner_uvvpgy.png'
 </script>
 
 <Link href="/">
