@@ -23,7 +23,16 @@
 			<Link href="/about">About</Link>
 		</li>
 		<li>
+			<Link href="/photos">Photos</Link>
+		</li>
+		<li>
 			<Link href="/uses">Uses</Link>
+		</li>
+		<li>
+			<Link href="/blog">Blog</Link>
+		</li>
+		<li>
+			<Link href="/contact-me">Contact Me</Link>
 		</li>
 	</ul>
 </nav>
