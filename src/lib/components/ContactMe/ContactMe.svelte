@@ -1,57 +1,22 @@
 <script lang="ts">
-	import { Button } from '$lib'
-	import { showModal } from '$stores'
-
-	const handleSubmit = async data => {
-    const formData = new FormData(data.currentTarget)
-
-    const res = await fetch('/api/contact-form', {
-      method: 'POST',
-      body: formData,
-    })
-
-    const { message } = await res.json()
-
-    console.log(message)
-
-		showModal.toggle()
-  }
 </script>
 
 <h2>Contact Me</h2>
 
 <form on:submit|preventDefault={handleSubmit}>
-  <label for="name">
-    <span>Name</span>
-  </label>
-  <input
-    type="text"
-    name="name"
-    aria-label="name"
-    placeholder="Enter your name"
-    required
-  />
-  <label for="email">
-    <span>Email</span>
-  </label>
-  <input
-    type="email"
-    name="email"
-    aria-label="email"
-    placeholder="bill@hotmail.com"
-    required
-  />
-  <label for="message">
-    <span>Message</span>
-  </label>
-  <textarea
-    name="message"
-    aria-label="name"
-    placeholder="Message"
-    required
-    rows="3"
-  />
-  <input type="submit" />
+	<label for="name">
+		<span>Name</span>
+	</label>
+	<input type="text" name="name" aria-label="name" placeholder="Enter your name" required />
+	<label for="email">
+		<span>Email</span>
+	</label>
+	<input type="email" name="email" aria-label="email" placeholder="bill@hotmail.com" required />
+	<label for="message">
+		<span>Message</span>
+	</label>
+	<textarea name="message" aria-label="name" placeholder="Message" required rows="3" />
+	<input type="submit" />
 </form>
 
 <style>

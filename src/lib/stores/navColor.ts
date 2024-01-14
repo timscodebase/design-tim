@@ -1,14 +1,7 @@
 import { writable } from 'svelte/store'
 
-function createNavColor() {
-	const { subscribe, set } = writable('frontend')
+type NavColor = 'frontend' | 'backend' | 'fullstack' | 'devops' | 'design' | 'methodology' | 'misc'	
 
-	return {
-		subscribe,
-		// set new color
-		set: (c: string) => set(c),
-		reset: () => set('frontend')
-	}
-}
+const navColor = writable<NavColor>('frontend')
 
-export const navColor = createNavColor()
+export default navColor

@@ -1,8 +1,5 @@
-import { navStore } from './navStore'
-export { navStore }
+import ogStore from './ogStore'
+export { ogStore }
 
-import { navColor } from './navColor'
+import navColor from './navColor'
 export { navColor }
-
-import { showModal } from './showModal'
-export { showModal }

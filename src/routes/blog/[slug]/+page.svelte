@@ -1,16 +1,17 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
 	import { Link, Tags } from '$lib'
+	import { ogStore } from '$stores'
 
 	export let data
+
+	$ogStore.banner = data.meta.image
+	$ogStore.name = data.meta.title
 </script>
 
 <!-- SEO -->
 <svelte:head>
-	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
-	<meta property="og:image" href={data.meta.image} />
 </svelte:head>
 
 {#if data.meta.image}
@@ -40,7 +41,7 @@
 		view-transition-name: var(--image);
 	}
 	h1 {
-		color: var(--primary-2);
+		color: var(--text);
 		view-transition-name: var(--title);
 	}
 	p {

@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { goto } from '$app/navigation'
-	import { Button, Link } from '$lib'
-	import SVG from './SVG.svelte'
+	import { Link } from '$lib'
 	import { navColor } from '$stores'
 </script>
 
@@ -31,9 +29,6 @@
 		<li>
 			<Link href="/blog">Blog</Link>
 		</li>
-		<li>
-			<Link href="/contact-me">Contact Me</Link>
-		</li>
 	</ul>
 </nav>
 
@@ -41,7 +36,7 @@
 	nav {
 		position: fixed;
 		top: 1rem;
-		right: 16svw;
+		right: 1rem;
 		display: grid;
 		z-index: 9999;
 		padding-top: var(--padding-lg);
@@ -65,7 +60,7 @@
 		text-decoration-thickness: 2px;
 	}
 
-	@media (max-width: 1400px) {
+	@media (max-width: 1000px) {
 		nav {
 			position: relative;
 			grid-column: 1/-1;
@@ -79,10 +74,10 @@
 
 		ul {
 			width: 100%;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-items: center;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+			grid-gap: 1rem;
+			place-items: center;
 		}
 		li {
 			margin-left: initial !important;
@@ -90,6 +85,7 @@
 			text-decoration-color: var(--pink);
 			text-underline-offset: 3px;
 			text-decoration-thickness: 4px;
+			text-align: center;
 		}
 		a {
 			font-size: clamp(1.25rem, 1.75svw, 2rem);
@@ -111,8 +107,8 @@
 		}
 	}
 
-	li {
+	/* li {
 		margin-left: auto;
 		text-align: center;
-	}
+	} */
 </style>

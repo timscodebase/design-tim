@@ -13,7 +13,7 @@
 	.tags {
 		display: flex;
 		flex-wrap: wrap;
-		padding-top: var(--padding-sm);
+		padding: var(--padding-sm) 0;
 		gap: var(--gap);
 	}
 </style>
