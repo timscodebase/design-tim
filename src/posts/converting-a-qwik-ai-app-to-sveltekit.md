@@ -10,8 +10,8 @@ categories:
   - typescript
   - tailwindcss
 published: true
-image: https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1705204527/article-banner_jojaf6.png
-thumb: https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1705204527/article-banner_jojaf6.png
+image: https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1705258344/article-banner-small_xxepf8.png
+thumb: https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1705258344/article-banner-small_xxepf8.png
 ---
 
 I recently completed an excellent AI tutorial by Austin Gil.  I highly suggest you check it out: AI for Web Devs.  "I thought it would be cool to build an app that takes two opponents and uses AI to determine who would win in a hypothetical fight. It provides some explanation and the option to create an AI-generated image. Sometimes the results come out a little wonky, but that’s what makes it fun."  Austin goes into depth about how to connect to the OpenAI API with out using an npm module, how to use the HTML Stream API, AI prompt engineering, and AI image generation.  It was a fun journey!
