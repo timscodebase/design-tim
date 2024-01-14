@@ -19,6 +19,8 @@
 						<img src={post.thumb} alt={post.title} style={`--image: ${post.title}`} />
 						<h2 style={`--title: ${post.title}`}>{post.title}</h2>
 					</a>
+				{:else}
+					<h2 style={`--title: ${post.title}`}>{post.title}</h2>
 				{/if}
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
@@ -28,12 +30,14 @@
 </section>
 
 <style>
+	a {
+		display: grid;
+	}
 	img {
 		view-transition-name: var(--image);
 	}
 	h2 {
 		display: block;
-		font-size: 3svw;
 		cursor: pointer;
 		color: var(--primary);
 		margin-bottom: var(--margin-sm);

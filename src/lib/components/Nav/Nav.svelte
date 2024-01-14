@@ -106,9 +106,4 @@
 			justify-content: center;
 		}
 	}
-
-	/* li {
-		margin-left: auto;
-		text-align: center;
-	} */
 </style>
