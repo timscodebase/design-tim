@@ -1,17 +1,15 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
 	import { Link, Tags } from '$lib'
-	import { ogStore } from '$stores'
 
 	export let data
-
-	$ogStore.banner = data.meta.image
-	$ogStore.name = data.meta.title
 </script>
 
 <!-- SEO -->
 <svelte:head>
 	<meta property="og:type" content="article" />
+	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.description} />
 </svelte:head>
 
 {#if data.meta.image}
