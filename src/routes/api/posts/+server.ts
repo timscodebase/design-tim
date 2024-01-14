@@ -22,7 +22,6 @@ async function getPosts() {
 	)
 
 	const publishedPosts = posts.filter((post) => post.published)
-	console.log(publishedPosts)
 
 	return publishedPosts
 }

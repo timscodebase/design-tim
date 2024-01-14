@@ -15,17 +15,19 @@
 		if (!visible && viewport.isIn(box)) {
 			visible = true
 		}
-		console.log('Hi', visible)
 
-		document.addEventListener('scroll', function () {
-			if (!visible && viewport.isIn(box)) {
-				visible = true
+		document.addEventListener(
+			'scroll',
+			function () {
+				if (!visible && viewport.isIn(box)) {
+					visible = true
+				}
+			},
+			{
+				passive: true
 			}
-		}, {
-			passive: true
-		});
+		)
 	})
-	
 
 	function onMouseover() {
 		navColor.set(skill.category)
@@ -33,40 +35,40 @@
 </script>
 
 <div class="outer">
-{#if visible}
-	<div
-		role="button"
-		tabindex="0"
-		on:touchstart={onMouseover}
-		on:mouseover={onMouseover}
-		on:focus={onMouseover}
-		class={`skill ${skill.category}`}
-		in:scale={{duration: 500 }}
-		out:scale={{duration: 500}}
-	>
-		<h3>{skill.name}</h3>
+	{#if visible}
+		<div
+			role="button"
+			tabindex="0"
+			on:touchstart={onMouseover}
+			on:mouseover={onMouseover}
+			on:focus={onMouseover}
+			class={`skill ${skill.category}`}
+			in:scale={{ duration: 500 }}
+			out:scale={{ duration: 500 }}
+		>
+			<h3>{skill.name}</h3>
 
-		<p class="info">
-			<b class="bold"
-				>{skill.yearsExp}
-				{parseInt(skill.yearsExp) > 1 ? ` years` : `year`}</b
-			>
-			<br />{skill.category}
-			<br /><b class="bold">{skill.level}</b>
-		</p>
+			<p class="info">
+				<b class="bold"
+					>{skill.yearsExp}
+					{parseInt(skill.yearsExp) > 1 ? ` years` : `year`}</b
+				>
+				<br />{skill.category}
+				<br /><b class="bold">{skill.level}</b>
+			</p>
 
-		<h4>Used At</h4>
-		<ul class="usedAt">
-			<!-- alphabetize list -->
+			<h4>Used At</h4>
+			<ul class="usedAt">
+				<!-- alphabetize list -->
 
-			{#each skill.usedAt.sort() as usedAt}
-				<Chip liClass={skill.category}>
-					<Link href={`/jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
-				</Chip>
-			{/each}
-		</ul>
-	</div>
-{/if}
+				{#each skill.usedAt.sort() as usedAt}
+					<Chip liClass={skill.category}>
+						<Link href={`/jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
+					</Chip>
+				{/each}
+			</ul>
+		</div>
+	{/if}
 </div>
 
 <style>
