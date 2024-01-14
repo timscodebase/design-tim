@@ -28,7 +28,7 @@
 <Analytics />
 
 <svelte:head>
-	<title>{name}</title>
+	<title>{$ogStore.name}</title>
 	<meta name="description" content={$ogStore.description} />
 	<meta name="keywords" content={$ogStore.description} />
 	<meta name="author" content={$ogStore.description} />
