@@ -393,12 +393,10 @@ In Svelte land, I converted the onPost handler to a form action in +page.server.
 
 This is the file in which Austin created an API to generate the AI image of the two opponents.  The API receives three query params, both opponents, and the winner.  Once again, this was an easy conversion.  Mostly copy/paste with a few quirks.
 
-### Conclusion
+## Conclusion
 
 While I have not yet finished this project, I intend to, and I have learn a lot about Qwik and the OpenAI API.  Plus, as a bonus, I learned some new things about Svelte.  Definitely worth the time and energy in my book! 🔥
 
 I love tutorials! I am a self taught dev, so video tutorials taught me how to code.  I have to say though, if you want to step up your game even further, I highly recommend converting an exiting project of your own or others.
 
 Thank You For Reading!
-
-Find me at  <http://www.timsmith.tech>
