@@ -40,9 +40,13 @@
 	h2 {
 		display: block;
 		cursor: pointer;
-		color: var(--primary);
+		color: var(--text);
 		margin-bottom: var(--margin-sm);
 		view-transition-name: var(--title);
+	}
+
+	.date {
+		color: var(--primary);
 	}
 	.posts {
 		display: grid;
