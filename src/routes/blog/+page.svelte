@@ -33,6 +33,7 @@
 <style>
 	a {
 		display: grid;
+		place-content: center;
 	}
 	img {
 		view-transition-name: var(--image);
@@ -55,6 +56,8 @@
 	}
 
 	.post {
+		display: grid;
+		place-content: center;
 		padding: var(--padding-md);
 		margin: var(--margin-md) 0;
 		border: var(--border-base);

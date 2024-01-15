@@ -91,7 +91,6 @@ Here is what the original Input.tsx file:
       </div>
     )
   })
-```
 
 This was the easiest file to convert as it is a simple UI component.  Svelte shines in this arena.  Here is my version:
 
