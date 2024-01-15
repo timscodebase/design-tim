@@ -18,10 +18,10 @@
 				{#if post.thumb}
 					<a href={`blog/${post.slug}`}>
 						<img src={post.thumb} alt={post.title} style={`--image: ${post.title}`} />
-						<h2 style={`--title: ${post.title}`}>{post.title}</h2>
+						<h3 style={`--title: ${post.title}`}>{post.title}</h3>
 					</a>
 				{:else}
-					<h2 style={`--title: ${post.title}`}>{post.title}</h2>
+					<h3 style={`--title: ${post.title}`}>{post.title}</h3>
 				{/if}
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
@@ -33,12 +33,12 @@
 <style>
 	a {
 		display: grid;
-		place-content: center;
+		place-items: center;
 	}
 	img {
 		view-transition-name: var(--image);
 	}
-	h2 {
+	h3 {
 		display: block;
 		cursor: pointer;
 		color: var(--text);
