@@ -34,6 +34,10 @@ html {
 	font-family: var(--body-font-family);
 }
 
+a {
+	 cursor: pointer;
+}
+
 a,
 button {
 	padding: var(--padding-xs);
