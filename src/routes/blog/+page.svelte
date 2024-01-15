@@ -10,7 +10,7 @@
 	<meta name="description" content="This is my blog. It's a work in progress." />
 </svelte:head>
 
-<!-- Posts -->
+<h2>Blog</h2>
 <section>
 	<ul class="posts">
 		{#each data.posts as post}

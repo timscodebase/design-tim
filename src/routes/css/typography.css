@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: 'Mulish Thin';
+	font-weight: 200;
+  src:
+    local('Mulish'),
+		url('./fonts/Mulish-ExtraLight.ttf') format('truetype');
+	display: swap;
+}
+
+@font-face {
   font-family: 'Space Mono';
 	font-weight: 700;
   src:
@@ -51,9 +60,11 @@ h1 {
 }
 
 h2 {
-	font-size: clamp(1.75rem, 3svw, 2.25rem);
+	font-size: clamp(4rem, 7svw, 6rem);
 	padding: 1.5svw 0;
 	color: var(--text);
+	font-weight: 200;
+	font-family: 'Mulish Thin', system-ui, sans-serif;
 }
 
 h3 {
