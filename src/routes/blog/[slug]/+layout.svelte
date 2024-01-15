@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation'
+	import 'iconify-icon'
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return

@@ -34,10 +34,26 @@
 		<svelte:component this={data.content} />
 	</div>
 
-	<Link href="/blog">Back to blog</Link>
+	<a href="/blog" data-sveltekit-preload-data>
+		<iconify-icon class="svg" icon="icon-park-twotone:left-two" /> Back to blog
+	</a>
 </article>
 
 <style>
+	a {
+		width: 185px;
+		color: var(--primary);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+		text-decoration: underline;
+		font-size: 1.2rem;
+
+		&:hover {
+			color: var(--primary-2);
+		}
+	}
 	img {
 		view-transition-name: var(--image);
 	}
