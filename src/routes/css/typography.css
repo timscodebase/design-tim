@@ -34,8 +34,13 @@ html {
 	font-family: var(--body-font-family);
 }
 
+article p a {
+	color: var(--primary);
+}
+
 a {
 	 cursor: pointer;
+	 text-decoration: underline;
 }
 
 a,
