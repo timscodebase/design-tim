@@ -6,7 +6,6 @@
 	import { description, name, url } from '$lib/config'
 	import favicon from '$lib/assets/favicon.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
-	import { partytownSnippet } from '@builder.io/partytown/integration'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 
 	injectSpeedInsights()
@@ -40,15 +39,6 @@
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />
 	<link rel="canonical" href="https://timsmith.tech" />
-
-	<script>
-		// Forward the necessary functions to the web worker layer
-		partytown = {
-			forward: ['dataLayer.push']
-		}
-	</script>
-
-	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
 
 <div class="container">

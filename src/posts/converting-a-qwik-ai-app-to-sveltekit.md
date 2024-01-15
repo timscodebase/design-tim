@@ -16,6 +16,8 @@ thumb: https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,
 
 I recently completed an excellent AI tutorial by Austin Gil.  I highly suggest you check it out: AI for Web Devs.  "I thought it would be cool to build an app that takes two opponents and uses AI to determine who would win in a hypothetical fight. It provides some explanation and the option to create an AI-generated image. Sometimes the results come out a little wonky, but that’s what makes it fun."  Austin goes into depth about how to connect to the OpenAI API with out using an npm module, how to use the HTML Stream API, AI prompt engineering, and AI image generation.  It was a fun journey!
 
+Here is Austin's tutorial: [https://www.austingil.com/blog/ai-for-web-devs/](https://austingil.com/ai-for-web-devs-set-up/)
+
 Austin wrote his app with Qwik, which is a new kind of web framework that can deliver instant loading web applications at any size or complexity.  Personally, I have nothing against Qwik.  In fact, during the tutorial, I found it rather interesting.  Maybe I will dig further into it later with another project.  Svelte, however is my bag.  So, I decided to covert Austin’s app to SvelteKit.
 
 ## Small Pieces
@@ -247,7 +249,7 @@ The challenge I faced converting this file was the fact that Svelte dose not hav
 
 ## The Bigger Picture
 
-The bulk of the UI and "functionality" of the app takes place the index.tsx and ai-image/index.js files.   I am going to focus on the "functionality" part.  The index file is very large, so I will only show the good parts. If you you want to see the complete original code check out Austin Gil's Repo.  My code is incomplete but, you can find the repo here: ai-svelte-tiger
+The bulk of the UI and "functionality" of the app takes place the index.tsx and ai-image/index.js files.   I am going to focus on the "functionality" part.  The index file is very large, so I will only show the good parts. If you you want to see the complete original code check out [Austin Gil's Repo](https://github.com/AustinGil/versus).  My code is incomplete but, you can find the repo here: [ai-svelte-tiger](https://github.com/timscodebase/ai-svelte-tiger)
 
 ### index.tsx
 
@@ -384,7 +386,7 @@ const pickRandomFighters = $(() => {
   })
 ```
 
-When I first saw all this, I kinda when crosseyed, but then I remembered that it is just JavaScript.  That is the beauty of these modern frameworks.  They all have there individual quirks, but at the end of the day, they all use JS.  pickRandomFighters is a perfect example of copy/paste greatness.
+When I first saw all this, I kinda when cross-eyed, but then I remembered that it is just JavaScript.  That is the beauty of these modern frameworks.  They all have there individual quirks, but at the end of the day, they all use JS.  pickRandomFighters is a perfect example of copy/paste greatness.
 
 In Svelte land, I converted the onPost handler to a form action in +page.server.ts
 
