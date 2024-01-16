@@ -1,7 +1,7 @@
-import { parse } from 'node-html-parser';
-import { getHighlighter } from 'shiki';
+import { parse } from 'node-html-parser'
+import { getHighlighter } from 'shiki'
 
-const THEME = 'github-dark';
+const THEME = 'oled-pure-black'
 
 /**
  * Returns code with curly braces and backticks replaced by HTML entity equivalents
@@ -12,7 +12,7 @@ function escapeHtml(code) {
   return code.replace(
     /[{}`]/g,
     (character) => ({ '{': '&lbrace;', '}': '&rbrace;', '`': '&grave;' })[character],
-  );
+  )
 }
 
 /**
@@ -21,21 +21,21 @@ function escapeHtml(code) {
  * @returns {number[]}
  */
 function rangeParser(rangeString) {
-  const result = [];
-  const ranges = rangeString.split(',');
+  const result = []
+  const ranges = rangeString.split(',')
   ranges.forEach((element) => {
     if (element.indexOf('-') === -1) {
-      result.push(parseInt(element, 10));
+      result.push(parseInt(element, 10))
     } else {
-      const limits = element.split('-');
-      const start = parseInt(limits[0], 10);
-      const end = parseInt(limits[1], 10);
+      const limits = element.split('-')
+      const start = parseInt(limits[0], 10)
+      const end = parseInt(limits[1], 10)
       for (let i = start; i <= end; i += 1) {
         result.push(i);
       }
     }
-  });
-  return result;
+  })
+  return result
 }
 
 /**
@@ -43,9 +43,9 @@ function rangeParser(rangeString) {
  * @returns {string} - highlighted html
  */
 function makeFocussable(html) {
-  const root = parse(html);
-  root.querySelector('pre').setAttribute('tabIndex', '0');
-  return root.toString();
+  const root = parse(html)
+  root.querySelector('pre').setAttribute('tabIndex', '0')
+  return root.toString()
 }
 
 /**
@@ -63,10 +63,10 @@ async function highlighter(code, lang, meta) {
   if (!meta) {
     html = shikiHighlighter.codeToHtml(code, {
       lang,
-    });
+    })
   } else {
-    const highlightMeta = /{([\d,-]+)}/.exec(meta)[1];
-    const highlightLines = rangeParser(highlightMeta);
+    const highlightMeta = /{([\d,-]+)}/.exec(meta)[1]
+    const highlightLines = rangeParser(highlightMeta)
 
     html = shikiHighlighter.codeToHtml(code, {
       lang,
@@ -74,10 +74,10 @@ async function highlighter(code, lang, meta) {
         line: element,
         classes: ['highlight-line'],
       })),
-    });
+    })
   }
-  html = makeFocussable(html);
-  return escapeHtml(html);
+  html = makeFocussable(html)
+  return escapeHtml(html)
 }
 
-export default highlighter;
+export default highlighter

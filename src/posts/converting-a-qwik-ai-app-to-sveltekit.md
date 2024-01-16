@@ -24,7 +24,7 @@ Austin wrote his app with Qwik, which is a new kind of web framework that can de
 
 My first step was to analyze his existing code and look for the small pieces.  In most JavaScript frameworks, these are typically components or exportable utility functions.  Upon inspection, I found the following project structure:
 
-<pre>
+```txt
   src/
   …
 
@@ -59,7 +59,7 @@ My first step was to analyze his existing code and look for the small pieces.  I
         ai-image/
 
           index.js
-</pre>
+```
 
 Looking at this folder structure, I see a components folder.  That is where I choice to start.
 
@@ -97,18 +97,18 @@ Here is what the original Input.tsx file:
 
 This was the easiest file to convert as it is a simple UI component.  Svelte shines in this arena.  Here is my version:
 
-```tsx
+```ts
   <script lang="ts">
     export let label: string
     export let name: string
     export let value: string
     export let className: string
   </script>
-
+  
   <div>
     <label class={className} for={name}>{label}</label>
     <textarea required maxLength={100} {name}>
-        {value}
+      {value}
     </textarea>
   </div>
 ```
@@ -190,7 +190,7 @@ import { randomString } from "~/utils.js";
 
 And mine, in Svelte:
 
-```tsx
+```ts
   <script lang="ts">
     import { onMount } from 'svelte'
     import { randomString } from '$lib'
@@ -309,7 +309,7 @@ export const onPost: RequestHandler = async (requestEvent) => {
 
 This is where I am currently stuck.  I have not yet found a Svelte equivalent for:
 
-const writer = requestEvent.getWritableStream().getWriter()
+`const writer = requestEvent.getWritableStream().getWriter()`
 Austin warned me that this part would be tricky, but I know that Svelte has a Stream API and I'm sure I can probably  also look into the native library to solve the problem.
 
 ### handleSubmit

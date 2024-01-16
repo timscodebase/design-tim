@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit'
-import skills from '$lib/skills.json'
+import skills from '$data/skills.json'
 function getTopSkills() {
 	const topSkills = skills.filter((skill) => skill.usedAt.length >= 3)
 
