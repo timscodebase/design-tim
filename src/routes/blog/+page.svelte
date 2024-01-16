@@ -17,7 +17,11 @@
 			<li class="post">
 				{#if post.thumb}
 					<a href={`blog/${post.slug}`}>
-						<img src={post.thumb} alt={post.title} style={`--image: ${post.title}`} />
+						<img
+							src={post.thumb}
+							alt="thumbnail image of the author"
+							style={`--image: ${post.title}`}
+						/>
 						<h3 style={`--title: ${post.title}`}>{post.title}</h3>
 					</a>
 				{:else}

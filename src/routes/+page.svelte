@@ -21,7 +21,7 @@
 	{/each}
 </div>
 
-<h3>Here are my most used skilled</h3>
+<h2>Here are my most used skilled</h2>
 <SkillGrid skills={topSkills} />
 <br />
 <Link href="/skills">See all my skills</Link>

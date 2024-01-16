@@ -6,7 +6,9 @@
 </script>
 
 <a href="/">
-	<img width="740" height="228" src={logo} alt={`${name} - ${description}`} />
+	<h1>
+		<img width="740" height="228" src={logo} alt={`${name} - ${description}`} />
+	</h1>
 </a>
 
 <style>

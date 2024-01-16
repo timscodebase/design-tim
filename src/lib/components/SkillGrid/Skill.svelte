@@ -37,7 +37,6 @@
 <div class="outer">
 	{#if visible}
 		<div
-			role="button"
 			tabindex="0"
 			on:touchstart={onMouseover}
 			on:mouseover={onMouseover}
