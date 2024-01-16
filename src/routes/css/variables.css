@@ -71,9 +71,9 @@
 	--border-radius-lg: 8px;
 	--border-radius-full: 100%;
 
-	--border-base: 2px solid var(--gray);
-	--border-primary: 2px solid var(--primary);
-	--border-primary-2: 2px solid var(--primary-2);
+	--border-base: 1px solid var(--gray);
+	--border-primary: 1px solid var(--primary);
+	--border-primary-2: 1px solid var(--primary-2);
 	--border-hover: var(--border-primary);
 }
 

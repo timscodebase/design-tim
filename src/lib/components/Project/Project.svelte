@@ -7,9 +7,9 @@
 
 <article>
 	<div>
-		<h2>{name}</h2>
+		<h3>{name}</h3>
 		{#if where}
-			<h3>Created at:</h3>
+			<h4>Created at:</h4>
 			<p>{where}</p>
 		{/if}
 	</div>
@@ -17,14 +17,10 @@
 		<img src={thumbnail} alt={name} />
 	</Link>
 	{#if href}
-		<Link {href} external={true}>
-			Project Link
-		</Link>
+		<Link {href} external={true}>Project Link</Link>
 	{/if}
 	{#if github}
-		<Link href={github} external={true}>
-			Github Link
-		</Link>
+		<Link href={github} external={true}>Github Link</Link>
 	{/if}
 
 	<div>
@@ -42,11 +38,14 @@
 		padding-bottom: var(--padding-sm);
 	}
 
-	h2 {
-		color: var(--primary-2);
-	}
 	h3 {
-		color: color-mix(in srgb, var(--primary), var(--text) 75%);
+		color: var(--primary-2);
+		font-size: clamp(2rem, 5svw, 4rem);
+	}
+
+	h4 {
+		color: var(--primary);
+		font-size: clamp(1.5rem, 3svw, 2.75rem);
 	}
 
 	p.meta {
@@ -63,14 +62,10 @@
 		align-items: flex-start;
 		padding: var(--padding-md);
 		border: var(--border-primary);
+		border-radius: var(--border-radius-sm);
 	}
 
 	article a {
 		color: color-mix(in srgb, var(--primary), var(--text) 75%);
-	}
-
-	h4 {
-		color: color-mix(in srgb, var(--primary-2), var(--text) 75%);
-		font-weight: bolder;
 	}
 </style>

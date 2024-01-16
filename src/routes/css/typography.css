@@ -83,9 +83,10 @@ h3 {
 }
 
 h4 {
-	font-size: clamp(1.5rem, 2svw, 1.75rem);
+	font-size: clamp(1.2rem, 2svw, 1.75rem);
 	padding: 1svw 0;
 	color: var(--text);
+	font-family: 'Mulish Thin', system-ui, sans-serif;
 }
 
 h5 {
