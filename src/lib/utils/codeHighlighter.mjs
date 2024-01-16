@@ -1,7 +1,7 @@
 import { parse } from 'node-html-parser'
 import { getHighlighter } from 'shiki'
 
-const THEME = 'oled-pure-black'
+const theme = shiki.loadTheme('./oled-pure-dark.json')
 
 /**
  * Returns code with curly braces and backticks replaced by HTML entity equivalents
@@ -56,7 +56,7 @@ function makeFocussable(html) {
  */
 async function highlighter(code, lang, meta) {
   const shikiHighlighter = await getHighlighter({
-    theme: THEME,
+    theme,
   });
 
   let html;
