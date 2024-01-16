@@ -87,6 +87,12 @@
 			text-decoration-thickness: 4px;
 			text-align: center;
 		}
+		li.active {
+			background: var(--primary-2);
+			color: var(--reverse-text);
+			padding: 5px 10px;
+			view-transition-name: active-page;
+		}
 		a {
 			font-size: clamp(1.25rem, 1.75svw, 2rem);
 		}

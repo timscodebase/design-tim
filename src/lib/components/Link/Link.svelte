@@ -13,7 +13,12 @@
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
-	<a class:is-active={currentRoute === href} {href} data-sveltekit-preload-data>
+	<a
+		class:active={currentRoute === href ? true : false}
+		aria-current={currentRoute === href ? 'page' : 'false'}
+		{href}
+		data-sveltekit-preload-data
+	>
 		<slot />
 	</a>
 {/if}
@@ -30,8 +35,10 @@
 		word-break: break-word;
 	}
 
-	.is-active {
-		color: var(--primary);
+	.active {
+		background: var(--primary-2);
+		color: var(--reverse-text);
+		padding: 3px 5px;
 		view-transition-name: active-page;
 	}
 </style>
