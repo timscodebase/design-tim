@@ -46,6 +46,9 @@ dependencies:
     version: link:@builder.io/partytown/utils
 
 devDependencies:
+  '@codewithshin/svelte-utterances':
+    specifier: ^0.2.4
+    version: 0.2.4
   '@csstools/postcss-global-data':
     specifier: ^2.1.1
     version: 2.1.1(postcss@8.4.33)
@@ -1433,6 +1436,10 @@ packages:
       '@babel/helper-string-parser': 7.23.4
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@codewithshin/svelte-utterances@0.2.4:
+    resolution: {integrity: sha512-8s4HS1GELFz8WUpABBHvO1XfjddQlHn15clpZ7dqXLbyY2bkP9V3Y4O2uVLsEsuyDFv8ePnwX+2CMa/o+q92HA==}
     dev: true
 
   /@colors/colors@1.5.0:

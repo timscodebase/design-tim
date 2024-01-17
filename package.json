@@ -17,6 +17,7 @@
 		"build-storybook": "storybook build"
 	},
 	"devDependencies": {
+		"@codewithshin/svelte-utterances": "^0.2.4",
 		"@csstools/postcss-global-data": "^2.1.1",
 		"@playwright/test": "^1.40.1",
 		"@sveltejs/adapter-auto": "^3.1.0",
