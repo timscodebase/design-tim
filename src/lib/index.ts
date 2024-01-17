@@ -61,5 +61,5 @@ export { Tags }
 import Teacher from './components/Teacher'
 export { Teacher }
 
-import Quote from './components/Quote'
-export { Quote }
+// import Quote from './components/Quote'
+// export { Quote }
