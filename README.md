@@ -4,7 +4,7 @@ Developer, Artist, Photographer, Writer, Creator
 
 ---
 
-This is the source code for my personal website. It is built using [SvelteKit](https://kit.svelte.dev/) and hosted on [Vercel](https://vercel.com/) with the help of [Cloudflare](https://www.cloudflare.com/).
+This is the source code for my personal website, It is built using [SvelteKit](https://kit.svelte.dev/) and hosted on [Vercel](https://vercel.com/) with the help of [Cloudflare](https://www.cloudflare.com/).
 
 ---
 
