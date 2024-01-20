@@ -67,7 +67,7 @@
 		/* border: var(--border-base); */
 	}
 	.post:hover {
-		border: var(--border-hover);
+		/* border: var(--border-hover); */
 	}
 	.post:hover > .title {
 		color: var(--text);
