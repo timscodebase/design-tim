@@ -64,7 +64,7 @@
 		place-content: center;
 		padding: var(--padding-md);
 		margin: var(--margin-md) 0;
-		border: var(--border-base);
+		/* border: var(--border-base); */
 	}
 	.post:hover {
 		border: var(--border-hover);
