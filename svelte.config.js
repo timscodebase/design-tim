@@ -1,4 +1,4 @@
-import adapter from 'svelte-adapter-bun'
+import adapter from '@sveltejs/adapter-vercel'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import preprocess from 'svelte-preprocess'
 import { mdsvex } from 'mdsvex'
