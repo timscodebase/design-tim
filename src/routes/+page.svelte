@@ -1,10 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import { BucketList, Link, SkillGrid, Teacher, Quote } from '$lib'
+	import { Link, SkillGrid, Teacher } from '$lib'
 
 	export let data: PageData
 
 	const { teachers, topSkills } = data
+	let count = $state(0)
 </script>
 
 <p>

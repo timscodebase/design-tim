@@ -7,6 +7,7 @@
 	import favicon from '$lib/assets/favicon.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
+	// import { SvelteUIProvider } from '@svelteuidev/core'
 
 	injectSpeedInsights()
 
@@ -17,8 +18,6 @@
 		path = $page?.url.pathname
 	})
 </script>
-
-<Analytics />
 
 <svelte:head>
 	<title>{name}</title>
@@ -41,6 +40,7 @@
 	<link rel="canonical" href="https://timsmith.tech" />
 </svelte:head>
 
+<!-- <SvelteUIProvider themeObserver="dark"> -->
 <div class="container">
 	<Header />
 
@@ -50,6 +50,9 @@
 
 	<Footer />
 </div>
+<!-- </SvelteUIProvider> -->
+
+<Analytics />
 
 <style>
 	.container {

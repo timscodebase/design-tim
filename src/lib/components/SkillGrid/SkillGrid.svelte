@@ -1,7 +1,7 @@
 <!-- <svelte:options runes={true} /> -->
 <script lang="ts">
-	import { viewport } from '$utils';
-	import { onMount } from 'svelte';
+	import { viewport } from '$utils'
+	import { onMount } from 'svelte'
 	import type { SkillType } from '$lib/types'
 	import Skill from './Skill.svelte'
 	import { Grid } from '$lib'
@@ -16,14 +16,17 @@
 	onMount(() => {
 		const box = document.querySelector('.grid')
 
-		document.addEventListener('scroll', () => {
-			if (viewport.isBottom(box)) {
-				resetVisible()
+		document.addEventListener(
+			'scroll',
+			() => {
+				if (viewport.isBottom(box)) {
+					resetVisible()
+				}
+			},
+			{
+				passive: true
 			}
-
-		}, {
-			passive: true
-		});
+		)
 	})
 </script>
 
