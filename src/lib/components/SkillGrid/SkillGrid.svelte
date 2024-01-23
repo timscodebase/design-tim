@@ -4,9 +4,8 @@
 	import { onMount } from 'svelte'
 	import type { SkillType } from '$lib/types'
 	import Skill from './Skill.svelte'
-	import { Grid } from '$lib'
 
-	export let skills: SkillType[]
+	let { skills } = $props<SkillType[]>()
 	let visible = false
 
 	function resetVisible() {

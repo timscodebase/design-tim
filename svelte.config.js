@@ -25,6 +25,7 @@ const config = {
 		alias: {
 			$data: 'src/lib/data',
 			$stores: 'src/lib/stores',
+			$css: 'src/lib/css',
 			$utils: 'src/lib/utils'
 		}
 	}

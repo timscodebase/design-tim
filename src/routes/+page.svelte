@@ -1,11 +1,9 @@
 <script lang="ts">
-	import type { PageData } from './$types'
 	import { Link, SkillGrid, Teacher } from '$lib'
 
-	export let data: PageData
+	let { data } = $props()
 
 	const { teachers, topSkills } = data
-	let count = $state(0)
 </script>
 
 <p>

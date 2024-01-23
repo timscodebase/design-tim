@@ -2,7 +2,7 @@
 	import { Button, Container, Head, Hr, Html, Img, Preview, Section, Text } from 'svelte-email'
 	import { Logo } from '$lib'
 
-	export let firstName = 'John'
+	let { firstName } = $props()
 
 	const headerFont = "'Mulish', sans-serif"
 	const bodyFont = "'Space Mono', monospace"

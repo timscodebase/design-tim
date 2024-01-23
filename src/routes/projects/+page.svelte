@@ -2,7 +2,7 @@
 	import type { PageData } from './$types'
 	import { Project, Masonry } from '$lib'
 
-	export let data: PageData
+	let { data } = $props<PageData>()
 
 	const { projects } = data
 </script>

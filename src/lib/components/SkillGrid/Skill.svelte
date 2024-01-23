@@ -1,14 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
 	import { scale } from 'svelte/transition'
-	import { quintOut } from 'svelte/easing'
 	import { Chip, Link } from '$lib'
 	import { viewport, slugify } from '$utils'
 	import { navColor } from '$stores'
 	import type { SkillType } from '$lib/types'
 
-	export let skill: SkillType
-	export let visible = false
+	let { skill, visible } = $props<SkillType, boolean>()
 
 	onMount(() => {
 		const box = document.querySelector('.outer')

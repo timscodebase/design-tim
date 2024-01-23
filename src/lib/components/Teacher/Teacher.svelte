@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { TeacherType } from '$lib/types'
-	export let teacher: TeacherType
-
+	let { teacher } = $props<TeacherType>()
 	const { name, url } = teacher
 </script>
 

@@ -1,7 +1,8 @@
 <script lang="ts">
+	import type { PageData } from './$types'
 	import { formatDate } from '$utils'
 
-	export let data
+	let { data } = $props<PageData>()
 </script>
 
 <svelte:head>

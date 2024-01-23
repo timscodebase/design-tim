@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { navColor } from '$stores'
-	export let btnRole: undefined | 'link' = undefined
-	export let buttonType: null | 'submit' = null
+
+	type BtnRole = undefined | 'link'
+	type BtnType = undefined | 'submit'
+	let { btnRole, buttonType } = $props<BtnRole, BtnType>()
 </script>
 
 <button

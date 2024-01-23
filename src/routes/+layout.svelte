@@ -1,5 +1,5 @@
 <script lang="ts">
-	import './css/style.css'
+	import '$css/style.css'
 	import { onMount } from 'svelte'
 	import { Analytics, Footer, Header } from '$lib'
 	import { page } from '$app/stores'

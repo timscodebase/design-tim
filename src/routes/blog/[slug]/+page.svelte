@@ -2,7 +2,7 @@
 	import { formatDate } from '$lib/utils'
 	import { Link, Tags } from '$lib'
 
-	export let data
+	let { data } = $props()
 </script>
 
 <!-- SEO -->

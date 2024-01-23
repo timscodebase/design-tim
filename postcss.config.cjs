@@ -6,7 +6,7 @@ const postcssGlobalData = require('@csstools/postcss-global-data')
 const config = {
 	plugins: [
 		postcssGlobalData({
-			files: ['src/routes/css/style.css']
+			files: ['src/lib/css/style.css']
 		}),
 		postcssPresetEnv({
 			stage: 3,

@@ -1,8 +1,9 @@
 <script lang="ts">
+	import type { PageData } from '$lib/types'
 	import { onMount } from 'svelte'
 	import ImageGallery from '@react2svelte/image-gallery'
 
-	export let data: PageData
+	let { data } = $props<PageData>()
 	const { photos } = data
 
 	let width = 0
