@@ -1,6 +1,6 @@
 <script lang="ts">
 	import 'iconify-icon'
-	let { href, external } = $props()
+	let { href = '', external = false } = $props()
 	import { page } from '$app/stores'
 
 	let currentRoute = $page.url.pathname

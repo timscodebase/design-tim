@@ -8,13 +8,17 @@
 <article>
 	<div>
 		<h3>{name}</h3>
+	</div>
+	<div>
 		{#if where}
 			<h4>Created at:</h4>
 			<p>{where}</p>
 		{/if}
 	</div>
 	<Link href={image}>
-		<img src={thumbnail} alt={name} />
+		<div class="img">
+			<img src={thumbnail} alt={name} />
+		</div>
 	</Link>
 	<div>
 		{#if href}
@@ -27,6 +31,8 @@
 	<div>
 		<h4>Description:</h4>
 		<p>{@html description}</p>
+	</div>
+	<div>
 		<p class="meta"><span>Medium: </span>{medium}</p>
 	</div>
 </article>
@@ -40,13 +46,16 @@
 	}
 
 	h3 {
+		display: grid;
+		place-items: center;
+		text-align: center;
 		color: var(--primary-2);
-		font-size: clamp(2rem, 5svw, 4rem);
+		font-size: clamp(2rem, 5svw, 3rem);
 	}
 
 	h4 {
 		color: var(--primary);
-		font-size: clamp(1.5rem, 3svw, 2.75rem);
+		font-size: clamp(1.5rem, 2.5svw, 2.25rem);
 	}
 
 	p.meta {
@@ -58,9 +67,19 @@
 		}
 	}
 
+	span {
+		color: var(--primary);
+		font-weight: bold;
+	}
+
+	.img {
+		height: 150px;
+		overflow-y: hidden;
+	}
+
 	article {
 		display: grid;
-		grid-row: span 4;
+		grid-row: span 6;
 		grid-template-rows: subgrid;
 		padding: var(--padding-md);
 		border: var(--border-primary);

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import { Project, Masonry } from '$lib'
+	import { Project } from '$lib'
 
 	let { data } = $props<PageData>()
 
@@ -25,7 +25,7 @@
 	div {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-template-rows: auto auto auto auto;
+		grid-template-rows: repeat(auto-fit, 6);
 		grid-gap: 1rem;
 		margin-top: var(--margin-md);
 		container-type: inline-size;

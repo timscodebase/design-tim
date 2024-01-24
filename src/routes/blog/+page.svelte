@@ -1,8 +1,9 @@
 <script lang="ts">
 	import type { PageData } from './$types'
 	import { formatDate } from '$utils'
+	import { Link } from '$lib'
 
-	let { data } = $props<PageData>()
+	let { data: PageData } = $props<PageData>()
 </script>
 
 <svelte:head>
@@ -17,14 +18,14 @@
 		{#each data.posts as post}
 			<li class="post">
 				{#if post.thumb}
-					<a href={`blog/${post.slug}`}>
+					<Link href={`blog/${post.slug}`}>
 						<img
 							src={post.thumb}
 							alt="thumbnail image of the author"
 							style={`--image: ${post.title}`}
 						/>
 						<h3 style={`--title: ${post.title}`}>{post.title}</h3>
-					</a>
+					</Link>
 				{:else}
 					<h3 style={`--title: ${post.title}`}>{post.title}</h3>
 				{/if}

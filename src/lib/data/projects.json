@@ -6,7 +6,6 @@
 		"image": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1705279159/Screenshot_2024-01-14_at_4.37.31_PM_e2jkhj.png",
 		"description": "<p>I am converting an image generation app from Qwik to Svelte</p>",
 		"medium": "Svelte, Qwik, Typescript, SvelteKit, TailwindCSS, Vercel",
-		"href": "#",
 		"github": "https://github.com/timscodebase/ai-svelte-tiger"
 	},
 	{
