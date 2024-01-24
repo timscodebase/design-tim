@@ -6,25 +6,25 @@
 <nav>
 	<ul class={`${$navColor}`}>
 		<li>
-			<Link href="/">Home</Link>
+			<a href="/">Home</a>
 		</li>
 		<li>
-			<Link href="/projects">Projects</Link>
+			<a href="/projects">Projects</a>
 		</li>
 		<li>
-			<Link href="/jobs">Jobs</Link>
+			<a href="/jobs">Jobs</a>
 		</li>
 		<li>
-			<Link href="/skills">Skills</Link>
+			<a href="/skills">Skills</a>
 		</li>
 		<li>
-			<Link href="/photos">Photos</Link>
+			<a href="/photos">Photos</a>
 		</li>
 		<li>
-			<Link href="/uses">Uses</Link>
+			<a href="/uses">Uses</a>
 		</li>
 		<li>
-			<Link href="/blog">Blog</Link>
+			<a href="/blog">Blog</a>
 		</li>
 	</ul>
 </nav>
