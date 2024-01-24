@@ -15,8 +15,19 @@
 
 <h2>Projects</h2>
 
-<Masonry>
+<div class="grid">
 	{#each projects as project}
 		<Project {project} />
 	{/each}
-</Masonry>
+</div>
+
+<style>
+	div {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-rows: auto auto auto auto;
+		grid-gap: 1rem;
+		margin-top: var(--margin-md);
+		container-type: inline-size;
+	}
+</style>

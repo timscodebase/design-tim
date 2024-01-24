@@ -16,13 +16,14 @@
 	<Link href={image}>
 		<img src={thumbnail} alt={name} />
 	</Link>
-	{#if href}
-		<Link {href} external={true}>Project Link</Link>
-	{/if}
-	{#if github}
-		<Link href={github} external={true}>Github Link</Link>
-	{/if}
-
+	<div>
+		{#if href}
+			<Link {href} external={true}>Project Link</Link>
+		{/if}
+		{#if github}
+			<Link href={github} external={true}>Github Link</Link>
+		{/if}
+	</div>
 	<div>
 		<h4>Description:</h4>
 		<p>{@html description}</p>
@@ -56,10 +57,11 @@
 			font-weight: bold;
 		}
 	}
+
 	article {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+		display: grid;
+		grid-row: span 4;
+		grid-template-rows: subgrid;
 		padding: var(--padding-md);
 		border: var(--border-primary);
 		border-radius: var(--border-radius-sm);

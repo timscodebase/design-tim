@@ -16,7 +16,6 @@
 		class:active={currentRoute === href ? true : false}
 		aria-current={currentRoute === href ? 'page' : 'false'}
 		{href}
-		data-sveltekit-preload-data
 	>
 		<slot />
 	</a>
