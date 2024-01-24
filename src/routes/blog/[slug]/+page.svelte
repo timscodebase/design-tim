@@ -8,11 +8,11 @@
 <!-- SEO -->
 <svelte:head>
 	<title>{data.meta.title}</title>
-	<link rel="canonical" href="https://timsmith.tech" />
 	<meta name="description" content={data.meta.description} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:image" content={data.meta.image} />
 </svelte:head>
 
 {#if data.meta.image}
