@@ -25,7 +25,7 @@
 
 	setInterval(fetchQuote, 10000)
 
-	async function copyQuote() {
+	async function onclick() {
 		try {
 			await navigator.clipboard.writeText(`${quote.content} - ${quote.author}`)
 			isCopied = true
@@ -49,7 +49,7 @@
 	</figure>
 
 	<div style:position="relative">
-		<Button on:click={copyQuote}>
+		<Button {onclick}>
 			{isCopied ? 'Copied!' : 'Copy quote'}
 		</Button>
 	</div>

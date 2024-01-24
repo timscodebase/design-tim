@@ -1,6 +1,6 @@
 ---
 title: Converting a Qwik AI app to Sveltekit
-description: The journey from Qwik to Svelte -  Converting an AI App
+description: The journey from Qwik to Svelte - Converting an AI App
 date: '2024-01-13'
 categories:
   - sveltekit

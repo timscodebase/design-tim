@@ -6,12 +6,7 @@
 	let { btnRole, buttonType } = $props<BtnRole, BtnType>()
 </script>
 
-<button
-	type={buttonType ? 'submit' : null}
-	role={btnRole}
-	class={`${$navColor} resizeable`}
-	on:click
->
+<button type={buttonType ? 'submit' : null} role={btnRole} class={`${$navColor} resizeable`}>
 	<slot />
 </button>
 
