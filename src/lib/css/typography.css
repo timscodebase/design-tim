@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-	font-size: clamp(4rem, 7svw, 6rem);
+	font-size: clamp(4rem, 6svw, 5.5rem);
 	padding: 1.5svw 0;
 	color: var(--text);
 	font-weight: 200;
