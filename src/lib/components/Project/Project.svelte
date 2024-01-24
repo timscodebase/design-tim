@@ -48,7 +48,6 @@
 	h3 {
 		display: grid;
 		place-items: center;
-		text-align: center;
 		color: var(--primary-2);
 		font-size: clamp(2rem, 5svw, 3rem);
 	}
@@ -82,7 +81,6 @@
 		grid-row: span 6;
 		grid-template-rows: subgrid;
 		padding: var(--padding-md);
-		border: var(--border-primary);
 		border-radius: var(--border-radius-sm);
 	}
 

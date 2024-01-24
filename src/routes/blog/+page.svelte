@@ -3,7 +3,7 @@
 	import { formatDate } from '$utils'
 	import { Link } from '$lib'
 
-	let { data: PageData } = $props<PageData>()
+	let { data } = $props<PageData>()
 </script>
 
 <svelte:head>
@@ -18,14 +18,14 @@
 		{#each data.posts as post}
 			<li class="post">
 				{#if post.thumb}
-					<Link href={`blog/${post.slug}`}>
+					<a href={`blog/${post.slug}`}>
 						<img
 							src={post.thumb}
 							alt="thumbnail image of the author"
 							style={`--image: ${post.title}`}
 						/>
 						<h3 style={`--title: ${post.title}`}>{post.title}</h3>
-					</Link>
+					</a>
 				{:else}
 					<h3 style={`--title: ${post.title}`}>{post.title}</h3>
 				{/if}
