@@ -15,7 +15,7 @@
 
 <h2>Projects</h2>
 
-<div class="grid">
+<div>
 	{#each projects as project}
 		<Project {project} />
 	{/each}
@@ -32,6 +32,11 @@
 		grid-template-rows: repeat(6, auto);
 		grid-gap: 1rem;
 		margin-top: var(--margin-md);
-		container-type: inline-size;
+	}
+
+	@media (max-width: 600px) {
+		div {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>
