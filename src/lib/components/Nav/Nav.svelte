@@ -1,30 +1,62 @@
 <script lang="ts">
 	import { Link } from '$lib'
 	import { navColor } from '$stores'
+	import { page } from '$app/stores'
+
+	let currentRoute = $page.url.pathname
+	console.log('Current Route: ', currentRoute)
 </script>
 
 <nav>
 	<ul class={`${$navColor}`}>
 		<li>
-			<a href="/">Home</a>
+			<a
+				class:active={currentRoute === '/' ? true : false}
+				aria-current={currentRoute === '/' ? 'page' : 'false'}
+				href="/">Home</a
+			>
 		</li>
 		<li>
-			<a href="/projects">Projects</a>
+			<a
+				class:active={currentRoute === '/projects' ? true : false}
+				aria-current={currentRoute === '/projects' ? 'page' : 'false'}
+				href="/projects">Projects</a
+			>
 		</li>
 		<li>
-			<a href="/jobs">Jobs</a>
+			<a
+				class:active={currentRoute === '/jobs' ? true : false}
+				aria-current={currentRoute === '/jobs' ? 'page' : 'false'}
+				href="/jobs">Jobs</a
+			>
 		</li>
 		<li>
-			<a href="/skills">Skills</a>
+			<a
+				class:active={currentRoute === '/skills' ? true : false}
+				aria-current={currentRoute === '/skills' ? 'page' : 'false'}
+				href="/skills">Skills</a
+			>
 		</li>
 		<li>
-			<a href="/photos">Photos</a>
+			<a
+				class:active={currentRoute === '/photos' ? true : false}
+				aria-current={currentRoute === '/photos' ? 'page' : 'false'}
+				href="/photos">Photos</a
+			>
 		</li>
 		<li>
-			<a href="/uses">Uses</a>
+			<a
+				class:active={currentRoute === '/uses' ? true : false}
+				aria-current={currentRoute === '/uses' ? 'page' : 'false'}
+				href="/uses">Uses</a
+			>
 		</li>
 		<li>
-			<a href="/blog">Blog</a>
+			<a
+				class:active={currentRoute === '/blog' ? true : false}
+				aria-current={currentRoute === '/blog' ? 'page' : 'false'}
+				href="/blog">Blog</a
+			>
 		</li>
 	</ul>
 </nav>
@@ -55,6 +87,13 @@
 		text-decoration-color: var(--primary);
 		text-underline-offset: 2px;
 		text-decoration-thickness: 2px;
+	}
+
+	.active {
+		background: var(--primary-2);
+		color: var(--reverse-text);
+		padding: 3px 5px;
+		view-transition-name: active-page;
 	}
 
 	@media (max-width: 1000px) {
