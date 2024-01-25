@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { navColor } from '$stores'
-	import exp from 'constants'
 
 	type BtnRole = undefined | 'link'
 	type BtnType = undefined | 'submit'
