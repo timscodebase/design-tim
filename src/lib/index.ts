@@ -7,7 +7,6 @@ export { BucketList }
 import Button from './components/Button'
 export { Button }
 
-
 import ContactMe from './components/ContactMe'
 export { ContactMe }
 

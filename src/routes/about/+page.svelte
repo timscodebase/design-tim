@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { BucketList, Email } from '$lib'
+	import { BucketList } from '$lib'
 </script>
 
 <h2>About</h2>
 <BucketList />
-
-<Email />
