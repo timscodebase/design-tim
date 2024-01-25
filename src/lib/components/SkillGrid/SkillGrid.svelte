@@ -2,6 +2,7 @@
 	import { viewport } from '$utils'
 	import { onMount } from 'svelte'
 	import type { SkillType } from '$lib/types'
+	import { Link } from '$lib'
 	import Skill from './Skill.svelte'
 
 	export let skills: SkillType[]
@@ -33,6 +34,8 @@
 		<Skill {visible} {skill} />
 	{/each}
 </div>
+<br />
+<Link href="/skills">See all my skills</Link>
 
 <style>
 	.grid {

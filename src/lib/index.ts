@@ -13,6 +13,9 @@ export { ContactMe }
 import Chip from './components/Chip'
 export { Chip }
 
+import FindMeOn from './components/FindMeOn'
+export { FindMeOn }
+
 import Footer from './components/Footer'
 export { Footer }
 

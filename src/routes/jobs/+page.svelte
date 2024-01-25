@@ -24,7 +24,7 @@
 </p>
 
 <p class="inline">
-	Checkout my <Link href={resume} external={true}>Resume</Link> to find out more.
+	Checkout my <Link href={resume} external>Resume</Link> to find out more.
 </p>
 
 <div>

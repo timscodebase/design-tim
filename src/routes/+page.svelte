@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types'
-	import { Link, SkillGrid, Teacher } from '$lib'
+	import { FindMeOn, SkillGrid, Teacher } from '$lib'
 
 	export let data: PageData
 
@@ -23,8 +23,8 @@
 
 <h2>Here are my most used skilled</h2>
 <SkillGrid skills={topSkills} />
-<br />
-<Link href="/skills">See all my skills</Link>
+
+<FindMeOn />
 
 <style>
 	p {

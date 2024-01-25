@@ -23,10 +23,10 @@
 	</Link>
 	<div>
 		{#if href}
-			<Link {href} external={true}>Project Link</Link>
+			<Link {href} external>Project Link</Link>
 		{/if}
 		{#if github}
-			<Link href={github} external={true}>Github Link</Link>
+			<Link href={github} external>Github Link</Link>
 		{/if}
 	</div>
 	<div>

@@ -7,8 +7,8 @@
 		<p>Tim Smith {new Date().getFullYear()}</p>
 	</div>
 	<div>
-		<Link href="https://github.com/timscodebase" external={true}>Github</Link>
-		<Link href="https://linkedin.com/in/timsmith25" external={true}>LinkedIn</Link>
+		<Link href="https://github.com/timscodebase" external>Github</Link>
+		<Link href="https://linkedin.com/in/timsmith25" external>LinkedIn</Link>
 	</div>
 	<div>
 		<Link href="/contact-me">Contact Me</Link>
