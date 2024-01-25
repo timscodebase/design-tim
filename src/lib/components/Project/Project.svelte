@@ -79,6 +79,9 @@
 
 	article {
 		display: grid;
+		/* || */
+		/* || */
+		/* \/ tied to the number of rows in /routes/projects/+page.svelte */
 		grid-row: span 6;
 		grid-template-rows: subgrid;
 		padding: var(--padding-md);

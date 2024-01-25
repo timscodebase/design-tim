@@ -25,7 +25,11 @@
 	div {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-template-rows: repeat(auto-fit, 6);
+		/* || */
+		/* || */
+		/* || tied to the number of spans in */
+		/* \/ /lib/components/Project/Project.svelte */
+		grid-template-rows: repeat(6, auto);
 		grid-gap: 1rem;
 		margin-top: var(--margin-md);
 		container-type: inline-size;
