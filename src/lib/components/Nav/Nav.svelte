@@ -1,62 +1,30 @@
 <script lang="ts">
 	import { Link } from '$lib'
 	import { navColor } from '$stores'
-	import { page } from '$app/stores'
-
-	let currentRoute = $page.url.pathname
-	console.log('Current Route: ', currentRoute)
 </script>
 
 <nav>
 	<ul class={`${$navColor}`}>
 		<li>
-			<a
-				class:active={currentRoute === '/' ? true : false}
-				aria-current={currentRoute === '/' ? 'page' : 'false'}
-				href="/">Home</a
-			>
+			<Link href="/">Home</Link>
 		</li>
 		<li>
-			<a
-				class:active={currentRoute === '/projects' ? true : false}
-				aria-current={currentRoute === '/projects' ? 'page' : 'false'}
-				href="/projects">Projects</a
-			>
+			<Link href="/projects">Projects</Link>
 		</li>
 		<li>
-			<a
-				class:active={currentRoute === '/jobs' ? true : false}
-				aria-current={currentRoute === '/jobs' ? 'page' : 'false'}
-				href="/jobs">Jobs</a
-			>
+			<Link href="/jobs">Jobs</Link>
 		</li>
 		<li>
-			<a
-				class:active={currentRoute === '/skills' ? true : false}
-				aria-current={currentRoute === '/skills' ? 'page' : 'false'}
-				href="/skills">Skills</a
-			>
+			<Link href="/skills">Skills</Link>
 		</li>
 		<li>
-			<a
-				class:active={currentRoute === '/photos' ? true : false}
-				aria-current={currentRoute === '/photos' ? 'page' : 'false'}
-				href="/photos">Photos</a
-			>
+			<Link href="/photos">Photos</Link>
 		</li>
 		<li>
-			<a
-				class:active={currentRoute === '/uses' ? true : false}
-				aria-current={currentRoute === '/uses' ? 'page' : 'false'}
-				href="/uses">Uses</a
-			>
+			<Link href="/uses">Uses</Link>
 		</li>
 		<li>
-			<a
-				class:active={currentRoute === '/blog' ? true : false}
-				aria-current={currentRoute === '/blog' ? 'page' : 'false'}
-				href="/blog">Blog</a
-			>
+			<Link href="/blog">Blog</Link>
 		</li>
 	</ul>
 </nav>
@@ -87,13 +55,6 @@
 		text-decoration-color: var(--primary);
 		text-underline-offset: 2px;
 		text-decoration-thickness: 2px;
-	}
-
-	.active {
-		background: var(--primary-2);
-		color: var(--reverse-text);
-		padding: 3px 5px;
-		view-transition-name: active-page;
 	}
 
 	@media (max-width: 1000px) {

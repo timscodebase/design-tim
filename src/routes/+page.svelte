@@ -1,7 +1,8 @@
 <script lang="ts">
+	import type { PageData } from './$types'
 	import { Link, SkillGrid, Teacher } from '$lib'
 
-	let { data } = $props()
+	export let data: PageData
 
 	const { teachers, topSkills } = data
 </script>

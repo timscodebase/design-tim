@@ -1,9 +1,11 @@
 <script lang="ts">
 	import 'iconify-icon'
-	let { href = '', external = false } = $props()
+	export let href = ''
+	export let external = false
 	import { page } from '$app/stores'
 
 	let currentRoute = $page.url.pathname
+	console.log('Current Route: ', currentRoute)
 </script>
 
 {#if external}

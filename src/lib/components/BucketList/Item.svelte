@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { Link } from '$lib'
-	let { item } = $props()
+	export let item = {
+		goal: 'Goal',
+		description: 'Description',
+		image: '',
+		thumb: ''
+	}
 	const { goal, description, image, thumb } = item
 </script>
 

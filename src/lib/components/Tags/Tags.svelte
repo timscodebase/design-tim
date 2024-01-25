@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Tag } from '$lib'
-	let { categories } = $props()
+	export let categories: string[]
 </script>
 
 <div class="tags">

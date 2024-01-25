@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
-	import { Link, Tags } from '$lib'
+	import { Tags } from '$lib'
 
-	let { data } = $props()
+	export let data
 </script>
 
 <!-- SEO -->

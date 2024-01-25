@@ -2,7 +2,7 @@
 	import type { PageData } from './$types'
 	import { SkillGrid } from '$lib'
 
-	let { data } = $props<PageData>()
+	export let data: PageData
 
 	const { skills } = data
 </script>

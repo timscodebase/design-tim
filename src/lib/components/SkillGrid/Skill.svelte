@@ -6,7 +6,8 @@
 	import { navColor } from '$stores'
 	import type { SkillType } from '$lib/types'
 
-	let { skill, visible } = $props<SkillType, boolean>()
+	export let skill: SkillType
+	export let visible: boolean
 
 	onMount(() => {
 		const box = document.querySelector('.outer')

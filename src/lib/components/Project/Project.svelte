@@ -1,6 +1,7 @@
 <script lang="ts">
+	import type { ProjectType } from '$lib/types'
 	import { Link } from '$lib'
-	let { project } = $props()
+	export let project: ProjectType
 
 	const { name, href, github, thumbnail, image, where, description, medium } = project
 </script>

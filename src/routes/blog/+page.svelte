@@ -3,7 +3,7 @@
 	import { formatDate } from '$utils'
 	import { Link } from '$lib'
 
-	let { data } = $props<PageData>()
+	export let data: PageData
 </script>
 
 <svelte:head>

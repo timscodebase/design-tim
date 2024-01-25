@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte'
 	import ImageGallery from '@react2svelte/image-gallery'
 
-	let { data } = $props<PageData>()
+	export let data: PageData
 	const { photos } = data
 
 	let width = 0

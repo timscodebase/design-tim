@@ -5,7 +5,7 @@
 	import type { SkillType } from '$lib/types'
 	import Skill from './Skill.svelte'
 
-	let { skills } = $props<SkillType[]>()
+	export let skills: SkillType[]
 	let visible = false
 
 	function resetVisible() {

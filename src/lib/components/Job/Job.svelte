@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { JobType } from '$lib/types'
 	import { slugify } from '$utils'
-	let { job } = $props()
+	export let job: JobType
 
 	const { company, dates, description, location, title } = job
 </script>

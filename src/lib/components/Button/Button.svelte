@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { navColor } from '$stores'
+	import exp from 'constants'
 
 	type BtnRole = undefined | 'link'
 	type BtnType = undefined | 'submit'
-	let { btnRole, buttonType } = $props<BtnRole, BtnType>()
+	export let btnRole: BtnRole = undefined
+	export let btnType: BtnType = undefined
 </script>
 
 <button type={buttonType ? 'submit' : null} role={btnRole} class={`${$navColor} resizeable`}>

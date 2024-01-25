@@ -4,7 +4,7 @@
 
 	import resume from '$lib/assets/resume.pdf'
 
-	let { data } = $props<PageData>()
+	export let data: PageData
 
 	const { jobs } = data
 </script>
