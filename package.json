@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@react2svelte/image-gallery": "^1.0.1",
+    "@sentry/sveltekit": "^7.99.0",
     "@sveltejs/adapter-vercel": "^4.0.5",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "@svelteuidev/composables": "^0.15.4",
