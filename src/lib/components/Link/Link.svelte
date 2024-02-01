@@ -1,25 +1,15 @@
 <script lang="ts">
 	import 'iconify-icon'
-	export let href = '/'
-	export let external = false
-	import { page } from '$app/stores'
-
-	let path = $page.url.pathname
-
-	console.log('HREF:', href)
+	const { external = false, to = '/' } = $props<{ external?: boolean; to: string }>()
 </script>
 
 {#if external}
-	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data>
+	<a href={to} target="_blank" rel="noopener" data-sveltekit-preload-data>
 		<slot />
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
-	<a
-		class:active={path === href ? true : false}
-		aria-current={path === href ? 'page' : 'false'}
-		{href}
-	>
+	<a href={to}>
 		<slot />
 	</a>
 {/if}
@@ -34,12 +24,5 @@
 		text-decoration: underline;
 		font-size: var(--body-font-family);
 		word-break: break-word;
-	}
-
-	.active {
-		background: var(--primary-2);
-		color: var(--reverse-text);
-		padding: 3px 5px;
-		view-transition-name: active-page;
 	}
 </style>

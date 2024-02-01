@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let liClass: string
+	const { liClass } = $props<{ liClass: string }>()
 </script>
 
 <li class={liClass}>

@@ -6,20 +6,20 @@
 	import { navColor } from '$stores'
 	import type { SkillType } from '$lib/types'
 
-	export let skill: SkillType
-	export let visible: boolean
+	const { skill, visible } = $props<{ skill: SkillType; visible: boolean }>()
+	let isVisible = $state(visible)
 
 	onMount(() => {
 		const box = document.querySelector('.outer')
-		if (!visible && viewport.isIn(box)) {
-			visible = true
+		if (!isVisible && viewport.isIn(box)) {
+			isVisible = true
 		}
 
 		document.addEventListener(
 			'scroll',
 			function () {
-				if (!visible && viewport.isIn(box)) {
-					visible = true
+				if (!isVisible && viewport.isIn(box)) {
+					isVisible = true
 				}
 			},
 			{
@@ -34,7 +34,7 @@
 </script>
 
 <div class="outer">
-	{#if visible}
+	{#if isVisible}
 		<div
 			tabindex="0"
 			on:touchstart={onMouseover}
@@ -83,9 +83,6 @@
 		h4,
 		p {
 			padding: 0;
-		}
-
-		h4 {
 		}
 	}
 

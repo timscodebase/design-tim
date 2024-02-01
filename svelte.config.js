@@ -28,6 +28,9 @@ const config = {
 			$css: 'src/lib/css',
 			$utils: 'src/lib/utils'
 		}
+	},
+	compilerOptions: {
+		runes: true
 	}
 }
 

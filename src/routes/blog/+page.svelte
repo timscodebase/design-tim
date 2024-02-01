@@ -1,9 +1,7 @@
 <script lang="ts">
-	import type { PageData } from './$types'
 	import { formatDate } from '$utils'
-	import { Link } from '$lib'
 
-	export let data: PageData
+	import { page } from '$app/stores'
 </script>
 
 <svelte:head>
@@ -15,7 +13,7 @@
 <h2>Blog</h2>
 <section>
 	<ul class="posts">
-		{#each data.posts as post}
+		{#each $page.data.posts as post}
 			<li class="post">
 				{#if post.thumb}
 					<a href={`blog/${post.slug}`}>

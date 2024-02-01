@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let category: string
+	const { category } = $props<{ category: string }>()
 </script>
 
 <span class="category">&num;{category}</span>

@@ -7,7 +7,6 @@
 	import favicon from '$lib/assets/favicon.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
-	// import { SvelteUIProvider } from '@svelteuidev/core'
 
 	injectSpeedInsights()
 

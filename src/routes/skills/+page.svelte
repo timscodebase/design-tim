@@ -2,9 +2,9 @@
 	import type { PageData } from './$types'
 	import { SkillGrid } from '$lib'
 
-	export let data: PageData
+	import { page } from '$app/stores'
 
-	const { skills } = data
+	const { skills } = $page.data
 </script>
 
 <svelte:head>

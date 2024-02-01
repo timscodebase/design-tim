@@ -5,7 +5,8 @@
 	import { Link } from '$lib'
 	import Skill from './Skill.svelte'
 
-	export let skills: SkillType[]
+	const { skills } = $props<SkillType>()
+	console.log('SKILLS: ', skills)
 	let visible = false
 
 	function resetVisible() {
@@ -35,7 +36,7 @@
 	{/each}
 </div>
 <br />
-<Link href="/skills">See all my skills</Link>
+<Link to="/skills">See all my skills</Link>
 
 <style>
 	.grid {

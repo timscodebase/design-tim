@@ -1,30 +1,64 @@
 <script lang="ts">
-	import { Link } from '$lib'
 	import { navColor } from '$stores'
+	import { page } from '$app/stores'
+
+	let path: string = '/'
+
+	function onclick() {
+		path = $page.url.pathname
+		console.log(path)
+	}
 </script>
 
 <nav>
 	<ul class={`${$navColor}`}>
 		<li>
-			<Link href="/">Home</Link>
+			<button
+				{onclick}
+				class:active={path === '/' ? true : false}
+				aria-current={path === '/' ? 'page' : 'false'}
+				href="/">Home</button
+			>
 		</li>
 		<li>
-			<Link href="/projects">Projects</Link>
+			<button
+				{onclick}
+				class:active={path === '/projects' ? true : false}
+				aria-current={path === '/projects' ? 'page' : 'false'}
+				href="/projects">Projects</button
+			>
 		</li>
 		<li>
-			<Link href="/jobs">Jobs</Link>
+			<button
+				{onclick}
+				class:active={path === '/jobs' ? true : false}
+				aria-current={path === '/jobs' ? 'page' : 'false'}
+				href="/jobs">Jobs</button
+			>
 		</li>
 		<li>
-			<Link href="/skills">Skills</Link>
+			<button
+				{onclick}
+				class:active={path === '/skills' ? true : false}
+				aria-current={path === '/skills' ? 'page' : 'false'}
+				href="/skills">Skills</button
+			>
 		</li>
 		<li>
-			<Link href="/photos">Photos</Link>
+			<button
+				{onclick()}
+				class:active={path === '/uses' ? true : false}
+				aria-current={path === '/uses' ? 'page' : 'false'}
+				href="/uses">Uses</button
+			>
 		</li>
 		<li>
-			<Link href="/uses">Uses</Link>
-		</li>
-		<li>
-			<Link href="/blog">Blog</Link>
+			<button
+				{onclick}
+				class:active={path === '/blog' ? true : false}
+				aria-current={path === '/blog' ? 'page' : 'false'}
+				href="/blog">Blog</button
+			>
 		</li>
 	</ul>
 </nav>
@@ -55,6 +89,13 @@
 		text-decoration-color: var(--primary);
 		text-underline-offset: 2px;
 		text-decoration-thickness: 2px;
+	}
+
+	.active {
+		background: var(--primary-2);
+		color: var(--reverse-text);
+		padding: 3px 5px;
+		view-transition-name: active-page;
 	}
 
 	@media (max-width: 1000px) {

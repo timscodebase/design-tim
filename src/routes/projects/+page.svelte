@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { PageData } from './$types'
 	import { Project } from '$lib'
 
-	export let data: PageData
+	import { page } from '$app/stores'
 
-	const { projects } = data
+	const { projects } = $page.data
 </script>
 
 <svelte:head>

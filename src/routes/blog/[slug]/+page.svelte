@@ -2,36 +2,40 @@
 	import { formatDate } from '$lib/utils'
 	import { Tags } from '$lib'
 
-	export let data
+	import { page } from '$app/stores'
 </script>
 
 <!-- SEO -->
 <svelte:head>
-	<title>{data.meta.title}</title>
-	<meta name="description" content={data.meta.description} />
+	<title>{$page.data.meta.title}</title>
+	<meta name="description" content={$page.data.meta.description} />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.meta.title} />
-	<meta property="og:description" content={data.meta.description} />
-	<meta property="og:image" content={data.meta.image} />
+	<meta property="og:title" content={$page.data.meta.title} />
+	<meta property="og:description" content={$page.data.meta.description} />
+	<meta property="og:image" content={$page.data.meta.image} />
 </svelte:head>
 
-{#if data.meta.image}
-	<img src={data.meta.image} alt={data.meta.title} style={`--image: ${data.meta.title}`} />
+{#if $page.data.meta.image}
+	<img
+		src={$page.data.meta.image}
+		alt={$page.data.meta.title}
+		style={`--image: ${$page.data.meta.title}`}
+	/>
 {/if}
 
 <article>
 	<!-- Title -->
 	<hgroup>
-		<h1 style={`--title: ${data.meta.title}`}>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+		<h1 style={`--title: ${$page.data.meta.title}`}>{$page.data.meta.title}</h1>
+		<p>Published at {formatDate($page.data.meta.date)}</p>
 	</hgroup>
 
 	<!-- Tags -->
-	<Tags categories={data.meta.categories} />
+	<Tags categories={$page.data.meta.categories} />
 
 	<!-- Post -->
 	<div class="prose">
-		<svelte:component this={data.content} />
+		<svelte:component this={$page.data.content} />
 	</div>
 
 	<a href="/blog" data-sveltekit-preload-data>

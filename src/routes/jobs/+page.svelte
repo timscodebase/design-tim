@@ -4,9 +4,9 @@
 
 	import resume from '$lib/assets/resume.pdf'
 
-	export let data: PageData
+	import { page } from '$app/stores'
 
-	const { jobs } = data
+	const { jobs } = $page.data
 </script>
 
 <svelte:head>

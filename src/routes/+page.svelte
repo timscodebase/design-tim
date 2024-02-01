@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { PageData } from './$types'
 	import { FindMeOn, SkillGrid, Teacher } from '$lib'
 
-	export let data: PageData
+	import { page } from '$app/stores'
 
-	const { teachers, topSkills } = data
+	const { teachers, topSkills } = $page.data
 </script>
 
 <p>
