@@ -1,11 +1,12 @@
 <script lang="ts">
 	import 'iconify-icon'
-	export let href = ''
+	export let href = '/'
 	export let external = false
 	import { page } from '$app/stores'
 
-	let currentRoute = $page.url.pathname
-	console.log('Current Route: ', currentRoute)
+	let path = $page.url.pathname
+
+	console.log('HREF:', href)
 </script>
 
 {#if external}
@@ -15,8 +16,8 @@
 	</a>
 {:else}
 	<a
-		class:active={currentRoute === href ? true : false}
-		aria-current={currentRoute === href ? 'page' : 'false'}
+		class:active={path === href ? true : false}
+		aria-current={path === href ? 'page' : 'false'}
 		{href}
 	>
 		<slot />
@@ -35,10 +36,10 @@
 		word-break: break-word;
 	}
 
-	/* .active {
+	.active {
 		background: var(--primary-2);
 		color: var(--reverse-text);
 		padding: 3px 5px;
 		view-transition-name: active-page;
-	} */
+	}
 </style>
