@@ -1,16 +1,20 @@
 <script lang="ts">
 	import 'iconify-icon'
 	import { page } from '$app/stores'
-	const { external = false, to = '/' } = $props<{ external?: boolean; to: string }>()
+	const { external = false, href = '/' } = $props<{ external?: boolean; to: string }>()
 </script>
 
 {#if external}
-	<a href={to} target="_blank" rel="noopener" data-sveltekit-preload-data>
+	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data="tap">
 		<slot />
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
-	<a href={to} aria-current={$page.route.id === to ? 'page' : undefined}>
+	<a
+		{href}
+		aria-current={$page.route.id === href ? 'page' : undefined}
+		data-sveltekit-preload-data="tap"
+	>
 		<slot />
 	</a>
 {/if}
@@ -27,10 +31,10 @@
 		word-break: break-word;
 	}
 
-	/* [aria-current='page'] {
+	[aria-current='page'] {
 		background: var(--primary-2);
 		color: var(--reverse-text);
 		padding: 3px 5px;
 		view-transition-name: active-page;
-	} */
+	}
 </style>

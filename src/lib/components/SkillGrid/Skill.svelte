@@ -61,7 +61,7 @@
 
 				{#each skill.usedAt.sort() as usedAt}
 					<Chip liClass={skill.category}>
-						<Link to={`/jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
+						<Link href={`/jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
 					</Chip>
 				{/each}
 			</ul>

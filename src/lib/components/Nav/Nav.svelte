@@ -1,26 +1,27 @@
 <script lang="ts">
 	import { navColor } from '$stores'
+	import { Link } from '$lib'
 </script>
 
 <nav>
 	<ul class={`${$navColor}`}>
 		<li>
-			<a href="/">Home</a>
+			<Link href="/" pre>Home</Link>
 		</li>
 		<li>
-			<a href="/projects">Projects</a>
+			<Link href="/projects">Projects</Link>
 		</li>
 		<li>
-			<a href="/jobs">Jobs</a>
+			<Link href="/jobs">Jobs</Link>
 		</li>
 		<li>
-			<a href="/skills">Skills</a>
+			<Link href="/skills">Skills</Link>
 		</li>
 		<li>
-			<a href="/uses">Uses</a>
+			<Link href="/uses">Uses</Link>
 		</li>
 		<li>
-			<a href="/blog">Blog</a>
+			<Link href="/blog">Blog</Link>
 		</li>
 	</ul>
 </nav>

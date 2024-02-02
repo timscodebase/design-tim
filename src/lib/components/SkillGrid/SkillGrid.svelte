@@ -35,7 +35,7 @@
 	{/each}
 </div>
 <br />
-<Link to="/skills">See all my skills</Link>
+<Link href="/skills">See all my skills</Link>
 
 <style>
 	.grid {
