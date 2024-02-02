@@ -9,6 +9,5 @@
 		grid-template-rows: 200px auto auto;
 		grid-gap: 1rem;
 		margin-top: var(--margin-md);
-		container-type: inline-size;
 	}
 </style>

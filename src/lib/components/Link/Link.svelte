@@ -2,9 +2,6 @@
 	import 'iconify-icon'
 	import { page } from '$app/stores'
 	const { external = false, to = '/' } = $props<{ external?: boolean; to: string }>()
-
-	console.log('Page: ', $page.route.id)
-	console.log('To: ', to)
 </script>
 
 {#if external}
@@ -13,11 +10,7 @@
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
-	<a
-		href={to}
-		class:active={$page.route.id === to}
-		aria-current={$page.route.id === to ? 'page' : undefined}
-	>
+	<a href={to} aria-current={$page.route.id === to ? 'page' : undefined}>
 		<slot />
 	</a>
 {/if}
@@ -35,7 +28,7 @@
 		font-size: clamp(1.25rem, 1.75svw, 2rem);
 	}
 
-	.active {
+	[aria-current='page'] {
 		background: var(--primary-2);
 		color: var(--reverse-text);
 		padding: 3px 5px;

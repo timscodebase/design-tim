@@ -54,6 +54,7 @@
     "mdsvex": "^0.11.0",
     "node-html-parser": "^6.1.12",
     "nodemailer": "^6.9.8",
+    "octokit": "^3.1.2",
     "svelte-feather-icons": "^4.1.0",
     "utils": "link:@builder.io/partytown/utils"
   }

@@ -110,5 +110,5 @@ pre[data-lang]::before { content: attr(data-lang); display: block; }
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-	animation-duration: 4s;
+	animation-duration: 5s;
 }
