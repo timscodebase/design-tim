@@ -25,7 +25,6 @@
 		text-decoration: underline;
 		font-size: var(--body-font-family);
 		word-break: break-word;
-		font-size: clamp(1.25rem, 1.75svw, 2rem);
 	}
 
 	/* [aria-current='page'] {

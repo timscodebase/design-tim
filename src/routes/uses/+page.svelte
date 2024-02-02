@@ -1,7 +1,3 @@
-<script lang="ts">
-	import { Grid } from '$lib'
-</script>
-
 <svelte:head>
 	<title>Tim Smith Uses</title>
 	<link rel="canonical" href="https://timsmith.tech" />
@@ -9,7 +5,7 @@
 </svelte:head>
 
 <h2>Uses</h2>
-<Grid>
+<div>
 	<section>
 		<h2>Hardware</h2>
 		<ul>
@@ -44,7 +40,7 @@
 			<li><span>Ad-Blocking</span> Pi-Hole</li>
 		</ul>
 	</section>
-</Grid>
+</div>
 
 <style>
 	li {
