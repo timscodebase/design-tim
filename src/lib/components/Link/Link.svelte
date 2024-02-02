@@ -28,10 +28,10 @@
 		font-size: clamp(1.25rem, 1.75svw, 2rem);
 	}
 
-	[aria-current='page'] {
+	/* [aria-current='page'] {
 		background: var(--primary-2);
 		color: var(--reverse-text);
 		padding: 3px 5px;
 		view-transition-name: active-page;
-	}
+	} */
 </style>
