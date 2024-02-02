@@ -13,7 +13,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: var(--gap);
-		view-transition-name: header;
+		/* view-transition-name: header; */
 	}
 
 	@media (max-width: 500px) {
