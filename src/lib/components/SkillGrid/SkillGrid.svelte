@@ -6,7 +6,6 @@
 	import Skill from './Skill.svelte'
 
 	const { skills } = $props<SkillType>()
-	console.log('SKILLS: ', skills)
 	let visible = false
 
 	function resetVisible() {
