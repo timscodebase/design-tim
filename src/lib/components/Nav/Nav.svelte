@@ -1,27 +1,26 @@
 <script lang="ts">
 	import { navColor } from '$stores'
-	import Button from './Button.svelte'
 </script>
 
 <nav>
 	<ul class={`${$navColor}`}>
 		<li>
-			<Button to="/">Home</Button>
+			<a href="/">Home</a>
 		</li>
 		<li>
-			<Button to="/projects">Projects</Button>
+			<a href="/projects">Projects</a>
 		</li>
 		<li>
-			<Button to="/jobs">Jobs</Button>
+			<a href="/jobs">Jobs</a>
 		</li>
 		<li>
-			<Button to="/skills">Skills</Button>
+			<a href="/skills">Skills</a>
 		</li>
 		<li>
-			<Button to="/uses">Uses</Button>
+			<a href="/uses">Uses</a>
 		</li>
 		<li>
-			<Button to="/blog">Blog</Button>
+			<a href="/blog">Blog</a>
 		</li>
 	</ul>
 </nav>
