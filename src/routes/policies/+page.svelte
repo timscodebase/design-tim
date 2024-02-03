@@ -21,14 +21,14 @@
 	<h4>1. Personal Information</h4>
 	<p>We may collect and process the following personal information:</p>
 
-	<ul>
-		<li>Name: To personalize your experience.</li>
+	<ul class="custom-list-style">
+		<li><strong>Name:</strong> To personalize your experience.</li>
 		<li>Email Address: To communicate with you and send newsletters (if you subscribe).</li>
 	</ul>
 
 	<h4>2. Non-Personal Information</h4>
 	<p>We may also collect non-personal information such as:</p>
-	<ul>
+	<ul class="custom-list-style">
 		<li>Browser type</li>
 		<li>Device type</li>
 		<li>IP address</li>
@@ -38,7 +38,7 @@
 	<h4>How We Use Your Information</h4>
 	<p>We use your information for the following purposes:</p>
 
-	<ul>
+	<ul class="custom-list-style">
 		<li>Personalize your experience on the blog.</li>
 		<li>Communicate with you through newsletters (if you subscribe).</li>
 		<li>Analyze and improve our website's performance.</li>
@@ -48,7 +48,7 @@
 	<h4>Legal Basis for Processing</h4>
 	<p>We process personal information based on the following legal bases:</p>
 
-	<ul>
+	<ul class="custom-list-style">
 		<li><strong>Consent:</strong> For newsletter subscriptions.</li>
 		<li><strong>Legitimate Interests:</strong> For improving our website and ensuring security.</li>
 	</ul>
@@ -68,7 +68,7 @@
 	<h4>Your Rights</h4>
 	<p>Under the GDPR, you have the following rights:</p>
 
-	<ul>
+	<ul class="custom-list-style">
 		<li>
 			<strong>Right to Access:</strong> You can request access to the personal information we hold about
 			you.
@@ -127,14 +127,16 @@
 	<h4>1. Personal Information</h4>
 	<p>We may collect and process the following personal information:</p>
 
-	<ul>
-		<li>Name: To personalize your experience.</li>
-		<li>Email Address: To communicate with you and send newsletters (if you subscribe).</li>
+	<ul class="custom-list-style">
+		<li><strong>Name:</strong> To personalize your experience.</li>
+		<li>
+			<strong>Email Address:</strong> To communicate with you and send newsletters (if you subscribe).
+		</li>
 	</ul>
 
 	<h4>2. Non-Personal Information</h4>
 	<p>We may also collect non-personal information such as:</p>
-	<ul>
+	<ul class="custom-list-style">
 		<li>Browser type</li>
 		<li>Device type</li>
 		<li>IP address</li>
@@ -144,7 +146,7 @@
 	<h4>How We Use Your Information</h4>
 	<p>We use your information for the following purposes:</p>
 
-	<ul>
+	<ul class="custom-list-style">
 		<li>Personalize your experience on the blog.</li>
 		<li>Communicate with you through newsletters (if you subscribe).</li>
 		<li>Analyze and improve our website's performance.</li>
@@ -154,7 +156,7 @@
 	<h4>Legal Basis for Processing</h4>
 	<p>We process personal information based on the following legal bases:</p>
 
-	<ul>
+	<ul class="custom-list-style">
 		<li><strong>Consent:</strong> For newsletter subscriptions.</li>
 		<li><strong>Legitimate Interests:</strong> For improving our website and ensuring security.</li>
 	</ul>
@@ -174,7 +176,7 @@
 	<h4>Your Rights</h4>
 	<p>Under the CPRA, you have the following rights:</p>
 
-	<ul>
+	<ul class="custom-list-style">
 		<li>
 			<strong>Right to Access:</strong> You can request access to the personal information we hold about
 			you.
@@ -221,8 +223,12 @@
 		margin-bottom: var(--padding-md);
 	}
 
-	ul {
-		margin-left: var(--padding-md);
-		list-style-type: disc;
+	ul.custom-list-style li::before {
+		content: '\2022';
+		color: var(--primary);
+		display: inline-block;
+		width: var(--size-1);
+		margin-right: 1rem;
+		font-size: var(--size-4);
 	}
 </style>
