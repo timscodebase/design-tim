@@ -23,7 +23,9 @@
 
 	<ul class="custom-list-style">
 		<li><strong>Name:</strong> To personalize your experience.</li>
-		<li>Email Address: To communicate with you and send newsletters (if you subscribe).</li>
+		<li>
+			<strong>Email Address:</strong> To communicate with you and send newsletters (if you subscribe).
+		</li>
 	</ul>
 
 	<h4>2. Non-Personal Information</h4>
@@ -219,6 +221,12 @@
 </section>
 
 <style>
+	h3 {
+		color: var(--primary-2);
+	}
+	h4 {
+		color: var(--primary);
+	}
 	p {
 		margin-bottom: var(--padding-md);
 	}
