@@ -13,7 +13,11 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: var(--gap);
-		/* view-transition-name: header; */
+		view-transition-name: header;
+	}
+
+	&[aria-current='page']::before {
+		view-transition-name: active-page;
 	}
 
 	@media (max-width: 500px) {

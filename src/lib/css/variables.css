@@ -122,3 +122,16 @@ html {
 	color: var(--text);
 	background-color: var(--background);
 }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 5s;
+}
+
+@media (prefers-reduced-motion) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
