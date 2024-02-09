@@ -85,6 +85,9 @@ devDependencies:
   iconify-icon:
     specifier: ^1.0.8
     version: 1.0.8
+  just-extend:
+    specifier: ^6.2.0
+    version: 6.2.0
   postcss:
     specifier: ^8.4.33
     version: 8.4.33
@@ -109,6 +112,9 @@ devDependencies:
   svelte-check:
     specifier: ^2.10.3
     version: 2.10.3(@babel/core@7.23.9)(postcss@8.4.33)(svelte@5.0.0-next.37)
+  svelte-meta-tags:
+    specifier: ^3.1.0
+    version: 3.1.0(svelte@5.0.0-next.37)(typescript@5.3.3)
   svelte-preprocess:
     specifier: ^5.1.3
     version: 5.1.3(@babel/core@7.23.9)(postcss@8.4.33)(svelte@5.0.0-next.37)(typescript@5.3.3)
@@ -4484,6 +4490,10 @@ packages:
       semver: 7.5.4
     dev: false
 
+  /just-extend@6.2.0:
+    resolution: {integrity: sha512-cYofQu2Xpom82S6qD778jBDpwvvy39s1l/hrYij2u9AMdQcGRpaBu6kY4mVhuno5kJVi1DAz4aiphA2WI1/OAw==}
+    dev: true
+
   /jwa@1.4.1:
     resolution: {integrity: sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA==}
     dependencies:
@@ -5624,6 +5634,14 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /schema-dts@1.1.2(typescript@5.3.3):
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
+    dependencies:
+      typescript: 5.3.3
+    dev: true
+
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
@@ -5940,6 +5958,17 @@ packages:
       svelte: ^3.19.0 || ^4.0.0
     dependencies:
       svelte: 5.0.0-next.37
+
+  /svelte-meta-tags@3.1.0(svelte@5.0.0-next.37)(typescript@5.3.3):
+    resolution: {integrity: sha512-wFBfpktSua1R5rdvQ/aFucvXmRqzDhRYrPpMQ/pL4+KL5QHIzomPf29a5WN3yDR0reSy1PXyQ2ah0+uCYCbi0g==}
+    peerDependencies:
+      svelte: ^3.55.0 || ^4.0.0
+    dependencies:
+      schema-dts: 1.1.2(typescript@5.3.3)
+      svelte: 5.0.0-next.37
+    transitivePeerDependencies:
+      - typescript
+    dev: true
 
   /svelte-preprocess@4.10.7(@babel/core@7.23.9)(postcss@8.4.33)(svelte@5.0.0-next.37)(typescript@5.3.3):
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
