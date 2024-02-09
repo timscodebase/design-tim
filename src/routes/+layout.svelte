@@ -5,6 +5,7 @@
 	import { page } from '$app/stores'
 	import { description, name, url } from '$lib/config'
 	import favicon from '$lib/assets/favicon.png'
+	import ogImage from '$lib/assets/ogImage.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import { onNavigate } from '$app/navigation'
@@ -16,8 +17,6 @@
 	})
 
 	injectSpeedInsights()
-
-	import banner from '$lib/assets/design-tim-genearal-banner.png'
 
 	let path
 	onMount(() => {
@@ -40,7 +39,7 @@
 	<meta property="og:url" content="https://timsmith.tech" />
 	<meta property="og:description" content={`${name}: ${description}`} />
 	<meta property="og:site_name" content={`${name}: ${description}`} />
-	<meta property="og:image" href={`${url}${banner}`} />
+	<meta property="og:image" content={`${url}${ogImage}`} />
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />
 	<link rel="canonical" href="https://timsmith.tech" />
