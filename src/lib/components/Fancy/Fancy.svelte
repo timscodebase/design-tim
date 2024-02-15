@@ -10,7 +10,6 @@
 		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: spin-gradient 6s infinite;
 		padding-top: var(--padding-md);
 		padding-bottom: var(--padding-md);
 		text-align: justify;

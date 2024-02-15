@@ -1,6 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types'
-	import { Link, Grid, Job } from '$lib'
+	import { Link, Fancy, Job } from '$lib'
 
 	import resume from '$lib/assets/resume.pdf'
 
@@ -17,11 +16,11 @@
 
 <h2>Past Work</h2>
 
-<p class="flashy">
+<Fancy>
 	I am actively looking to secure a dynamic Full-Stack Engineer role within an innovative
 	organization, where I can channel my technical prowess and creative flair to craft and maintain
 	cutting-edge, user-friendly websites with a focus on responsiveness and visual appeal.
-</p>
+</Fancy>
 
 <p class="inline">
 	Checkout my <Link href={resume} external>Resume</Link> to find out more.
