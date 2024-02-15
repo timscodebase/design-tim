@@ -1,5 +1,6 @@
 
 :root {
+	--body-font-thin: 'Mulish Thin', system-ui, sans-serif;
 	--header-font-family: 'Mulish', system-ui, sans-serif;
 	--body-font-family: 'Space Mono', monospace;
 }
@@ -39,11 +40,11 @@ h6 {
 }
 
 h1 {
-	font-size: clamp(3rem, 6svw, 5rem);
+	font-size: clamp(2.5rem, 3svw, 2.986rem);
 }
 
 h2 {
-	font-size: clamp(4rem, 6svw, 5.5rem);
+	font-size: clamp(2rem, 2.5svw, 2.488rem);
 	padding: 1.5svw 0;
 	color: var(--text);
 	font-weight: 200;
@@ -51,25 +52,25 @@ h2 {
 }
 
 h3 {
-	font-size: clamp(1.5rem, 2.5svw, 2rem);
+	font-size: clamp(1.5rem, 2.1svw, 2.074rem);
 	padding: 1.25svw 0;
 	color: var(--text);
 }
 
 h4 {
-	font-size: clamp(1.2rem, 2svw, 1.75rem);
+	font-size: clamp(1rem, 1.75svw, 1.728rem);
 	padding: 1svw 0;
 	color: var(--text);
-	font-family: 'Mulish Thin', system-ui, sans-serif;
+	font-family: var(--body-font-thin);
 }
 
 h5 {
-	font-size: clamp(1rem, 1.5svw, 1.5rem);
+	font-size: clamp(0.75rem, 1.5svw, 1.44rem);
 	padding: 1.5svw 0;
 }
 
 h6 {
-	font-size: clamp(0.75rem, 1svw, 1rem);
+	font-size: clamp(0.5rem, 1.25svw, 1.2rem);
 	padding: 0.75svw 0;
 }
 
