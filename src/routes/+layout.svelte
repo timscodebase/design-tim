@@ -45,7 +45,6 @@
 	<link rel="canonical" href="https://timsmith.tech" />
 </svelte:head>
 
-<!-- <SvelteUIProvider themeObserver="dark"> -->
 <div class="container">
 	<Header />
 
@@ -55,7 +54,6 @@
 
 	<Footer />
 </div>
-<!-- </SvelteUIProvider> -->
 
 <Analytics />
 

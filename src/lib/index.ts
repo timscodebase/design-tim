@@ -13,6 +13,9 @@ export { ContactMe }
 import Chip from './components/Chip'
 export { Chip }
 
+import Fancy from './components/Fancy'
+export { Fancy }
+
 import FindMeOn from './components/FindMeOn'
 export { FindMeOn }
 

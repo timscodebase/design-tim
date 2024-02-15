@@ -1,18 +1,18 @@
 <script lang="ts">
-	import { FindMeOn, SkillGrid, Teacher } from '$lib'
+	import { Fancy, FindMeOn, SkillGrid, Teacher } from '$lib'
 
 	import { page } from '$app/stores'
 
 	const { teachers, topSkills } = $page.data
 </script>
 
-<p>
+<Fancy>
 	My cognitive gears turn in their unique way, making the conventional educational path a mismatch
 	for me. While I dabbled in a few college courses, my true knowledge reservoir comes from the
 	realms of self-study and hands-on experimentation—like the art of reverse engineering websites.
 	Fueled by an insatiable passion for learning, I constantly seek fresh avenues to refine my skills
 	and navigate the ever-evolving landscape. The following are some of my favorite teachers:
-</p>
+</Fancy>
 
 <div class="teachers">
 	{#each teachers as teacher}
@@ -26,24 +26,6 @@
 <FindMeOn />
 
 <style>
-	p {
-		--turn: 1turn;
-		color: var(--primary-2);
-		font-size: clamp(1.5rem, 1.75svw, 2rem) !important;
-		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: spin-gradient 6s infinite;
-		padding-top: var(--padding-md);
-		padding-bottom: var(--padding-md);
-	}
-
-	@media (max-width: 500px) {
-		p {
-			text-align: justify;
-		}
-	}
-
 	.teachers {
 		display: grid;
 		gap: var(--gap);
