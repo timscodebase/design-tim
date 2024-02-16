@@ -4,7 +4,7 @@
 </script>
 
 {#if external}
-	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data="preload">
+	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data="tap">
 		<slot />
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
