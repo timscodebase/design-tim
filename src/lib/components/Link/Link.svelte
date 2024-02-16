@@ -4,12 +4,12 @@
 </script>
 
 {#if external}
-	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data="tap">
+	<a {href} target="_blank" rel="noopener" data-sveltekit-preload-data="preload">
 		<slot />
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
-	<a {href} data-sveltekit-preload-data="tap">
+	<a {href} data-sveltekit-preload-data="preload">
 		<slot />
 	</a>
 {/if}
