@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Fancy, FindMeOn, SkillGrid, Teacher } from '$lib'
+	import { Link, Fancy, FindMeOn, SkillGrid, Teacher } from '$lib'
 
 	import { page } from '$app/stores'
 
@@ -22,6 +22,7 @@
 
 <h2>Here are my most used skilled</h2>
 <SkillGrid skills={topSkills} />
+<Link href="/skills">See all my skills</Link>
 
 <FindMeOn />
 

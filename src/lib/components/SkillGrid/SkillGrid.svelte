@@ -2,7 +2,6 @@
 	import { viewport } from '$utils'
 	import { onMount } from 'svelte'
 	import type { SkillType } from '$lib/types'
-	import { Link } from '$lib'
 	import Skill from './Skill.svelte'
 
 	const { skills } = $props<SkillType>()
@@ -35,7 +34,6 @@
 	{/each}
 </div>
 <br />
-<Link href="/skills">See all my skills</Link>
 
 <style>
 	.grid {
