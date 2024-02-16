@@ -114,7 +114,7 @@
 		ul {
 			display: grid;
 			gap: 0;
-			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 			font-size: 1.1rem;
 			text-align: center;
 		}
