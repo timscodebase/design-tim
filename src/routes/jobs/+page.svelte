@@ -14,7 +14,7 @@
 	<meta name="description" content="Here is my past work experience." />
 </svelte:head>
 
-<h2>Past Work</h2>
+<h2>Jobs</h2>
 
 <Fancy>
 	I am actively looking to secure a dynamic Full-Stack Engineer role within an innovative
