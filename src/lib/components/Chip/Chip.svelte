@@ -8,20 +8,22 @@
 
 <style>
 	li {
-		padding: var(--padding-xs) var(--padding-sm);
+		display: block;
+		padding: 1px 2px;
 		border-radius: 6px;
 		color: var(--reverse-text);
-		border: 4px solid var(--background), 2px solid var(--yellow);
+		outline: var(--background) 2px solid;
 	}
 
 	.frontend {
-		background: color-mix(in srgb, var(--yellow), var(--text) 50%);
-		border: 4px solid var(--background), 2px solid var(--yellow);
+		--color: color-mix(in srgb, var(--yellow), var(--text) 50%);
+		background: var(--color);
+		box-shadow: 0 0 0 0px var(--background), 0 0 0 4px var(--color);
 	}
 
 	.backend {
 		background: color-mix(in srgb, var(--blue), var(--text) 50%);
-		border: 4px solid var(--background), 2px solid var(--blue);
+		border: 2px solid var(--blue);
 	}
 
 	.fullstack {

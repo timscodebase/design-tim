@@ -1,12 +1,34 @@
 <script lang="ts">
 	import { navColor } from '$stores'
 	import { Link } from '$lib'
+
+	let navEl: HTMLElement | null = null
+
+	function isScrolling(distance = 300) {
+		let pastScrollY = window.scrollY
+
+		window.addEventListener('scroll', () => {
+			let currentScrollY = window.scrollY
+			let scrollDistance = Math.abs(currentScrollY - pastScrollY)
+
+			if (window.innerWidth >= 1000) {
+				if (currentScrollY > pastScrollY && scrollDistance >= distance) {
+					navEl?.classList.add('is-hidden')
+				} else if (currentScrollY < pastScrollY && scrollDistance >= distance) {
+					navEl?.classList.remove('is-hidden')
+				}
+			}
+		})
+		return 'up'
+	}
 </script>
 
-<nav>
+<svelte:window on:scroll={() => isScrolling(300)} />
+
+<nav bind:this={navEl}>
 	<ul class={`${$navColor}`}>
 		<li>
-			<Link href="/" pre>Home</Link>
+			<Link href="/">Home</Link>
 		</li>
 		<li>
 			<Link href="/projects">Projects</Link>
@@ -27,6 +49,9 @@
 </nav>
 
 <style>
+	.is-hidden {
+		transform: translateX(120%);
+	}
 	nav {
 		position: fixed;
 		top: 1rem;
@@ -35,6 +60,7 @@
 		z-index: 9999;
 		padding-top: var(--padding-lg);
 		padding-bottom: var(--padding-lg);
+		transition: transform 0.3s ease;
 	}
 
 	ul {

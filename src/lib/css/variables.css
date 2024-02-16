@@ -41,12 +41,12 @@
 	--pre-backgroung: var(--white-15);
 
 	/* Sizes */
-	--size-1: 0.5rem;
-	--size-2: 0.75rem;
-	--size-3: 1rem;
-	--size-4: 1.25rem;
-	--size-5: 1.5rem;
-	--size-6: 1.75rem;
+	--size-1: 0.25rem;
+	--size-2: 0.5rem;
+	--size-3: 0.75rem;
+	--size-4: 1rem;
+	--size-5: 1.25rem;
+	--size-6: 1.5rem;
 
 	--gap: var(--size-3);
 

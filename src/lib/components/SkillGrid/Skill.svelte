@@ -97,6 +97,6 @@
 	.usedAt {
 		display: flex;
 		flex-wrap: wrap;
-		gap: var(--padding-xs);
+		gap: var(--padding-md);
 	}
 </style>

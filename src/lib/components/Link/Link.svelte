@@ -1,7 +1,7 @@
 <script lang="ts">
 	import 'iconify-icon'
 	import { page } from '$app/stores'
-	const { external = false, href = '/' } = $props<{ external?: boolean; to: string }>()
+	const { external = false, href = '/' } = $props<{ external?: boolean; href: string }>()
 </script>
 
 {#if external}
