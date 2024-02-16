@@ -1,6 +1,5 @@
 <script lang="ts">
 	import 'iconify-icon'
-	import { page } from '$app/stores'
 	const { external = false, href = '/' } = $props<{ external?: boolean; href: string }>()
 </script>
 
@@ -10,11 +9,7 @@
 		<iconify-icon icon="mdi:open-in-new" />
 	</a>
 {:else}
-	<a
-		{href}
-		aria-current={$page.route.id === href ? 'page' : undefined}
-		data-sveltekit-preload-data="tap"
-	>
+	<a {href} data-sveltekit-preload-data="tap">
 		<slot />
 	</a>
 {/if}

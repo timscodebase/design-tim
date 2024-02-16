@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { JobType } from '$lib/types'
 	import { slugify } from '$utils'
-	const { job } = $props<JobType>()
+	const { job } = $props() as { job: JobType }
 
 	const { company, dates, description, location, title } = job
 </script>
@@ -19,7 +19,6 @@
 	article {
 		min-height: 50svh;
 		padding: var(--padding-lg);
-		border: var(--border-primary);
 	}
 
 	h3 {

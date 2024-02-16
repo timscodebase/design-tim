@@ -1,6 +1,16 @@
 <script lang="ts">
+	import { page } from '$app/stores'
 	import { navColor } from '$stores'
 	import { Link } from '$lib'
+
+	const links = [
+		{ name: 'Home', href: '/' },
+		{ name: 'Projects', href: '/projects' },
+		{ name: 'Jobs', href: '/jobs' },
+		{ name: 'Skills', href: '/skills' },
+		{ name: 'Uses', href: '/uses' },
+		{ name: 'Blog', href: '/blog' }
+	]
 
 	let navEl: HTMLElement | null = null
 
@@ -27,24 +37,11 @@
 
 <nav bind:this={navEl}>
 	<ul class={`${$navColor}`}>
-		<li>
-			<Link href="/">Home</Link>
-		</li>
-		<li>
-			<Link href="/projects">Projects</Link>
-		</li>
-		<li>
-			<Link href="/jobs">Jobs</Link>
-		</li>
-		<li>
-			<Link href="/skills">Skills</Link>
-		</li>
-		<li>
-			<Link href="/uses">Uses</Link>
-		</li>
-		<li>
-			<Link href="/blog">Blog</Link>
-		</li>
+		{#each links as { name, href }}
+			<li aria-current={$page.route.id === href ? 'page' : undefined}>
+				<Link {href}>{name}</Link>
+			</li>
+		{/each}
 	</ul>
 </nav>
 
@@ -78,6 +75,10 @@
 		text-decoration-color: var(--primary);
 		text-underline-offset: 2px;
 		text-decoration-thickness: 2px;
+
+		&[aria-current='page'] {
+			view-transition-name: active-page;
+		}
 	}
 
 	@media (max-width: 1000px) {

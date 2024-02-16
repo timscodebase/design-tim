@@ -78,12 +78,16 @@
 		padding: var(--gap);
 		border-radius: 4px;
 		height: 100%;
+		margin: 1rem 0;
 
 		h3,
 		h4,
 		p {
 			padding: 0;
 		}
+	}
+
+	h3 {
 	}
 
 	.info {

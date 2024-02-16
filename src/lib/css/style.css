@@ -2,42 +2,27 @@
 @import './variables.css';
 @import './typography.css';
 
-.frontend,
-.backend,
-.fullstack,
-.devops,
-.methodology,
-.design {
-	border: 2px solid !important;
-}
-
-.frontend {
-	border-color: var(--yellow);
+.frontend h3 {
 	color: var(--yellow);
 }
 
-.backend {
-	border-color: var(--blue);
+.backend h3 {
 	color: var(--blue);
 }
 
-.fullstack {
-	border-color: var(--green);
+.fullstack h3 {
 	color: var(--green);
 }
 
-.devops {
-	border-color: var(--orange);
+.devops h3 {
 	color: var(--orange);
 }
 
-.methodology {
-	border-color: var(--pink);
+.methodology h3 {
 	color: var(--pink);
 }
 
-.design {
-	border-color: var(--purple);
+.design h3 {
 	color: var(--purple);
 }
 

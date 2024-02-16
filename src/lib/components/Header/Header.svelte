@@ -16,10 +16,6 @@
 		view-transition-name: header;
 	}
 
-	&[aria-current='page']::before {
-		view-transition-name: active-page;
-	}
-
 	@media (max-width: 500px) {
 		header {
 			gap: 0;
