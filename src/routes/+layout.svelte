@@ -41,6 +41,7 @@
 	<meta property="og:site_name" content={`${name}: ${description}`} />
 	<meta property="og:image" content={`${url}${ogImage}`} />
 	<link rel="icon" type="image/png" href={favicon} />
+	<link rel="manifest" href="%sveltekit.assets%/pwa/manifest.json" />
 	<link rel="apple-touch-icon" href={appleIcon} />
 	<link rel="canonical" href="https://timsmith.tech" />
 </svelte:head>
