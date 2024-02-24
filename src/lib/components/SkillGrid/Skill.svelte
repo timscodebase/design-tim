@@ -87,9 +87,6 @@
 		}
 	}
 
-	h3 {
-	}
-
 	.info {
 		--size: 10px;
 		position: absolute;

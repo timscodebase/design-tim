@@ -23,11 +23,11 @@ button {
 	padding: var(--padding-xs);
 }
 
-a:focus,
+/* a:focus,
 button:focus {
 	--color: color-mix(in srgb, var(--primary), var(--text) 50%);
 	outline: 2px solid var(--color);
-}
+} */
 
 h1,
 h2,

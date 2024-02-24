@@ -68,4 +68,7 @@
 	p {
 		padding: var(--padding-sm) 0;
 	}
+	ul {
+		list-style: disc !important;
+	}
 </style>

@@ -128,7 +128,8 @@
 	[aria-current='page'] {
 		background: var(--primary-2);
 		color: var(--reverse-text);
-		padding: 3px 5px;
+		padding: 1px 2px;
+		border-radius: 6px;
 		view-transition-name: active-page;
 	}
 </style>
