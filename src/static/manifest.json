@@ -1,7 +1,8 @@
 {
-  "short_name": "Tim Smith",
-  "name": "Tim Smith",
+  "short_name": "tim-smith",
+  "name": "tim-smith",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#222",
   "theme_color": "#ff00fc",
