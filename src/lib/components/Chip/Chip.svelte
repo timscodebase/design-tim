@@ -11,6 +11,6 @@
 		display: block;
 		padding: 1px 2px;
 		border-radius: 6px;
-		color: var(--primary-2);
+		color: var(--primary);
 	}
 </style>
