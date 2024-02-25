@@ -1,9 +1,8 @@
 {
-  "short_name": "tim-smith",
-  "name": "tim-smith",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
+  "name": "Tim Smith",
+  "short_name": "tim smith",
+  "display": "fullscreen",
+  "orientation": "portrait",
   "background_color": "#222",
   "theme_color": "#ff00fc",
   "description": "Developer, Artist, Photographer, Writer, Creator",
