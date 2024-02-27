@@ -17,8 +17,8 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
-		color: color-mix(in srgb, var(--purple), var(--text) 60%);
-		font-weight: bolder;
+		color: var(--primary-2);
+		font-weight: 700;
 		font-family: var(--header-font-family);
 		font-size: clamp(1.2rem, 1.75svw, 1.5rem);
 
@@ -43,6 +43,6 @@
 	}
 
 	.teacher:nth-child(odd) {
-		color: color-mix(in srgb, var(--yellow), var(--text) 60%);
+		color: var(--primary);
 	}
 </style>
