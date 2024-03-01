@@ -13,6 +13,7 @@
 		padding-top: var(--padding-md);
 		padding-bottom: var(--padding-md);
 		text-align: justify;
+		font-weight: 700;
 	}
 
 	@media (max-width: 500px) {

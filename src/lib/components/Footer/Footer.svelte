@@ -21,8 +21,8 @@
 		place-items: center;
 		margin-top: var(--margin-md);
 		grid-template-columns: auto 1fr auto;
-		/* border: var(--border-primary); */
-		padding: var(--padding-sm);
+		border-top: 1px dashed var(--text);
+		padding: var(--padding-lg);
 		gap: var(--gap);
 	}
 
