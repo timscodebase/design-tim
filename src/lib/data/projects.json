@@ -52,7 +52,7 @@
 		"github": "https://github.com/timscodebase/memory-game"
 	},
 	{
-		"name": "Ropck Paper Sciessors Lizard Spock",
+		"name": "Rock Paper Scissors Lizards Spock",
 		"thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_300/v1704425058/rpsls_rqsubg.webp",
 		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704425058/rpsls_rqsubg.webp",
 		"description": "<p>All hail Sam Kass!  This is a simple game of Rock Paper Scissors Lizard Spock made popular by Sheldon Cooper on \"Big Bang Teory\"  I built this to practice my JavaScript ans svelte skills.</p>",
