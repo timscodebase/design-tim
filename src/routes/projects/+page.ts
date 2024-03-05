@@ -1,10 +1,5 @@
 import { error } from '@sveltejs/kit'
-import type { PageServerLoad } from './$types'
-import type Config from '@sveltejs/adapter-vercel'
-
-export const config: typeof Config = {
-	runtime: 'edge'
-}
+import type { PageLoad } from './$types'
 
 export const load = (async (e) => {
 	try {
@@ -15,4 +10,4 @@ export const load = (async (e) => {
 	} catch (e) {
 		error(500, `Could not load your projects. Error: ${e}`)
 	}
-}) satisfies PageServerLoad
+}) satisfies PageLoad
