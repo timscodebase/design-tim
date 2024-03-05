@@ -19,14 +19,14 @@
 	}
 
 	h3 {
-		color: color-mix(in srgb, var(--primary), var(--text) 50%);
+		color: var(--primary);
 	}
 
 	li {
-		color: color-mix(in srgb, var(--primary-2), var(--text) 50%);
+		color: var(--primary-2);
 
 		&:hover {
-			color: var(--primary-2);
+			color: var(--primary);
 		}
 	}
 </style>
