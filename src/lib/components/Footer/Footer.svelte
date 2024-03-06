@@ -22,7 +22,7 @@
 		margin-top: var(--margin-md);
 		grid-template-columns: auto 1fr auto;
 		border-top: 1px dashed var(--text);
-		padding: var(--padding-lg);
+		padding: var(--padding-lg) 0;
 		gap: var(--gap);
 	}
 

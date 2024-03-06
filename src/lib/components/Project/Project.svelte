@@ -48,14 +48,11 @@
 
 	h3 {
 		display: grid;
-		place-items: center;
 		color: var(--primary-2);
-		font-size: clamp(2rem, 5svw, 3rem);
 	}
 
 	h4 {
 		color: var(--primary);
-		font-size: clamp(1.5rem, 2.5svw, 2.25rem);
 	}
 
 	p.meta {
@@ -84,7 +81,6 @@
 		/* \/ tied to the number of rows in /routes/projects/+page.svelte */
 		grid-row: span 6;
 		grid-template-rows: subgrid;
-		padding: var(--padding-md);
 		border-radius: var(--border-radius-sm);
 	}
 

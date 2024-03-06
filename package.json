@@ -48,6 +48,7 @@
     "vitest": "^1.3.1"
   },
   "dependencies": {
+    "@sentry/sveltekit": "^7.105.0",
     "@sveltejs/adapter-vercel": "^4.0.5",
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "@vercel/speed-insights": "^1.0.10",
