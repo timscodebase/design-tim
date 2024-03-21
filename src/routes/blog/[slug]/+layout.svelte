@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation'
+	import Comments, { Count } from 'disqus-svelte'
+
 	import 'iconify-icon'
 
 	onNavigate((navigation) => {
@@ -15,3 +17,5 @@
 </script>
 
 <slot />
+
+<Count shortname="tim-smith" />

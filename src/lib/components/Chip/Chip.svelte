@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
 	const { liClass } = $props<{ liClass: string }>()
 </script>

@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
 	import type { TeacherType } from '$lib/types'
 	const { teacher } = $props() as { teacher: TeacherType }

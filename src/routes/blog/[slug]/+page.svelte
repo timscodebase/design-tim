@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
 	import { Tags } from '$lib'
+	import Comments from 'disqus-svelte'
 
 	import { page } from '$app/stores'
 </script>
@@ -42,6 +43,8 @@
 		<iconify-icon class="svg" icon="icon-park-twotone:left-two" /> Back to blog
 	</a>
 </article>
+
+<Comments identifier={$page.data.meta.title} />
 
 <style>
 	a {

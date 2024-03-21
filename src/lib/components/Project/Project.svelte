@@ -1,3 +1,5 @@
+<svelte:options runes={true} />
+
 <script lang="ts">
 	import type { ProjectType } from '$lib/types'
 	import { Link } from '$lib'
