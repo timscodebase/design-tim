@@ -2,7 +2,7 @@
 
 <script lang="ts">
 	import { Link } from '$lib'
-	const { item } = $props
+	const { item } = $props()
 	const { goal, description, image, thumb } = item
 </script>
 
