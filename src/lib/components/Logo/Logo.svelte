@@ -1,24 +1,41 @@
 <script>
 	import { name, description } from '$lib/config'
-
-	const logo =
-		'https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704304026/design-tim-header-banner_uvvpgy.png'
 </script>
 
-<a href="/">
-	<h1>
-		<img width="740" height="228" src={logo} alt={`${name} - ${description}`} />
-	</h1>
-</a>
+<div class="logo">
+	<div class="name-wrapper">
+		<div class="name-1">{name}</div>
+		<!-- <div class="name-2">{name}</div> -->
+	</div>
+	<div class="description" data-text={description}>{description}</div>
+</div>
 
 <style>
-	a {
-		display: block;
+	.name-wrapper {
+		display: grid;
+		place-content: center;
+		place-items: center;
+
+		> * {
+			grid-area: 1 / 1;
+		}
+	}
+	.name-1 {
+		--turn: 0.25turn;
+		color: var(--primary-2);
+		font-size: clamp(4rem, 10svw, 9rem);
+		text-transform: uppercase;
+		font-family: var(--header-font-family);
+		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		font-weight: 900;
 	}
 
-	img {
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
+	.description {
+		color: var(--text);
+		font-size: clamp(1.5rem, 5svw, 2rem);
+		text-align: center;
 	}
 </style>
