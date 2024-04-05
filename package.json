@@ -58,7 +58,6 @@
     "node-html-parser": "^6.1.13",
     "nodemailer": "^6.9.13",
     "octokit": "^3.1.2",
-    "svelte-feather-icons": "^4.1.0",
-    "utils": "link:@builder.io/partytown/utils"
+    "svelte-feather-icons": "^4.1.0"
   }
 }

@@ -23,7 +23,7 @@
 	.name-1 {
 		--turn: 0.25turn;
 		color: var(--primary-2);
-		font-size: clamp(4rem, 10svw, 9rem);
+		font-size: clamp(4rem, 9svw, 8rem);
 		text-transform: uppercase;
 		font-family: var(--header-font-family);
 		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
@@ -35,7 +35,8 @@
 
 	.description {
 		color: var(--text);
-		font-size: clamp(1.5rem, 5svw, 2rem);
+		font-size: clamp(1rem, 5svw, 2rem);
 		text-align: center;
+		margin-bottom: var(--margin-md);
 	}
 </style>
