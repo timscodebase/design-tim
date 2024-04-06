@@ -48,7 +48,7 @@
 		padding-bottom: var(--padding-md);
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 1000px) {
 		li {
 			flex-direction: column;
 			padding-bottom: calc(var(-padding-md) / 2);

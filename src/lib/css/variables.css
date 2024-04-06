@@ -1,6 +1,6 @@
 :root {
 	view-transition-name: none;
-	
+
 	/* Colors */
 	--black: #000000;
 	--black-75: rgba(0, 0, 0, 0.75);
@@ -75,6 +75,10 @@
 	--border-primary: 1px solid var(--primary);
 	--border-primary-2: 1px solid var(--primary-2);
 	--border-hover: var(--border-primary);
+
+	--media-sm: 500px;
+	--media-md: 800px;
+	--media-lg: 1000px;
 }
 
 /* Prefers Dark

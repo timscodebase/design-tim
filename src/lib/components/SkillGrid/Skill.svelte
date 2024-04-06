@@ -89,6 +89,13 @@
 		}
 	}
 
+	@media (max-width: 500px) {
+		.skill {
+			margin: 0;
+			padding: var(--padding-sm);
+		}
+	}
+
 	.info {
 		--size: 10px;
 		position: absolute;

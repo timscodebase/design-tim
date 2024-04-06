@@ -24,7 +24,7 @@
 		gap: var(--gap);
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 500px) {
 		img {
 			width: 80svw;
 			height: auto;

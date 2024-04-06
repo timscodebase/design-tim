@@ -35,7 +35,7 @@
 		margin-top: var(--margin-md);
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 500px) {
 		div {
 			grid-template-columns: 1fr;
 		}
