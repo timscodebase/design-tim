@@ -35,9 +35,6 @@ dependencies:
   svelte-feather-icons:
     specifier: ^4.1.0
     version: 4.1.0
-  utils:
-    specifier: link:@builder.io/partytown/utils
-    version: link:@builder.io/partytown/utils
 
 devDependencies:
   '@csstools/postcss-global-data':
