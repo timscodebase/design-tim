@@ -35,7 +35,6 @@
 		<Skill {visible} {skill} />
 	{/each}
 </div>
-<br />
 
 <style>
 	.grid {
