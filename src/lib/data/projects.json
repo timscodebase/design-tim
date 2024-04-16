@@ -1,4 +1,3 @@
-
 [
 	{
 		"name": "AI Svelte Tiger",
@@ -48,7 +47,7 @@
 		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704425403/memory_zq6on5.webp",
 		"description": "<p>I designed a delightful memory game leveraging the power of Svelte. What sets it apart? Well, I've seamlessly integrated a theme system, allowing you to effortlessly transform the visuals on the back of each tile. So, not only do you get to exercise your memory prowess, but you can also do it with a personalized touch.</p>",
 		"medium": "Svelte, Typescript, SvelteKit, SCSS",
-		"href": "https://site-v5.netlify.app/",
+		"href": "https://cute-haupia-c97ca6.netlify.app/",
 		"github": "https://github.com/timscodebase/memory-game"
 	},
 	{
@@ -61,6 +60,3 @@
 		"github": "https://github.com/timscodebase/RPS"
 	}
 ]
-
-
-
