@@ -1,9 +1,9 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { navColor } from '$stores'
+import { navColor } from "$stores";
 
-	const { btnRole, btnType } = $props
+const { btnRole, btnType } = $props;
 </script>
 
 <button type={btnType ? 'submit' : null} role={btnRole} class={`${$navColor} resizeable`}>

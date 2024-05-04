@@ -1,8 +1,11 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import 'iconify-icon'
-	const { external = false, href = '/' } = $props<{ external?: boolean; href: string }>()
+import "iconify-icon";
+const { external = false, href = "/" } = $props<{
+  external?: boolean;
+  href: string;
+}>();
 </script>
 
 {#if external}

@@ -1,2 +1,2 @@
-import Link from './Link.svelte'
-export default Link
+import Link from "./Link.svelte";
+export default Link;

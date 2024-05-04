@@ -15,6 +15,7 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
+    "@biomejs/biome": "1.7.2",
     "@csstools/postcss-global-data": "^2.1.1",
     "@eslint/eslintrc": "^3.0.2",
     "@eslint/js": "^9.0.0",

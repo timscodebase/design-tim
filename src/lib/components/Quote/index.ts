@@ -1,2 +1,2 @@
-import Quote from './Quote.svelte'
-export default Quote
+import Quote from "./Quote.svelte";
+export default Quote;

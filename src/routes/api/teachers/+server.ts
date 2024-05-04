@@ -1,6 +1,6 @@
-import { json } from '@sveltejs/kit'
-import teachers from '$data/teachers.json'
+import { json } from "@sveltejs/kit";
+import teachers from "$data/teachers.json";
 
 export async function GET() {
-	return json(teachers)
+  return json(teachers);
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Link } from '$lib'
+import { Link } from "$lib";
 </script>
 
 <div class="find-me-on">

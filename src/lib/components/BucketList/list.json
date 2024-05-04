@@ -1,50 +1,50 @@
 [
-	{
-		"goal": "Everest Base Camp",
-		"description": "I don't necessarily have the urge to climb there, but just imagine how amazing it would be if I had! Right?",
-		"image": null,
-		"thumb": null
-	},
-	{
-		"goal": "Audience with the Pope and tour of Vatican City",
-		"description": "I'd absolutely cherish the opportunity to tour Vatican City with the Pope. Despite not being particularly religious and intending no disrespect, I can't help but be fascinated by the immense influence and authority held by the Pope.",
-		"image": null,
-		"thumb": null
-	},
-	{
-		"goal": "Write the next great Novel",
-		"description": "I consider myself a skilled writer. Nevertheless, I grapple with 'stage fright' when it comes to sharing my work. I'm confident in my abilities; I just need to find my muse.",
-		"image": null,
-		"thumb": null
-	},
-	{
-		"goal": "Walk the length of the Great Wall of China",
-		"description": "The Great Wall of China has always captivated me, and if you inquire with anyone, they'll tell you that I have a genuine fondness for a delightful stroll.",
-		"image": null,
-		"thumb": null
-	},
-	{
-		"goal": "Explore Pachu Picchu and other sacred sites",
-		"description": "In my dream, fueled by childlike curiosity, I explore mystical landscapes like Machu Picchu, unveiling profound insights. Guided by an inner compass, each step becomes a sacred journey, transcending reality to unravel timeless wisdom woven into my being.",
-		"image": null,
-		"thumb": null
-	},
-	{
-		"goal": "Walk in the Footsteps of Forest Gump: A Tranquil Trek Across the USA",
-		"description": "Embark on a unique journey inspired by Forest Gump, exploring the diverse beauty of the United States through a leisurely stroll. Uncover hidden gems and untold stories as you traverse the vast land, gaining a profound appreciation for the nation's wonders on this foot-powered odyssey.",
-		"image": null,
-		"thumb": null
-	},
-	{
-		"goal": "Light the Olympic Torch",
-		"description": "I've already had the honor of participating in the Olympic Torch Relay back in 1996. Now, I dream of taking those final steps to carry the torch and ignite the flame.",
-		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907647/olympics_kkud3r.png",
-		"thumb": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/olympics-thumb_spjffj.png"
-	},
-	{
-		"goal": "Claim the throne of Scotland",
-		"description": "Technically, I possess a 1-acre plot of land in West Scotland. It's more of a whimsical claim than anything, but hey, I can boast a connection to the throne.",
-		"image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/title_jmoatp.png",
-		"thumb": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/title-thumb_jjeenm.png"
-	}
+  {
+    "goal": "Everest Base Camp",
+    "description": "I don't necessarily have the urge to climb there, but just imagine how amazing it would be if I had! Right?",
+    "image": null,
+    "thumb": null
+  },
+  {
+    "goal": "Audience with the Pope and tour of Vatican City",
+    "description": "I'd absolutely cherish the opportunity to tour Vatican City with the Pope. Despite not being particularly religious and intending no disrespect, I can't help but be fascinated by the immense influence and authority held by the Pope.",
+    "image": null,
+    "thumb": null
+  },
+  {
+    "goal": "Write the next great Novel",
+    "description": "I consider myself a skilled writer. Nevertheless, I grapple with 'stage fright' when it comes to sharing my work. I'm confident in my abilities; I just need to find my muse.",
+    "image": null,
+    "thumb": null
+  },
+  {
+    "goal": "Walk the length of the Great Wall of China",
+    "description": "The Great Wall of China has always captivated me, and if you inquire with anyone, they'll tell you that I have a genuine fondness for a delightful stroll.",
+    "image": null,
+    "thumb": null
+  },
+  {
+    "goal": "Explore Pachu Picchu and other sacred sites",
+    "description": "In my dream, fueled by childlike curiosity, I explore mystical landscapes like Machu Picchu, unveiling profound insights. Guided by an inner compass, each step becomes a sacred journey, transcending reality to unravel timeless wisdom woven into my being.",
+    "image": null,
+    "thumb": null
+  },
+  {
+    "goal": "Walk in the Footsteps of Forest Gump: A Tranquil Trek Across the USA",
+    "description": "Embark on a unique journey inspired by Forest Gump, exploring the diverse beauty of the United States through a leisurely stroll. Uncover hidden gems and untold stories as you traverse the vast land, gaining a profound appreciation for the nation's wonders on this foot-powered odyssey.",
+    "image": null,
+    "thumb": null
+  },
+  {
+    "goal": "Light the Olympic Torch",
+    "description": "I've already had the honor of participating in the Olympic Torch Relay back in 1996. Now, I dream of taking those final steps to carry the torch and ignite the flame.",
+    "image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907647/olympics_kkud3r.png",
+    "thumb": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/olympics-thumb_spjffj.png"
+  },
+  {
+    "goal": "Claim the throne of Scotland",
+    "description": "Technically, I possess a 1-acre plot of land in West Scotland. It's more of a whimsical claim than anything, but hey, I can boast a connection to the throne.",
+    "image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/title_jmoatp.png",
+    "thumb": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/title-thumb_jjeenm.png"
+  }
 ]

@@ -1,2 +1,2 @@
-import FindMeOn from './FindMeOn.svelte'
-export default FindMeOn 
+import FindMeOn from "./FindMeOn.svelte";
+export default FindMeOn;

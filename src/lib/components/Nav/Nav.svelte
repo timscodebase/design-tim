@@ -1,36 +1,36 @@
 <script lang="ts">
-	import { page } from '$app/stores'
-	import { navColor } from '$stores'
-	import { Link } from '$lib'
+import { page } from "$app/stores";
+import { navColor } from "$stores";
+import { Link } from "$lib";
 
-	const links = [
-		{ name: 'Home', href: '/' },
-		{ name: 'Projects', href: '/projects' },
-		{ name: 'Resume', href: '/resume' },
-		{ name: 'Skills', href: '/skills' },
-		{ name: 'Uses', href: '/uses' },
-		{ name: 'Blog', href: '/blog' }
-	]
+const links = [
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "Resume", href: "/resume" },
+  { name: "Skills", href: "/skills" },
+  { name: "Uses", href: "/uses" },
+  { name: "Blog", href: "/blog" },
+];
 
-	let navEl: HTMLElement | null = null
+const navEl: HTMLElement | null = null;
 
-	function isScrolling(distance = 300) {
-		let pastScrollY = window.scrollY
+function isScrolling(distance = 300) {
+  const pastScrollY = window.scrollY;
 
-		window.addEventListener('scroll', () => {
-			let currentScrollY = window.scrollY
-			let scrollDistance = Math.abs(currentScrollY - pastScrollY)
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    const scrollDistance = Math.abs(currentScrollY - pastScrollY);
 
-			if (window.innerWidth >= 1000) {
-				if (currentScrollY > pastScrollY && scrollDistance >= distance) {
-					navEl?.classList.add('is-hidden')
-				} else if (currentScrollY < pastScrollY && scrollDistance >= distance) {
-					navEl?.classList.remove('is-hidden')
-				}
-			}
-		})
-		return 'up'
-	}
+    if (window.innerWidth >= 1000) {
+      if (currentScrollY > pastScrollY && scrollDistance >= distance) {
+        navEl?.classList.add("is-hidden");
+      } else if (currentScrollY < pastScrollY && scrollDistance >= distance) {
+        navEl?.classList.remove("is-hidden");
+      }
+    }
+  });
+  return "up";
+}
 </script>
 
 <svelte:window on:scroll={() => isScrolling(300)} />

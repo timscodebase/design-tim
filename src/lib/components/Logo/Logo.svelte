@@ -1,5 +1,5 @@
 <script>
-	import { name, description } from '$lib/config'
+import { name, description } from "$lib/config";
 </script>
 
 <div class="logo">

@@ -1,41 +1,41 @@
 <script>
-	import { fly } from 'svelte/transition'
-	import { Button } from '$lib'
-	import { onMount } from 'svelte'
+import { fly } from "svelte/transition";
+import { Button } from "$lib";
+import { onMount } from "svelte";
 
-	let quote = {
-		content:
-			'The person I am know and the person I have been in the past does not need to be the person I will be in the future.',
-		author: 'Tim Smith'
-	}
+let quote = {
+  content:
+    "The person I am know and the person I have been in the past does not need to be the person I will be in the future.",
+  author: "Tim Smith",
+};
 
-	let isCopied = false
+let isCopied = false;
 
-	async function fetchQuote() {
-		try {
-			const res = await fetch('https://api.quotable.io/random')
-			const data = await res.json()
-			quote = data
-		} catch (err) {
-			console.error(err)
-		}
-	}
+async function fetchQuote() {
+  try {
+    const res = await fetch("https://api.quotable.io/random");
+    const data = await res.json();
+    quote = data;
+  } catch (err) {
+    console.error(err);
+  }
+}
 
-	onMount(fetchQuote)
+onMount(fetchQuote);
 
-	setInterval(fetchQuote, 10000)
+setInterval(fetchQuote, 10000);
 
-	async function onclick() {
-		try {
-			await navigator.clipboard.writeText(`${quote.content} - ${quote.author}`)
-			isCopied = true
-			setTimeout(() => {
-				isCopied = false
-			}, 2500)
-		} catch (err) {
-			console.error('Failed to copy: ', err)
-		}
-	}
+async function onclick() {
+  try {
+    await navigator.clipboard.writeText(`${quote.content} - ${quote.author}`);
+    isCopied = true;
+    setTimeout(() => {
+      isCopied = false;
+    }, 2500);
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
+}
 </script>
 
 <section>

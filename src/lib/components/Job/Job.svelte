@@ -1,11 +1,11 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import type { JobType } from '$lib/types'
-	import { slugify } from '$utils'
-	const { job } = $props() as { job: JobType }
+import type { JobType } from "$lib/types";
+import { slugify } from "$utils";
+const { job } = $props() as { job: JobType };
 
-	const { company, dates, description, location, title } = job
+const { company, dates, description, location, title } = job;
 </script>
 
 <article id={`${slugify(company)}`}>

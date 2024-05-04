@@ -1,2 +1,2 @@
-import Logo from './Logo.svelte'
-export default Logo
+import Logo from "./Logo.svelte";
+export default Logo;

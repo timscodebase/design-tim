@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { PageData } from './$types'
-	import { SkillGrid } from '$lib'
+import type { PageData } from "./$types";
+import { SkillGrid } from "$lib";
 
-	import { page } from '$app/stores'
+import { page } from "$app/stores";
 
-	const { skills } = $page.data
+const { skills } = $page.data;
 </script>
 
 <svelte:head>

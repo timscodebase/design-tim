@@ -1,2 +1,2 @@
-import ContactMe from './ContactMe.svelte'
-export default ContactMe
+import ContactMe from "./ContactMe.svelte";
+export default ContactMe;

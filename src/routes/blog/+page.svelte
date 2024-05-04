@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { formatDate } from '$utils'
+import { formatDate } from "$utils";
 
-	import { page } from '$app/stores'
+import { page } from "$app/stores";
 </script>
 
 <svelte:head>

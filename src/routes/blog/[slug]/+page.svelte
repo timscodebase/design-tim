@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { formatDate } from '$lib/utils'
-	import { Tags } from '$lib'
-	import Comments from 'disqus-svelte'
+import { formatDate } from "$lib/utils";
+import { Tags } from "$lib";
+import Comments from "disqus-svelte";
 
-	import { page } from '$app/stores'
+import { page } from "$app/stores";
 </script>
 
 <!-- SEO -->

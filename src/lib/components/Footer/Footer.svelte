@@ -1,5 +1,5 @@
 <script>
-	import { Link } from '$lib'
+import { Link } from "$lib";
 </script>
 
 <footer>

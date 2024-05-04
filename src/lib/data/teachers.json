@@ -1,22 +1,22 @@
 [
-	{
-		"name": "Wes Bos",
-		"url": "https://wesbos.com"
-	},
-	{
-		"name": "Scott Tolinski",
-		"url": "https://scotttolinski.com"
-	},
-	{
-		"name": "Chris Coyier",
-		"url": "https://chriscoyier.net"
-	},
-	{
-		"name": "Kevin Powell",
-		"url": "https://www.kevinpowell.co/"
-	},
-	{
-		"name": "Matija",
-		"url": "https://joyofcode.xyz"
-	}
+  {
+    "name": "Wes Bos",
+    "url": "https://wesbos.com"
+  },
+  {
+    "name": "Scott Tolinski",
+    "url": "https://scotttolinski.com"
+  },
+  {
+    "name": "Chris Coyier",
+    "url": "https://chriscoyier.net"
+  },
+  {
+    "name": "Kevin Powell",
+    "url": "https://www.kevinpowell.co/"
+  },
+  {
+    "name": "Matija",
+    "url": "https://joyofcode.xyz"
+  }
 ]

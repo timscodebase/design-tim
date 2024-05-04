@@ -1,12 +1,12 @@
-import { json } from '@sveltejs/kit'
-import skills from '$data/skills.json'
+import { json } from "@sveltejs/kit";
+import skills from "$data/skills.json";
 function getTopSkills() {
-	const topSkills = skills.filter((skill) => skill.usedAt.length >= 3)
+  const topSkills = skills.filter((skill) => skill.usedAt.length >= 3);
 
-	return topSkills
+  return topSkills;
 }
 
 export async function GET() {
-	const topSkills = getTopSkills()
-	return json(topSkills)
+  const topSkills = getTopSkills();
+  return json(topSkills);
 }

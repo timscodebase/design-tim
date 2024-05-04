@@ -1,2 +1,2 @@
-import Nav from './Nav.svelte'
-export default Nav
+import Nav from "./Nav.svelte";
+export default Nav;

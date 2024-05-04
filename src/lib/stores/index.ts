@@ -1,5 +1,5 @@
-import ogStore from './ogStore'
-export { ogStore }
+import ogStore from "./ogStore";
+export { ogStore };
 
-import navColor from './navColor'
-export { navColor }
+import navColor from "./navColor";
+export { navColor };

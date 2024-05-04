@@ -1,9 +1,9 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { Link } from '$lib'
-	const { item } = $props()
-	const { goal, description, image, thumb } = item
+import { Link } from "$lib";
+const { item } = $props();
+const { goal, description, image, thumb } = item;
 </script>
 
 <div>

@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Link, Fancy, Job } from '$lib'
+import { Link, Fancy, Job } from "$lib";
 
-	import resume from '$lib/assets/resume-2024.pdf'
+import resume from "$lib/assets/resume-2024.pdf";
 
-	import { page } from '$app/stores'
+import { page } from "$app/stores";
 
-	const { jobs } = $page.data
+const { jobs } = $page.data;
 </script>
 
 <svelte:head>

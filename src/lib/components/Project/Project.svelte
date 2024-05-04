@@ -1,11 +1,12 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import type { ProjectType } from '$lib/types'
-	import { Link } from '$lib'
-	const { project } = $props<ProjectType>()
+import type { ProjectType } from "$lib/types";
+import { Link } from "$lib";
+const { project } = $props<ProjectType>();
 
-	const { name, href, github, thumbnail, image, where, description, medium } = project
+const { name, href, github, thumbnail, image, where, description, medium } =
+  project;
 </script>
 
 <article>

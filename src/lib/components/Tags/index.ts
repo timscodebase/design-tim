@@ -1,2 +1,2 @@
-import Tags from './Tags.svelte'
-export default Tags
+import Tags from "./Tags.svelte";
+export default Tags;

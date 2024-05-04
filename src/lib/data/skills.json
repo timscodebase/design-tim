@@ -1,122 +1,129 @@
 [
-	{
-		"name": "HTML",
-		"usedAt": [
-			"Gap",
-			"Partners in Code",
-			"LafLife",
-			"Spotkey",
-			"The Clorox Company",
-			"YesMail InfoUSA",
-			"Zynga"
-		],
-		"yearsExp": 15,
-		"level": "advanced",
-		"category": "frontend"
-	},
-	{
-		"name": "CSS",
-		"usedAt": ["Partners in Code", "Gap", "Spotkey", "LafLife", "Zynga", "The Clorox Company"],
-		"yearsExp": 14,
-		"level": "advanced",
-		"category": "frontend"
-	},
-	{
-		"name": "React",
-		"usedAt": ["Partners in Code", "Gap"],
-		"yearsExp": 6,
-		"level": "intermediate",
-		"category": "frontend"
-	},
-	{
-		"name": "Next JS",
-		"usedAt": ["Partners in Code"],
-		"yearsExp": 5,
-		"level": "intermediate",
-		"category": "fullstack"
-	},
-	{
-		"name": "Node JS",
-		"usedAt": ["Partners in Code", "Gap", "Spotkey", "LafLife"],
-		"yearsExp": 5,
-		"level": "intermediate",
-		"category": "backend"
-	},
-	{
-		"name": "JAMStack",
-		"usedAt": ["Partners in Code"],
-		"yearsExp": 5,
-		"level": "advanced",
-		"category": "frontend"
-	},
-	{
-		"name": "Svelte",
-		"usedAt": ["Partners in Code"],
-		"yearsExp": 4,
-		"level": "intermediate",
-		"category": "fullstack"
-	},
-	{
-		"name": "Typescript",
-		"usedAt": ["Partners in Code", "Gap"],
-		"yearsExp": 3,
-		"level": "beginner",
-		"category": "fullstack"
-	},
-	{
-		"name": "Python",
-		"usedAt": ["Partners in Code"],
-		"yearsExp": 4,
-		"level": "beginner",
-		"category": "fullstack"
-	},
-	{
-		"name": "Github",
-		"usedAt": ["Partners in Code", "Gap", "Spotkey", "LafLife"],
-		"yearsExp": 8,
-		"level": "intermediate",
-		"category": "devops"
-	},
-	{
-		"name": "Photoshop",
-		"usedAt": ["Partners in Code", "Gap", "Zynga", " YesMail/InfoUSA"],
-		"yearsExp": 5,
-		"level": "intermediate",
-		"category": "design"
-	},
-	{
-		"name": "Agile",
-		"usedAt": ["Partners in Code", "Gap", "Spotkey"],
-		"yearsExp": 6,
-		"level": "intermediate",
-		"category": "methodology"
-	},
-	{
-		"name": "Docker",
-		"usedAt": ["Partners in Code", "Gap"],
-		"yearsExp": 2,
-		"level": "beginner",
-		"category": "backend"
-	},
-	{
-		"name": "Kubernetes",
-		"usedAt": ["Partners in Code", "Gap"],
-		"yearsExp": 1,
-		"level": "beginner",
-		"category": "devops"
-	},
-	{
-		"name": "Splunk",
-		"usedAt": ["Gap"],
-		"yearsExp": 2,
-		"level": "beginner",
-		"category": "devops"
-	},
-	{
-		"name": "New Relic",
-		"usedAt": ["Gap"],
-		"yearsExp": 1,
-		"level": "beginner",
-		"category": "devops"
-	}
+  {
+    "name": "HTML",
+    "usedAt": [
+      "Gap",
+      "Partners in Code",
+      "LafLife",
+      "Spotkey",
+      "The Clorox Company",
+      "YesMail InfoUSA",
+      "Zynga"
+    ],
+    "yearsExp": 15,
+    "level": "advanced",
+    "category": "frontend"
+  },
+  {
+    "name": "CSS",
+    "usedAt": [
+      "Partners in Code",
+      "Gap",
+      "Spotkey",
+      "LafLife",
+      "Zynga",
+      "The Clorox Company"
+    ],
+    "yearsExp": 14,
+    "level": "advanced",
+    "category": "frontend"
+  },
+  {
+    "name": "React",
+    "usedAt": ["Partners in Code", "Gap"],
+    "yearsExp": 6,
+    "level": "intermediate",
+    "category": "frontend"
+  },
+  {
+    "name": "Next JS",
+    "usedAt": ["Partners in Code"],
+    "yearsExp": 5,
+    "level": "intermediate",
+    "category": "fullstack"
+  },
+  {
+    "name": "Node JS",
+    "usedAt": ["Partners in Code", "Gap", "Spotkey", "LafLife"],
+    "yearsExp": 5,
+    "level": "intermediate",
+    "category": "backend"
+  },
+  {
+    "name": "JAMStack",
+    "usedAt": ["Partners in Code"],
+    "yearsExp": 5,
+    "level": "advanced",
+    "category": "frontend"
+  },
+  {
+    "name": "Svelte",
+    "usedAt": ["Partners in Code"],
+    "yearsExp": 4,
+    "level": "intermediate",
+    "category": "fullstack"
+  },
+  {
+    "name": "Typescript",
+    "usedAt": ["Partners in Code", "Gap"],
+    "yearsExp": 3,
+    "level": "beginner",
+    "category": "fullstack"
+  },
+  {
+    "name": "Python",
+    "usedAt": ["Partners in Code"],
+    "yearsExp": 4,
+    "level": "beginner",
+    "category": "fullstack"
+  },
+  {
+    "name": "Github",
+    "usedAt": ["Partners in Code", "Gap", "Spotkey", "LafLife"],
+    "yearsExp": 8,
+    "level": "intermediate",
+    "category": "devops"
+  },
+  {
+    "name": "Photoshop",
+    "usedAt": ["Partners in Code", "Gap", "Zynga", " YesMail/InfoUSA"],
+    "yearsExp": 5,
+    "level": "intermediate",
+    "category": "design"
+  },
+  {
+    "name": "Agile",
+    "usedAt": ["Partners in Code", "Gap", "Spotkey"],
+    "yearsExp": 6,
+    "level": "intermediate",
+    "category": "methodology"
+  },
+  {
+    "name": "Docker",
+    "usedAt": ["Partners in Code", "Gap"],
+    "yearsExp": 2,
+    "level": "beginner",
+    "category": "backend"
+  },
+  {
+    "name": "Kubernetes",
+    "usedAt": ["Partners in Code", "Gap"],
+    "yearsExp": 1,
+    "level": "beginner",
+    "category": "devops"
+  },
+  {
+    "name": "Splunk",
+    "usedAt": ["Gap"],
+    "yearsExp": 2,
+    "level": "beginner",
+    "category": "devops"
+  },
+  {
+    "name": "New Relic",
+    "usedAt": ["Gap"],
+    "yearsExp": 1,
+    "level": "beginner",
+    "category": "devops"
+  }
 ]

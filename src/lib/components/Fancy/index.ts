@@ -1,2 +1,2 @@
-import Fancy from './Fancy.svelte'
-export default Fancy
+import Fancy from "./Fancy.svelte";
+export default Fancy;

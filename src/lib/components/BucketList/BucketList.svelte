@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { GoalType } from '$lib/types'
-	import { Grid } from '$lib'
-	import List from './list.json'
-	import Item from './Item.svelte'
+import type { GoalType } from "$lib/types";
+import { Grid } from "$lib";
+import List from "./list.json";
+import Item from "./Item.svelte";
 
-	let bucketList: GoalType[] = List
+const bucketList: GoalType[] = List;
 </script>
 
 <h3>My BucketList...</h3>

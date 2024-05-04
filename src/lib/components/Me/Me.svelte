@@ -1,14 +1,14 @@
 <script lang="ts">
-	function preload(src) {
-		return new Promise(function (resolve) {
-			let img = new Image()
-			img.onload = resolve
-			img.src = src
-		})
-	}
+function preload(src) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = resolve;
+    img.src = src;
+  });
+}
 
-	let src =
-		'https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_323/v1703907649/me_f8wxaa.png'
+const src =
+  "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_323/v1703907649/me_f8wxaa.png";
 </script>
 
 <div class="me">

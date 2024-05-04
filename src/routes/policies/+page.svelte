@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { name } from '$lib/config'
+import { name } from "$lib/config";
 </script>
 
 <h2>Policies</h2>

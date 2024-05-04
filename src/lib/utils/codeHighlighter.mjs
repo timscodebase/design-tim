@@ -9,10 +9,10 @@ const t = 'material-theme-darker'
  * @returns {string} - escaped HTML
  */
 function escapeHtml(code) {
-  return code.replace(
-    /[{}`]/g,
-    (character) => ({ '{': '&lbrace;', '}': '&rbrace;', '`': '&grave;' })[character],
-  )
+	return code.replace(
+		/[{}`]/g,
+		(character) => ({ '{': '&lbrace;', '}': '&rbrace;', '`': '&grave;' }[character])
+	)
 }
 
 /**
@@ -21,21 +21,22 @@ function escapeHtml(code) {
  * @returns {number[]}
  */
 function rangeParser(rangeString) {
-  const result = []
-  const ranges = rangeString.split(',')
-  ranges.forEach((element) => {
-    if (element.indexOf('-') === -1) {
-      result.push(parseInt(element, 10))
-    } else {
-      const limits = element.split('-')
-      const start = parseInt(limits[0], 10)
-      const end = parseInt(limits[1], 10)
-      for (let i = start; i <= end; i += 1) {
-        result.push(i);
-      }
-    }
-  })
-  return result
+	const result = []
+	const ranges = rangeString.split(',')
+	for (let i = 0; i < ranges.length; i += 1) {
+		const element = ranges[i]
+		if (element.indexOf('-') === -1) {
+			result.push(Number.parseInt(element, 10))
+		} else {
+			const [startStr, endStr] = element.split('-')
+			const start = Number.parseInt(startStr, 10)
+			const end = Number.parseInt(endStr, 10)
+			for (let j = start; j <= end; j += 1) {
+				result.push(j)
+			}
+		}
+	}
+	return result
 }
 
 /**
@@ -43,9 +44,9 @@ function rangeParser(rangeString) {
  * @returns {string} - highlighted html
  */
 function makeFocussable(html) {
-  const root = parse(html)
-  root.querySelector('pre').setAttribute('tabIndex', '0')
-  return root.toString()
+	const root = parse(html)
+	root.querySelector('pre').setAttribute('tabIndex', '0')
+	return root.toString()
 }
 
 /**
@@ -55,29 +56,29 @@ function makeFocussable(html) {
  * @returns {string} - highlighted html
  */
 async function highlighter(code, lang, meta) {
-  const shikiHighlighter = await getHighlighter({
-    theme: t,
-  });
+	const shikiHighlighter = await getHighlighter({
+		theme: t
+	})
 
-  let html;
-  if (!meta) {
-    html = shikiHighlighter.codeToHtml(code, {
-      lang,
-    })
-  } else {
-    const highlightMeta = /{([\d,-]+)}/.exec(meta)[1]
-    const highlightLines = rangeParser(highlightMeta)
+	let html
+	if (!meta) {
+		html = shikiHighlighter.codeToHtml(code, {
+			lang
+		})
+	} else {
+		const highlightMeta = /{([\d,-]+)}/.exec(meta)[1]
+		const highlightLines = rangeParser(highlightMeta)
 
-    html = shikiHighlighter.codeToHtml(code, {
-      lang,
-      lineOptions: highlightLines.map((element) => ({
-        line: element,
-        classes: ['highlight-line'],
-      })),
-    })
-  }
-  html = makeFocussable(html)
-  return escapeHtml(html)
+		html = shikiHighlighter.codeToHtml(code, {
+			lang,
+			lineOptions: highlightLines.map((element) => ({
+				line: element,
+				classes: ['highlight-line']
+			}))
+		})
+	}
+	html = makeFocussable(html)
+	return escapeHtml(html)
 }
 
 export default highlighter

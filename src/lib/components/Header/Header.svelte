@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Logo, Me, Nav } from '$lib'
+import { Logo, Me, Nav } from "$lib";
 </script>
 
 <header>

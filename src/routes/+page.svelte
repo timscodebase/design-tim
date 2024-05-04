@@ -1,11 +1,11 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { Link, Fancy, FindMeOn, SkillGrid, Teacher } from '$lib'
+import { Link, Fancy, FindMeOn, SkillGrid, Teacher } from "$lib";
 
-	import { page } from '$app/stores'
+import { page } from "$app/stores";
 
-	const { teachers, topSkills } = $page.data
+const { teachers, topSkills } = $page.data;
 </script>
 
 <Fancy>

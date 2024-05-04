@@ -1,2 +1,2 @@
-import Teacher from './Teacher.svelte'
-export default Teacher
+import Teacher from "./Teacher.svelte";
+export default Teacher;

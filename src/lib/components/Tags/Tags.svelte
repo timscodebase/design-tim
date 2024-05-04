@@ -1,8 +1,8 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { Tag } from '$lib'
-	const { categories } = $props<{ categories: Tag[] }>()
+import type { Tag } from "$lib";
+const { categories } = $props<{ categories: Tag[] }>();
 </script>
 
 <div class="tags">

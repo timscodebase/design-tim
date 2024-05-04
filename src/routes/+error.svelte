@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores'
+import { page } from "$app/stores";
 </script>
 
 <h2>There has been an error 😫</h2>

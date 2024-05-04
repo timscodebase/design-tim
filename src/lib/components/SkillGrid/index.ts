@@ -1,2 +1,2 @@
-import SkillGrid from './SkillGrid.svelte'
-export default SkillGrid
+import SkillGrid from "./SkillGrid.svelte";
+export default SkillGrid;

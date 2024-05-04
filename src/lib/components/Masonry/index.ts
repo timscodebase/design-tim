@@ -1,2 +1,2 @@
-import Masonry from './Masonry.svelte'
-export default Masonry
+import Masonry from "./Masonry.svelte";
+export default Masonry;

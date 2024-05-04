@@ -1,11 +1,11 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { Project } from '$lib'
+import { Project } from "$lib";
 
-	import { page } from '$app/stores'
+import { page } from "$app/stores";
 
-	const { projects } = $page.data
+const { projects } = $page.data;
 </script>
 
 <svelte:head>

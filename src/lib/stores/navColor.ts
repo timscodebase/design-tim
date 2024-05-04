@@ -1,7 +1,14 @@
-import { writable } from 'svelte/store'
+import { writable } from "svelte/store";
 
-type NavColor = 'frontend' | 'backend' | 'fullstack' | 'devops' | 'design' | 'methodology' | 'misc'	
+type NavColor =
+  | "frontend"
+  | "backend"
+  | "fullstack"
+  | "devops"
+  | "design"
+  | "methodology"
+  | "misc";
 
-const navColor = writable<NavColor>('frontend')
+const navColor = writable<NavColor>("frontend");
 
-export default navColor
+export default navColor;
