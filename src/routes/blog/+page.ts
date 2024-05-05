@@ -1,5 +1,9 @@
 import { error } from '@sveltejs/kit'
-import type { PageLoad } from './$types'
+import type { PageServerLoad } from './$types'
+
+export const config: typeof Config = {
+	runtime: 'edge'
+}
 
 export const load = (async (e) => {
 	try {
@@ -10,4 +14,4 @@ export const load = (async (e) => {
 	} catch (e) {
 		error(500, `Could not load your published posts. Error: ${e}`)
 	}
-}) satisfies PageLoad
+}) satisfies PageServerLoad
