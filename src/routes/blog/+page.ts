@@ -1,13 +1,15 @@
-import { error } from "@sveltejs/kit";
-import type { PageLoad } from "./$types";
+import { error } from '@sveltejs/kit'
+import type { PageLoad } from './$types'
 
-export const load = (async (e) => {
-  try {
-    const response = await e.fetch("api/posts");
-    const posts = await response.json();
+export const load = (async ({ params }) => {
+	try {
+		const post = await import(`../../../posts/${params.slug}.md`)
 
-    return { posts };
-  } catch (e) {
-    error(500, `Could not load your published posts. Error: ${e}`);
-  }
-}) satisfies PageLoad;
+		return {
+			content: post.default,
+			meta: post.metadata
+		}
+	} catch (e) {
+		error(404, `Could not find ${params.slug}`)
+	}
+}) satisfies PageLoad
