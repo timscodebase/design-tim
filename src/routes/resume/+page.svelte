@@ -5,7 +5,7 @@ import resume from "$lib/assets/resume-2024.pdf";
 
 import { page } from "$app/stores";
 
-const { jobs } = $page.data;
+let { jobs } = $page.data;
 </script>
 
 <svelte:head>

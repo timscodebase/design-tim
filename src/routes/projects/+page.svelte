@@ -5,7 +5,7 @@ import { Project } from "$lib";
 
 import { page } from "$app/stores";
 
-const { projects } = $page.data;
+let { projects } = $page.data;
 </script>
 
 <svelte:head>

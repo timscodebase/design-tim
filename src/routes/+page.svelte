@@ -5,7 +5,7 @@ import { Link, Fancy, FindMeOn, SkillGrid, Teacher } from "$lib";
 
 import { page } from "$app/stores";
 
-const { teachers, topSkills } = $page.data;
+let { teachers, topSkills } = $page.data;
 </script>
 
 <Fancy>
