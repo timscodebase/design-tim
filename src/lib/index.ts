@@ -55,9 +55,6 @@ export { formatDate, slugify };
 import SkillGrid from "./components/SkillGrid";
 export { SkillGrid };
 
-import Tag from "./components/Tags/Tag";
-export { Tag };
-
 import Tags from "./components/Tags";
 export { Tags };
 

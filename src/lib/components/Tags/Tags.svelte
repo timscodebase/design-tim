@@ -1,13 +1,16 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-import type { Tag } from "$lib";
-const { categories } = $props<{ categories: Tag[] }>();
+    const { categories } = $props<{ categories: Tag[] }>();
 </script>
+
+{#snippet tag(category)}
+	<span class="category">&num;{category}</span>
+{/snippet}
 
 <div class="tags">
 	{#each categories as category}
-		<Tag {category} />
+		{@render tag(category)}
 	{/each}
 </div>
 

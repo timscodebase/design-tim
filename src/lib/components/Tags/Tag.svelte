@@ -1,7 +1,7 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-const { category } = $props<{ category: string }>();
+  const { category } = $props<{ category: string }>();
 </script>
 
 <span class="category">&num;{category}</span>
