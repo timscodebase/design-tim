@@ -4,7 +4,7 @@ import { SkillGrid } from "$lib";
 
 import { page } from "$app/stores";
 
-const { skills } = $page.data;
+let { skills } = $page.data;
 </script>
 
 <svelte:head>
