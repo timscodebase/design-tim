@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<script type="speculationrules">
+			{
+				"prerender": [
+					{
+						"where": {
+							"and": [
+								{ "href_matches": "/*" },
+								{ "not": { "selector_matches": ".do-not-prerender" } },
+								{ "not": { "selector_matches": "[rel=nofollow]" } }
+							]
+						}
+					}
+				]
+			}
+		</script>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="view-transition" content="same-origin" />
