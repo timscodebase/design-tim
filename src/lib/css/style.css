@@ -10,6 +10,10 @@
 	@import './typography.css';
 }
 
+@import './reset.css';
+@import './variables.css';
+@import './typography.css';
+
 @layer base {
 	.frontend h3 {
 		color: var(--yellow);
