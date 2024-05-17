@@ -2,99 +2,118 @@
 @import './variables.css';
 @import './typography.css';
 
-@layer base {
-	.frontend h3 {
-		color: var(--yellow);
-	}
+@view-transition {
+	navigation: auto;
+}
 
-	.backend h3 {
-		color: var(--blue);
-	}
+.frontend h3 {
+	color: var(--yellow);
+}
 
-	.fullstack h3 {
-		color: var(--green);
-	}
+.backend h3 {
+	color: var(--blue);
+}
 
-	.devops h3 {
-		color: var(--orange);
-	}
+.fullstack h3 {
+	color: var(--green);
+}
 
-	.methodology h3 {
-		color: var(--pink);
-	}
+.devops h3 {
+	color: var(--orange);
+}
 
-	.design h3 {
-		color: var(--purple);
-	}
+.methodology h3 {
+	color: var(--pink);
+}
 
-	strong {
-		color: var(--primary-2);
-	}
+.design h3 {
+	color: var(--purple);
+}
 
-	#__svelte-email > table {
-		width: 80svw !important;
-	}
+strong {
+	color: var(--primary-2);
+}
 
-	.flashy {
-		--turn: 1turn;
-		color: var(--primary-2);
-		font-size: clamp(1.5rem, 1.75svw, 2rem) !important;
-		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: spin-gradient 6s infinite;
-		padding-top: var(--padding-lg);
-	}
+#__svelte-email > table {
+	width: 80svw !important;
+}
 
-	.prose h2,
-	.prose h3 {
-		color: var(--primary-2);
-	}
+.flashy {
+	--turn: 1turn;
+	color: var(--primary-2);
+	font-size: clamp(1.5rem, 1.75svw, 2rem) !important;
+	background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: spin-gradient 6s infinite;
+	padding-top: var(--padding-lg);
+}
 
-	/* Image Slider Component */
-	.image-gallery-icon {
-		color: var(--primary);
-	}
+.prose h2,
+.prose h3 {
+	color: var(--primary-2);
+}
 
-	.image-gallery-icon:hover {
-		color: var(--primary-2);
-	}
+/* Image Slider Component */
+.image-gallery-icon {
+	color: var(--primary);
+}
 
-	.image-gallery-thumbnails-wrapper {
-		display: none !important;
-	}
+.image-gallery-icon:hover {
+	color: var(--primary-2);
+}
 
-	pre {
-		position: relative;
-		font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-			'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-			'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-		white-space: pre-wrap;
-		overflow-x: auto;
-		padding: var(--padding-md);
-		padding-top: 40px;
-		margin: var(--margin-md) 0;
-		border: var(--border-primary);
-		border-radius: var(--border-radius-md);
-		background: var(--pre-backgroung);
-	}
-	pre::before {
-		position: relative;
-		display: grid;
-		place-items: center;
-		top: 0;
-		left: 0;
-		width: 70px;
-		height: 25px;
-		content: 'Code';
-		color: var(--reverse-text);
-		font-family: var(--body-font-family);
-		background: var(--primary-2);
-		border-radius: 0 0 var(--border-radius-md) 0;
-	}
+.image-gallery-thumbnails-wrapper {
+	display: none !important;
+}
 
-	pre[data-lang]::before {
-		content: attr(data-lang);
-		display: block;
+pre {
+	position: relative;
+	font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
+		'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+		'Courier New', Courier, monospace;
+	white-space: pre-wrap;
+	overflow-x: auto;
+	padding: var(--padding-md);
+	padding-top: 40px;
+	margin: var(--margin-md) 0;
+	border: var(--border-primary);
+	border-radius: var(--border-radius-md);
+	background: var(--pre-backgroung);
+}
+pre::before {
+	position: relative;
+	display: grid;
+	place-items: center;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 25px;
+	content: 'Code';
+	color: var(--reverse-text);
+	font-family: var(--body-font-family);
+	background: var(--primary-2);
+	border-radius: 0 0 var(--border-radius-md) 0;
+}
+
+pre[data-lang]::before {
+	content: attr(data-lang);
+	display: block;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		scale: 0.6;
 	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+.fade-in {
+	animation: fadeIn linear;
+	animation-timeline: view();
+	animation-range: entry 25% cover 50%;
 }
