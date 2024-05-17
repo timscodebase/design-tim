@@ -1,77 +1,58 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-import { onMount } from "svelte";
-import { scale } from "svelte/transition";
-import { Chip, Link } from "$lib";
-import { viewport, slugify } from "$utils";
-import { navColor } from "$stores";
-import type { SkillType } from "$lib/types";
+	import { scale } from 'svelte/transition'
+	import { Chip } from '$lib'
+	import type { SkillType } from '$lib/types'
 
-const { skill, visible } = $props<{ skill: SkillType; visible: boolean }>();
-let isVisible = $state(visible);
-
-onMount(() => {
-  const box = document.querySelector(".outer");
-  if (!isVisible && viewport.isIn(box)) {
-    isVisible = true;
-  }
-
-  document.addEventListener(
-    "scroll",
-    () => {
-      if (!isVisible && viewport.isIn(box)) {
-        isVisible = true;
-      }
-    },
-    {
-      passive: true,
-    },
-  );
-});
-
-function onMouseover() {
-  navColor.set(skill.category);
-}
+	const { skill } = $props<{ skill: SkillType }>()
 </script>
 
-<div class="outer">
-	{#if isVisible}
-		<div
-			tabindex="0"
-			on:touchstart={onMouseover}
-			on:mouseover={onMouseover}
-			on:focus={onMouseover}
-			class={`skill ${skill.category}`}
-			in:scale={{ duration: 500 }}
-			out:scale={{ duration: 500 }}
+<div
+	class={`skill fade-in ${skill.category}`}
+	in:scale={{ duration: 500 }}
+	out:scale={{ duration: 500 }}
+	role="button"
+>
+	<h3>{skill.name}</h3>
+
+	<p class="info">
+		<b class="bold"
+			>{skill.yearsExp}
+			{parseInt(skill.yearsExp) > 1 ? ` years` : `year`}</b
 		>
-			<h3>{skill.name}</h3>
+		<br />{skill.category}
+		<br /><b class="bold">{skill.level}</b>
+	</p>
 
-			<p class="info">
-				<b class="bold"
-					>{skill.yearsExp}
-					{parseInt(skill.yearsExp) > 1 ? ` years` : `year`}</b
-				>
-				<br />{skill.category}
-				<br /><b class="bold">{skill.level}</b>
-			</p>
+	<h4>Used At</h4>
+	<ul class="usedAt">
+		<!-- alphabetize list -->
 
-			<h4>Used At</h4>
-			<ul class="usedAt">
-				<!-- alphabetize list -->
-
-				{#each skill.usedAt.sort() as usedAt}
-					<Chip liClass={skill.category}>
-						<Link href={`/jobs/#${slugify(usedAt)}`}>{usedAt}</Link>
-					</Chip>
-				{/each}
-			</ul>
-		</div>
-	{/if}
+		{#each skill.usedAt.sort() as usedAt}
+			<Chip liClass={skill.category}>{usedAt}</Chip>
+		{/each}
+	</ul>
 </div>
 
 <style>
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			scale: 0.8;
+		}
+		to {
+			opacity: 1;
+			scale: 1;
+		}
+	}
+
+	.fade-in {
+		animation: fadeIn linear;
+		animation-timeline: scroll(root);
+		animation-range: contain 25% contain;
+	}
+
 	.skill {
 		position: relative;
 		display: flex;
@@ -79,7 +60,7 @@ function onMouseover() {
 		gap: var(--gap);
 		padding: var(--gap);
 		border-radius: 4px;
-		height: 100%;
+		/* height: 100%; */
 		margin: 1rem 0;
 
 		h3,

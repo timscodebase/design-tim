@@ -1,33 +1,33 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-import { viewport } from "$utils";
-import { onMount } from "svelte";
-import type { SkillType } from "$lib/types";
-import Skill from "./Skill.svelte";
+	import { viewport } from '$utils'
+	import { onMount } from 'svelte'
+	import type { SkillType } from '$lib/types'
+	import Skill from './Skill.svelte'
 
-const { skills } = $props<SkillType>();
-let visible = false;
+	const { skills } = $props<SkillType>()
+	let visible = false
 
-function resetVisible() {
-  visible = false;
-}
+	function resetVisible() {
+		visible = false
+	}
 
-onMount(() => {
-  const box = document.querySelector(".grid");
+	onMount(() => {
+		const box = document.querySelector('.grid')
 
-  document.addEventListener(
-    "scroll",
-    () => {
-      if (viewport.isBottom(box)) {
-        resetVisible();
-      }
-    },
-    {
-      passive: true,
-    },
-  );
-});
+		document.addEventListener(
+			'scroll',
+			() => {
+				if (viewport.isBottom(box)) {
+					resetVisible()
+				}
+			},
+			{
+				passive: true
+			}
+		)
+	})
 </script>
 
 <div class="grid">
