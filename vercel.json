@@ -3,7 +3,7 @@
 	"framework": "sveltekit",
 	"headers": [
 		{
-			"source": "/src/service-worker.js",
+			"source": "/service-worker.js",
 			"headers": [
 				{
 					"key": "Cache-Control",
