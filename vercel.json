@@ -3,12 +3,26 @@
 	"framework": "sveltekit",
 	"headers": [
 		{
-			"key": "Content-Type",
-			"value": "aplication/speculationrules+json"
+			"source": "/src/service-worker.js",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=0, must-revalidate"
+				}
+			]
 		},
 		{
-			"key": "Access-Control-Allow-Origin",
-			"value": "*"
+			"source": "/(.*)",
+			"headers": [
+				{
+					"key": "Content-Type",
+					"value": "aplication/speculationrules+json"
+				},
+				{
+					"key": "Access-Control-Allow-Origin",
+					"value": "*"
+				}
+			]
 		}
 	]
 }
