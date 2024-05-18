@@ -1,8 +1,8 @@
-import formatDate from "./formateDate";
-export { formatDate };
+import formatDate from './formateDate'
+export { formatDate }
 
-import viewport from "./viewport";
-export { viewport };
+import viewport from './viewport'
+export { viewport }
 
-import slugify from "./slugify";
-export { slugify };
+import slugify from './slugify'
+export { slugify }

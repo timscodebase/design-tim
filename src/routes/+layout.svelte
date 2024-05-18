@@ -50,7 +50,7 @@
 	<link rel="canonical" href="https://timsmith.tech" />
 </svelte:head>
 
-<div class="container">
+<div id="wrapper" class="container">
 	<Header />
 
 	<main>
@@ -67,6 +67,13 @@
 		padding: var(--padding-md);
 		max-width: 740px;
 		margin: 0 auto;
-		overflow: hidden;
+		overflow: clip;
+	}
+
+	:global(#wrapper) {
+		height: 100%;
+		overflow: clip;
+		view-timeline-name: --section-pin-tl;
+		view-timeline-axis: block;
 	}
 </style>

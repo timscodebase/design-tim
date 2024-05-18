@@ -1,5 +1,5 @@
 <script>
-import { Link } from "$lib";
+	import { Link, FindMeOn } from '$lib'
 </script>
 
 <footer>
@@ -24,14 +24,34 @@ import { Link } from "$lib";
 </footer>
 
 <style>
+	@keyframes glow {
+		0% {
+			background: linear-gradient(to top, var(--pink) 0%, rgba(0, 0, 0, 0) 40%);
+		}
+		25% {
+			background: linear-gradient(to top, var(--pink) 20%, rgba(0, 0, 0, 0) 40%);
+		}
+		50% {
+			background: linear-gradient(to top, var(--purple) 0%, rgba(0, 0, 0, 0) 40%);
+		}
+		75% {
+			background: linear-gradient(to top, var(--purple) 20%, rgba(0, 0, 0, 0) 40%);
+		}
+		100% {
+			background: linear-gradient(to top, var(--pink) 0%, rgba(0, 0, 0, 0) 40%);
+		}
+	}
+
 	footer {
 		display: grid;
 		place-items: center;
 		margin-top: var(--margin-md);
 		grid-template-columns: auto 1fr auto;
 		border-top: 1px dashed var(--text);
-		padding: var(--padding-lg) 0;
+		padding: var(--padding-lg) 0 350px 0;
 		gap: var(--gap);
+		transition: all 2s;
+		animation: glow 2s ease infinite;
 	}
 
 	@media (max-width: 500px) {

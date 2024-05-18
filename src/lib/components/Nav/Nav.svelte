@@ -6,7 +6,6 @@
 		{ name: 'Home', href: '/' },
 		{ name: 'Projects', href: '/projects' },
 		{ name: 'Resume', href: '/resume' },
-		{ name: 'Skills', href: '/skills' },
 		{ name: 'Uses', href: '/uses' },
 		{ name: 'Blog', href: '/blog' }
 	]

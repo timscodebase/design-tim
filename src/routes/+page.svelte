@@ -1,11 +1,11 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-import { Link, Fancy, FindMeOn, SkillGrid, Teacher } from "$lib";
+	import { Fancy, SkillGrid, Teacher } from '$lib'
 
-import { page } from "$app/stores";
+	import { page } from '$app/stores'
 
-let { teachers, topSkills } = $page.data;
+	let { teachers, topSkills } = $page.data
 </script>
 
 <Fancy>
@@ -24,9 +24,6 @@ let { teachers, topSkills } = $page.data;
 
 <h2>Here are my most used skilled</h2>
 <SkillGrid skills={topSkills} />
-<Link href="/skills">See all my skills</Link>
-
-<FindMeOn />
 
 <style>
 	.teachers {

@@ -1,47 +1,34 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { viewport } from '$utils'
-	import { onMount } from 'svelte'
 	import type { SkillType } from '$lib/types'
 	import Skill from './Skill.svelte'
 
-	const { skills } = $props<SkillType>()
-	let visible = false
-
-	function resetVisible() {
-		visible = false
-	}
-
-	onMount(() => {
-		const box = document.querySelector('.grid')
-
-		document.addEventListener(
-			'scroll',
-			() => {
-				if (viewport.isBottom(box)) {
-					resetVisible()
-				}
-			},
-			{
-				passive: true
-			}
-		)
-	})
+	const { skills } = $props() as { skills: SkillType[] }
 </script>
 
-<div class="grid">
+<div class="horizontal-strip">
 	{#each skills as skill}
-		<Skill {visible} {skill} />
+		<Skill {skill} />
 	{/each}
 </div>
 
 <style>
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		grid-template-rows: 1fr;
-		grid-gap: 1rem;
-		margin-top: var(--margin-md);
+	@keyframes move {
+		to {
+			transform: translateX(calc(-100% + 100vw));
+		}
+	}
+	.horizontal-strip {
+		display: flex;
+		justify-content: flex-start;
+		gap: 1vmax;
+		flex-wrap: wrap;
+		width: calc(8 * 300px + 7rem);
+		will-change: transform;
+		animation: linear move forwards;
+		animation-timeline: --section-pin-tl;
+		animation-range: cover 55% contain 100%;
+		overflow: clip;
 	}
 </style>

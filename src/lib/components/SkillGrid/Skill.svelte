@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class={`skill fade-in ${skill.category}`}
+	class={`skill ${skill.category}`}
 	in:scale={{ duration: 500 }}
 	out:scale={{ duration: 500 }}
 	role="button"
@@ -50,18 +50,16 @@
 	.fade-in {
 		animation: fadeIn linear;
 		animation-timeline: scroll(root);
-		animation-range: contain 25% contain;
+		animation-range: entry 25% cover 50%;
 	}
 
 	.skill {
+		width: 300px;
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		gap: var(--gap);
-		padding: var(--gap);
 		border-radius: 4px;
-		/* height: 100%; */
-		margin: 1rem 0;
 
 		h3,
 		h4,
@@ -88,6 +86,7 @@
 	.usedAt {
 		display: flex;
 		flex-wrap: wrap;
+		margin-top: var(--padding-md);
 		gap: var(--padding-md);
 	}
 </style>
