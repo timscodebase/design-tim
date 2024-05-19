@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Fancy} from '$lib'import { page } from '$app/stores'
+	import { Fancy } from '$lib'
+	import { page } from '$app/stores'
 </script>
 
 <svelte:head>
