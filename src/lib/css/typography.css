@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-	font-size: clamp(2rem, 3.5svw, 4rem);
+	font-size: clamp(2rem, 4svw, 3.5rem);
 	font-weight: 200;
 	font-weight: bolder;
 	padding: 1.5svw 0;
@@ -51,7 +51,6 @@ h2 {
 	font-family: 'Mulish Thin', system-ui, sans-serif;
 }
 
-h3,
 h4,
 h5,
 h6 {
@@ -59,9 +58,10 @@ h6 {
 }
 
 h3 {
-	font-size: clamp(1.5rem, 2.1svw, 2.074rem);
+	font-size: clamp(1.5rem, 2.75svw, 2.5rem);
 	padding: 1.25svw 0;
-	color: var(--text);
+	color: var(--blue);
+	font-weight: bolder;
 }
 
 h4 {

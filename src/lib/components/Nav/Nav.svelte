@@ -112,7 +112,7 @@
 	}
 	[aria-current='page'] {
 		background: var(--primary-2);
-		color: var(--reverse-text);
+		color: #000;
 		padding: 1px 2px;
 		border-radius: 6px;
 		view-transition-name: active-page;

@@ -1,7 +1,12 @@
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+*:where(:not(iframe, canvas, img, svg, video, summary, details):not(svg *)) {
+	all: unset;
+	display: revert;
+}
+
+a {
 	all: unset;
 	display: revert;
 }
@@ -10,6 +15,7 @@
 *,
 *::before,
 *::after {
+	position: relative;
 	box-sizing: border-box;
 }
 
@@ -37,7 +43,12 @@ textarea {
 	white-space: revert;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	text-wrap: balance;
 }
 
@@ -45,4 +56,3 @@ p {
 	text-wrap: pretty;
 	max-width: 75ch;
 }
-

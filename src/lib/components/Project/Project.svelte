@@ -1,23 +1,16 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-import type { ProjectType } from "$lib/types";
-import { Link } from "$lib";
-const { project } = $props<ProjectType>();
+	import type { ProjectType } from '$lib/types'
+	import { Link } from '$lib'
+	const { project } = $props<ProjectType>()
 
-const { name, href, github, thumbnail, image, where, description, medium } =
-  project;
+	const { name, href, github, thumbnail, image, where, description, medium } = project
 </script>
 
 <article>
 	<div>
 		<h3>{name}</h3>
-	</div>
-	<div>
-		{#if where}
-			<h4>Created at:</h4>
-			<p>{where}</p>
-		{/if}
 	</div>
 	<Link href={image}>
 		<div class="img">
@@ -25,19 +18,27 @@ const { name, href, github, thumbnail, image, where, description, medium } =
 		</div>
 	</Link>
 	<div>
-		{#if href}
-			<Link {href} external>Project Link</Link>
-		{/if}
-		{#if github}
-			<Link href={github} external>Github Link</Link>
-		{/if}
-	</div>
-	<div>
-		<h4>Description:</h4>
-		<p>{@html description}</p>
-	</div>
-	<div>
-		<p class="meta"><span>Medium: </span>{medium}</p>
+		<details>
+			<summary>Description</summary>
+			<p>{@html description}</p>
+			<div>
+				{#if where}
+					<h4>Created at:</h4>
+					<p>{where}</p>
+				{/if}
+			</div>
+			<div>
+				{#if href}
+					<Link {href} external>Project Link</Link>
+				{/if}
+				{#if github}
+					<Link href={github} external>Github Link</Link>
+				{/if}
+			</div>
+			<div>
+				<p class="meta"><span>Medium: </span>{medium}</p>
+			</div>
+		</details>
 	</div>
 </article>
 
@@ -89,5 +90,21 @@ const { name, href, github, thumbnail, image, where, description, medium } =
 
 	article a {
 		color: color-mix(in srgb, var(--primary), var(--text) 75%);
+	}
+
+	details {
+		padding-top: var(--padding-sm);
+	}
+
+	summary {
+		cursor: pointer;
+		list-style-type: '▼ ';
+	}
+	summary::marker {
+		color: var(--blue);
+		font-size: 1.2em;
+	}
+	details[open] > summary {
+		list-style-type: '▲ ';
 	}
 </style>

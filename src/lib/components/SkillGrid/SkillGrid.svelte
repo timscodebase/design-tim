@@ -7,12 +7,14 @@
 	const { skills } = $props() as { skills: SkillType[] }
 </script>
 
-<div class="sticky">
+<div class="sticky shadow">
 	<h2>Here are my most used skilled</h2>
-	<div class="horizontal-strip">
-		{#each skills as skill}
-			<Skill {skill} />
-		{/each}
+	<div class="border">
+		<div class="horizontal-strip">
+			{#each skills as skill}
+				<Skill {skill} />
+			{/each}
+		</div>
 	</div>
 </div>
 
@@ -25,10 +27,15 @@
 		margin-top: var(--margin-md);
 	}
 
+	.border {
+		width: 100%;
+		height: 100%;
+	}
+
 	@supports (animation-timeline: view()) {
 		.sticky {
 			position: sticky;
-			top: 22%;
+			top: 18%;
 			overflow-x: hidden;
 		}
 		@keyframes move {
@@ -40,12 +47,12 @@
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
-			width: calc((8 * 300px) + (7 * var(--gap)));
+			width: calc((8 * 400px) + (7 * var(--gap)));
 			gap: var(--gap);
 			will-change: transform;
 			animation: linear move forwards;
 			animation-timeline: --section-pin-tl;
-			animation-range: contain 20% contain 100%;
+			animation-range: contain 50% contain 100%;
 			overflow: clip;
 		}
 	}

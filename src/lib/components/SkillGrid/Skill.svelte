@@ -8,12 +8,7 @@
 	const { skill } = $props<{ skill: SkillType }>()
 </script>
 
-<div
-	class={`skill ${skill.category}`}
-	in:scale={{ duration: 500 }}
-	out:scale={{ duration: 500 }}
-	role="button"
->
+<div class={`skill ${skill.category}`} in:scale={{ duration: 500 }} out:scale={{ duration: 500 }}>
 	<h3>{skill.name}</h3>
 
 	<p class="info">
@@ -54,7 +49,7 @@
 	}
 
 	.skill {
-		width: 300px;
+		width: 400px;
 		position: relative;
 		display: flex;
 		flex-direction: column;

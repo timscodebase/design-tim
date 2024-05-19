@@ -1,11 +1,11 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-import "iconify-icon";
-const { external = false, href = "/" } = $props<{
-  external?: boolean;
-  href: string;
-}>();
+	import 'iconify-icon'
+	const { external = false, href = '/' } = $props<{
+		external?: boolean
+		href: string
+	}>()
 </script>
 
 {#if external}
@@ -20,6 +20,12 @@ const { external = false, href = "/" } = $props<{
 {/if}
 
 <style>
+	[aria-current='page'] {
+		background: var(--primary-2);
+		color: #000;
+		padding: 3px 5px;
+		view-transition-name: active-page;
+	}
 	a {
 		display: flex;
 		gap: 5px;
@@ -29,12 +35,5 @@ const { external = false, href = "/" } = $props<{
 		text-decoration: underline;
 		font-size: var(--body-font-family);
 		word-break: break-word;
-	}
-
-	[aria-current='page'] {
-		background: var(--primary-2);
-		color: var(--reverse-text);
-		padding: 3px 5px;
-		view-transition-name: active-page;
 	}
 </style>
