@@ -7,28 +7,48 @@
 	const { skills } = $props() as { skills: SkillType[] }
 </script>
 
-<div class="horizontal-strip">
-	{#each skills as skill}
-		<Skill {skill} />
-	{/each}
+<div class="sticky">
+	<h2>Here are my most used skilled</h2>
+	<div class="horizontal-strip">
+		{#each skills as skill}
+			<Skill {skill} />
+		{/each}
+	</div>
 </div>
 
 <style>
-	@keyframes move {
-		to {
-			transform: translateX(calc(-100% + 100vw));
-		}
-	}
 	.horizontal-strip {
-		display: flex;
-		justify-content: flex-start;
-		gap: 1vmax;
-		flex-wrap: wrap;
-		width: calc(8 * 300px + 7rem);
-		will-change: transform;
-		animation: linear move forwards;
-		animation-timeline: --section-pin-tl;
-		animation-range: cover 55% contain 100%;
-		overflow: clip;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-rows: 1fr;
+		grid-gap: 1rem;
+		margin-top: var(--margin-md);
+	}
+
+	@supports (animation-timeline: view()) {
+		.sticky {
+			width: 100vw;
+			position: sticky;
+			top: 32%;
+			width: 100vw;
+			overflow-x: hidden;
+		}
+		@keyframes move {
+			to {
+				transform: translateX(calc(-100% + 38vw));
+			}
+		}
+		.horizontal-strip {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			width: calc((8 * 300px) + (7 * var(--gap)));
+			gap: var(--gap);
+			will-change: transform;
+			animation: linear move forwards;
+			animation-timeline: --section-pin-tl;
+			animation-range: contain 5% contain 80%;
+			overflow: clip;
+		}
 	}
 </style>

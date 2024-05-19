@@ -1,8 +1,9 @@
+import type { Config } from '@sveltejs/adapter-vercel';
 import { error } from '@sveltejs/kit'
 import type { PageServerLoad } from './$types'
 
-export const config: typeof Config = {
-	runtime: 'edge'
+export const config: Config = {
+	runtime: 'nodejs20.x'
 }
 
 export const load = (async (e) => {

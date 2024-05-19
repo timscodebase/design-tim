@@ -50,10 +50,10 @@
 	<link rel="canonical" href="https://timsmith.tech" />
 </svelte:head>
 
-<div id="wrapper" class="container">
+<div class="container">
 	<Header />
 
-	<main>
+	<main id="wrapper">
 		<slot />
 	</main>
 
@@ -68,12 +68,5 @@
 		max-width: 740px;
 		margin: 0 auto;
 		overflow: clip;
-	}
-
-	:global(#wrapper) {
-		height: 100%;
-		overflow: clip;
-		view-timeline-name: --section-pin-tl;
-		view-timeline-axis: block;
 	}
 </style>

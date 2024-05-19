@@ -1,5 +1,10 @@
+import type { Config } from '@sveltejs/adapter-vercel';
 import { error } from '@sveltejs/kit'
 import type { PageLoad } from './$types'
+
+export const config: Config = {
+	runtime: 'nodejs20.x'
+}
 
 export const load = (async ({ params }) => {
 	try {

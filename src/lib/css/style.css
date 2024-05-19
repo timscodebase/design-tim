@@ -108,3 +108,12 @@ pre[data-lang]::before {
 	content: attr(data-lang);
 	display: block;
 }
+
+@supports (animation-timeline: view()) {
+	#wrapper {
+		min-height: 500vh;
+		overflow: visible;
+		view-timeline-name: --section-pin-tl;
+		view-timeline-axis: block;
+	}
+}

@@ -22,7 +22,6 @@
 	{/each}
 </div>
 
-<h2>Here are my most used skilled</h2>
 <SkillGrid skills={topSkills} />
 
 <style>
