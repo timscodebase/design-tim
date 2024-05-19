@@ -1,9 +1,9 @@
-<p>
+<p class="fancy-header">
 	<slot />
 </p>
 
 <style>
-	p {
+	/* p {
 		--turn: 1turn;
 		color: var(--primary-2);
 		font-size: clamp(1.5rem, 1.75svw, 2rem) !important;
@@ -14,7 +14,7 @@
 		padding-bottom: var(--padding-md);
 		text-align: justify;
 		font-weight: 700;
-	}
+	} */
 
 	@media (max-width: 500px) {
 		p {
