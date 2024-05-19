@@ -41,6 +41,7 @@
 <h6>Experience</h6>
 
 <h5>Partners in Code, Gresham, OR — Freelancer</h5>
+<p><strong>January 2016 - Present</strong></p>
 <ul>
 	<li>Developed modern JAMStack websites using the latest technologies</li>
 	<li>Solely responsible for UI and designs of most projects delivered</li>
@@ -54,7 +55,7 @@
 </p>
 
 <h5>Gap, Remote — Frontend Engineer</h5>
-<p>MARCH 2021 - JULY 2022</p>
+<p><strong>March 2021 - July 2022</strong></p>
 <ul>
 	<li>Built standards-based, reusable React components for checkout flow UI</li>
 	<li>Upgraded node version, enabling better use of modern APIs</li>
@@ -68,7 +69,7 @@
 </p>
 
 <h5>Spotkey, San Francisco, CA — Senior (Lead) Frontend Developer</h5>
-<p>2014 - 2016</p>
+<p><strong>2014 - 2016</strong></p>
 <ul>
 	<li>Selected and implemented the stack for the company's corporate website and core product</li>
 	<li>
@@ -81,7 +82,7 @@
 </p>
 
 <h5>LafLife, Berkeley, CA — Senior UI Architect</h5>
-<p>2013 - 2014</p>
+<p><strong>2013 - 2014</strong></p>
 <ul>
 	<li>
 		Solely responsible for building and maintaining the front end of the application and company
@@ -93,7 +94,7 @@
 <p><strong>Backbone, Foundation, SCSS, Javascript, Ruby on Rails, Node, jQuery</strong></p>
 
 <h5>Zynga, San Francisco, CA — Email Marketing</h5>
-<p>2010 - 2012</p>
+<p><strong>2010 - 2012</strong></p>
 <ul>
 	<li>Built and maintained email marketing campaigns for featured games</li>
 	<li>Hand-coded emails for maximum compatibility with various email clients</li>
@@ -111,7 +112,7 @@
 <p><strong>HTML, CSS, Javascript, jQuery</strong></p>
 
 <h5>YesMail/InfoUSA, San Francisco, CA — Email Marketing</h5>
-<p>2006 - 2008</p>
+<p><strong>2006 - 2008</strong></p>
 <ul>
 	<li>Developed and maintained email marketing campaigns for prominent brands and clients</li>
 	<li>Hand-coded emails for maximum compatibility with various email clients</li>
@@ -140,3 +141,9 @@
 		</ul>
 	</li>
 </ul>
+
+<style>
+	li {
+		padding-bottom: var(--padding-sm);
+	}
+</style>
