@@ -18,7 +18,7 @@
 			<li><span>Keyboard</span> Apple Wireless Keyboard</li>
 			<li><span>Mouse</span> Apple Magic Trackpad</li>
 			<li><span>Exercise Headphones</span> Apple AirPod Pro</li>
-			<li><span>Phone</span> iPhone 12</li>
+			<li><span>Phone</span> iPhone 13</li>
 			<li><span>Watch</span> Apple Watch Series 6</li>
 			<li><span>Dock</span> Anker Series 5</li>
 			<li><span>Play Computer</span> Raspberry Pi 4</li>
@@ -33,7 +33,7 @@
 			<li><span>Browser</span> Arc</li>
 			<li><span>Virual Machine</span> Parallels Desktop</li>
 			<li><span>General Produtivity</span> Raycast</li>
-			<li><span>OS</span> 14.4 Beta (23E5180j)</li>
+			<li><span>OS</span> 14.5 (23F79)</li>
 			<li><span>Ad-Blocking</span> Pi-Hole</li>
 		</ul>
 	</section>

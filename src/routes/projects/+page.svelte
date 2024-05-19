@@ -1,17 +1,20 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-import { Project } from "$lib";
+	import { Project } from '$lib'
 
-import { page } from "$app/stores";
+	import { page } from '$app/stores'
 
-let { projects } = $page.data;
+	let { projects } = $page.data
 </script>
 
 <svelte:head>
-	<title>Tim Smith Projects</title>
+	<title>Tim Smith's Projects</title>
 	<link rel="canonical" href="https://timsmith.tech" />
-	<meta name="description" content="Here are some of the projects I've worked on." />
+	<meta
+		name="description"
+		content="Here are some of the projects I've worked on."
+	/>
 </svelte:head>
 
 <h2>Projects</h2>
