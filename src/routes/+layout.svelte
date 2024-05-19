@@ -1,8 +1,8 @@
 <script lang="ts">
+	import { page } from '$app/stores'
 	import '$css/style.css'
 	import { onMount } from 'svelte'
 	import { Analytics, Footer, Header } from '$lib'
-	import { page } from '$app/stores'
 	import { description, name, url } from '$lib/config'
 	import favicon from '$lib/assets/favicon.png'
 	import ogImage from '$lib/assets/ogImage.png'
@@ -53,7 +53,7 @@
 <div class="container">
 	<Header />
 
-	<main id="wrapper">
+	<main id={$page.route.id === '/' ? 'wrapper' : ''}>
 		<slot />
 	</main>
 

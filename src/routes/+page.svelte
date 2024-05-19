@@ -9,11 +9,13 @@
 </script>
 
 <Fancy>
-	My cognitive gears turn in their unique way, making the conventional educational path a mismatch
-	for me. While I dabbled in a few college courses, my true knowledge reservoir comes from the
-	realms of self-study and hands-on experimentation—like the art of reverse engineering websites.
-	Fueled by an insatiable passion for learning, I constantly seek fresh avenues to refine my skills
-	and navigate the ever-evolving landscape. The following are some of my favorite teachers:
+	As a self-directed learner, I've developed a unique approach to knowledge acquisition. While I've
+	explored traditional education, my true expertise stems from a lifelong passion for self-study and
+	hands-on experimentation. From reverse engineering websites to exploring new technologies, I'm
+	driven by an insatiable curiosity and a desire to stay ahead of the curve. Throughout my learning
+	journey, I've been fortunate to have had the guidance of many influential mentors and resources.
+	Here, you'll find some of the individuals and sources that have shaped my understanding of the
+	world and fueled my passion for continuous learning.
 </Fancy>
 
 <div class="teachers">

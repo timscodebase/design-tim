@@ -81,6 +81,7 @@
 		top: var(--size);
 		right: var(--size);
 		color: var(--text);
+		text-align: end;
 	}
 
 	.usedAt {

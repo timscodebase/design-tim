@@ -109,6 +109,10 @@ pre[data-lang]::before {
 	display: block;
 }
 
+/**
+ * Applies styles to the #wrapper element when the browser supports the `animation-timeline: view()` feature.
+ * This sets the minimum height of the wrapper to 460vh, allows the overflow to be visible, and sets the view timeline name and axis.
+ */
 @supports (animation-timeline: view()) {
 	#wrapper {
 		min-height: 500vh;

@@ -27,10 +27,8 @@
 
 	@supports (animation-timeline: view()) {
 		.sticky {
-			width: 100vw;
 			position: sticky;
-			top: 32%;
-			width: 100vw;
+			top: 22%;
 			overflow-x: hidden;
 		}
 		@keyframes move {
@@ -47,7 +45,7 @@
 			will-change: transform;
 			animation: linear move forwards;
 			animation-timeline: --section-pin-tl;
-			animation-range: contain 5% contain 80%;
+			animation-range: contain 20% contain 100%;
 			overflow: clip;
 		}
 	}
