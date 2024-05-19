@@ -82,8 +82,7 @@ pre {
 		'Courier New', Courier, monospace;
 	white-space: pre-wrap;
 	overflow-x: auto;
-	padding: var(--padding-md);
-	padding-top: 40px;
+	padding: 20px var(--padding-md);
 	margin: var(--margin-md) 0;
 	border: var(--border-primary);
 	border-radius: var(--border-radius-md);
@@ -93,8 +92,8 @@ pre::before {
 	position: relative;
 	display: grid;
 	place-items: center;
-	top: 0;
-	left: 0;
+	top: -20px;
+	left: -12px;
 	width: 70px;
 	height: 25px;
 	content: 'Code';
