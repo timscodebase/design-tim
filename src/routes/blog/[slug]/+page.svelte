@@ -3,9 +3,8 @@
 	import { Link, Tags } from '$lib'
 	import { ogStore } from '$stores'
 
-	import { page } from "$app/stores"
+	import { page } from '$app/stores'
 	const data = $page.data
-	console.log("DATA: ", data)
 
 	$ogStore.banner = data.meta.image
 	$ogStore.name = data.meta.title

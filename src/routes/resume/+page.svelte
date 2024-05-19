@@ -1,11 +1,11 @@
 <script lang="ts">
-import { Link, Fancy, Job } from "$lib";
+	import { Link, Fancy, Job } from '$lib'
 
-import resume from "$lib/assets/resume-2024.pdf";
+	import resume from '$lib/assets/resume-2024.pdf'
 
-import { page } from "$app/stores";
+	import { page } from '$app/stores'
 
-let { jobs } = $page.data;
+	let { jobs } = $page.data
 </script>
 
 <svelte:head>
@@ -17,9 +17,12 @@ let { jobs } = $page.data;
 <h2>Jobs</h2>
 
 <Fancy>
-	I am actively looking to secure a dynamic Full-Stack Engineer role within an innovative
-	organization, where I can channel my technical prowess and creative flair to craft and maintain
-	cutting-edge, user-friendly websites with a focus on responsiveness and visual appeal.
+	I'm excited to leverage my skills as a Full-Stack Engineer to join a forward-thinking organization
+	that values innovation and creativity. With a passion for crafting exceptional user experiences,
+	I'm eager to bring my technical expertise and artistic flair to a dynamic team. I'm particularly
+	drawn to roles that prioritize responsiveness, visual appeal, and user-centric design. If you're
+	looking for a dedicated professional who can drive digital excellence, I'd love to explore
+	opportunities with your innovative organization.
 </Fancy>
 
 <h3>Tim Smith</h3>
@@ -38,13 +41,11 @@ let { jobs } = $page.data;
 <h6>Experience</h6>
 
 <h5>Partners in Code, Gresham, OR — Freelancer</h5>
-<p>FEBRUARY 2016 - PRESENT</p>
-<p>
-	Partners in Code is my own business. I work with small businesses and clients to build websites
-	and applications that best meet their needs. I provide modern JAMStack websites with the latest
-	proven technologies. I am solely responsible for the UI and designs of most of the projects I
-	deliver.
-</p>
+<ul>
+	<li>Developed modern JAMStack websites using the latest technologies</li>
+	<li>Solely responsible for UI and designs of most projects delivered</li>
+	<li>Worked with small businesses and clients to build websites and applications</li>
+</ul>
 <p>
 	<strong
 		>React, Next, Node, Svelte, Remix, Redux, WordPress, Javascript, TypeScript Github, Python,
@@ -54,14 +55,11 @@ let { jobs } = $page.data;
 
 <h5>Gap, Remote — Frontend Engineer</h5>
 <p>MARCH 2021 - JULY 2022</p>
-<p>
-	I built standards-based, reusable React components for Gap's checkout flow UI. xAPI is used in
-	place of other flux libraries to pass data throughout the site and other parts of the application.
-	I helped to move Gap towards microservices by upgrading their node version allowing better use of
-	modern APIs. All of the code and components I wrote were tested at the code level with full-on E2E
-	testing suites. Another part of my role at Gap was DevOps and maintaining core metrics for the
-	app's health. I wore many hats at Gap, however the frontend was my main focus.
-</p>
+<ul>
+	<li>Built standards-based, reusable React components for checkout flow UI</li>
+	<li>Upgraded node version, enabling better use of modern APIs</li>
+	<li>Conducted full-on E2E testing and maintained core metrics for app health</li>
+</ul>
 <p>
 	<strong
 		>React, Javascript, TypeScript, Node, Agile, Jira, Figma/FIGJAM, Confluence, Github, xAPI,
@@ -71,51 +69,54 @@ let { jobs } = $page.data;
 
 <h5>Spotkey, San Francisco, CA — Senior (Lead) Frontend Developer</h5>
 <p>2014 - 2016</p>
-<p>
-	As the senior frontend Developer, I was responsible for choosing and implementing the stack of our
-	company's corporate website and core product. Worked closely with the Backend and iOS developers
-	on the data schemas database design and the internal and external APIs. I wrote the entire front
-	and UI of the website and app.
-</p>
+<ul>
+	<li>Selected and implemented the stack for the company's corporate website and core product</li>
+	<li>
+		Collaborated closely with backend and iOS developers on data schemas, database design, and APIs
+	</li>
+	<li>Developed the entire front end and UI of the website and app</li>
+</ul>
 <p>
 	<strong>Ruby on Rails, Angular 2, Javascript, Node, JAMstack, MySQL, MongoDB, Github</strong>
 </p>
 
 <h5>LafLife, Berkeley, CA — Senior UI Architect</h5>
 <p>2013 - 2014</p>
-<p>
-	I was solely responsible for building and maintaining the front end of the application and company
-	website. Because the design of the site was constantly changing and being improved, I learned to
-	write more modules and reusable CSS with SASS, making it easier to update and maintain the CSS. I
-	also worked with a junior back-end developer to help him become a better front-end developer. He
-	in turn helped me to become a better backend developer. It was a great relationship.
-</p>
+<ul>
+	<li>
+		Solely responsible for building and maintaining the front end of the application and company
+		website
+	</li>
+	<li>Wrote modules and reusable CSS with SASS for easy updates and maintenance</li>
+	<li>Mentored a junior back-end developer and learned backend development</li>
+</ul>
 <p><strong>Backbone, Foundation, SCSS, Javascript, Ruby on Rails, Node, jQuery</strong></p>
 
 <h5>Zynga, San Francisco, CA — Email Marketing</h5>
 <p>2010 - 2012</p>
-<p>
-	I built and maintained email marketing campaigns for several of Zynga's featured games. Hand-coded
-	each email to ensure maximum compatibility with many email clients. We utilized testing suites to
-	ensure quality and click-through. I was consulted on the layout and UI of mobile emails.
-</p>
+<ul>
+	<li>Built and maintained email marketing campaigns for featured games</li>
+	<li>Hand-coded emails for maximum compatibility with various email clients</li>
+	<li>Consulted on the layout and UI of mobile emails</li>
+</ul>
 <p><strong>HTML, HAML, Javascript, Photoshop</strong></p>
 
 <h5>The Clorox Company, San Francisco, CA— Frontend Developer</h5>
-<p>
-	My role was to update their codebase by removing jQuery and MooTools and replacing them with
-	vanilla javascript. Another responsibility was building new mobile-first templates for their Brita
-	products.
-</p>
+<ul>
+	<li>
+		Updated codebase by removing jQuery and MooTools and replacing them with vanilla JavaScript
+	</li>
+	<li>Built new mobile-first templates for Brita products</li>
+</ul>
 <p><strong>HTML, CSS, Javascript, jQuery</strong></p>
 
 <h5>YesMail/InfoUSA, San Francisco, CA — Email Marketing</h5>
 <p>2006 - 2008</p>
-<p>
-	I built and maintained email marketing campaigns for several prominent brands. Macy's, King's
-	Hawaiian, and many others. Completely hand-coded all emails to ensure maximum compatibility with
-	many email clients. We utilized testing suites to ensure quality and click-through.
-</p>
+<ul>
+	<li>Developed and maintained email marketing campaigns for prominent brands and clients</li>
+	<li>Hand-coded emails for maximum compatibility with various email clients</li>
+	<li>Utilized testing suites to ensure quality and click-through rates were met</li>
+</ul>
 <p><strong>HTML, HAML, Javascript, Photoshop</strong></p>
 <p />
 
@@ -136,15 +137,6 @@ let { jobs } = $page.data;
 			<li>Computer Science</li>
 			<li>Algebra</li>
 			<li>Statistics</li>
-			<li>Sociology</li>
-		</ul>
-	</li>
-	<li>Contra Costa College - S.P.I.R.I.T, San Pablo, CA 2016 - 2018</li>
-	<li>
-		<ul>
-			<li>County supervised peer support and social work training</li>
-			<li>One on one peer interaction simulation</li>
-			<li>Onsite training</li>
 		</ul>
 	</li>
 </ul>
