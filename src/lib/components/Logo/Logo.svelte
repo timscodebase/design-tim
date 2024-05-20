@@ -1,16 +1,21 @@
 <script>
-import { name, description } from "$lib/config";
+	import { name, description } from '$lib/config'
 </script>
 
-<div class="logo">
-	<div class="name-wrapper">
-		<div class="name-1">{name}</div>
-		<!-- <div class="name-2">{name}</div> -->
+<a href="/">
+	<div class="logo">
+		<div class="name-wrapper">
+			<div class="name-1">{name}</div>
+			<!-- <div class="name-2">{name}</div> -->
+		</div>
+		<div class="description" data-text={description}>{description}</div>
 	</div>
-	<div class="description" data-text={description}>{description}</div>
-</div>
+</a>
 
 <style>
+	a {
+		text-decoration: none;
+	}
 	.name-wrapper {
 		display: grid;
 		place-content: center;

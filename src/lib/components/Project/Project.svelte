@@ -27,7 +27,7 @@
 					<p>{where}</p>
 				{/if}
 			</div>
-			<div>
+			<div class="links">
 				{#if href}
 					<Link {href} external>Project Link</Link>
 				{/if}
@@ -76,6 +76,10 @@
 	.img {
 		height: 150px;
 		overflow-y: hidden;
+	}
+
+	.links {
+		padding-bottom: var(--padding-md);
 	}
 
 	article {

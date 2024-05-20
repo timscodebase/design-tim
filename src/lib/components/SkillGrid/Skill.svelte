@@ -48,8 +48,13 @@
 		animation-range: entry 25% cover 50%;
 	}
 
+	@supports (animation-timeline: view()) {
+		.skill {
+			width: 400px;
+		}
+	}
+
 	.skill {
-		width: 400px;
 		position: relative;
 		display: flex;
 		flex-direction: column;
