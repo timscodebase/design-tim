@@ -17,7 +17,9 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), preprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+      precompress: true,
+    }),
 		alias: {
 			$assets: 'src/lib/assets',
 			$data: 'src/lib/data',
