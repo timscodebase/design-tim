@@ -8,7 +8,7 @@
 </script>
 
 <div class="sticky shadow">
-	<h2>Here are my most used skilled</h2>
+	<h2>The Skills That Make Me Unstoppable</h2>
 	<div class="border">
 		<div class="horizontal-strip">
 			{#each skills as skill}

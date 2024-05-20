@@ -11,13 +11,10 @@
 <svelte:head>
 	<title>Tim Smith's Projects</title>
 	<link rel="canonical" href="https://timsmith.tech" />
-	<meta
-		name="description"
-		content="Here are some of the projects I've worked on."
-	/>
+	<meta name="description" content="Here are some of the projects I've worked on." />
 </svelte:head>
 
-<h2>Projects</h2>
+<h2>My Latest Projects</h2>
 
 <div>
 	{#each projects as project}

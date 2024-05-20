@@ -5,6 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/mulish':
+    specifier: ^5.0.19
+    version: 5.0.19
+  '@fontsource/mulish':
+    specifier: ^5.0.18
+    version: 5.0.18
+  '@fontsource/space-mono':
+    specifier: ^5.0.20
+    version: 5.0.20
   '@sveltejs/adapter-vercel':
     specifier: ^4.0.5
     version: 4.0.5(@sveltejs/kit@2.4.3)
@@ -2302,6 +2311,18 @@ packages:
     resolution: {integrity: sha512-niBqk8iwv96+yuTwjM6bWg8ovzAPF9qkICsGtcoa5/dmqcEMfdwNAX7+/OHcJHc7wj7XqPxH98oAHytFYlw6Sw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
+
+  /@fontsource-variable/mulish@5.0.19:
+    resolution: {integrity: sha512-yUZdTpgr6HF1OmKU0SUQbiI1ZTbx48ybjZL7tfMwAt07SLA6JD8ax6+oppkqpITrOXKn0hBbWY2RtTxaUq6Bew==}
+    dev: false
+
+  /@fontsource/mulish@5.0.18:
+    resolution: {integrity: sha512-vcJcdhJpd10NLsWq5Op6++zEs5UhnVf1BdjvN1Uv+jOGmYD/PFTE/V8IxN1FO/jNY4x27gMdRy2mTMXU+ST6Kw==}
+    dev: false
+
+  /@fontsource/space-mono@5.0.20:
+    resolution: {integrity: sha512-F+9Y/PA06mB6kXI6l8ub0vSR72x3wpzJtxAUoPpvJDu9nWADFIwunkfzSS9PyzFQOgAPPzuCfywTTG+GfQxqeg==}
+    dev: false
 
   /@humanwhocodes/config-array@0.13.0:
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
