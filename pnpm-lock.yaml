@@ -52,9 +52,6 @@ devDependencies:
   '@biomejs/biome':
     specifier: 1.7.2
     version: 1.7.2
-  '@builder.io/partytown':
-    specifier: ^0.10.2
-    version: 0.10.2
   '@csstools/postcss-global-data':
     specifier: ^2.1.1
     version: 2.1.1(postcss@8.4.38)
@@ -1483,12 +1480,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@builder.io/partytown@0.10.2:
-    resolution: {integrity: sha512-A9U+4PREWcS+CCYzKGIPovtGB/PBgnH/8oQyCE6Nr9drDJk6cMPpLQIEajpGPmG9tYF7N3FkRvhXm/AS9+0iKg==}
-    engines: {node: '>=18.0.0'}
-    hasBin: true
-    dev: true
 
   /@csstools/cascade-layer-name-parser@1.0.11(@csstools/css-parser-algorithms@2.6.3)(@csstools/css-tokenizer@2.3.1):
     resolution: {integrity: sha512-yhsonEAhaWRQvHFYhSzOUobH2Ev++fMci+ppFRagw0qVSPlcPV4FnNmlwpM/b2BM10ZeMRkVV4So6YRswD0O0w==}
