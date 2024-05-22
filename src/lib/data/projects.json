@@ -3,7 +3,7 @@
     "name": "Blockchain Music Video",
     "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1716414827/bcmv_a6cimi.webp",
     "image": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1716414827/bcmv_a6cimi.webp",
-    "description": "<p>I am building the landing page for the first ever Blockchain Music Video service</p>",
+    "description": "<p>Imagine a world where artists have complete control over their music videos, and fans can participate in the creation and curation of their favorite songs. Welcome to the Blockchain Music Video, a revolutionary platform that's changing the way we experience music. With decentralized ownership and immutable records, artists can finally get the recognition and compensation they deserve. Join the movement and be part of the pioneering effort to reshape the music industry.</p>",
     "medium": "Svelte, Typescript, SvelteKit, TailwindCSS, Vercel",
     "href": "https://blockchainmusicvideos.com/"
   },
@@ -11,7 +11,7 @@
     "name": "AI Svelte Tiger",
     "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1705279159/Screenshot_2024-01-14_at_4.37.31_PM_e2jkhj.webp",
     "image": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1705279159/Screenshot_2024-01-14_at_4.37.31_PM_e2jkhj.webp",
-    "description": "<p>I am converting an image generation app from Qwik to Svelte</p>",
+    "description": "<p>I'm excited to announce that I'm migrating my image generation app from Qwik to Svelte. This move will allow me to take advantage of Svelte's fast performance and robust ecosystem, unlocking new creative possibilities.</p>",
     "medium": "Svelte, Qwik, Typescript, SvelteKit, TailwindCSS, Vercel",
     "github": "https://github.com/timscodebase/ai-svelte-tiger"
   },
@@ -26,24 +26,24 @@
   },
   {
     "name": "Wolf In Sheep's Clothing",
-    "thumbnail": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/wolf-in-sheeps-clothing-thumb_pcsrpg.jpg",
-    "image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/wolf-in-sheeps-clothing_vxvumk.webp",
+    "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1703907648/wolf-in-sheeps-clothing-thumb_pcsrpg.jpg",
+    "image": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1703907648/wolf-in-sheeps-clothing_vxvumk.webp",
     "where": "Digital Art I: Mount Hood Community College",
     "description": "<p>\"Wolf In Sheep's Clothing\" is an adaptation of \"Saturn Devouring His Son\", a painting by Spanish artist Francisco Goya.  I was hoping to reverse the play on the \"Wolf in sheep's clothing\", onlt darker.</p>",
     "medium": "digital"
   },
   {
     "name": "Perfection",
-    "thumbnail": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907647/perfection-thumb_zoox4g.jpg",
-    "image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto/v1703907648/perfection_e6gns5.webp",
+    "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1703907647/perfection-thumb_zoox4g.jpg",
+    "image": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1703907648/perfection_e6gns5.webp",
     "where": "Digital Art I: Mount Hood Community College",
     "description": "<p>\"Perfection\" is a digital reflection of what I feel perfection is.</p><ul><li><strong>1:</strong> Anxiety</li><li><strong>2:</strong> Imposter</li><li><strong>3:</strong> Stress</li><li><strong>4:</strong> \"I'm not good enough!\"</li><li><strong>5:</strong> Self-doubt</li><li><strong>6:</strong> \"What will the think?\"</li><li><strong>7:</strong> NOT POSSIBLE!!</li><li><strong>8:</strong> ?</li></ul>",
     "medium": "digital"
   },
   {
     "name": "Tim Smith V-5",
-    "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_300/v1704421345/site-v5_xgk0te.webp",
-    "image": "https://res.cloudinary.com/tithos/image/upload/f_auto,q_auto:eco/v1704421345/site-v5_xgk0te.webp",
+    "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1704421345/site-v5_xgk0te.webp",
+    "image": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1704421345/site-v5_xgk0te.webp",
     "description": "<p>The 5th iteration of my personal website—a cybernetic masterpiece crafted with the enchanting harmony of SvelteKit, the precision of Typescript, and a dash of the mystical THREE.js. As you traverse these virtual corridors, may you find not just lines of code, but a symphony of pixels choreographed to dance in harmony with your digital wanderings. Welcome, dear traveler, to a corner of the internet where technology meets artistry in a dazzling display of creativity!</p>",
     "medium": "Gatsby, Typescript, SvelteKit, SCSS",
     "href": "https://site-v5.netlify.app/",
