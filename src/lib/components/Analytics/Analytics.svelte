@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores'
+
 	const MEASUREMENT_ID = 'G-EPNRTTEP8M'
 
 	$: {

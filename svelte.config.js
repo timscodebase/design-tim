@@ -28,9 +28,6 @@ const config = {
 			$utils: 'src/lib/utils'
 		}
 	}
-	// compilerOptions: {
-	// 	runes: true
-	// }
 }
 
 export default config
