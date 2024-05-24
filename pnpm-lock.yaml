@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@builder.io/partytown':
+    specifier: ^0.10.2
+    version: 0.10.2
   '@fontsource-variable/mulish':
     specifier: ^5.0.19
     version: 5.0.19
@@ -32,6 +35,9 @@ dependencies:
   gsap:
     specifier: ^3.12.5
     version: 3.12.5
+  join:
+    specifier: ^3.0.0
+    version: 3.0.0
   mdsvex:
     specifier: ^0.11.0
     version: 0.11.0(svelte@5.0.0-next.37)
@@ -1480,6 +1486,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@builder.io/partytown@0.10.2:
+    resolution: {integrity: sha512-A9U+4PREWcS+CCYzKGIPovtGB/PBgnH/8oQyCE6Nr9drDJk6cMPpLQIEajpGPmG9tYF7N3FkRvhXm/AS9+0iKg==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
+    dev: false
 
   /@csstools/cascade-layer-name-parser@1.0.11(@csstools/css-parser-algorithms@2.6.3)(@csstools/css-tokenizer@2.3.1):
     resolution: {integrity: sha512-yhsonEAhaWRQvHFYhSzOUobH2Ev++fMci+ppFRagw0qVSPlcPV4FnNmlwpM/b2BM10ZeMRkVV4So6YRswD0O0w==}
@@ -5625,6 +5637,11 @@ packages:
       filelist: 1.0.4
       minimatch: 3.1.2
     dev: true
+
+  /join@3.0.0:
+    resolution: {integrity: sha512-RtCMVccL9rDfwqgQHpRx8ewxRDPkN2eoPbElrBJYMZIt0pTW2x8p2km4svpFmLb/sOPPRfD+ZwlJwYmONVVZzA==}
+    engines: {ender: '>= 0.5.0'}
+    dev: false
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}

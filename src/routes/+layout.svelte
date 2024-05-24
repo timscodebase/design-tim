@@ -8,6 +8,7 @@
 	import ogImage from '$lib/assets/ogImage.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
+	import { partytownSnippet } from '@builder.io/partytown/integration'
 	import { onNavigate } from '$app/navigation'
 
 	onNavigate((navigation) => {
@@ -48,6 +49,7 @@
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />
 	<link rel="canonical" href="https://timsmith.tech" />
+	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
 
 <div class="container">
