@@ -5,6 +5,7 @@
   "orientation": "portrait",
   "background_color": "#222",
   "theme_color": "#ff00fc",
+  "start_url": "/",
   "description": "Developer, Artist, Photographer, Writer, Creator",
   "icons": [
     {
