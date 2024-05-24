@@ -3,10 +3,10 @@ import { error } from '@sveltejs/kit'
 import type { PageServerLoad } from './$types'
 
 export const config: Config = {
-	runtime: 'nodejs20.x'
+	runtime: 'edge'
 }
 
-export const load = (async (e) => {
+export const load = (async (e: any) => {
 	try {
 		const response = await e.fetch('api/posts')
 		const posts = await response.json()
