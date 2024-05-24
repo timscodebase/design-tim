@@ -49,7 +49,7 @@
 	<meta property="og:image" content={`${url}${ogImage}`} />
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />
-	<link rel="manifest" href={manifest} />
+	<link rel="manifest" href="manifest.json" />
 	<link rel="canonical" href="https://timsmith.tech" />
 	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
