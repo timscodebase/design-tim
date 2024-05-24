@@ -7,6 +7,7 @@
 	import favicon from '$lib/assets/favicon.png'
 	import ogImage from '$lib/assets/ogImage.png'
 	import appleIcon from '$lib/assets/apple-icon.png'
+	import manifest from '$lib/assets/manifest.json'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
 	import { onNavigate } from '$app/navigation'
@@ -48,6 +49,7 @@
 	<meta property="og:image" content={`${url}${ogImage}`} />
 	<link rel="icon" type="image/png" href={favicon} />
 	<link rel="apple-touch-icon" href={appleIcon} />
+	<link rel="manifest" href={manifest} />
 	<link rel="canonical" href="https://timsmith.tech" />
 	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
