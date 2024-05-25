@@ -2,110 +2,116 @@
 @import './variables.css';
 @import './typography.css';
 
+@layer reset, variables, typography, base;
+
 @view-transition {
 	navigation: auto;
 }
 
-.frontend h3 {
-	color: var(--yellow);
+@layer typography {
+	.frontend h3 {
+		color: var(--yellow);
+	}
+
+	.backend h3 {
+		color: var(--blue);
+	}
+
+	.fullstack h3 {
+		color: var(--green);
+	}
+
+	.devops h3 {
+		color: var(--orange);
+	}
+
+	.methodology h3 {
+		color: var(--pink);
+	}
+
+	.design h3 {
+		color: var(--purple);
+	}
+
+	strong {
+		color: var(--primary-2);
+	}
 }
 
-.backend h3 {
-	color: var(--blue);
-}
+@layer base {
+	#__svelte-email > table {
+		width: 80svw !important;
+	}
 
-.fullstack h3 {
-	color: var(--green);
-}
+	body {
+		transition: 0.3s ease-out;
+		overflow-x: hidden;
+		max-width: 100vw;
+		width: 100%;
+		overscroll-behavior: none;
+	}
 
-.devops h3 {
-	color: var(--orange);
-}
+	.flashy {
+		--turn: 1turn;
+		color: var(--primary-2);
+		font-size: clamp(1.5rem, 1.75svw, 2rem) !important;
+		background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: spin-gradient 6s infinite;
+		padding-top: var(--padding-lg);
+	}
 
-.methodology h3 {
-	color: var(--pink);
-}
+	.prose h2,
+	.prose h3 {
+		color: var(--primary-2);
+	}
 
-.design h3 {
-	color: var(--purple);
-}
+	/* Image Slider Component */
+	.image-gallery-icon {
+		color: var(--primary);
+	}
 
-strong {
-	color: var(--primary-2);
-}
+	.image-gallery-icon:hover {
+		color: var(--primary-2);
+	}
 
-#__svelte-email > table {
-	width: 80svw !important;
-}
+	.image-gallery-thumbnails-wrapper {
+		display: none !important;
+	}
 
-body {
-	transition: 0.3s ease-out;
-	overflow-x: hidden;
-	max-width: 100vw;
-	width: 100%;
-	overscroll-behavior: none;
-}
+	pre {
+		position: relative;
+		font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+			'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+			'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+		white-space: pre-wrap;
+		overflow-x: auto;
+		padding: 20px var(--padding-md);
+		margin: var(--margin-md) 0;
+		border: var(--border-primary);
+		border-radius: var(--border-radius-md);
+		background: var(--pre-backgroung);
+	}
+	pre::before {
+		position: relative;
+		display: grid;
+		place-items: center;
+		top: -20px;
+		left: -12px;
+		width: 70px;
+		height: 25px;
+		content: 'Code';
+		color: var(--reverse-text);
+		font-family: var(--body-font-family);
+		background: var(--primary-2);
+		border-radius: 0 0 var(--border-radius-md) 0;
+	}
 
-.flashy {
-	--turn: 1turn;
-	color: var(--primary-2);
-	font-size: clamp(1.5rem, 1.75svw, 2rem) !important;
-	background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: spin-gradient 6s infinite;
-	padding-top: var(--padding-lg);
-}
-
-.prose h2,
-.prose h3 {
-	color: var(--primary-2);
-}
-
-/* Image Slider Component */
-.image-gallery-icon {
-	color: var(--primary);
-}
-
-.image-gallery-icon:hover {
-	color: var(--primary-2);
-}
-
-.image-gallery-thumbnails-wrapper {
-	display: none !important;
-}
-
-pre {
-	position: relative;
-	font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
-		'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-		'Courier New', Courier, monospace;
-	white-space: pre-wrap;
-	overflow-x: auto;
-	padding: 20px var(--padding-md);
-	margin: var(--margin-md) 0;
-	border: var(--border-primary);
-	border-radius: var(--border-radius-md);
-	background: var(--pre-backgroung);
-}
-pre::before {
-	position: relative;
-	display: grid;
-	place-items: center;
-	top: -20px;
-	left: -12px;
-	width: 70px;
-	height: 25px;
-	content: 'Code';
-	color: var(--reverse-text);
-	font-family: var(--body-font-family);
-	background: var(--primary-2);
-	border-radius: 0 0 var(--border-radius-md) 0;
-}
-
-pre[data-lang]::before {
-	content: attr(data-lang);
-	display: block;
+	pre[data-lang]::before {
+		content: attr(data-lang);
+		display: block;
+	}
 }
 
 /**

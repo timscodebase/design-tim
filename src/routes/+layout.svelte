@@ -1,16 +1,12 @@
 <script lang="ts">
-	import { page } from '$app/stores'
 	import '$css/style.css'
 	import { onMount } from 'svelte'
+	import { page } from '$app/stores'
+	import { onNavigate } from '$app/navigation'
 	import { Analytics, Footer, Header } from '$lib'
 	import { description, name, url } from '$lib/config'
-	import favicon from '$lib/assets/favicon.png'
-	import ogImage from '$lib/assets/ogImage.png'
-	import appleIcon from '$lib/assets/apple-icon.png'
-	import manifest from '$lib/assets/manifest.json'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
-	import { onNavigate } from '$app/navigation'
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return
@@ -43,14 +39,14 @@
 	<meta name="twitter:creator" content="@timsmith23" />
 	<meta property="og:title" content={description} />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://timsmith.tech" />
+	<meta property="og:url" content={url} />
 	<meta property="og:description" content={`${name}: ${description}`} />
 	<meta property="og:site_name" content={`${name}: ${description}`} />
-	<meta property="og:image" content={`${url}${ogImage}`} />
-	<link rel="icon" type="image/png" href={favicon} />
-	<link rel="apple-touch-icon" href={appleIcon} />
+	<meta property="og:image" content="ogImage.png" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="apple-touch-icon" href="apple-icon.png" />
 	<link rel="manifest" href="manifest.json" />
-	<link rel="canonical" href="https://timsmith.tech" />
+	<link rel="canonical" href={url} />
 	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
 

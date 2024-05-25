@@ -1,58 +1,49 @@
-/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+@layer reset {
+	*:where(:not(iframe, canvas, img, svg, video, summary, details):not(svg *)) {
+		all: unset;
+		display: revert;
+	}
 
-/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video, summary, details):not(svg *)) {
-	all: unset;
-	display: revert;
-}
+	a {
+		all: unset;
+		display: revert;
+	}
 
-a {
-	all: unset;
-	display: revert;
-}
+	*,
+	*::before,
+	*::after {
+		position: relative;
+		box-sizing: border-box;
+	}
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-	position: relative;
-	box-sizing: border-box;
-}
+	ol,
+	ul {
+		list-style: none;
+	}
 
-/*
-  Remove list styles (bullets/numbers)
-  in case you use it with normalize.css
-*/
-ol,
-ul {
-	list-style: none;
-}
+	img {
+		max-width: 100%;
+	}
 
-/* For images to not be able to exceed their container */
-img {
-	max-width: 100%;
-}
+	table {
+		border-collapse: collapse;
+	}
 
-/* Removes spacing between cells in tables */
-table {
-	border-collapse: collapse;
-}
+	textarea {
+		white-space: revert;
+	}
 
-/* Revert the 'white-space' property for textarea elements on Safari */
-textarea {
-	white-space: revert;
-}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+	}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-wrap: balance;
-}
-
-p {
-	text-wrap: pretty;
-	max-width: 75ch;
+	p {
+		text-wrap: pretty;
+		max-width: 75ch;
+	}
 }

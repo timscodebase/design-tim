@@ -1,100 +1,104 @@
-:root {
-	--body-font-thin: 'Mulish Thin', system-ui, sans-serif;
-	--header-font-family: 'Mulish', system-ui, sans-serif;
-	--body-font-family: 'Space Mono', monospace;
+@layer variables {
+	:root {
+		--body-font-thin: 'Mulish Thin', system-ui, sans-serif;
+		--header-font-family: 'Mulish', system-ui, sans-serif;
+		--body-font-family: 'Space Mono', monospace;
+	}
 }
 
-html {
-	font-family: var(--body-font-family);
-}
+@layer typography {
+	html {
+		font-family: var(--body-font-family);
+	}
 
-article p a {
-	color: var(--primary);
-}
+	article p a {
+		color: var(--primary);
+	}
 
-a {
-	cursor: pointer;
-	text-decoration: underline;
-}
+	a {
+		cursor: pointer;
+		text-decoration: underline;
+	}
 
-a,
-button {
-	padding: var(--padding-xs);
-}
+	a,
+	button {
+		padding: var(--padding-xs);
+	}
 
-/* a:focus,
+	/* a:focus,
 button:focus {
 	--color: color-mix(in srgb, var(--primary), var(--text) 50%);
 	outline: 2px solid var(--color);
 } */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--header-font-family);
-	color: var(--primary);
-}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--header-font-family);
+		color: var(--primary);
+	}
 
-h1 {
-	font-size: clamp(2.5rem, 3svw, 2.986rem);
-}
+	h1 {
+		font-size: clamp(2.5rem, 3svw, 2.986rem);
+	}
 
-h2 {
-	font-size: clamp(2rem, 4svw, 3.5rem);
-	font-weight: 200;
-	font-weight: bolder;
-	padding: 1.5svw 0;
-	color: var(--text);
-	font-family: 'Mulish Thin', system-ui, sans-serif;
-}
+	h2 {
+		font-size: clamp(2rem, 4svw, 3.5rem);
+		font-weight: 200;
+		font-weight: bolder;
+		padding: 1.5svw 0;
+		color: var(--text);
+		font-family: 'Mulish Thin', system-ui, sans-serif;
+	}
 
-h4,
-h5,
-h6 {
-	font-weight: bold;
-}
+	h4,
+	h5,
+	h6 {
+		font-weight: bold;
+	}
 
-h3 {
-	font-size: clamp(1.5rem, 2.75svw, 2.5rem);
-	padding: 1.25svw 0;
-	color: var(--blue);
-	font-weight: bolder;
-}
+	h3 {
+		font-size: clamp(1.5rem, 2.75svw, 2.5rem);
+		padding: 1.25svw 0;
+		color: var(--blue);
+		font-weight: bolder;
+	}
 
-h4 {
-	font-size: clamp(1rem, 1.75svw, 1.728rem);
-	padding: 1svw 0;
-	color: var(--text);
-	font-family: var(--body-font-thin);
-}
+	h4 {
+		font-size: clamp(1rem, 1.75svw, 1.728rem);
+		padding: 1svw 0;
+		color: var(--text);
+		font-family: var(--body-font-thin);
+	}
 
-h5 {
-	font-size: clamp(0.75rem, 1.5svw, 1.44rem);
-	padding: 1.5svw 0;
-}
+	h5 {
+		font-size: clamp(0.75rem, 1.5svw, 1.44rem);
+		padding: 1.5svw 0;
+	}
 
-h6 {
-	font-size: clamp(0.5rem, 1.25svw, 1.2rem);
-	padding: 0.75svw 0;
-}
+	h6 {
+		font-size: clamp(0.5rem, 1.25svw, 1.2rem);
+		padding: 0.75svw 0;
+	}
 
-p {
-	font-size: clamp(1rem, 1.5svw, 1rem);
-	padding: 0.5svh 0;
-	line-height: 1.5;
-}
+	p {
+		font-size: clamp(1rem, 1.5svw, 1rem);
+		padding: 0.5svh 0;
+		line-height: 1.5;
+	}
 
-small {
-	font-size: 0.833rem;
-}
+	small {
+		font-size: 0.833rem;
+	}
 
-.resizeable {
-	font-size: clamp(1rem, 1.75svw, 1.5rem);
-}
+	.resizeable {
+		font-size: clamp(1rem, 1.75svw, 1.5rem);
+	}
 
-b {
-	font-weight: 600;
+	b {
+		font-weight: 600;
+	}
 }
