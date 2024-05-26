@@ -18,11 +18,14 @@
 
 <style>
 	header {
+		position: relative;
 		padding: var(--padding-md) 0;
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: var(--gap);
 		view-transition-name: header;
+		z-index: 999999;
+		background: var(--black-75);
 	}
 
 	.disclaimer {

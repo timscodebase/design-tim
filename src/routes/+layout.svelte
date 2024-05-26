@@ -64,8 +64,8 @@
 
 <style>
 	.container {
-		padding: var(--padding-md);
-		max-width: 740px;
+		padding-top: 250px;
+		max-width: var(--max-width);
 		margin: 0 auto;
 		overflow: clip;
 	}

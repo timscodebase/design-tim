@@ -2,18 +2,43 @@
 	import { name, description } from '$lib/config'
 </script>
 
-<a href="/">
+<div class="header-content">
 	<div class="logo">
 		<div class="name-wrapper">
 			<h1>{name}</h1>
 		</div>
 		<p data-text={description}>{description}</p>
 	</div>
-</a>
+</div>
 
 <style>
-	a {
-		text-decoration: none;
+	h1,
+	p {
+		animation-timeline: scroll();
+		animation-range: 0 250px;
+	}
+
+	@keyframes fade-to-black {
+		from {
+			box-shadow: none;
+		}
+		to {
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			box-shadow: 0 1px 0 var(--primary-2), 0 2px 0 var(--primary);
+		}
+	}
+
+	.header-content {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		animation-timeline: scroll();
+		animation: fade-to-black linear both;
+		background: var(--black-75);
+		box-shadow: none;
 	}
 	.name-wrapper {
 		display: grid;
@@ -26,6 +51,18 @@
 	}
 
 	@layer typography {
+		@keyframes shrink-name {
+			to {
+				font-size: clamp(2rem, 4.5svw, 4rem);
+			}
+		}
+
+		@keyframes shrink-description {
+			to {
+				font-size: clamp(0.75rem, 1.5svw, 1.2rem);
+			}
+		}
+
 		h1 {
 			--turn: 0.25turn;
 			color: var(--primary-2);
@@ -37,6 +74,7 @@
 			-webkit-text-fill-color: transparent;
 			text-align: center;
 			font-weight: 900;
+			animation: shrink-name linear both;
 		}
 
 		p {
@@ -45,6 +83,7 @@
 			text-align: center;
 			margin-bottom: var(--margin-md);
 			padding: 0;
+			animation: shrink-description linear both;
 		}
 	}
 </style>
