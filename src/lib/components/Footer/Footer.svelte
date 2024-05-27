@@ -1,5 +1,5 @@
 <script>
-	import { Link, FindMeOn } from '$lib'
+	import { Link } from '$lib'
 </script>
 
 <footer>
@@ -11,7 +11,7 @@
 		<Link href="https://linkedin.com/in/timsmith25" external>LinkedIn</Link>
 	</div>
 	<div>
-		<Link href="/contact-me">Contact Me</Link>
+		<Link href="/find-me">Find Me</Link>
 		<a href="https://ko-fi.com/T6T5VLU5D" target="_blank"
 			><img
 				height="36"
