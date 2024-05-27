@@ -9,6 +9,7 @@
 @layer typography {
 	html {
 		font-family: var(--body-font-family);
+		line-height: 1.6;
 	}
 
 	article p a {
@@ -49,7 +50,7 @@ button:focus {
 		font-size: clamp(2rem, 4svw, 3.5rem);
 		font-weight: 200;
 		font-weight: bolder;
-		padding: 1.5svw 0;
+		padding: 0;
 		color: var(--text);
 		font-family: 'Mulish Thin', system-ui, sans-serif;
 	}

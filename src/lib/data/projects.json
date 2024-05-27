@@ -8,6 +8,14 @@
     "href": "https://blockchainmusicvideos.com/"
   },
   {
+    "name": "Python 3 Text Adventure",
+    "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_400/v1713294369/03_Text_Adv_uyypc4.webp",
+    "image": "https://res.cloudinary.com/tithos/image/upload/c_scale,q_auto:eco,w_1000/v1713294369/03_Text_Adv_uyypc4.webp",
+    "description": "<p>This is a text adventure game that I am making in honor of my Chihuahua Papi. It's a simple game that uses a lot of the things I am learning on Python journey. I hope you enjoy it! See my <a href='https://youtu.be/44jwqgBHHec'>YouTube</a> for more.</p>",
+    "medium": "python 3, art, attrs, chalky, importlib",
+    "href": "https://github.com/timscodebase/text-battle/tree/main"
+  },
+  {
     "name": "AI Svelte Tiger",
     "thumbnail": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_400/v1705279159/Screenshot_2024-01-14_at_4.37.31_PM_e2jkhj.webp",
     "image": "https://res.cloudinary.com/tithos/image/upload/c_scale,f_auto,q_auto:eco,w_1000/v1705279159/Screenshot_2024-01-14_at_4.37.31_PM_e2jkhj.webp",

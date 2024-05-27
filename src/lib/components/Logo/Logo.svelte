@@ -66,7 +66,7 @@
 		h1 {
 			--turn: 0.25turn;
 			color: var(--primary-2);
-			font-size: clamp(4rem, 9svw, 8rem);
+			font-size: clamp(3rem, 7svw, 6rem);
 			text-transform: uppercase;
 			font-family: var(--header-font-family);
 			background: linear-gradient(var(--turn), var(--primary-2), var(--primary));
@@ -75,11 +75,13 @@
 			text-align: center;
 			font-weight: 900;
 			animation: shrink-name linear both;
+			margin: -1rem;
+			padding: 0;
 		}
 
 		p {
 			color: var(--text);
-			font-size: clamp(1rem, 5svw, 2rem);
+			font-size: clamp(1rem, 4svw, 1.5rem);
 			text-align: center;
 			margin-bottom: var(--margin-md);
 			padding: 0;

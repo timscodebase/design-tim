@@ -20,22 +20,20 @@
 {/if}
 
 <style>
-	@layer typography {
-		[aria-current='page'] {
-			background: var(--primary-2);
-			color: #000;
-			padding: 3px 5px;
-			view-transition-name: active-page;
-		}
-		a {
-			display: flex;
-			gap: 5px;
-			align-items: center;
-			cursor: pointer;
-			font-weight: bold;
-			text-decoration: underline;
-			font-size: var(--body-font-family);
-			word-break: break-word;
-		}
+	[aria-current='page'] {
+		background: var(--primary-2);
+		color: #000;
+		padding: 3px 5px;
+		view-transition-name: active-page;
+	}
+	a {
+		display: flex;
+		gap: 5px;
+		align-items: center;
+		cursor: pointer;
+		font-weight: bold;
+		text-decoration: underline;
+		font-size: var(--body-font-family);
+		word-break: break-word;
 	}
 </style>

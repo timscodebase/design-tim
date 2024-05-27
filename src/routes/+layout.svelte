@@ -140,7 +140,7 @@
 
 <style>
 	.container {
-		padding-top: 250px;
+		padding-top: 180px;
 		max-width: var(--max-width);
 		margin: 0 auto;
 		overflow: clip;
