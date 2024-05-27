@@ -15,7 +15,7 @@
 	h1,
 	p {
 		animation-timeline: scroll();
-		animation-range: 0 250px;
+		animation-range: 0 160px;
 	}
 
 	@keyframes fade-to-black {

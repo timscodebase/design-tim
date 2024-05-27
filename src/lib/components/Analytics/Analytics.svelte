@@ -19,17 +19,14 @@
 		partytown = {
 			forward: ['dataLayer.push', 'gtag']
 		}
-	</script>
-	<script async src={`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`}>
-	</script>
+	</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-EPNRTTEP8M"></script>
 	<script>
 		window.dataLayer = window.dataLayer || []
-
 		function gtag() {
 			dataLayer.push(arguments)
 		}
-
 		gtag('js', new Date())
-		gtag('config', MEASUREMENT_ID)
+
+		gtag('config', 'G-EPNRTTEP8M')
 	</script>
 </svelte:head>
