@@ -58,7 +58,7 @@
 						consentModal: {
 							title: "Hello traveller, it's cookie time!",
 							description:
-								'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+								'Our website uses cookies to enhance your browsing experience, provide personalized services, and collect information about how our website is used. This Cookie Usage Policy explains what cookies are, how we use them, and your choices regarding cookies.',
 							acceptAllBtn: 'Accept all',
 							acceptNecessaryBtn: 'Reject all',
 							showPreferencesBtn: 'Manage preferences',
