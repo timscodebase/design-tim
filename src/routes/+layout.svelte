@@ -86,7 +86,7 @@
 								{
 									title: 'Analytics Cookies',
 									description:
-										'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+										'Analytics cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. These cookies allow us to track and analyze the performance of our website and understand user behavior, which helps us improve our services and user experience.',
 									linkedCategory: 'analytics'
 								},
 								{
