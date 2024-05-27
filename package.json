@@ -75,6 +75,7 @@
     "node-html-parser": "^6.1.13",
     "nodemailer": "^6.9.13",
     "octokit": "^3.2.1",
-    "svelte-feather-icons": "^4.1.0"
+    "svelte-feather-icons": "^4.1.0",
+    "vanilla-cookieconsent": "3.0.1"
   }
 }

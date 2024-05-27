@@ -53,6 +53,9 @@ dependencies:
   svelte-feather-icons:
     specifier: ^4.1.0
     version: 4.1.0
+  vanilla-cookieconsent:
+    specifier: 3.0.1
+    version: 3.0.1
 
 devDependencies:
   '@biomejs/biome':
@@ -7836,6 +7839,10 @@ packages:
     dependencies:
       inherits: 2.0.3
     dev: true
+
+  /vanilla-cookieconsent@3.0.1:
+    resolution: {integrity: sha512-gqc4x7O9t1I4xWr7x6/jtQWPr4PZK26SmeA0iyTv1WyoECfAGnu5JEOExmMEP+5Fz66AT9OiCBO3GII4wDQHLw==}
+    dev: false
 
   /vfile-message@2.0.4:
     resolution: {integrity: sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==}

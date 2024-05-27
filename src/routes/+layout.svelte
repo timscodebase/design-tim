@@ -5,6 +5,8 @@
 	import { onNavigate } from '$app/navigation'
 	import { Analytics, Footer, Header } from '$lib'
 	import { description, name, url } from '$lib/config'
+	import 'vanilla-cookieconsent/dist/cookieconsent.css'
+	import * as CookieConsent from 'vanilla-cookieconsent'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
 	import { partytownSnippet } from '@builder.io/partytown/integration'
 
@@ -24,6 +26,80 @@
 	let path: string
 	onMount(() => {
 		path = $page?.url.pathname
+
+		document.documentElement.classList.add('cc--darkmode')
+
+		CookieConsent.run({
+			guiOptions: {
+				consentModal: {
+					layout: 'box',
+					position: 'bottom left',
+					equalWeightButtons: true,
+					flipButtons: false
+				},
+				preferencesModal: {
+					layout: 'box',
+					position: 'right',
+					equalWeightButtons: true,
+					flipButtons: false
+				}
+			},
+			categories: {
+				necessary: {
+					readOnly: true
+				},
+				analytics: {}
+			},
+			language: {
+				default: 'en',
+				autoDetect: 'browser',
+				translations: {
+					en: {
+						consentModal: {
+							title: "Hello traveller, it's cookie time!",
+							description:
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+							acceptAllBtn: 'Accept all',
+							acceptNecessaryBtn: 'Reject all',
+							showPreferencesBtn: 'Manage preferences',
+							footer: '<a href="#link">Privacy Policy</a>\n<a href="#link">Terms and conditions</a>'
+						},
+						preferencesModal: {
+							title: 'Consent Preferences Center',
+							acceptAllBtn: 'Accept all',
+							acceptNecessaryBtn: 'Reject all',
+							savePreferencesBtn: 'Save preferences',
+							closeIconLabel: 'Close modal',
+							serviceCounterLabel: 'Service|Services',
+							sections: [
+								{
+									title: 'Cookie Usage',
+									description:
+										'Our website uses cookies to enhance your browsing experience, provide personalized services, and collect information about how our website is used. This Cookie Usage Policy explains what cookies are, how we use them, and your choices regarding cookies.'
+								},
+								{
+									title: 'Strictly Necessary Cookies <span class="pm__badge">Always Enabled</span>',
+									description:
+										'Strictly necessary cookies are essential for the operation of our website. These cookies are required to enable core functionality such as security, network management, and accessibility. Without these cookies, services you have asked for, like logging into your account or completing transactions, cannot be provided.',
+									linkedCategory: 'necessary'
+								},
+								{
+									title: 'Analytics Cookies',
+									description:
+										'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+									linkedCategory: 'analytics'
+								},
+								{
+									title: 'More information',
+									description:
+										'For any query in relation to my policy on cookies and your choices, please <a class="cc__link" href="https://www.timsmith.tech">contact me</a>.'
+								}
+							]
+						}
+					}
+				}
+			}
+		})
 	})
 </script>
 
