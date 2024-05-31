@@ -75,6 +75,7 @@
 			text-align: center;
 			font-weight: 900;
 			animation: shrink-name linear both;
+			animation-timeline: scroll();
 			margin: -1rem;
 			padding: 0;
 		}
