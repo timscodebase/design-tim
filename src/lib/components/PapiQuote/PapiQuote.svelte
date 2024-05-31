@@ -28,12 +28,13 @@
 	<div class="blockquote-wrapper">
 		<div class="blockquote">
 			<p>
-				I watch Tim code all day, <span>literally, every day.</span> He is committed to learning,
-				<span>always willing to play with me,</span>
-				I mean with new tech/frameworks,
-				<span
-					>and I hear, looking for work. If you're looking to hire an excellent developer,
-				</span>Tim is your guy.
+				Okay, maybe I don't <span>ACTUALLY</span> watch Tim code every single second.
+				<span>(Squirrels are fascinating, you know?)</span>
+				But when I do, his fingers fly across the keyboard like he's chasing a <span>ball!</span>
+				He's constantly learning new things, always on the hunt for the perfect code bone. And speaking
+				of chasing, guess what? <span>He's chasing a new opportunity!</span> So, if you need a
+				fantastic developer with the focus of a champion fetch retriever,
+				<span>Tim's your guy!</span>
 			</p>
 			<h5>&mdash; Papi Dog<br /><em>I was <span>NOT</span> paid to say this!</em></h5>
 		</div>
@@ -102,8 +103,8 @@
 
 	.blockquote p {
 		position: relative;
-		color: var(--primary-2);
-		font-weight: bolder;
+		color: var(--text);
+		font-weight: bold;
 		margin: 0;
 		border: 2px solid var(--primary-2);
 		border: solid 2px;
@@ -113,7 +114,7 @@
 	}
 
 	.blockquote span {
-		color: var(--text);
+		color: var(--primary-2);
 	}
 
 	p:before {
