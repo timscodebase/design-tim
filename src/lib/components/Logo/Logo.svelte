@@ -20,7 +20,7 @@
 
 	@keyframes fade-to-black {
 		from {
-			box-shadow: none;
+			border-bottom: none;
 		}
 		to {
 			width: 100%;
@@ -28,7 +28,7 @@
 			top: 0;
 			left: 50%;
 			transform: translateX(-50%);
-			box-shadow: 0 1px 0 var(--primary-2), 0 2px 0 var(--primary);
+			border-bottom: 2px solid var(--primary-2);
 		}
 	}
 
@@ -38,7 +38,7 @@
 		animation-timeline: scroll();
 		animation: fade-to-black linear both;
 		background: var(--black-75);
-		box-shadow: none;
+		overflow-x: hidden;
 	}
 	.name-wrapper {
 		display: grid;

@@ -1,7 +1,7 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-	import { Fancy, SkillGrid, Teacher } from '$lib'
+	import { Fancy, PapiQuote, SkillGrid, Teacher } from '$lib'
 
 	import { page } from '$app/stores'
 
@@ -23,6 +23,8 @@
 		<Teacher {teacher} />
 	{/each}
 </div>
+
+<PapiQuote />
 
 <SkillGrid skills={topSkills} />
 

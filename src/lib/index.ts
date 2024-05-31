@@ -46,6 +46,9 @@ export { Me }
 import Masonry from './components/Masonry'
 export { Masonry }
 
+import PapiQuote from './components/PapiQuote'
+export { PapiQuote }
+
 import Project from './components/Project'
 export { Project }
 

@@ -145,4 +145,10 @@
 		margin: 0 auto;
 		overflow: clip;
 	}
+
+	@media (max-width: 500px) {
+		.container {
+			padding: 1rem;
+		}
+	}
 </style>
