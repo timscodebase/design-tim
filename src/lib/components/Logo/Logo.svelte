@@ -35,10 +35,9 @@
 	.header-content {
 		max-width: var(--max-width);
 		margin: 0 auto;
-		animation-timeline: scroll();
 		animation: fade-to-black linear both;
 		background: var(--black-75);
-		overflow-x: hidden;
+		box-shadow: none;
 	}
 	.name-wrapper {
 		display: grid;

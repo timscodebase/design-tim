@@ -105,7 +105,7 @@
 		color: var(--primary-2);
 		font-weight: bolder;
 		margin: 0;
-		border: 2px solid var(--primary);
+		border: 2px solid var(--primary-2);
 		border: solid 2px;
 		border-radius: 20px;
 		padding: 25px;
@@ -137,6 +137,10 @@
 		padding-top: 15px;
 		z-index: 1;
 		padding-left: 150px;
+		padding-bottom: 1rem;
+		border-radius: 20px;
+		border: 2px solid var(--primary);
+		border-top: none;
 	}
 
 	@media (max-width: 1000px) {
@@ -144,9 +148,6 @@
 			font-size: 1.1rem;
 			padding-left: 50px;
 			padding-bottom: 1rem;
-			border-radius: 20px;
-			border: 2px solid var(--primary);
-			border-top: none;
 		}
 	}
 
