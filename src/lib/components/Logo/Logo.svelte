@@ -33,10 +33,12 @@
 	}
 
 	.header-content {
+		position: relative;
+		z-index: 99999;
 		max-width: var(--max-width);
 		margin: 0 auto;
 		animation: fade-to-black linear both;
-		background: var(--black-75);
+		background: rgba(0, 0, 0, 0.75);
 		box-shadow: none;
 	}
 	.name-wrapper {

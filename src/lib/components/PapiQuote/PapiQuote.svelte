@@ -46,6 +46,9 @@
 		grid-template-columns: 246px auto;
 		place-items: center;
 	}
+	.wrapper:hover .img-wrapper {
+		animation: pink 0.5s cubic-bezier(0, 0.82, 0.52, 1.68) forwards;
+	}
 
 	@media (max-width: 1000px) {
 		.wrapper {
@@ -58,9 +61,6 @@
 		border-radius: 20px;
 		padding: 0.5rem;
 		background: none;
-	}
-	.img-wrapper:hover {
-		animation: pink 0.5s cubic-bezier(0, 0.82, 0.52, 1.68) forwards;
 	}
 	.img-wrapper::before {
 		--delta: -4rem;
