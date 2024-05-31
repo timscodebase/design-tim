@@ -32,7 +32,7 @@
 				<span>always willing to play with me,</span>
 				I mean with new tech/frameworks,
 				<span
-					>and I hear, looking for work. If you're looking for to hire an excellent developer,
+					>and I hear, looking for work. If you're looking to hire an excellent developer,
 				</span>Tim is your guy.
 			</p>
 			<h5>&mdash; Papi Dog<br /><em>I was <span>NOT</span> paid to say this!</em></h5>
