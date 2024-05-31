@@ -18,6 +18,14 @@
 			if (img) img.src = papi_1
 			imgWrapper.style.background = 'none'
 		})
+		wrapper?.addEventListener('touchstart', () => {
+			if (img) img.src = papi_2
+			imgWrapper.style.background = ''
+		})
+		wrapper?.addEventListener('touchend', () => {
+			if (img) img.src = papi_1
+			imgWrapper.style.background = 'none'
+		})
 	})
 </script>
 
