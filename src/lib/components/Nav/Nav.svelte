@@ -2,6 +2,8 @@
 	import { page } from '$app/stores'
 	import { navColor } from '$stores'
 	import { Link } from '$lib'
+  import { onMount } from'svelte'
+
 	const links = [
 		{ name: 'Home', href: '/' },
 		{ name: 'Projects', href: '/projects' },
@@ -9,12 +11,25 @@
 		{ name: 'Uses', href: '/uses' },
 		{ name: 'Blog', href: '/blog' }
 	]
+
+  onMount(() => {
+    const dialog = document.querySelector("dialog") as HTMLDialogElement
+    const selfie_open_btn = document.getElementById("selfie_open_btn") as HTMLButtonElement
+    const selfie_close_btn = document.querySelector(".selfie_close_btn") as HTMLButtonElement
+
+    if (window.innerWidth < 1000) {
+      selfie_open_btn?.classList.remove("visually-hidden");
+      selfie_open_btn?.addEventListener("click", () => dialog.showModal())
+      selfie_close_btn?.addEventListener("click", () => dialog.close())
+    }
+  })
+
 	let navEl: HTMLElement | null = null
 	function isScrolling(distance = 300) {
-		let pastScrollY = window.scrollY
+		const pastScrollY = window.scrollY
 		window.addEventListener('scroll', () => {
-			let currentScrollY = window.scrollY
-			let scrollDistance = Math.abs(currentScrollY - pastScrollY)
+			const currentScrollY = window.scrollY
+			const scrollDistance = Math.abs(currentScrollY - pastScrollY)
 			if (window.innerWidth >= 1000) {
 				if (currentScrollY > pastScrollY && scrollDistance >= distance) {
 					navEl?.classList.add('is-hidden')
@@ -35,6 +50,14 @@
 				<Link {href}>{name}</Link>
 			</li>
 		{/each}
+    <dialog>
+      <button class="selfie_close_btn" autofocus>Close</button>
+      <label for="selfie">Selfie</label>
+      <input name="selfie" id="selfie" type="file" accept="image/*" capture="user">
+      <label for="picture">Picture</label>
+      <input name="picture" id="picture" type="file" accept="image/*" capture="environment" />
+    </dialog>
+    <button id="selfie_open_btn" class="visually-hidden">Take a Selfie</button>
 	</ul>
 </nav>
 
@@ -52,7 +75,17 @@
 		padding-bottom: var(--padding-lg);
 		transition: transform 0.3s ease;
 	}
+  dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--black-75);
+    z-index: 999999;
+  }
 	ul {
+    position: relative;
 		display: grid;
 		height: auto;
 		gap: calc(var(--gap) / 2);

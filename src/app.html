@@ -38,7 +38,24 @@
         padding-bottom: var(--padding-md);
         text-align: justify;
         font-weight: 700;
+        transition-property: background;
+        transition-duration: 0.3s;
+        transition-behavior: allow-discrete;
+        animation: rotate 5s linear infinite;
       }
+
+      @keyframes rotate {
+        25% {
+          --turn: 0.25turn;
+        }
+        50% {
+          --turn: 0.5turn;
+        }
+        75% {
+          --turn: 0.75turn;
+        }
+      }
+
     </style>
 	</head>
 	<body data-sveltekit-preload-data="hover" class="body">
