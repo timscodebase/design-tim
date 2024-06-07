@@ -54,8 +54,6 @@
       <button class="selfie_close_btn" autofocus>Close</button>
       <label for="selfie">Selfie</label>
       <input name="selfie" id="selfie" type="file" accept="image/*" capture="user">
-      <label for="picture">Picture</label>
-      <input name="picture" id="picture" type="file" accept="image/*" capture="environment" />
     </dialog>
     <button id="selfie_open_btn" class="visually-hidden">Take a Selfie</button>
 	</ul>
