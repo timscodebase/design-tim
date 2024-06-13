@@ -123,6 +123,7 @@
 	<link rel="apple-touch-icon" href="apple-icon.png" />
 	<link rel="manifest" href="manifest.json" />
 	<link rel="canonical" href={url} />
+	<script defer src="https://cloud.umami.is/script.js" data-website-id="2f31869b-ee8d-4618-b354-2cc8fa3f319c"></script>
 	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
 

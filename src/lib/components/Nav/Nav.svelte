@@ -51,9 +51,11 @@
 			</li>
 		{/each}
     <dialog>
-      <button class="selfie_close_btn" autofocus>Close</button>
-      <label for="selfie">Selfie</label>
-      <input name="selfie" id="selfie" type="file" accept="image/*" capture="user">
+      <form>
+        <label for="selfie">Selfie</label>
+        <input name="selfie" id="selfie" type="file" accept="image/*" capture="user">
+        <button class="selfie_close_btn" autofocus>Close</button>
+      </form>
     </dialog>
     <button id="selfie_open_btn" class="visually-hidden">Take a Selfie</button>
 	</ul>
