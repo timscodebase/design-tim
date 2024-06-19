@@ -1,65 +1,68 @@
-import Analytics from './components/Analytics'
-export { Analytics }
+import Analytics from "./components/Analytics";
+export { Analytics };
 
-import BucketList from './components/BucketList'
-export { BucketList }
+import BucketList from "./components/BucketList";
+export { BucketList };
 
-import Button from './components/Button'
-export { Button }
+import Button from "./components/Button";
+export { Button };
 
-import ContactMe from './components/ContactMe'
-export { ContactMe }
+import ContactMe from "./components/ContactMe";
+export { ContactMe };
 
-import Chip from './components/Chip'
-export { Chip }
+import Chip from "./components/Chip";
+export { Chip };
 
-import Fancy from './components/Fancy'
-export { Fancy }
+import Fancy from "./components/Fancy";
+export { Fancy };
 
-import FindMeOn from './components/FindMeOn'
-export { FindMeOn }
+import FindMeOn from "./components/FindMeOn";
+export { FindMeOn };
 
-import Footer from './components/Footer'
-export { Footer }
+import Footer from "./components/Footer";
+export { Footer };
 
-import Header from './components/Header'
-export { Header }
+import Header from "./components/Header";
+export { Header };
 
-import Job from './components/Job'
-export { Job }
+import IE from "./components/IE";
+export { IE };
 
-import Link from './components/Link'
-export { Link }
+import Job from "./components/Job";
+export { Job };
 
-import Logo from './components/Logo'
-export { Logo }
+import Link from "./components/Link";
+export { Link };
 
-import Grid from './components/Grid'
-export { Grid }
+import Logo from "./components/Logo";
+export { Logo };
 
-import Nav from './components/Nav'
-export { Nav }
+import Grid from "./components/Grid";
+export { Grid };
 
-import Me from './components/Me'
-export { Me }
+import Nav from "./components/Nav";
+export { Nav };
 
-import Masonry from './components/Masonry'
-export { Masonry }
+import Me from "./components/Me";
+export { Me };
 
-import PapiQuote from './components/PapiQuote'
-export { PapiQuote }
+import Masonry from "./components/Masonry";
+export { Masonry };
 
-import Project from './components/Project'
-export { Project }
+import PapiQuote from "./components/PapiQuote";
+export { PapiQuote };
 
-import { formatDate, slugify } from './utils'
-export { formatDate, slugify }
+import Project from "./components/Project";
+export { Project };
 
-import SkillGrid from './components/SkillGrid'
-export { SkillGrid }
+import { formatDate, slugify } from "./utils";
+export { formatDate, slugify };
 
-import Tags from './components/Tags'
-export { Tags }
+import SkillGrid from "./components/SkillGrid";
+export { SkillGrid };
 
-import Teacher from './components/Teacher'
-export { Teacher }
+import Tags from "./components/Tags";
+export { Tags };
+
+import Teacher from "./components/Teacher";
+export { Teacher };

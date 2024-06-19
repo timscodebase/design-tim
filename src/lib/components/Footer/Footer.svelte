@@ -1,5 +1,5 @@
 <script>
-	import { Link } from '$lib'
+	import { IE, Link } from '$lib'
 </script>
 
 <footer>
@@ -21,6 +21,9 @@
 			/></a
 		>
 	</div>
+	<div>
+		<IE />
+	</div>
 </footer>
 
 <style>
@@ -28,7 +31,8 @@
 		display: grid;
 		place-items: center;
 		margin-top: var(--margin-md);
-		grid-template-columns: auto 1fr auto;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		border-top: 1px dashed var(--text);
 		padding: var(--padding-lg) 0;
 		padding-bottom: 2rem;

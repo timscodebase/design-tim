@@ -2,13 +2,15 @@
 	import { page } from '$app/stores'
 	import { navColor } from '$stores'
 	import { Link } from '$lib'
+
 	const links = [
-		{ name: 'Home', href: '/' },
-		{ name: 'Projects', href: '/projects' },
-		{ name: 'Resume', href: '/resume' },
-		{ name: 'Uses', href: '/uses' },
-		{ name: 'Blog', href: '/blog' }
+		{ name: 'Home', href: '/', external: false },
+		{ name: 'Projects', href: '/projects', external: false },
+		{ name: 'Resume', href: '/resume', external: false },
+		{ name: 'Uses', href: '/uses', external: false },
+		{ name: 'Blog', href: '/blog', external: false }
 	]
+
 	let navEl: HTMLElement | null = null
 	function isScrolling(distance = 300) {
 		let pastScrollY = window.scrollY
@@ -30,11 +32,14 @@
 <svelte:window on:scroll={() => isScrolling(300)} />
 <nav bind:this={navEl}>
 	<ul class={`${$navColor}`}>
-		{#each links as { name, href }}
+		{#each links as { name, href, external }}
 			<li aria-current={$page.route.id === href ? 'page' : undefined}>
-				<Link {href}>{name}</Link>
+				<Link {href} {external}>{name}</Link>
 			</li>
 		{/each}
+		<li>
+			<Link className="ei" external href="https://www.websitecarbon.com/website/timsmith-tech/">EI</Link>
+		</li>
 	</ul>
 </nav>
 

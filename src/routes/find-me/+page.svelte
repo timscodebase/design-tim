@@ -8,7 +8,7 @@
 	<meta name="description" content="Contact Tim Smith" />
 </svelte:head>
 
-<h2>Find Me</h2>
+<h2>Find Me On</h2>
 
 <div class="socials">
 	<div>
@@ -81,7 +81,7 @@
 	.socials {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: start;
+		place-content: center;
 		gap: var(--gap);
 	}
 
