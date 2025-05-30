@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@sveltejs/kit'
+  - '@vercel/speed-insights'
+  - esbuild
+  - svelte-preprocess

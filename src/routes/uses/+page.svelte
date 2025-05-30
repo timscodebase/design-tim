@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Tim Smith Uses</title>
-	<link rel="canonical" href="https://timsmith.tech" />
+	<link rel="canonical" href="https://design-tim.vercel.app/" />
 	<meta name="description" content="This is the tech and software I use." />
 </svelte:head>
 
@@ -9,7 +9,7 @@
 	<section>
 		<h2>Hardware</h2>
 		<ul>
-			<li><span>Computer</span> M1 MacBook Pro</li>
+			<li><span>Computer</span> M3 MacBook Air</li>
 			<li><span>Monitor</span> Scepter P30</li>
 			<li><span>Web Cam</span> Logitech HD Pro Webcam C920</li>
 			<li><span>Speakers</span> Apple HomePod Minis</li>

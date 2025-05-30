@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>Tim Smith Blog</title>
-	<link rel="canonical" href="https://timsmith.tech" />
+	<link rel="canonical" href="https://design-tim.vercel.app/" />
 	<meta name="description" content="This is my blog. It's a work in progress." />
 </svelte:head>
 

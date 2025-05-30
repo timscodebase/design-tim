@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>Tim Smith's Resume</title>
-	<link rel="canonical" href="https://timsmith.tech" />
+	<link rel="canonical" href="https://design-tim.vercel.app/" />
 	<meta name="description" content="Here is my past work experience." />
 </svelte:head>
 

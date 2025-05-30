@@ -10,7 +10,7 @@
 
 <svelte:head>
 	<title>Tim Smith's Projects</title>
-	<link rel="canonical" href="https://timsmith.tech" />
+	<link rel="canonical" href="https://design-tim.vercel.app/" />
 	<meta name="description" content="Here are some of the projects I've worked on." />
 </svelte:head>
 

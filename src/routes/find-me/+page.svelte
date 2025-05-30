@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Contact Tim Smith</title>
-	<link rel="canonical" href="https://timsmith.tech" />
+	<link rel="canonical" href="https://design-tim.vercel.app/" />
 	<meta name="description" content="Contact Tim Smith" />
 </svelte:head>
 
