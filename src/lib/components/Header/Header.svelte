@@ -5,10 +5,9 @@
 <header>
 	<div class="disclaimer">
 		<p>
-			You are missing some cool <strong>Scroll Driven Animations</strong>! Switch to a chromium
-			based browser for the best experience.
-			<a rel="external" target="_blank" href="https://arc.net/gift/d96cec75"
-				>Here is my favorite. (Arc)</a
+			You are missing some cool <strong>Scroll Driven Animations</strong>! Switch to a chromium based browser for the best experience.
+			<a rel="external" target="_blank" href="https://brave.com/"
+				>Brave is great and very secure</a
 			>
 		</p>
 	</div>

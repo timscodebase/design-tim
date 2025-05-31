@@ -52,7 +52,7 @@
 			will-change: transform;
 			animation: linear move forwards;
 			animation-timeline: --section-pin-tl;
-			animation-range: exit-crossing 30% contain 100%;
+			animation-range: exit-crossing 15% contain 100%;
 			overflow: clip;
 		}
 	}
