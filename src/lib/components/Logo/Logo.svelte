@@ -74,7 +74,7 @@
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
 			text-align: center;
-			font-weight: 900;
+			font-weight: 700;
 			animation: shrink-name linear both;
 			animation-timeline: scroll();
 			margin: -1rem;

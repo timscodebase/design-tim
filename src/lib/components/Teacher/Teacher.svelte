@@ -20,8 +20,7 @@ const { name, url } = teacher;
 		align-items: center;
 		justify-content: space-between;
 		color: var(--primary-2);
-		font-weight: 700;
-		font-family: var(--header-font-family);
+		font-family: var(--body-font-family);
 		font-size: clamp(1.2rem, 1.75svw, 1.5rem);
 
 		p {

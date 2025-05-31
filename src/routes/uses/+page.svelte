@@ -56,7 +56,7 @@
 	}
 
 	span {
-		font-weight: 900;
+		font-weight: 700;
 		color: var(--primary);
 	}
 </style>

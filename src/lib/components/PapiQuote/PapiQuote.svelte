@@ -76,7 +76,7 @@
 		content: '“';
 		position: absolute;
 		top: -6rem;
-		left: -2rem;
+		left: 0rem;
 		font-size: 10rem;
 		color: var(--primary);
 	}
