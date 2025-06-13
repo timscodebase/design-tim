@@ -12,6 +12,9 @@
 	html {
 		font-family: var(--body-font-family);
 		line-height: 1.6;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeLegibility;
 	}
 
 	article p a {
