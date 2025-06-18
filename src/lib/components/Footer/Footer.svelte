@@ -52,13 +52,6 @@
 		gap: var(--gap);
 	}
 
-	button:hover {
-		background-color: var(--color-primary-dark);
-	}
-
-	.textarea {
-		grid-column: 1 / -1;
-	}
 
 	p {
 		color: var(--primary-2);

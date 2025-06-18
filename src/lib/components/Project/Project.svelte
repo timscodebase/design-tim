@@ -44,7 +44,6 @@
 
 <style>
 	p,
-	h2,
 	h3 {
 		padding: 0;
 		padding-bottom: var(--padding-sm);
@@ -90,10 +89,6 @@
 		grid-row: span 6;
 		grid-template-rows: subgrid;
 		border-radius: var(--border-radius-sm);
-	}
-
-	article a {
-		color: color-mix(in srgb, var(--primary), var(--text) 75%);
 	}
 
 	details {

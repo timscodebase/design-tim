@@ -60,6 +60,7 @@
 		flex-direction: column;
 		gap: var(--gap);
 		border-radius: 4px;
+		width: calc(var(--max-width) / 2);
 
 		h3,
 		h4,
@@ -72,6 +73,7 @@
 		.skill {
 			margin: 0;
 			padding: var(--padding-sm);
+		width: calc(var(--max-width) / 3);
 		}
 	}
 

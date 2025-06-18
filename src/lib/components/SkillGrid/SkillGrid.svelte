@@ -44,6 +44,7 @@
 			}
 		}
 		.horizontal-strip {
+			padding: 0;
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
@@ -52,8 +53,16 @@
 			will-change: transform;
 			animation: linear move forwards;
 			animation-timeline: --section-pin-tl;
-			animation-range: exit-crossing 15% contain 100%;
+			animation-range: exit-crossing 25% exit 100%;
 			overflow: clip;
+		}
+
+		@media (max-width: 500px) {
+			.horizontal-strip {
+				width: calc((6 * 300px) + (6 * var(--gap)));
+				animation-range: exit-crossing 30% exit 90%;
+			}
+			
 		}
 	}
 </style>

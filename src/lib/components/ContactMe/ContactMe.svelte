@@ -15,7 +15,10 @@
 	<label for="message">
 		<span>Message</span>
 	</label>
-	<textarea name="message" aria-label="name" placeholder="Message" required rows="3" />
+	<textarea name="message" aria-label="name" placeholder="Message" required rows="3"></textarea>
+	<label for="honeypot" class="ohnohoney">
+		<span>Leave this field empty</span>
+	</label>
 	<input type="submit" />
 </form>
 

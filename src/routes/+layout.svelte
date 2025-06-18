@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '$css/style.css'
+	import 'iconify-icon'
 	import { onMount } from 'svelte'
 	import { page } from '$app/stores'
 	import { onNavigate } from '$app/navigation'
@@ -8,7 +9,8 @@
 	import 'vanilla-cookieconsent/dist/cookieconsent.css'
 	import * as CookieConsent from 'vanilla-cookieconsent'
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit'
-	import { partytownSnippet } from '@builder.io/partytown/integration'
+
+	let { children } = $props();
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return
@@ -124,14 +126,13 @@
 	<link rel="manifest" href="manifest.json" />
 	<link rel="canonical" href={url} />
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="2f31869b-ee8d-4618-b354-2cc8fa3f319c"></script>
-	{@html '<script>' + partytownSnippet() + '</script>'}
 </svelte:head>
 
 <div class="container">
 	<Header />
 
 	<main id={$page.route.id === '/' ? 'wrapper' : ''}>
-		<slot />
+		{@render children()}
 	</main>
 
 	<Footer />

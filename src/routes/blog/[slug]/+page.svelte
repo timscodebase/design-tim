@@ -31,7 +31,7 @@
 
 	<!-- Post -->
 	<div class="prose">
-		<svelte:component this={data.content} />
+		{data.content}
 	</div>
 
 	<Link href="/blog">Back to blog</Link>

@@ -15,7 +15,7 @@ const src =
 	{#await preload(src) then _}
 		<img {src} alt="Tim Smith" />
 	{/await}
-	<div class="gradient" />
+	<div class="gradient"></div>
 </div>
 
 <style>

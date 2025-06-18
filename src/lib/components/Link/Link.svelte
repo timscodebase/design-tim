@@ -2,10 +2,9 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores'
-	import 'iconify-icon'
+	import { page } from '$app/stores';
 
-	const { className = '', external = false, href = '/' } = $props<{
+	const { children, className = '', external = false, href = '/' } = $props<{
 		className?: string
 		external?: boolean
 		href: string
@@ -17,26 +16,26 @@
 			EI.addEventListener('mouseover', () => {
 				EI.innerHTML = `
 					Environmental Impact
-					<iconify-icon icon="mdi:open-in-new" />
+					<iconify-icon icon="mdi:open-in-new"></iconify-icon>
 				`
 			})
 			EI.addEventListener('mouseleave', () => {
 				EI.innerHTML = `
 					EI
-					<iconify-icon icon="mdi:open-in-new" />
+					<iconify-icon icon="mdi:open-in-new"></iconify-icon>
 				`
 			})
 
 			EI.addEventListener('touchstart', () => {
 				EI.innerHTML = `
 					Environmental Impact
-					<iconify-icon icon="mdi:open-in-new" />
+					<iconify-icon icon="mdi:open-in-new"></iconify-icon>
 				`
 			})
 			EI.addEventListener('touchend', () => {
 				EI.innerHTML = `
 					EI
-					<iconify-icon icon="mdi:open-in-new" />
+					<iconify-icon icon="mdi:open-in-new"></iconify-icon>
 				`
 			})
 		}
@@ -45,12 +44,12 @@
 
 {#if external}
 	<a class={className} aria-current={$page.route.id === href ? 'page' : undefined} {href} target="_blank" rel="noopener" data-sveltekit-preload-data="viewport">
-		<slot />
-		<iconify-icon icon="mdi:open-in-new" />
+		{@render children()}
+		<iconify-icon icon="mdi:open-in-new"></iconify-icon>
 	</a>
 {:else}
 	<a {href}>
-		<slot />
+		{@render children()}
 	</a>
 {/if}
 

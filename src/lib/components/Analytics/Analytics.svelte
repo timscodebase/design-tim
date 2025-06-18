@@ -15,11 +15,6 @@
 
 <svelte:head>
 	<script>
-		// Forward the necessary functions to the web worker layer
-		partytown = {
-			forward: ['dataLayer.push', 'gtag']
-		}
-	</script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EPNRTTEP8M"></script>
 	<script>
 		window.dataLayer = window.dataLayer || []

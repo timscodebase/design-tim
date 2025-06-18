@@ -10,9 +10,9 @@ const { goal, description, image, thumb } = item;
 	<h4>{goal}</h4>
 	<p>{description}</p>
 	{#if image}
-		<Link href={image}><img src={thumb} alt={goal} /></Link>
+		<a href={image}><img src={thumb} alt={goal} /></a>
 	{:else}
-		<div />
+		<div></div>
 	{/if}
 </div>
 

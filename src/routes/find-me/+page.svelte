@@ -12,44 +12,44 @@
 
 <div class="socials">
 	<div>
-		<Link href="https://twitter.com/timsmith23" external>
-			<iconify-icon icon="simple-icons:x" />
+		<a href="https://twitter.com/timsmith23" target="_blank" rel="noopener noreferrer">
+			<iconify-icon icon="simple-icons:x"></iconify-icon>
 			<p>@tismith23</p>
-		</Link>
+		</a>
 	</div>
 	<div>
-		<Link href="https://www.linkedin.com/in/timsmith25/" external>
-			<iconify-icon icon="simple-icons:linkedin" />
+		<a href="https://www.linkedin.com/in/timsmith25/" target="_blank" rel="noopener noreferrer">
+			<iconify-icon icon="simple-icons:linkedin"></iconify-icon>
 			<p>/timsmith25</p>
-		</Link>
+		</a>
 	</div>
 	<div>
-		<Link href="https://github.com/timscodebase" external>
-			<iconify-icon icon="simple-icons:github" />
+		<a href="https://github.com/timscodebase" target="_blank" rel="noopener noreferrer">
+			<iconify-icon icon="simple-icons:github"></iconify-icon>
 			<p>/timscodebase</p>
-		</Link>
+		</a>
 	</div>
 	<div>
-		<Link href="https://github.com/webruin" external>
-			<iconify-icon icon="simple-icons:github" />
+		<a href="https://github.com/webruin" target="_blank" rel="noopener noreferrer">
+			<iconify-icon icon="simple-icons:github"></iconify-icon>
 			<p>/webruin</p>
-		</Link>
+		</a>
 	</div>
 	<div>
-		<Link href="https://codepen.io/WebRuin" external>
-			<iconify-icon icon="simple-icons:codepen" />
+		<a href="https://codepen.io/WebRuin" target="_blank" rel="noopener noreferrer">
+			<iconify-icon icon="simple-icons:codepen"></iconify-icon>
 			<p>/WebRuin</p>
-		</Link>
+		</a>
 	</div>
 	<div>
 		<a href="tel:415-694-3568">
-			<iconify-icon icon="mdi:phone-classic" />
+			<iconify-icon icon="mdi:phone-classic"></iconify-icon>
 			<p>415-694-3568</p></a
 		>
 	</div>
 	<div>
 		<a href="mailto:tim.smith.hdg@gmail.com">
-			<iconify-icon icon="mdi:email" />
+			<iconify-icon icon="mdi:email"></iconify-icon>
 			<p>tim.smith.hdg@gmail.com</p>
 		</a>
 	</div>

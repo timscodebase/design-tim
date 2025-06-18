@@ -1,5 +1,9 @@
+<script>
+	let { children}  = $props()
+</script>
+
 <p class="fancy-header">
-	<slot />
+	{@render children()}
 </p>
 
 <style>

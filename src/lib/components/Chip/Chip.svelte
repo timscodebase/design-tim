@@ -1,11 +1,11 @@
 <svelte:options runes={true} />
 
 <script lang="ts">
-const { liClass } = $props<{ liClass: string }>();
+const { children, liClass } = $props<{ liClass: string }>();
 </script>
 
 <li class={liClass}>
-	<slot />
+	{@render children()}
 </li>
 
 <style>
