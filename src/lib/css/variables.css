@@ -6,9 +6,9 @@
 		--black: #000000;
 		--black-75: rgba(0, 0, 0, 0.75);
 		--black-15: rgba(0, 0, 0, 0.15);
-		--white-75: rgba(196, 196, 196, 0.75);
+		--white-75: rgba(255, 255, 255, 0.75);
 		--white-15: rgba(196, 196, 196, 0.15);
-		--white: rgb(196, 196, 196);
+		--white: rgb(255, 255, 255);
 		--gray: #808080;
 		--grey: var(--gray);
 		--bright-pink-p3: oklch(71.76% 0.351 333.53);
